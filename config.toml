@@ -1,5 +1,5 @@
-# baseURL = "https://digitalhistory.github.io/dh-website/"
-baseURL = "http://digitalhistory.github.io/"
+baseURL = "https://digitalhistory.github.io/dh-website/"
+# baseURL = "http://digitalhistory.github.io/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 
