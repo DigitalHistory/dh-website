@@ -1,4 +1,5 @@
-baseURL = "https://digitalhistory.github.io/dh-website/"
+# baseURL = "https://digitalhistory.github.io/dh-website/"
+baseURL = "http://digitalhistory.github.io/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 
@@ -8,11 +9,11 @@ theme = "docdock"
 # themesdir = "../.."
 
 [params]
-# editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
+editURL = "https://github.com/titaniumbones/digital-history/"
 showVisitedLinks = true # default is false
 themeStyle = "original" # "original" or "flex" # default "original"
 themeVariant = "green" # choose theme variant "green", "gold" , "gray", "blue" (default)
-ordersectionsby = "title" # ordersectionsby = "title" or "weight"
+ordersectionsby = "weight" # ordersectionsby = "title" or "weight"
 disableHomeIcon = false # default is false
 disableSearch = false # default is false
 disableNavChevron = true # set true to hide next/prev chevron, default is false
@@ -25,11 +26,17 @@ home = [ "HTML", "RSS", "JSON"]
 pre = "<h3>More</h3>"
 name = "<i class='fa fa-github'></i> Github repo"
 identifier = "ds"
-url = "https://github.com/vjeantet/hugo-theme-docdock"
+url = "https://github.com/titaniumbones/digital-history"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fa fa-camera'></i> Showcases"
+name = "<i class='fa fa-camera'></i> Digital Humanities @ U of T"
+url = "/showcase"
+weight = 11
+
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-camera'></i> History Department"
 url = "/showcase"
 weight = 11
 

@@ -11,29 +11,6 @@ menu :
     weight : 10
 ---
 
-<div class="ox-hugo-toc toc">
-<div></div>
-
-## Table of Contents
-
-- [Logistics](#logistics)
-- [Introduction](#introduction)
-- [Objectives](#objectives)
-- [Method](#method)
-- [Policies](#policies)
-- [Tools](#tools)
-- [Course Requirements & Grading](#course-requirements-and-grading)
-- [Texts](#texts)
-- [Course Outline](#course-outline)
-    - [Text, Code, and the Web](#text-code-and-the-web)
-    - [Data Driven History](#data-driven-history)
-    - [Maps, Visualization, and History](#maps-visualization-and-history)
-    - [Oral History, Crowdsourcing, and the Promise of the Public Sphere](#oral-history-crowdsourcing-and-the-promise-of-the-public-sphere)
-</div>
-<!--endtoc-->
-
-
-
 ## Logistics {#logistics}
 
 | **Instructor:**   | Matt Price                              |
