@@ -17,7 +17,7 @@ menu :
 |-------------------|-----------------------------------------|
 | **Email:**        | matt.price@utoronto.ca                  |
 | **Office Hrs:**   | SS 3077 T 1-2:30                        |
-| **Meeting Times** | F 3-5                                   |
+| **Meeting Times** | Thurs 2-4                               |
 | **Web:**          | <http://digital.hackinghistory.ca/>     |
 | **Slack:**        | <https://digitalhistoryuoft.slack.com/> |
 
