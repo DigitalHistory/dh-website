@@ -157,7 +157,7 @@ The following texts are required and available at the Bookstore, or via various 
 ### Text, Code, and the Web {#text-code-and-the-web}
 
 
-#### Introducing _Digital History_ <span class="timestamp-wrapper"><span class="timestamp">Jan. 04</span></span> {#introducing-digital-history}
+#### Introducing _Digital History_ (<span class="timestamp-wrapper"><span class="timestamp">Jan. 04</span></span>) {#introducing-digital-history}
 
 **Class Synopsis:** Introduction to the course, Github, and Markdown.
 
@@ -170,7 +170,7 @@ The following texts are required and available at the Bookstore, or via various 
 **In-Class Activity: Collaboration on Github, Markdown**
 
 
-#### What the Web Signifies <span class="timestamp-wrapper"><span class="timestamp">Jan. 11</span></span> {#what-the-web-signifies}
+#### What the Web Signifies (<span class="timestamp-wrapper"><span class="timestamp">Jan. 11</span></span>) {#what-the-web-signifies}
 
 We all live with the web, but that doesn't mean we think much about _how it works_ and _what it's changed_. This week's lecture presents some thoughts on the changing nature of the public sphere and the significance of the web's _digital_ and _machine-readable_ nature.
 
@@ -182,7 +182,7 @@ We all live with the web, but that doesn't mean we think much about _how it work
 **In-Class Activity: HTML + CSS**
 
 
-#### Abundance and Openness <span class="timestamp-wrapper"><span class="timestamp">Jan. 18</span></span> {#abundance-and-openness}
+#### Abundance and Openness (<span class="timestamp-wrapper"><span class="timestamp">Jan. 18</span></span>) {#abundance-and-openness}
 
 One of the key features of the web is its _immenseness_. We will discuss how this genuinely new circumstance transforms the work of the historian.
 
@@ -198,7 +198,7 @@ One of the key features of the web is its _immenseness_. We will discuss how thi
 ### Data Driven History {#data-driven-history}
 
 
-#### Distant Reading 1 <span class="timestamp-wrapper"><span class="timestamp">Jan. 25</span></span> {#distant-reading-1}
+#### Distant Reading 1 (<span class="timestamp-wrapper"><span class="timestamp">Jan. 25</span></span>) {#distant-reading-1}
 
 Franco Moretti's _Graphs, Maps, Trees_ was a manifesto of sorts for a data-driven literary history. We'll discuss the first 2/3s of this book before turning to some practical skills
 
@@ -210,7 +210,7 @@ Franco Moretti's _Graphs, Maps, Trees_ was a manifesto of sorts for a data-drive
 **In-Class Activity: Javascript variables & functions**
 
 
-#### Distant Reading 2: Are Texts Data? <span class="timestamp-wrapper"><span class="timestamp">Feb. 01</span></span> {#distant-reading-2-are-texts-data}
+#### Distant Reading 2: Are Texts Data? (<span class="timestamp-wrapper"><span class="timestamp">Feb. 01</span></span>) {#distant-reading-2-are-texts-data}
 
 More Moretti, and some criticisms
 
@@ -227,7 +227,7 @@ More Moretti, and some criticisms
 ### Maps, Visualization, and History {#maps-visualization-and-history}
 
 
-#### Spatial History <span class="timestamp-wrapper"><span class="timestamp">Feb. 08</span></span> {#spatial-history}
+#### Spatial History (<span class="timestamp-wrapper"><span class="timestamp">Feb. 08</span></span>) {#spatial-history}
 
 Contemporary "Historical GIS" and web-based geohistory projects descend from an illustrious lineage of qualitative and quantitative "spatial histories". In class today we explore what happens when "place" takes centre stage in a historical analysis.
 
@@ -239,15 +239,15 @@ Contemporary "Historical GIS" and web-based geohistory projects descend from an 
 **In-Class Activity: Mapping with Google**
 
 
-#### ??? <span class="timestamp-wrapper"><span class="timestamp">Feb. 15</span></span> {#}
+#### ??? (<span class="timestamp-wrapper"><span class="timestamp">Feb. 15</span></span>) {#}
 
 **Note: In all likelihood, there will be no class this week due to a scheduling conflict.**
 
 
-#### NO CLASS <span class="timestamp-wrapper"><span class="timestamp">Feb. 22</span></span>: READING WEEK {#no-class-reading-week}
+#### NO CLASS (<span class="timestamp-wrapper"><span class="timestamp">Feb. 22</span></span>): READING WEEK {#no-class--reading-week}
 
 
-#### Visualization <span class="timestamp-wrapper"><span class="timestamp">Mar. 01</span></span> {#visualization}
+#### Visualization (<span class="timestamp-wrapper"><span class="timestamp">Mar. 01</span></span>) {#visualization}
 
 Of course, maps and graphs are in a certain sense part of a much broader field of _rhetorical visualizations:_ attempts to convey quantitative information through pictures in an effort to convince the reader.
 
@@ -260,7 +260,7 @@ Of course, maps and graphs are in a certain sense part of a much broader field o
 **In-Class Activity: Reading visualizations**
 
 
-#### Maps Online <span class="timestamp-wrapper"><span class="timestamp">Mar. 08</span></span> {#maps-online}
+#### Maps Online (<span class="timestamp-wrapper"><span class="timestamp">Mar. 08</span></span>) {#maps-online}
 
 Maps and visiaulizations are neat and all, but contemporary web-based geohistory allows historical maps to interact powerfully with other data sources.  We'll explore some possibilities!
 
@@ -276,7 +276,7 @@ Maps and visiaulizations are neat and all, but contemporary web-based geohistory
 ### Oral History, Crowdsourcing, and the Promise of the Public Sphere {#oral-history-crowdsourcing-and-the-promise-of-the-public-sphere}
 
 
-#### What's Special about Oral History <span class="timestamp-wrapper"><span class="timestamp">Mar. 15</span></span> {#what-s-special-about-oral-history}
+#### What's Special about Oral History (<span class="timestamp-wrapper"><span class="timestamp">Mar. 15</span></span>) {#what-s-special-about-oral-history}
 
 Oral History has a long tradition; we explore its roots and peculiarities, and
 
@@ -288,14 +288,14 @@ Oral History has a long tradition; we explore its roots and peculiarities, and
 **In-Class Activity: Popcorn.js**
 
 
-#### Interlude: Project Planning & Citizen History  <span class="timestamp-wrapper"><span class="timestamp">Mar. 22</span></span> {#interlude-project-planning-and-citizen-history}
+#### Interlude: Project Planning & Citizen History  (<span class="timestamp-wrapper"><span class="timestamp">Mar. 22</span></span>) {#interlude-project-planning-and-citizen-history}
 
 We'll discuss some project management techniques that should help you with your final proposal
 
 -   <http://publichistorycommons.org/where-are-the-citizen-historians/>
 
 
-#### Oral History & Remix Culture <span class="timestamp-wrapper"><span class="timestamp">Mar. 29</span></span> {#oral-history-and-remix-culture}
+#### Oral History & Remix Culture (<span class="timestamp-wrapper"><span class="timestamp">Mar. 29</span></span>) {#oral-history-and-remix-culture}
 
 Once oral histories migrate to the web, they, like maps, can interact with other kinds of data.
 
