@@ -2,7 +2,7 @@
 title : "Assignment 00: Git and Github"
 author : ["Matt Price"]
 date : 2017-01-04T21:55:00-05:00
-lastmod : 2018-01-04T13:46:28-05:00
+lastmod : 2018-01-04T15:09:55-05:00
 draft : false
 banner : "testbanner"
 menu :
@@ -13,6 +13,8 @@ menu :
 ---
 
 ## General Description {#general-description}
+
+If you're looking for [History, Please](https://github.com/titaniumbones/history-please), follow that link!
 
 One of the hardest parts of this course for many people is setting up their working environment.  In this assignment you will be need to [set up your working environment](./../../tools/setup) and then use Git, much as we did in class, but this time manipulating the command line.
 
