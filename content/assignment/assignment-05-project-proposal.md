@@ -2,7 +2,7 @@
 title : "Assignment 05: Project Proposal"
 author : ["Matt Price"]
 date : 2017-01-04T21:55:00-05:00
-lastmod : 2017-12-08T15:26:03-05:00
+lastmod : 2018-01-04T13:46:41-05:00
 draft : false
 banner : "testbanner"
 menu :
@@ -11,17 +11,6 @@ menu :
     identifier : "assignment-05-project-proposal"
     parent : "Asisgnments"
 ---
-
-<div class="ox-hugo-toc toc">
-<div></div>
-
-## Table of Contents
-
-- [Call for Proposals: Digital History Initiative Grants](#call-for-proposals-digital-history-initiative-grants)
-- [Structure](#structure)
-- [Expectations](#expectations)
-</div>
-<!--endtoc-->
 
 **Due Date: April 02**
 

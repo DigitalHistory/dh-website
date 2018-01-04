@@ -2,7 +2,7 @@
 title : "Assignment 03: Spatial History"
 author : ["Matt Price"]
 date : 2017-01-04T21:55:00-05:00
-lastmod : 2017-12-08T15:25:59-05:00
+lastmod : 2018-01-04T13:46:37-05:00
 draft : false
 banner : "testbanner"
 menu :
@@ -11,18 +11,6 @@ menu :
     identifier : "assignment-03-spatial-history"
     parent : "Asisgnments"
 ---
-
-<div class="ox-hugo-toc toc">
-<div></div>
-
-## Table of Contents
-
-- [Assignment](#assignment)
-- [Getting your assignment, and handing it in](#getting-your-assignment-and-handing-it-in)
-- [Learning Objectives](#learning-objectives)
-- [Expectations](#expectations)
-</div>
-<!--endtoc-->
 
 **Due Date: March 02**
 

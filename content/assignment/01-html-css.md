@@ -2,7 +2,7 @@
 title : "Assignment 01: HTML & CSS self-study"
 author : ["Matt Price"]
 date : 2017-01-04T21:55:00-05:00
-lastmod : 2017-12-08T15:27:19-05:00
+lastmod : 2018-01-04T13:46:31-05:00
 draft : false
 banner : "testbanner"
 menu :
@@ -12,16 +12,10 @@ menu :
     parent : "Asisgnments"
 ---
 
-<div class="ox-hugo-toc toc">
-<div></div>
-
-## Table of Contents
-
-- [Assignment](#assignment)
-</div>
-<!--endtoc-->
-
 **Due Date: Jan. 26**
+
+
+## General Description {#general-description}
 
 You do not have to become a coder to do well in this course.  However, you _will_ have to be willing to explore technical skills that you might not otherwise develop as a humanities scholar.  In this second assignment, we'll use one of the web's many excellent self-education platforms to learn the very basics of how web pages work.  We'll then extend that knowledge with a set of slightly more advanced programming exercises.
 

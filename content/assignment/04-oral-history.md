@@ -2,7 +2,7 @@
 title : "Assignment 04: Oral History"
 author : ["Matt Price"]
 date : 2017-01-04T21:55:00-05:00
-lastmod : 2017-12-08T15:26:00-05:00
+lastmod : 2018-01-04T13:46:38-05:00
 draft : false
 banner : "testbanner"
 menu :

@@ -2,7 +2,7 @@
 title : "Participation"
 author : ["Matt Price"]
 date : 2017-01-04T21:55:00-05:00
-lastmod : 2017-12-08T15:25:52-05:00
+lastmod : 2018-01-04T13:46:26-05:00
 draft : false
 banner : "testbanner"
 menu :
@@ -12,25 +12,12 @@ menu :
     parent : "Asisgnments"
 ---
 
-<div class="ox-hugo-toc toc">
-<div></div>
-
-## Table of Contents
-
-- [The System](#the-system)
-- [The Criteria](#the-criteria)
-    - [In the Classroom](#in-the-classroom)
-    - [Online](#online)
-- [Finally](#finally)
-</div>
-<!--endtoc-->
-
 As described in the syllabus, I use your participation mark to determine the "-/null/+" part of your grade.  Let me explain a little more explicitly how this works.
 
 
 ## The System {#the-system}
 
-It's simple.  Suppose you successfully complete the HTML Top-Up, Distant Reading, Spatial History, and Aural History assignments. Congratulations! You have qualified for a B. But what kind of a B?
+It's simple.  Suppose you successfully complete the Git & Github, HTML & CSS, Javascript, Spatial History, and Oral History assignments. Congratulations! You have qualified for a B. But what kind of a B?
 
 | If your class participation was: | You get a: | Which ROSI will show as: |
 |----------------------------------|------------|--------------------------|
@@ -38,17 +25,17 @@ It's simple.  Suppose you successfully complete the HTML Top-Up, Distant Reading
 | Satisfactory                     | B          | 75                       |
 | Excellent                        | B+         | 78                       |
 
-Similarly, perhaps you were only able to complete the HTML Top-Up and the Distant Reading assignment. Oops! You're going to get a D.  Like your somewhat happier classmate, your final grade will be assigned thus:
+Similarly, perhaps you were only able to complete the Git & Github, HTML & CSS, Javascript and Oral History. Oops! You're going to get a C.  Like your somewhat happier classmate, your final grade will be assigned thus:
 
 | If your class participation was: | You get a: | Which ROSI will show as: |
 |----------------------------------|------------|--------------------------|
-| Poor                             | D-         | 52                       |
-| Satisfactory                     | D          | 55                       |
-| Excellent                        | D+         | 58                       |
+| Poor                             | C-         | 52                       |
+| Satisfactory                     | C          | 55                       |
+| Excellent                        | C+         | 58                       |
 
 **But Note!**
 
-A+ is a special grade.  Suppose you complete all the assignments satisfactorily.  Wow! You get an A, great.  But...  do you get an A+?
+A+ is a special grade.  Suppose you complete all the assignments satisfactorily, **including the additional "A only" sections of the relevant assignments**.  Wow! You get an A, great.  But...  do you get an A+?
 
 | If your class participation was: | You get an: | Which ROSI will show as: |
 |----------------------------------|-------------|--------------------------|
@@ -58,14 +45,12 @@ A+ is a special grade.  Suppose you complete all the assignments satisfactorily.
 
 Even if your participation was excellent, you will only receive an A+ if your work was consistently excellent and occasionally brilliant.  So, if you successfully complete all the assignments (great!), and also are a great class participant (thanks!), then I'll look over all your work and make a value judgment about whether you deserve this rare and precious grade.
 
+**Final Note for 2018** -- this year, there isn't really a "D" grade. To pass the course you basically have to get a C. In rare cases I will consider lowering the grading criteria for the "Oral History" assignment to permit a student to scrape through the course.
 
-## The Criteria {#the-criteria}
 
-This is a class about digital history, so it would be **crazy** not to have an online presence.  The course website is:
+## Participation Criteria {#participation-criteria}
 
-<http://digital.hackinghistory.ca/>
-
-I'll post just about everything related to the class there, except for marks, which I'll do on Blackboard or by personal communication.  Your participation mark is a combination of _in-class_ and _online_ participation.
+Your participation mark is a combination of _in-class_ and _online_ participation.
 
 
 ### In the Classroom {#in-the-classroom}

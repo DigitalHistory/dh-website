@@ -13,15 +13,15 @@ menu :
 
 ## Logistics {#logistics}
 
-| **Instructor:**   | Matt Price                              |
-|-------------------|-----------------------------------------|
-| **Email:**        | matt.price@utoronto.ca                  |
-| **Office Hrs:**   | SS 3077 T 1-2:30                        |
-| **Meeting Times** | Thurs 2-4                               |
-| **Web:**          | <http://digital.hackinghistory.ca/>     |
-| **Slack:**        | <https://digitalhistoryuoft.slack.com/> |
+| **Instructor:**   | Matt Price                                                     |
+|-------------------|----------------------------------------------------------------|
+| **Email:**        | matt.price@utoronto.ca                                         |
+| **Office Hrs:**   | T 1-2:30, [SS 3077](http://map.utoronto.ca/utsg/building/033)  |
+| **Meeting Times** | Thurs 2-4, [SS 1088](http://map.utoronto.ca/utsg/building/033) |
+| **Web:**          | <http://digital.hackinghistory.ca/>                            |
+| **Slack:**        | <https://digitalhistoryuoft.slack.com/>                        |
 
-In general, communication should take place **via Slack**.  In the case of questions having to do with official University business (requests for extensions, discussion of accommodations, any message involving sensitive personal data) please [use my University email, being sure to put "HIS389" in the subject line](matt.price@utoronto.ca?subject=HIS389%20Digital%20History).
+In general, communication should take place **via Slack**.  In the case of questions having to do with official University business (requests for extensions, discussion of accommodations, any message involving sensitive personal data) please [use my University email, being sure to put "HIS393" in the subject line](matt.price@utoronto.ca?subject=HIS389%20Digital%20History).
 
 
 ## Introduction {#introduction}
@@ -68,7 +68,24 @@ Almost every digital humanist will, at some point, need to do the following:
 Our emphasis is therefore on _simple coding_ taught using _standard tools that are available almost everywhere_.  Almost all of the software we use is Free or Open Source. You will learn very basic web development skills and _slowly_ come to apply them to _increasingly sophisticated_ (but still pretty simple!) historical questions.  These baby steps will give you some sense of what skills a "real" digital history project requires, and give you the tools you'll need to _teach yourself_ when you encounter new tools in the course of a project.
 
 
-## <span class="todo ACTION_">ACTION </span> Policies {#policies}
+## Policies {#policies}
+
+
+### Respecting Diversity {#respecting-diversity}
+
+Diverse backgrounds, embodiments, and experiences are essential to the critical thinking endeavor at the heart of higher education. We expect you to be respectful of the many social and cultural differences among us, which may include, but are not limited to: age, cultural background, disability, ethnicity, technical ability, gender identity and presentation, citizenship and immigration status, national origin, race, religious and political beliefs, sex, sexual orientation, and socioeconomic status. Please talk with me right away if you experience disrespect in this class—from any source, including myself—and I will active work to address it.
+
+
+### Correspondence {#correspondence}
+
+As noted above, most communication should take place **via Slack**.  In the case of questions having to do with official University business (requests for extensions, discussion of accommodations, any message involving sensitive personal data) please [use my University email, being sure to put "HIS393" in the subject line](matt.price@utoronto.ca?subject=HIS389%20Digital%20History).  I'll do my best to reply within two working days, though occasionally the delay may be slightly longer. Please allow the full 48 hours to elapse before sending a repeat email.
+
+
+### Attendance {#attendance}
+
+Make every effort to attend each class meeting (including lab sections)! Class will begin and (usually) end on time. Please do your best to get to class before the start of the session. Students are expected to attend all meetings, with exceptions permitted in case of illness and family emergencies.
+
+Please silence all cell phones/pagers/etc. before the beginning of each class. You should bring your laptop for in-class work, but please don't use class time (lecture or lab) to check your email, update your Facebook, read reddit, watch YouTube, make dank memes, seize the means of production (allowed), etc. Such usage is distracting and interferes with learning both for you and for all the other students around you. Spend class time on class materials. If another student's activity is distracting, please ask them to stop it (or let us know outside of class).
 
 
 ## Tools {#tools}
@@ -79,7 +96,7 @@ I can offer help with the following
 
 | Tool                   | On Mac                                                                                                                     | On Windows                                                                                                                                             | On Linux                                                                                                                 |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Real Webbrowser        | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                          | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                                                      | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                        |
+| Real Web Browser       | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                          | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                                                      | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                        |
 | Text Editor            | [Atom](https://atom.io/)                                                                                                   | [Atom](https://atom.io/)                                                                                                                               | [Atom](https://atom.io/)                                                                                                 |
 | Bash Shell Environment | Terminal (Built in)                                                                                                        | [Git for Windows](https://git-for-windows.github.io/) or [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/install-win10) | gnome-terminal, qterm, etc                                                                                               |
 | Git Version Control    | [Git for OSX](https://sourceforge.net/projects/git-osx-installer/files/)                                                   | [Git for Windows](https://git-for-windows.github.io/)                                                                                                  | `apt-get install git`                                                                                                    |
@@ -113,9 +130,12 @@ I know there will be questions!  Please don't hesitate to ask them.  And here, f
 | Assignment          | Due Date                                                                      | Brief Description                 | A           | B           | C           | D           |
 |---------------------|-------------------------------------------------------------------------------|-----------------------------------|-------------|-------------|-------------|-------------|
 | Git & Github        | <span class="timestamp-wrapper"><span class="timestamp">Jan. 15</span></span> | version control and collaboration | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
-| HTML & CSS          | <span class="timestamp-wrapper"><span class="timestamp">Jan. 26</span></span> | web markup and presentaiton       | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
+| G & GH Extras       |                                                                               |                                   | &checkmark; |             |             |             |
+| HTML & CSS          | <span class="timestamp-wrapper"><span class="timestamp">Jan. 26</span></span> | web markup and presentation       | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
+| H & C Extras        |                                                                               |                                   | &checkmark; |             |             |             |
 | Javascript for DH   | <span class="timestamp-wrapper"><span class="timestamp">Feb. 02</span></span> | intro to programming              | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
-| Data-Driven History | <span class="timestamp-wrapper"><span class="timestamp">Feb. 16</span></span> |                                   | &checkmark; | &checkmark; | &checkmark; |             |
+| JS Extras           |                                                                               |                                   | &checkmark; |             |             |             |
+| Data-Driven History | <span class="timestamp-wrapper"><span class="timestamp">Feb. 16</span></span> | CANCELLED                         | x           | x           | x           | x           |
 | Spatial History     | <span class="timestamp-wrapper"><span class="timestamp">Mar. 02</span></span> | Simple GIS Web project            | &checkmark; | &checkmark; |             |             |
 | Oral History        | <span class="timestamp-wrapper"><span class="timestamp">Mar. 16</span></span> | Multimedia Web Project            | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
 | Project Proposal    | <span class="timestamp-wrapper"><span class="timestamp">Mar. 23</span></span> | Imagine a Digital History Project | &checkmark; |             |             |             |
@@ -287,3 +307,8 @@ If we're ahead of schedule, we'll watch _Harlan County USA_ in class.
 -   Gunkel, David J. “Rethinking the Digital Remix: Mash‐ups and the Metaphysics of Sound Recording.” Popular Music and Society 31, no. 4 (October 1, 2008): 489–510. <http://resolver.scholarsportal.info/resolve/03007766/v31i0004/489_rtdrmatmosr.xml>.
 
 **In-Class Activity: popcorn.js (just in case)**
+
+
+## Acknowledgments {#acknowledgments}
+
+Thanks to Joel Wrossley of the University of Washington and Thomas J Bradley of Algonquin Collegee for help and inspiration in assignments and grading strategy.  The "Policies" section above is taken almost verbatim from [Joel's web development course](https://canvas.uw.edu/courses/1118282/pages/policies). Various pieces of the course have been inspired by other teachers over the year, and I hope to do a better job of document theft and inspiration from here on in.
