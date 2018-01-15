@@ -2,7 +2,7 @@
 title : "Setup"
 author : ["Matt Price"]
 date : 2015-07-21T13:48:00-04:00
-lastmod : 2017-12-08T15:16:08-05:00
+lastmod : 2018-01-15T13:13:27-05:00
 draft : false
 banner : "testbanner"
 menu :
@@ -29,7 +29,7 @@ Here's the table of tools from the syllabus:
 
 | Tool                   | On Mac                                                                                                                     | On Windows                                                                                                                                             | On Linux                                                                                                                 |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Real Webbrowser        | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                          | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                                                      | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                        |
+| Real Web Browser       | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                          | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                                                      | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                        |
 | Text Editor            | [Atom](https://atom.io/)                                                                                                   | [Atom](https://atom.io/)                                                                                                                               | [Atom](https://atom.io/)                                                                                                 |
 | Bash Shell Environment | Terminal (Built in)                                                                                                        | [Git for Windows](https://git-for-windows.github.io/) or [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/install-win10) | gnome-terminal, qterm, etc                                                                                               |
 | Git Version Control    | [Git for OSX](https://sourceforge.net/projects/git-osx-installer/files/)                                                   | [Git for Windows](https://git-for-windows.github.io/)                                                                                                  | `apt-get install git`                                                                                                    |
@@ -49,7 +49,7 @@ Both have highly sophisticated **developer tools** with which you should familia
 
 Of particular value in both Chrome and Firefox is the "Javascript Consoles," accessible from the developer tools: `Tools \rarr Web Developer \rarr Console` or `Menu \rarr More Tools \rarr Developer \rarr Console`
 
-The Firefox console is a little awkward to use for multi-line programming, so they have also provided a "Scratchpad" tool (`Shift-F4`), which I find helpful, though I now use Atom's Javascript console instead (see "Text Editor", below.
+The Firefox console is a little awkward to use for multi-line programming, so they have also provided a "Scratchpad" tool (`Shift-F4`), which I find helpful, though I now use Atom's Javascript console instead (see "Text Editor", below).
 
 The other tool I use all the time is "inspect element", available by right-clicking on any part of a web page.  Both of these tools will prove **essential** for figuring out why your code isn't working right!
 
@@ -72,7 +72,7 @@ In Windows, bash comes with the Git installation -- follow the instructions belo
 
 ## Git, Github, and GitKraken {#git-github-and-gitkraken}
 
-Software development is made **vastly** by "[version control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)" systems: specialized software that keeps track of the history and current state of files and directories. In the past there were many such systems, but now almost the whole user uses [git](https://git-scm.com/), and we're all grateful for it.
+Software development is made **vastly** easier by "[version control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)" systems: specialized software that keeps track of the history and current state of files and directories. In the past there were many such systems, but now almost the whole user uses [git](https://git-scm.com/), and we're all grateful for it.
 
 
 ### Install Git {#install-git}
@@ -96,7 +96,8 @@ You need to tell git a little bit about yourself. Start with your [email address
 
 ```sh
 git config --global user.name "Your Name"
-git config --global user.email "youraddress@ mail.utoronto.a"
+git config --global user.email "youraddress@ mail.utoronto.ca"
+git config --global github.user YourGithubId
 ```
 
 Great -- now git knows who you are. If you're feeling ambitious, you can also [set up SSH keys so you don't have to type in your password every time you commit to Git](https://help.github.com/articles/connecting-to-github-with-ssh/).
@@ -114,9 +115,9 @@ There is a somewhat more wordy [Git tutorial on this website](http://digital.hac
 
 ## Node and NPM {#node-and-npm}
 
-Most of our programming work will involve Javascript, which runs most of the web. The [Node.js](https://nodejs.org/en/) environment and its "package manager," [NPM](https://www.npmjs.com/), are an incredible resource for Javascript development. In fact, Slack, Atom, and gitKraken are all written as Node applications themselves! Installing the "bare" versions of node and NPM let us access some of that power while we work.
+Most of our programming work will involve Javascript, which runs most of the web. The [Node.js](https://nodejs.org/en/) environment and its "package manager," [NPM](https://www.npmjs.com/), are an incredible resource for Javascript development. In fact, Slack, Atom, and gitKraken are all written as Node applications themselves! Installing the "bare" versions of node and NPM lets us access some of that power while we work.
 
-You can survive this class  without installing Node, but without it, you won't be able to run the test suites that accompany all of the assignments. You'll therefore be at a serious disadvantage in the class.
+You can survive this class without installing Node, but without it, you won't be able to run the test suites that accompany all of the assignments. You'll therefore be at a serious disadvantage in the class.
 
 -   In Mac and Linux, the instructions linked to in the table above are probably good enough.
 -   In Windows, you may follow all the instructions and then find yourself getting an error ("`Command not found`"). If that happens, you may want to try [the instructions laid out here](http://blog.theodo.fr/2017/01/use-git-ssh-and-npm-on-windows-with-git-bash/), or if you're on Windows 10, [you could go crazy and install the amazing Windows Subsystem for Linux](https://hackernoon.com/running-nodejs-on-linux-on-windows-88bd12993bae), which allows you to work as if your computer had a real Unix operating system like everyone else.
