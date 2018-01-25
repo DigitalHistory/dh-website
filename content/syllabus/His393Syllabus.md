@@ -71,6 +71,11 @@ Our emphasis is therefore on _simple coding_ taught using _standard tools that a
 ## Policies {#policies}
 
 
+### Accessibility {#accessibility}
+
+The University provides academic accommodations for students with disabilities in accordance with the terms of the Ontario Human Rights Code. For information on services and resources, see <http://www.studentlife.utoronto.ca/as>
+
+
 ### Respecting Diversity {#respecting-diversity}
 
 Diverse backgrounds, embodiments, and experiences are essential to the critical thinking endeavor at the heart of higher education. We expect you to be respectful of the many social and cultural differences among us, which may include, but are not limited to: age, cultural background, disability, ethnicity, technical ability, gender identity and presentation, citizenship and immigration status, national origin, race, religious and political beliefs, sex, sexual orientation, and socioeconomic status. Please talk with me right away if you experience disrespect in this class—from any source, including myself—and I will active work to address it.
@@ -80,12 +85,14 @@ Diverse backgrounds, embodiments, and experiences are essential to the critical 
 
 As noted above, most communication should take place **via Slack**.  In the case of questions having to do with official University business (requests for extensions, discussion of accommodations, any message involving sensitive personal data) please [use my University email, being sure to put "HIS393" in the subject line](matt.price@utoronto.ca?subject=HIS389%20Digital%20History).  I'll do my best to reply within two working days, though occasionally the delay may be slightly longer. Please allow the full 48 hours to elapse before sending a repeat email.
 
+**Also:** I have an injury-related difficulty co-ordinating action between my left and right hands, which leads to very frequent & distinctive typographical errors (and is also one of the many reasons you don't want to hear me play a musical instrument). In my course materials, assignment comments, and announcements, I strive to eliminate those errors, but in instant messaging I am less attentive, as typing corrections approximately triples my composition time. So&#x2026; please bear with me.
+
 
 ### Attendance {#attendance}
 
 Make every effort to attend each class meeting (including lab sections)! Class will begin and (usually) end on time. Please do your best to get to class before the start of the session. Students are expected to attend all meetings, with exceptions permitted in case of illness and family emergencies.
 
-Please silence all cell phones/pagers/etc. before the beginning of each class. You should bring your laptop for in-class work, but please don't use class time (lecture or lab) to check your email, update your Facebook, read reddit, watch YouTube, make dank memes, seize the means of production (allowed), etc. Such usage is distracting and interferes with learning both for you and for all the other students around you. Spend class time on class materials. If another student's activity is distracting, please ask them to stop it (or let us know outside of class).
+Please silence all cell phones/pagers/etc. before the beginning of each class. You should bring your laptop for in-class work, but please don't use class time (lecture or lab) to check your email, update your Facebook, read reddit, watch YouTube, make dank memes, seize the means of production (allowed), etc. Such usage is distracting and interferes with learning both for you and for all the other students around you. Spend class time on class materials. If another student's activity is distracting, please ask them to stop it (or let me know outside of class).
 
 
 ## Tools {#tools}
