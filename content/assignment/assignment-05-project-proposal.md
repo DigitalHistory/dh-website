@@ -2,7 +2,7 @@
 title : "Assignment 05: Project Proposal"
 author : ["Matt Price"]
 date : 2017-01-04T21:55:00-05:00
-lastmod : 2018-01-04T13:46:41-05:00
+lastmod : 2018-03-08T12:11:08-05:00
 draft : false
 banner : "testbanner"
 menu :
@@ -14,7 +14,9 @@ menu :
 
 **Due Date: April 02**
 
-For your final assignment, respond to the following _call for proposals_ with an application approximately 2000 words in length, plus a provisional budget i n the form of a spreadsheet. See below for details.
+For your final assignment, respond to the following _call for proposals_ with an application approximately 2000 words in length, plus a provisional budget in the form of a spreadsheet (includea PDF, or provide a link to a **viewable** google sheet) or Markdown table. There's a nice [Google Sheets Extension](https://chrome.google.com/webstore/detail/markdowntablemaker/cofkbgfmijanlcdooemafafokhhaeold?hl=en) that will convert a Google sheet to markdown for you.
+
+See below for details.
 
 
 ## Call for Proposals: Digital History Initiative Grants {#call-for-proposals-digital-history-initiative-grants}
