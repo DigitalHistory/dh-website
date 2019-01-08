@@ -31,13 +31,13 @@ weight = 10
 
 [[menu.shortcuts]]
 name = "<i class='fa fa-camera'></i> Digital Humanities @ U of T"
-url = "/showcase"
+url = "https://wdw.utoronto.ca/digital-humanities"
 weight = 11
 
 
 [[menu.shortcuts]]
 name = "<i class='fa fa-camera'></i> History Department"
-url = "/showcase"
+url = "http://history.utoronto.ca/"
 weight = 11
 
 [[menu.shortcuts]]
@@ -46,8 +46,8 @@ identifier = "hugodoc"
 url = "https://gohugo.io/"
 weight = 20
 
-[[menu.shortcuts]]
-name = "<i class='fa fa-bullhorn'></i> Credits"
-url = "/credits"
-weight = 30
+# [[menu.shortcuts]]
+# name = "<i class='fa fa-bullhorn'></i> Credits"
+# url = "/credits"
+# weight = 30
 
