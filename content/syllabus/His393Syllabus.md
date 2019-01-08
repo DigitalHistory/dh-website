@@ -1,34 +1,34 @@
 ---
-title : "Syllabus"
-author : ["Matt Price"]
-date : 2017-01-03T00:00:00-05:00
-draft : false
-creator : "Emacs 27.0.5 (Org mode 9.1.4)"
-banner : "testbanner"
-menu :
+title: "Syllabus"
+author: ["Matt Price"]
+date: 2018-01-08T00:00:00-05:00
+draft: false
+creator: "Emacs 27.0.5 (Org mode 9.1.4)"
+banner: "testbanner"
+menu:
   main:
-    identifier : "syllabus"
-    weight : 10
+    identifier: "syllabus"
+    weight: 10
 ---
 
 ## Logistics {#logistics}
 
-| **Instructor:**   | Matt Price                                                     |
-|-------------------|----------------------------------------------------------------|
-| **Email:**        | matt.price@utoronto.ca                                         |
-| **Office Hrs:**   | T 1-2:30, [SS 3077](http://map.utoronto.ca/utsg/building/033)  |
-| **Meeting Times** | Thurs 2-4, [SS 1088](http://map.utoronto.ca/utsg/building/033) |
-| **Web:**          | <http://digital.hackinghistory.ca/>                            |
-| **Slack:**        | <https://digitalhistoryuoft.slack.com/>                        |
+| **Instructor:**   | Matt Price                                                       |
+|-------------------|------------------------------------------------------------------|
+| **Email:**        | matt.price@utoronto.ca                                           |
+| **Meeting Times** | T Th 2-3, [SS 1088](http://map.utoronto.ca/utsg/building/033)    |
+| **Web:**          | <http://digital.hackinghistory.ca/>                              |
+| **Slack:**        | <https://digitalhistoryuoft.slack.com/>                          |
+| **Office Hrs:**   | T Th 3-3:30, [SS 3077](http://map.utoronto.ca/utsg/building/033) |
 
-In general, communication should take place **via Slack**.  In the case of questions having to do with official University business (requests for extensions, discussion of accommodations, any message involving sensitive personal data) please [use my University email, being sure to put "HIS393" in the subject line](matt.price@utoronto.ca?subject=HIS389%20Digital%20History).
+In general, online communication should take place **via Slack**.  In the case of questions having to do with official University business (requests for extensions, discussion of accommodations, any message involving sensitive personal data) please [use my University email, being sure to put "HIS393" in the subject line](mailto:matt.price@utoronto.ca?subject=HIS389%20Digital%20History).
 
 
 ## Introduction {#introduction}
 
 We all know &#x2013; it is so commonplace that we barely even notice it! &#x2013; that we are living through a revolutionary period in the history of communication.  In the year of your birth, the World Wide Web was a scrawny, hand-powered frontier of hand-coded sites and Internet startups.  Amazon and Google were infants.  The University of Toronto Library website [looked something like this](https://web.archive.org/web/19971210222202/http://library.utoronto.ca/):
 
-{{<figure src="/ox-hugo/Screenshot from 2015-06-23 16-12-51.png" class="someclass">}}
+{{< figure src="/ox-hugo/Screenshot from 2015-06-23 16-12-51.png" class="someclass" >}}
 
 and many students and faculty still used the card catalog to find books in Robarts.
 
@@ -83,7 +83,7 @@ Diverse backgrounds, embodiments, and experiences are essential to the critical 
 
 ### Correspondence {#correspondence}
 
-As noted above, most communication should take place **via Slack**.  In the case of questions having to do with official University business (requests for extensions, discussion of accommodations, any message involving sensitive personal data) please [use my University email, being sure to put "HIS393" in the subject line](matt.price@utoronto.ca?subject=HIS389%20Digital%20History).  I'll do my best to reply within two working days, though occasionally the delay may be slightly longer. Please allow the full 48 hours to elapse before sending a repeat email.
+As noted above, most communication should take place **via Slack**.  In the case of questions having to do with official University business (requests for extensions, discussion of accommodations, any message involving sensitive personal data) please [use my University email, being sure to put "HIS393" in the subject line](mailto:matt.price@utoronto.ca?subject=HIS389%20Digital%20History).  I'll do my best to reply within two working days, though occasionally the delay may be slightly longer. Please allow the full 48 hours to elapse before sending a repeat email.
 
 **Also:** I have an injury-related difficulty co-ordinating action between my left and right hands, which leads to very frequent & distinctive typographical errors (and is also one of the many reasons you don't want to hear me play a musical instrument). In my course materials, assignment comments, and announcements, I strive to eliminate those errors, but in instant messaging I am less attentive, as typing corrections approximately triples my composition time. So&#x2026; please bear with me.
 
@@ -101,15 +101,15 @@ Course assignments will require you to install software. All of the software we 
 
 I can offer help with the following
 
-| Tool                   | On Mac                                                                                                                     | On Windows                                                                                                                                             | On Linux                                                                                                                 |
-|------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Real Web Browser       | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                          | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                                                      | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                        |
-| Text Editor            | [Atom](https://atom.io/)                                                                                                   | [Atom](https://atom.io/)                                                                                                                               | [Atom](https://atom.io/)                                                                                                 |
-| Bash Shell Environment | Terminal (Built in)                                                                                                        | [Git for Windows](https://git-for-windows.github.io/) or [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/install-win10) | gnome-terminal, qterm, etc                                                                                               |
-| Git Version Control    | [Git for OSX](https://sourceforge.net/projects/git-osx-installer/files/)                                                   | [Git for Windows](https://git-for-windows.github.io/)                                                                                                  | `apt-get install git`                                                                                                    |
-| Git Visualization      | [gitKraken](https://www.gitkraken.com/)                                                                                    | [gitKraken](https://www.gitkraken.com/)                                                                                                                | [gitKraken](https://www.gitkraken.com/)                                                                                  |
-| Github Org Membership  | [Sign up here](https://github.com/join)                                                                                    | [Sign up here](https://github.com/join)                                                                                                                | [Sign up here](https://github.com/join)                                                                                  |
-| Node and NPM           | [Node Website](https://nodejs.org/en/download/) ([guide](http://nodesource.com/blog/installing-nodejs-tutorial-mac-os-x/)) | [Node Website](https://nodejs.org/en/download/) ([guide](https://wsvincent.com/install-node-js-npm-windows/))                                          | [Node Website](https://nodejs.org/en/download/) ([distro instructions](https://nodejs.org/en/download/package-manager/)) |
+| Tool                          | On Mac                                                                                                                     | On Windows                                                                                                                                             | On Linux                                                                                                                 |
+|-------------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| Real Web Browser              | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                          | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                                                      | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                        |
+| Text Editor                   | [VSCode](https://code.visualstudio.com/download)                                                                           | [VSCode](https://code.visualstudio.com/download)                                                                                                       | [VSCode](https://code.visualstudio.com/download)                                                                         |
+| Bash Shell Environment        | Terminal (Built in)                                                                                                        | [Git for Windows](https://git-for-windows.github.io/) or [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/install-win10) | gnome-terminal, qterm, etc                                                                                               |
+| Git Version Control           | [Git for OSX](https://sourceforge.net/projects/git-osx-installer/files/)                                                   | [Git for Windows](https://git-for-windows.github.io/)                                                                                                  | `apt-get install git`                                                                                                    |
+| Git Visualization (optional!) | [gitKraken](https://www.gitkraken.com/)                                                                                    | [gitKraken](https://www.gitkraken.com/)                                                                                                                | [gitKraken](https://www.gitkraken.com/)                                                                                  |
+| Github Org Membership         | [Sign up here](https://github.com/join)                                                                                    | [Sign up here](https://github.com/join)                                                                                                                | [Sign up here](https://github.com/join)                                                                                  |
+| Node and NPM                  | [Node Website](https://nodejs.org/en/download/) ([guide](http://nodesource.com/blog/installing-nodejs-tutorial-mac-os-x/)) | [Node Website](https://nodejs.org/en/download/) ([guide](https://wsvincent.com/install-node-js-npm-windows/))                                          | [Node Website](https://nodejs.org/en/download/) ([distro instructions](https://nodejs.org/en/download/package-manager/)) |
 
 Please see the [Setup](http://digital.hackinghistory.ca/article/tools) page for more details about the particular tools we will be using. **YOU WILL ABSOLUTEY NEED TO HAVE THESE TOOLS IN ORDER TO TAKE THE COURSE**
 
@@ -124,38 +124,52 @@ Grading in this course is done using a _modified point system_. The system may s
 
 Here are some more details:
 
--   **All Assignments Are Graded Pass/Fail:** Each assignment you get will include a careful explanation of my expectations. If your work meets those expectations, you get full credit; if not you get _no credit_.
--   **A 'Passing' Mark on Assignments is a B+:** In order to get credit for an assignment, you will have to demonstrate a high level of mastery &#x2013; about the level normally required for a B+.
--   **Each Higher Grade Represents a quantum level of additional achievement:** As you move up the ladder, assignments test more advanced and difficult concepts from the course.
--   **If you fail, you can try again:** You start the semester with 5 'retry' chits, which you can use to resubmit assignments that have not succeeded. If necessary, you can use all of those chits on a single assignment! Resubmission process must be completed withing 1 week of the return date of the original version.
--   **A late assignment costs one 'retry' chit:** There is no percentage penalty for late work; instead, a late paper will cost you one of your retry opportunities.
--   **Second and third tries get fewer comments:** I will give substantial comments on first tries; additional tries will get less and less fulsome commentary.
--   **Pluses and Minuses are determined by participation:** The only part of your grade which is not determined on a pass/fail basis is the "+" or "-" part, which is assigned based on your on and offline participation.  See the participation grade sheet for more details.
+All Assignments Are Graded Pass/Fail
+: Each assignment you get will include a careful explanation of my expectations. If your work meets those expectations, you get full credit; if not you get _no credit_.
+
+A 'Passing' Mark on Assignments is a B+
+: In order to get credit for an assignment, you will have to demonstrate a high level of mastery &#x2013; about the level normally required for a B+.
+
+Each Higher Grade Represents a quantum level of additional achievement
+: As you move up the ladder, assignments test more advanced and difficult concepts from the course.
+
+If you fail, you can try again
+: You start the semester with 5 'retry' chits, which you can use to resubmit assignments that have not succeeded. If necessary, you can use all of those chits on a single assignment! Resubmission process must be completed withing 1 week of the return date of the original version.
+
+A late assignment costs one 'retry' chit
+: There is no percentage penalty for late work; instead, a late paper will cost you one of your retry opportunities.
+
+Second and third tries get fewer comments
+: I will give substantial comments on first tries; additional tries will get less and less fulsome commentary.
+
+Pluses and Minuses are determined by participation
+: The only part of your grade which is not determined on a pass/fail basis is the "+" or "-" part, which is assigned based on your on and offline participation.  See the participation grade sheet for more details.
 
 I know there will be questions!  Please don't hesitate to ask them.  And here, finally, is the list of assignments. Detailed assignments will be handed out with adequate time to permit completion.
 
-| Assignment          | Due Date                                                                      | Brief Description                 | A           | B           | C           | D           |
-|---------------------|-------------------------------------------------------------------------------|-----------------------------------|-------------|-------------|-------------|-------------|
-| Git & Github        | <span class="timestamp-wrapper"><span class="timestamp">Jan. 15</span></span> | version control and collaboration | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
-| G & GH Extras       |                                                                               |                                   | &checkmark; |             |             |             |
-| HTML & CSS          | <span class="timestamp-wrapper"><span class="timestamp">Jan. 26</span></span> | web markup and presentation       | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
-| H & C Extras        |                                                                               |                                   | &checkmark; |             |             |             |
-| Javascript for DH   | <span class="timestamp-wrapper"><span class="timestamp">Feb. 02</span></span> | intro to programming              | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
-| JS Extras           |                                                                               |                                   | &checkmark; |             |             |             |
-| Data-Driven History | <span class="timestamp-wrapper"><span class="timestamp">Feb. 16</span></span> | CANCELLED                         | x           | x           | x           | x           |
-| Spatial History     | <span class="timestamp-wrapper"><span class="timestamp">Mar. 02</span></span> | Simple GIS Web project            | &checkmark; | &checkmark; |             |             |
-| Oral History        | <span class="timestamp-wrapper"><span class="timestamp">Mar. 16</span></span> | Multimedia Web Project            | &checkmark; | &checkmark; | &checkmark; | &checkmark; |
-| Project Proposal    | <span class="timestamp-wrapper"><span class="timestamp">Mar. 23</span></span> | Imagine a Digital History Project | &checkmark; |             |             |             |
-|                     |                                                                               |                                   |             |             |             |             |
+| Assignment           | Due Date                                                                      | Skills/Aims                                                        | A        | B        | C        | D        |
+|----------------------|-------------------------------------------------------------------------------|--------------------------------------------------------------------|----------|----------|----------|----------|
+| Class Profile        | <span class="timestamp-wrapper"><span class="timestamp">Jan. 17</span></span> | version control and collaboration                                  | &#10004; | &#10004; | &#10004; | &#10004; |
+| G & GH Extras        |                                                                               |                                                                    | &#10004; |          |          |          |
+| Zero to Blog Post    | <span class="timestamp-wrapper"><span class="timestamp">Jan. 29</span></span> | web markup and presentation                                        | &#10004; | &#10004; | &#10004; | &#10004; |
+| Z2B Extras           |                                                                               |                                                                    | &#10004; |          |          |          |
+| A Table of Ministers | <span class="timestamp-wrapper"><span class="timestamp">Feb. 12</span></span> | Programming Concepts: abstraction, loops, DOM                      | &#10004; | &#10004; | &#10004; | &#10004; |
+| Ministers Extras     |                                                                               |                                                                    | &#10004; |          |          |          |
+| Using Data Sources   | <span class="timestamp-wrapper"><span class="timestamp">Mar. 01</span></span> | Programming Concepts: Object structure, substitution, text as data | &#10004; | &#10004; | &#10004; |          |
+| Data Sources Extras  |                                                                               |                                                                    | &#10004; |          |          |          |
+| Spatial History      | <span class="timestamp-wrapper"><span class="timestamp">Mar. 15</span></span> | API's, GIS                                                         | &#10004; | &#10004; |          |          |
+| Oral History         | <span class="timestamp-wrapper"><span class="timestamp">Mar. 30</span></span> | API's, Multimedia Narratives                                       | &#10004; | &#10004; | &#10004; | &#10004; |
+| Project Proposal     | <span class="timestamp-wrapper"><span class="timestamp">Apr. 05</span></span> | Imagine a Digital History Project                                  | &#10004; |          |          |          |
+|                      |                                                                               |                                                                    |          |          |          |          |
 
 
 ## Texts {#texts}
 
-The following texts are required and available at the Bookstore, or via various online booksellers:
+While all our readings are online, the following texts are heavily used & may be of interest. They are available in the library or via various online booksellers:
 
--   Moretti, Franco. _Graphs, Maps, Trees: Abstract Models for a Literary History_ Verso, 2005.
+-   Moretti, Franco. _Graphs, Maps, Trees: Abstract Models for a Literary History_ Verso, 2005. ([Online Access](https://search.library.utoronto.ca/details?9090019&uuid=d91e562b-497c-4029-aada-3f665f3a0d70))
 -   Geddes et al _Toward Spatial Humanities_ Bloomington: Indiana University Press, 2014.
--   Perks, et al. _The Oral History Reader_. 2006
+-   Perks, et al. _The Oral History Reader_. 2016 ([Online Access](https://www-taylorfrancis-com.myaccess.library.utoronto.ca/books/9781315671833))
 
 
 ## Course Outline {#course-outline}
@@ -164,20 +178,21 @@ The following texts are required and available at the Bookstore, or via various 
 ### Text, Code, and the Web {#text-code-and-the-web}
 
 
-#### Introducing _Digital History_ (<span class="timestamp-wrapper"><span class="timestamp">Jan. 04</span></span>) {#introducing-digital-history}
+#### Introducing _Digital History_ (<span class="timestamp-wrapper"><span class="timestamp">Jan. 08</span></span>) {#introducing-digital-history}
 
-**Class Synopsis:** Introduction to the course, Github, and Markdown.
+**Class Synopsis:** Introduction to the course
 
 **Readings:** You may want to read some of these as general preparation for this and other history classes:
 
 -   W. Caleb McDaniel. “How to Read for History.” W. Caleb McDaniel. Accessed June 27, 2015. <http://wcm1.web.rice.edu/howtoread.html>.
--   William Cronon, ["Why the Past Matters"](http://www.williamcronon.net/writing/Cronon_Why_the_Past_Matters.pdf)
+-   William Cronon, ["Why the Past Matters"](http://www.williamcronon.net/writing/Cronon%5FWhy%5Fthe%5FPast%5FMatters.pdf)
 -   Cohen, Daniel J, and Roy Rosenzweig. “Becoming Digital.” In _Digital History: A Guide to Gathering, Preserving, and Presenting the Past on the Web_. Philadelphia: University of Pennsylvania Press, 2006. <http://chnm.gmu.edu/digitalhistory/digitizing/>.
 
-**In-Class Activity: Collaboration on Github, Markdown**
+
+#### In-Class Activity: Collaboration on Github, Markdown (<span class="timestamp-wrapper"><span class="timestamp">Jan. 10</span></span>) {#in-class-activity-collaboration-on-github-markdown}
 
 
-#### What the Web Signifies (<span class="timestamp-wrapper"><span class="timestamp">Jan. 11</span></span>) {#what-the-web-signifies}
+#### What the Web Signifies (<span class="timestamp-wrapper"><span class="timestamp">Jan. 15</span></span>) {#what-the-web-signifies}
 
 We all live with the web, but that doesn't mean we think much about _how it works_ and _what it's changed_. This week's lecture presents some thoughts on the changing nature of the public sphere and the significance of the web's _digital_ and _machine-readable_ nature.
 
@@ -186,10 +201,11 @@ We all live with the web, but that doesn't mean we think much about _how it work
 -   Juergen Habermas, "The Public Sphere: An Encyclopedia Article" (1964) <http://www.sociol.unimi.it/docenti/barisione/documenti/File/2008-09/Habermas%20%281964%29%20-%20The%20Public%20Sphere.pdf>
 -   Cohen, Daniel J. “Interchange: The Promise of Digital History” 95, no. 2 (September 1, 2008): 452–91. <http://jah.oxfordjournals.org.myaccess.library.utoronto.ca/content/95/2/452.short>
 
-**In-Class Activity: HTML + CSS**
+
+#### In-Class Activity: HTML + CSS (<span class="timestamp-wrapper"><span class="timestamp">Jan. 17</span></span>) {#in-class-activity-html-css}
 
 
-#### Abundance and Openness (<span class="timestamp-wrapper"><span class="timestamp">Jan. 18</span></span>) {#abundance-and-openness}
+#### Abundance and Openness (<span class="timestamp-wrapper"><span class="timestamp">Jan. 22</span></span>) {#abundance-and-openness}
 
 One of the key features of the web is its _immenseness_. We will discuss how this genuinely new circumstance transforms the work of the historian.
 
@@ -199,25 +215,27 @@ One of the key features of the web is its _immenseness_. We will discuss how thi
 
 -   “Learn How Google Works: In Gory Detail.” _PPCBlog_. Accessed June 30, 2015. <http://www.ppcblog.com/how-google-works/>.
 
-**In-Class Activity: More HTML + CSS**
+
+#### In-Class Activity: More HTML + CSS (<span class="timestamp-wrapper"><span class="timestamp">Jan. 24</span></span>) {#in-class-activity-more-html-css}
 
 
 ### Data Driven History {#data-driven-history}
 
 
-#### Distant Reading 1 (<span class="timestamp-wrapper"><span class="timestamp">Jan. 25</span></span>) {#distant-reading-1}
+#### Distant Reading 1 (<span class="timestamp-wrapper"><span class="timestamp">Jan. 29</span></span>) {#distant-reading-1}
 
 Franco Moretti's _Graphs, Maps, Trees_ was a manifesto of sorts for a data-driven literary history. We'll discuss the first 2/3s of this book before turning to some practical skills
 
 **Readings:**
 
 -   Moretti, Franco. _Graphs, Maps, Trees: Abstract Models for a Literary History_. Verso, 2005 through p. 64, or  Moretti, Franco. “[Graphs, Maps, Trees.](http://search.proquest.com.myaccess.library.utoronto.ca/docview/1301929949/citation/D2E84E1A5CCD4A82PQ/1)” New Left Review 24 (November 1, 2003): 67–93m and Moretti, Franco. “[Graphs, Maps, Trees - 2](http://search.proquest.com.myaccess.library.utoronto.ca/docview/1301999488/citation/72DD61D56A3244B9PQ/1).” New Left Review 26 (March 1, 2004): 79–103
--   "Basic Text Mining" in _The Historian's Macroscope:_ <http://www.themacroscope.org/?page_id=362>
-
-**In-Class Activity: Javascript variables & functions**
+-   "Basic Text Mining" in _The Historian's Macroscope:_ <http://www.themacroscope.org/?page%5Fid=362>
 
 
-#### Distant Reading 2: Are Texts Data? (<span class="timestamp-wrapper"><span class="timestamp">Feb. 01</span></span>) {#distant-reading-2-are-texts-data}
+#### In-Class Activity: Javascript variables & functions (<span class="timestamp-wrapper"><span class="timestamp">Jan. 31</span></span>) {#in-class-activity-javascript-variables-and-functions}
+
+
+#### Distant Reading 2: Are Texts Data? (<span class="timestamp-wrapper"><span class="timestamp">Feb. 05</span></span>) {#distant-reading-2-are-texts-data}
 
 More Moretti, and some criticisms
 
@@ -228,43 +246,52 @@ More Moretti, and some criticisms
 -   Gibbs, Fred. “Hermeneutics of Data and Historical Writing” Writing History in the Digital Age, March 14, 2012. <http://writinghistory.trincoll.edu/data/gibbs-owens-2012-spring/>.
 -   Marc Dunkelman. “[What Data Can't Convey](http://chronicle.com/blogs/conversation/2014/08/19/what-data-cant-convey/).” Blog. _The Chronicle of Higher Education_, 19 2014.
 
-**In-Class Activity: Javascript objects and DOM manipulation**
+
+#### In-Class Activity: Javascript objects and DOM manipulation (<span class="timestamp-wrapper"><span class="timestamp">Feb. 07</span></span>) {#in-class-activity-javascript-objects-and-dom-manipulation}
 
 
-#### Revised <span class="timestamp-wrapper"><span class="timestamp">Feb. 08</span></span>: Distant Reading Catch-up (<span class="timestamp-wrapper"><span class="timestamp">Feb. 15</span></span>) {#revised}
+#### Text as Data, History as Algorithm (<span class="timestamp-wrapper"><span class="timestamp">Feb. 12</span></span>) {#text-as-data-history-as-algorithm}
+
+**Note:** we may need to push this up
+We'll explore "topic modelling" &#x2013; one of the most popular DH methods &#x2013; as well as some critiques of it, and some more playful extrapolations about the future of data-driven history.
+
+**Readings:**
+
+-   Gibbs, Fred. “[Hermeneutics of Data and Historical Writing](http://writinghistory.trincoll.edu/data/gibbs-owens-2012-spring/).” _Writing History in the Digital Age_, March 14, 2012.
+-   Seth van Hooland, Ruben Verborgh, and Max De Wilde. “[Cleaning Data with OpenRefine](http://programminghistorian.org/lessons/cleaning-data-with-openrefine).” _The Programming Historian_.
+
+
+#### In-Class Activity: Javascript questions (<span class="timestamp-wrapper"><span class="timestamp">Feb. 14</span></span>) {#in-class-activity-javascript-questions}
+
+
+#### READING WEEK &#x2013; NO CLASS <span class="timestamp-wrapper"><span class="timestamp">Feb. 19</span></span> and <span class="timestamp-wrapper"><span class="timestamp">Feb. 21</span></span> {#reading-week-and-x2013-no-class}
+
+
+#### Computing Concepts Catch-up day (<span class="timestamp-wrapper"><span class="timestamp">Feb. 26</span></span>) {#computing-concepts-catch-up-day}
 
 More JS, and Trees.
+
+
+#### Assignment Help Day (<span class="timestamp-wrapper"><span class="timestamp">Feb. 28</span></span>) {#assignment-help-day}
 
 
 ### Maps, Visualization, and History {#maps-visualization-and-history}
 
 
-#### Revise Date: Spatial History (<span class="timestamp-wrapper"><span class="timestamp">Feb. 22</span></span>) {#revise-date-spatial-history}
+#### Spatial History (<span class="timestamp-wrapper"><span class="timestamp">Mar. 05</span></span>) {#spatial-history}
 
 Contemporary "Historical GIS" and web-based geohistory projects descend from an illustrious lineage of qualitative and quantitative "spatial histories". In class today we explore what happens when "place" takes centre stage in a historical analysis.
 
 **Readings:**
 
--   Mark Monmonier,  "[Lying with Maps](http://faculty.maxwell.syr.edu/mon2ier/e_reprints/StatSci%20Aug2005%20%28Lying%20with%20Maps%29.pdf)" _Statistical Science_ 20:3, 2005. 215-222.
+-   Mark Monmonier,  "[Lying with Maps](http://faculty.maxwell.syr.edu/mon2ier/e%5Freprints/StatSci%20Aug2005%20%28Lying%20with%20Maps%29.pdf)" _Statistical Science_ 20:3, 2005. 215-222.
 -   Ben Schmidt, "[Data narratives and structural histories: Melville, Maury, and American whaling](http://sappingattention.blogspot.com/2012/10/data-narratives-and-structural.html)
 
-**In-Class Activity: Mapping with Google**
+
+#### In-Class Activity: Mapping with Google (<span class="timestamp-wrapper"><span class="timestamp">Mar. 07</span></span>) {#in-class-activity-mapping-with-google}
 
 
-#### Visualization (<span class="timestamp-wrapper"><span class="timestamp">Mar. 01</span></span>) {#visualization}
-
-Of course, maps and graphs are in a certain sense part of a much broader field of _rhetorical visualizations:_ attempts to convey quantitative information through pictures in an effort to convince the reader.
-
-**Readings:**
-
--   Jefferson Bailey and Lily Pregill, ‘[Speak to the Eyes: The History and Practice of Information Visualization](http://www.jeffersonbailey.com/speak-to-the-eyes-the-history-and-practice-of-information-visualization/)’, Art Documentation: Journal of the Art Libraries Society of North America, vol. 33 (2014).
--   Kostiantyn Kucher and Andreas Kerren, ‘[Text Visualization Browser: A Visual Survey of Text Visualization Techniques](http://textvis.lnu.se/)’, (2014)
--   Andy Kirk, 298 Data Visualisation Resources, Visualising Data, (2015).
-
-**In-Class Activity: Reading visualizations**
-
-
-#### Maps Online (<span class="timestamp-wrapper"><span class="timestamp">Mar. 08</span></span>) {#maps-online}
+#### Maps Online (<span class="timestamp-wrapper"><span class="timestamp">Mar. 12</span></span>) {#maps-online}
 
 Maps and visiaulizations are neat and all, but contemporary web-based geohistory allows historical maps to interact powerfully with other data sources.  We'll explore some possibilities!
 
@@ -274,13 +301,28 @@ Maps and visiaulizations are neat and all, but contemporary web-based geohistory
 -   "The Development, Persistance, and Change of Racial Segregation in U.S. Urban Areas, 1880-2010" in _Toward Spatial Humanities_
 -   google earth tutorial: <https://geospatialhistorian.wordpress.com/lessons/lesson-1/>
 
-**In-Class Activity: GIS**
+
+#### In-Class Activity: GIS (<span class="timestamp-wrapper"><span class="timestamp">Mar. 14</span></span>) {#in-class-activity-gis}
+
+
+#### Visualization (<span class="timestamp-wrapper"><span class="timestamp">Mar. 19</span></span>) {#visualization}
+
+Of course, maps and graphs are in a certain sense part of a much broader field of _rhetorical visualizations:_ attempts to convey quantitative information through pictures in an effort to convince the reader.
+
+**Readings:**
+
+-   Jefferson Bailey and Lily Pregill, ‘[Speak to the Eyes: The History and Practice of Information Visualization](http://www.jeffersonbailey.com/speak-to-the-eyes-the-history-and-practice-of-information-visualization/)’, Art Documentation: Journal of the Art Libraries Society of North America, vol. 33 (2014).
+-   Kostiantyn Kucher and Andreas Kerren, ‘[Text Visualization Browser: A Visual Survey of Text Visualization Techniques](http://textvis.lnu.se/)’, (2014)
+-   Andy Kirk, 298 Data Visualisation Resources, Visualising Data, (2015).
+
+
+#### In-Class Activity: Reading visualizations (<span class="timestamp-wrapper"><span class="timestamp">Mar. 21</span></span>) {#in-class-activity-reading-visualizations}
 
 
 ### Oral History, Crowdsourcing, and the Promise of the Public Sphere {#oral-history-crowdsourcing-and-the-promise-of-the-public-sphere}
 
 
-#### What's Special about Oral History (<span class="timestamp-wrapper"><span class="timestamp">Mar. 15</span></span>) {#what-s-special-about-oral-history}
+#### What's Special about Oral History (<span class="timestamp-wrapper"><span class="timestamp">Mar. 26</span></span>) {#what-s-special-about-oral-history}
 
 Oral History has a long tradition; we explore its roots and peculiarities, and
 
@@ -289,17 +331,18 @@ Oral History has a long tradition; we explore its roots and peculiarities, and
 -   "The Voice of the Past" and "What makes Oral History Different" in _The Oral History Reader_
 -   Listen to some part of  "I can almost see the lights of home" <http://www.albany.edu/jmmh/vol2no1/lightssoundessay.html>
 
-**In-Class Activity: Popcorn.js**
+
+#### In-Class Activity: Popcorn.js (<span class="timestamp-wrapper"><span class="timestamp">Mar. 28</span></span>) {#in-class-activity-popcorn-dot-js}
 
 
-#### Interlude: Project Planning & Citizen History  (<span class="timestamp-wrapper"><span class="timestamp">Mar. 22</span></span>) {#interlude-project-planning-and-citizen-history}
+#### Project Planning & Citizen History  (<span class="timestamp-wrapper"><span class="timestamp">Apr. 02</span></span>) {#project-planning-and-citizen-history}
 
 We'll discuss some project management techniques that should help you with your final proposal
 
 -   <http://publichistorycommons.org/where-are-the-citizen-historians/>
 
 
-#### Oral History & Remix Culture (<span class="timestamp-wrapper"><span class="timestamp">Mar. 29</span></span>) {#oral-history-and-remix-culture}
+#### Oral History & Remix Culture (<span class="timestamp-wrapper"><span class="timestamp">Apr. 04</span></span>) {#oral-history-and-remix-culture}
 
 Once oral histories migrate to the web, they, like maps, can interact with other kinds of data.
 
@@ -307,12 +350,13 @@ If we're ahead of schedule, we'll watch _Harlan County USA_ in class.
 
 **Readings:**
 
--   "Oral History and the Digital Revolution" and "Authoring in Sound" in _The Oral History Reader_
--   Gunkel, David J. “Rethinking the Digital Remix: Mash‐ups and the Metaphysics of Sound Recording.” Popular Music and Society 31, no. 4 (October 1, 2008): 489–510. <http://resolver.scholarsportal.info/resolve/03007766/v31i0004/489_rtdrmatmosr.xml>.
-
-**In-Class Activity: popcorn.js (just in case)**
+-   "[Oral History and the Digital Revolution](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.582.7124&rep=rep1&type=pdf)" and "Authoring in Sound" in _The Oral History Reader_
+-   Gunkel, David J. “[Rethinking the Digital Remix: Mash‐ups and the Metaphysics of Sound Recording](https://journals-scholarsportal-info.myaccess.library.utoronto.ca/details/03007766/v31i0004/489%5Frtdrmatmosr.xml).” Popular Music and Society 31, no. 4 (October 1, 2008): 489–510. <http://resolver.scholarsportal.info/resolve/03007766/v31i0004/489%5Frtdrmatmosr.xml>.
 
 
 ## Acknowledgments {#acknowledgments}
 
 Thanks to Joel Wrossley of the University of Washington and Thomas J Bradley of Algonquin Collegee for help and inspiration in assignments and grading strategy.  The "Policies" section above is taken almost verbatim from [Joel's web development course](https://canvas.uw.edu/courses/1118282/pages/policies). Various pieces of the course have been inspired by other teachers over the year, and I hope to do a better job of document theft and inspiration from here on in.
+
+
+##  {#}
