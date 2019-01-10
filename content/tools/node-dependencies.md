@@ -1,16 +1,18 @@
 ---
-title : "Installing Node Dependencies"
-author : ["Matt Price"]
-date : 2015-07-21T13:48:00-04:00
-lastmod : 2018-01-14T19:59:18-05:00
-draft : false
-banner : "testbanner"
-menu :
+title: "Installing Node Dependencies"
+author: ["Matt Price"]
+date: 2015-07-21T13:48:00-04:00
+lastmod: 2019-01-10T08:42:34-05:00
+draft: false
+banner: "testbanner"
+menu:
   main:
-    weight : 1003
-    identifier : "installing-node-dependencies"
-    parent : "Tools"
+    identifier: "installing-node-dependencies"
+    parent: "Tools"
+    weight: 10
 ---
+
+Or, "_the nightmarish hellscape that is node.js installation_".
 
 Node.js is an exquisite piece of programming infrastructure. One of its main features is support for _developer-defined dependencies_. As a programmer -- or in my case, as a teacher -- you can inform the underlying node package manager (`npm`) that your project "depends" on some group of other projects. This allows programmers to build constantly on each other's work.
 

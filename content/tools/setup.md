@@ -2,7 +2,7 @@
 title: "Setup"
 author: ["Matt Price"]
 date: 2015-07-21T13:48:00-04:00
-lastmod: 2019-01-08T13:17:00-05:00
+lastmod: 2019-01-10T08:42:08-05:00
 draft: false
 banner: "testbanner"
 menu:
@@ -56,7 +56,7 @@ The other tool I use all the time is "inspect element", available by right-click
 
 ## Text Editor {#text-editor}
 
-If you want to code, you have to write like a coder. This means using a powerful text editor. In this class we use [Visual Studio Code](https://code.visualstudio.com/).  Please follow the download links and install to your computer. Once you've read the first chapter or two of the [Manual](http://flight-manual.atom.io/), go ahead and [install some extenstions](http://flight-manual.atom.io/using-atom/sections/atom-packages/) by clicking on the oddly-shaped "Extensions" button in the left-hand sidebar. Later this week I will prepare a set of extensions for the class; details will be here once it's complete. The functionalities for the various packages are briefly discussed in the package description.
+If you want to code, you have to write like a coder. This means using a powerful text editor. In this class we use [Visual Studio Code](https://code.visualstudio.com/).  Please follow the download links and install to your computer. There's a separate post about using VSCode -- once you've installed it, navigate there!
 
 
 ## Command Line {#command-line}
@@ -67,7 +67,9 @@ There are actually many different command-line environments; in this class we us
 
 On Mac and Linux, bash is built in to the system.  In Mac, open the `Terminal` app to find the bash prompt; in Linux you may have any of several terminal emulators installed, search your program list for "term" to find yours.
 
-In Windows, bash comes with the Git installation -- follow the instructions below. Note that very recent editions of Windows 10 come with the "Wondows Subsystem for Linux, which you can use instead of the Git Bash method.
+In Windows, bash comes with the Git installation -- follow the instructions below. Note that very recent editions of Windows 10 come with the "Windows Subsystem for Linux (WSL)", which you can use instead of the Git Bash method.
+
+**IMPORTANT UPDATE**: VSCode has an [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal), and it's extremely useful. Windows users will have to do a little bit of work in order to use bash in the integrated terminal. See the excellent [terminal configuration instructions online](https://code.visualstudio.com/docs/editor/integrated-terminal#%5Fconfiguration), and be sure to follow the link explaining [how to access the user settings screen in VSCode](https://code.visualstudio.com/docs/getstarted/settings#%5Fcreating-user-and-workspace-settings).
 
 
 ## Git, Github, and GitKraken {#git-github-and-gitkraken}
@@ -118,13 +120,15 @@ Sometimes it's nice to have a backp. [GitKraken](https://www.gitkraken.com/) is 
 There is a somewhat more wordy [Git tutorial on this website](http://digital.hackinghistory.ca/introduction-to-github), which you should read. For now, [Install the Github Desktop App](https://desktop.github.com/) which also includes the command-line version of git.  You can follow the [excellent tutorial in the downloadable git-it application](https://github.com/jlord/git-it-electron/releases), as well as the [Github Desktop documentation](https://help.github.com/desktop/guides/).  There is also a [quite helpful tutorial on The Programming Historian](http://programminghistorian.org/lessons/getting-started-with-github-desktop). We'll be discussing Git and Github further in our first class.
 
 
-## Node and NPM -- WAIT ON THIS! {#node-and-npm-wait-on-this}
+## Node and NPM -- This is the hardest part! {#node-and-npm-this-is-the-hardest-part}
 
-**WAIT ON THIS FOR NOW**. We're finishing up a drag-and-drop tool which may make it unnecessary for you to do this.
+**Right now it looks like the drag and drop tool we wanted to make will NOT be ready for this semester** :frowning_face:
 
-Most of our programming work will involve Javascript, which runs most of the web. The [Node.js](https://nodejs.org/en/) environment and its "package manager," [NPM](https://www.npmjs.com/), are an incredible resource for Javascript development. In fact, Slack, Atom, and gitKraken are all written as Node applications themselves! Installing the "bare" versions of node and NPM lets us access some of that power while we work.
+Installing Node is not strictly necessary for the first assignment. If you are having trouble, put this off till next week.
 
-You can survive this class without installing Node, but without it, you won't be able to run the test suites that accompany all of the assignments. You'll therefore be at a serious disadvantage in the class.
+Most of our programming work will involve Javascript, which runs most of the web. The [Node.js](https://nodejs.org/en/) environment and its "package manager," [NPM](https://www.npmjs.com/), are an incredible resource for Javascript development. In fact, Slack, VSCode, and gitKraken are all written as Node applications themselves! Installing the "bare" versions of node and NPM lets us access some of that power while we work.
+
+You can survive this class without installing Node, but without it, you won't be able to run the test suites that accompany all of the assignments. You'll therefore be at a disadvantage in the class, because the tests offer hints about what's wrong with your code.
 
 -   In Mac and Linux, the instructions linked to in the table above are probably good enough.
 -   In Windows, you may follow all the instructions and then find yourself getting an error ("`Command not found`"). If that happens, you may want to try [the instructions laid out here](http://blog.theodo.fr/2017/01/use-git-ssh-and-npm-on-windows-with-git-bash/), or if you're on Windows 10, [you could go crazy and install the amazing Windows Subsystem for Linux](https://hackernoon.com/running-nodejs-on-linux-on-windows-88bd12993bae), which allows you to work as if your computer had a real Unix operating system like everyone else.
