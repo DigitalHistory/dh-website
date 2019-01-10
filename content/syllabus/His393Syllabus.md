@@ -16,7 +16,7 @@ menu:
 | **Instructor:**   | Matt Price                                                       |
 |-------------------|------------------------------------------------------------------|
 | **Email:**        | matt.price@utoronto.ca                                           |
-| **Meeting Times** | T Th 2-3, [SS 1088](http://map.utoronto.ca/utsg/building/033)    |
+| **Meeting Times** | T Th 2-3, [SS 1070](http://map.utoronto.ca/utsg/building/033)    |
 | **Web:**          | <http://digital.hackinghistory.ca/>                              |
 | **Slack:**        | <https://digitalhistoryuoft.slack.com/>                          |
 | **Office Hrs:**   | T Th 3-3:30, [SS 3077](http://map.utoronto.ca/utsg/building/033) |
