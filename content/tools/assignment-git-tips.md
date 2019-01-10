@@ -1,15 +1,15 @@
 ---
-title : "Git Tips for Assignments"
-author : ["Matt Price"]
-date : 2015-07-21T13:48:00-04:00
-lastmod : 2018-01-18T12:25:26-05:00
-draft : false
-banner : "testbanner"
-menu :
+title: "Git Tips for Assignments"
+author: ["Matt Price"]
+date: 2015-07-21T13:48:00-04:00
+lastmod: 2019-01-10T13:48:13-05:00
+draft: false
+banner: "testbanner"
+menu:
   main:
-    weight : 1004
-    identifier : "git-tips-for-assignments"
-    parent : "Tools"
+    identifier: "git-tips-for-assignments"
+    parent: "Tools"
+    weight: 10
 ---
 
 Well the first assignment is done.  Whew! There were some common git issues that came up, and I hope we can cut back on them by documenting them here.

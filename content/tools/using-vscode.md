@@ -2,7 +2,7 @@
 title: "Using VSCode"
 author: ["Matt Price"]
 date: 2015-07-21T13:48:00-04:00
-lastmod: 2019-01-10T08:36:00-05:00
+lastmod: 2019-01-10T13:48:41-05:00
 draft: false
 banner: "testbanner"
 menu:

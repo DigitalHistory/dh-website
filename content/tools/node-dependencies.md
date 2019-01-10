@@ -2,7 +2,7 @@
 title: "Installing Node Dependencies"
 author: ["Matt Price"]
 date: 2015-07-21T13:48:00-04:00
-lastmod: 2019-01-10T08:42:34-05:00
+lastmod: 2019-01-10T13:48:23-05:00
 draft: false
 banner: "testbanner"
 menu:
@@ -27,3 +27,8 @@ You should see some complex output from the command, after which your node depen
 Once the dependencies are installed, you should be able to run the node tests with `npm test` (issued from the same directory, that is, the root directory of your repository).
 
 I hope that helps!
+
+
+## Installing global packages {#installing-global-packages}
+
+Some advanced features of VSCode will only work if you install so-called "global" node packages in a special way.  You can do this for one important package from the command-line with `npm install -g eslint`.  You may urn into problems though; if so, don't worry about this for now.

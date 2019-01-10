@@ -2,7 +2,7 @@
 title: "Navigating at the Command Line"
 author: ["Matt Price"]
 date: 2015-07-21T13:48:00-04:00
-lastmod: 2019-01-10T08:42:18-05:00
+lastmod: 2019-01-10T13:48:35-05:00
 draft: false
 banner: "testbanner"
 menu:
