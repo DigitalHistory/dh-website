@@ -198,11 +198,24 @@ We all live with the web, but that doesn't mean we think much about _how it work
 
 **Readings:**
 
--   Juergen Habermas, "The Public Sphere: An Encyclopedia Article" (1964) <http://www.sociol.unimi.it/docenti/barisione/documenti/File/2008-09/Habermas%20%281964%29%20-%20The%20Public%20Sphere.pdf>
+-   Juergen Habermas, "[The Public Sphere: An Encyclopedia Article](https://unige.ch/sciences-societe/socio/files/2914/0533/6073/Habermas%5F1974.pdf)" (1964)
 -   Cohen, Daniel J. “Interchange: The Promise of Digital History” 95, no. 2 (September 1, 2008): 452–91. <http://jah.oxfordjournals.org.myaccess.library.utoronto.ca/content/95/2/452.short>
 
 
 #### In-Class Activity: HTML + CSS (<span class="timestamp-wrapper"><span class="timestamp">Jan. 17</span></span>) {#in-class-activity-html-css}
+
+**Resources:**
+These Mozilla Developer Network guides are inter-related, and the structure is easy to get lost in. Still, this is among the best resources on the web.
+
+-   [MDN: HTML Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting%5Fstarted%5Fwith%5Fthe%5Fweb/HTML%5Fbasics). Start here.
+-   [MDN: Getting Started with the Web](https://developer.mozilla.org/en-US/docs/Learn/Getting%5Fstarted%5Fwith%5Fthe%5Fweb) (HTML Basics, above, is part of this progression. You can skip this for now, but we'll come back to several of these topics later.)
+-   [MDN: Intro to HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction%5Fto%5FHTML). This is a great, systematic introduction to the most important HTML elements. There are some interactive  exercises, and you can also copy code into files to experiment with in VSCode using the [Live Server Preview](https://marketplace.visualstudio.com/items?itemName=negokaz.live-server-preview) functionality.
+-   [MDN: Learn  HTML Pathway](https://developer.mozilla.org/en-US/docs/Learn/HTML#Modules) . There's a ton more here; we will use some of it later on.
+-   [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference). Complete reference for all HTML elements, These pages are often very technical, but can be useful when you find yourself stumped
+
+<!--listend-->
+
+-   [Blogstarter: simple tutorial](https://www.theblogstarter.com/html-for-beginners/) (one of a zillion alternatives to the MDN pages)
 
 
 #### Abundance and Openness (<span class="timestamp-wrapper"><span class="timestamp">Jan. 22</span></span>) {#abundance-and-openness}
