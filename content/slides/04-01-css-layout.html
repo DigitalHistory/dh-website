@@ -29,7 +29,7 @@
 <div class="slides">
 <section>
 <section id="slide-sec-">
-<h2 id="org12a14db">Recap</h2>
+<h2 id="org1fb9085">Recap</h2>
 <ul>
 <li>selector syntax: <code>selector &gt; string {property: value;}</code></li>
 <li>colors: <code>#RRGGBB</code> or <code>rgba(RRR, BBB, GGG, 0.alpha)</code></li>
@@ -41,7 +41,7 @@
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="orgb7795f1">Today</h2>
+<h2 id="orgd369168">Today</h2>
 <ul>
 <li>intro to layout</li>
 <li>follow along with the repo: <a href="https://github.com/DigitalHistory/css-layout">https://github.com/DigitalHistory/css-layout</a></li>
@@ -66,17 +66,12 @@
 <li>margin</li>
 
 </ul>
-<aside class="notes">
-<p>
-One important notion to understand in CSS is the so-called &ldquo;<a href="http://www.w3.org/TR/CSS2/box.html">Box Model</a>&rdquo;, which accounts for the distribution of whitespace around elements.  A lot of the grief you will encounter when designing websites will come back to the box model, so it&rsquo;s important to learn it:  
-</p>
 
-</aside>
 </section>
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="org80346ea">&ldquo;Russian Dolls&rdquo;</h2>
+<h2 id="org670af97">&ldquo;Russian Dolls&rdquo;</h2>
 
 
 </section>
@@ -116,7 +111,7 @@ while these are block:
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="orga41ae99">Normal Flow</h2>
+<h2 id="orgbb94593">Normal Flow</h2>
 <ul>
 <li>page processed sequentially</li>
 <li>each block-level element gets its own line</li>
@@ -128,7 +123,7 @@ while these are block:
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="orgbfb0970">Layout: Overriding &ldquo;normal&rdquo; flows</h2>
+<h2 id="org61b9f53">Layout: Overriding &ldquo;normal&rdquo; flows</h2>
 <ul>
 <li>instruct elements to either <b>step out of the normal flow</b> or <b>set new rues for their &ldquo;internal&rdquo; or &ldquo;external&rdquo; flow</b></li>
 
@@ -137,7 +132,7 @@ while these are block:
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="org82ca290">Layout Methods</h2>
+<h2 id="orgb371500">Layout Methods</h2>
 <ul>
 <li><b>display</b> property</li>
 <li><b>position</b> property</li>
@@ -152,7 +147,7 @@ We focus on <b>display</b> but dip into the other methods
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="orgc77436c">Display</h2>
+<h2 id="org4f9957a">Display</h2>
 <p>
 values we care about: 
 </p>
@@ -167,7 +162,7 @@ values we care about:
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="org5e844f5">Follow Along</h2>
+<h2 id="org0302c40">Follow Along</h2>
 <ul>
 <li>I&rsquo;ll be using <b>dev tools</b> to quickly change css properties</li>
 <li>do the same if you wish!</li>
@@ -178,7 +173,7 @@ values we care about:
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="orgdef3fd2">Display: None</h2>
+<h2 id="org4f065e2">Display: None</h2>
 <p>
 hide element <b>completely</b> so that it takes up no space at all 
 </p>
@@ -186,7 +181,7 @@ hide element <b>completely</b> so that it takes up no space at all
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="org24a7b8b">Display: Flex</h2>
+<h2 id="org28131a1">Display: Flex</h2>
 <ul>
 <li>one-dimensional layout</li>
 <li>&ldquo;content-out&rdquo;
@@ -200,7 +195,7 @@ hide element <b>completely</b> so that it takes up no space at all
 </ul>
 </section>
 <section id="slide-sec-">
-<h3 id="org549a84b">Flex Concepts: Container and Items</h3>
+<h3 id="orgfa1606e">Flex Concepts: Container and Items</h3>
 <ul>
 <li>the <b>container</b> has <b>display: flex;</b></li>
 <li>the <b>items</b> are <b>direct children of the container</b></li>
@@ -210,7 +205,7 @@ hide element <b>completely</b> so that it takes up no space at all
 </ul>
 </section>
 <section id="slide-sec-">
-<h3 id="org8356a74">Flex Concepts: Direction (container!)</h3>
+<h3 id="org5008450">Flex Concepts: Direction (container!)</h3>
 
 <figure>
 <img src="https://mdn.mozillademos.org/files/3739/flex_terms.png" alt="flex_terms.png">
@@ -223,7 +218,7 @@ hide element <b>completely</b> so that it takes up no space at all
 </ul>
 </section>
 <section id="slide-sec-">
-<h3 id="orgad18125">Flex Concepts: Alignment, Justification (container and items!)</h3>
+<h3 id="orgc076d0d">Flex Concepts: Alignment, Justification (container and items!)</h3>
 <ul>
 <li><b>align-items</b>: default cross-axis alignment (stretch, flex-start, flex-end)</li>
 <li><b>justify-content</b>: default main-axis alignment (flex-start, flex-end, space-around, space-between)</li>
@@ -235,7 +230,7 @@ hide element <b>completely</b> so that it takes up no space at all
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="org7492189">Display: Grid</h2>
+<h2 id="org66932ff">Display: Grid</h2>
 <ul>
 <li>two-dimensional layout</li>
 <li>&ldquo;container-in&rdquo;
@@ -249,7 +244,7 @@ hide element <b>completely</b> so that it takes up no space at all
 </ul>
 </section>
 <section id="slide-sec-">
-<h3 id="org32293d0">A lot like flex!</h3>
+<h3 id="orgf1dcb11">A lot like flex!</h3>
 <ul>
 <li>many ideas come from flex</li>
 <li>finer control</li>
@@ -258,14 +253,14 @@ hide element <b>completely</b> so that it takes up no space at all
 </ul>
 </section>
 <section id="slide-sec-">
-<h3 id="orgdcf35b2">Grid Concepts: Container and Items</h3>
+<h3 id="orge49c70d">Grid Concepts: Container and Items</h3>
 <ul>
 <li>as in flex</li>
 
 </ul>
 </section>
 <section id="slide-sec-">
-<h3 id="org546131f">Grid Concepts: Templates and Areas (container)</h3>
+<h3 id="org9a2bbcc">Grid Concepts: Templates and Areas (container)</h3>
 <ul>
 <li>set patterns for the 2-d grid</li>
 <li><b>grid-template-columns</b>: how many columns, and what size?</li>
@@ -275,7 +270,7 @@ hide element <b>completely</b> so that it takes up no space at all
 </ul>
 </section>
 <section id="slide-sec-">
-<h3 id="orgf99c0ea">Placing Items</h3>
+<h3 id="orgc3ff231">Placing Items</h3>
 <ul>
 <li><b>grid-column: n/m</b>: place items by <b>column-number</b></li>
 <li><b>grid-row: n/m</b>: place items by <b>row-number</b>
@@ -294,7 +289,7 @@ hide element <b>completely</b> so that it takes up no space at all
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="orgf34b779">Media Queries</h2>
+<h2 id="org2709044">Media Queries</h2>
 <ul>
 <li>CSS rules that only come into effect under certain conditions</li>
 <li>we will only use for <b>screen size</b></li>
