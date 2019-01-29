@@ -1,3 +1,4 @@
+
 @import url(../../lib/font/league-gothic/league-gothic.css);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 /**
@@ -138,7 +139,8 @@ body {
   font-family: monospace;
   line-height: 1.2em;
   word-wrap: break-word;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+  white-space: pre-wrap; }
 
 .reveal code {
   font-family: monospace; }
@@ -270,7 +272,8 @@ body {
  * SLIDE NUMBER
  *********************************************/
 .reveal .slide-number {
-  color: #268bd2; }
+    /* color: #268bd2; */
+}
 
 /* incorporate local.css from org-reveal */
 .reveal p {
@@ -357,4 +360,8 @@ span.figure-number {
     display: block;
     margin-left: auto !important;
     margin-right: auto !important;
+}
+
+p.date {
+    display:none;
 }
