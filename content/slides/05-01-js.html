@@ -28,8 +28,8 @@
 <div class="reveal">
 <div class="slides">
 <section>
-<section id="slide-sec-">
-<h2 id="org01f94b1">JavaScript</h2>
+<section id="slide-sec-javascript-cc80">
+<h2 id="javascript-cc80">JavaScript</h2>
 <ul>
 <li>a real language!</li>
 <li>dynamic transformation</li>
@@ -39,8 +39,8 @@
 </section>
 </section>
 <section>
-<section id="slide-sec-">
-<h2 id="org32f6cbb">Some Big Ideas</h2>
+<section id="slide-sec-some-big-ideas-1d46">
+<h2 id="some-big-ideas-1d46">Some Big Ideas</h2>
 <ul>
 <li>Abstraction</li>
 <li>Formalization</li>
@@ -51,8 +51,8 @@
 </section>
 </section>
 <section>
-<section id="slide-sec-">
-<h2 id="org6c0913d">Assignment 1 will require</h2>
+<section id="slide-sec-assignment-1-will-require-ab9b">
+<h2 id="assignment-1-will-require-ab9b">Assignment 1 will require</h2>
 <ul>
 <li>Basic Syntax</li>
 <li>Variable Types</li>
@@ -64,8 +64,8 @@
 </section>
 </section>
 <section>
-<section id="slide-sec-">
-<h2 id="org4abdfa3">Running Javascript</h2>
+<section id="slide-sec-running-javascript-10e9">
+<h2 id="running-javascript-10e9">Running Javascript</h2>
 <ul>
 <li>in Browser Console</li>
 <li>in terminal (with the command <code>node</code>)</li>
@@ -75,8 +75,8 @@
 </section>
 </section>
 <section>
-<section id="slide-sec-">
-<h2 id="org2ad2088">What is a Variable?</h2>
+<section id="slide-sec-what-is-a-variable?-d2ea">
+<h2 id="what-is-a-variable?-d2ea">What is a Variable?</h2>
 <ul>
 <li><b>name</b> for <b>memory location</b> to be used later, usually <b>in specific ways</b> that <b>depend on type</b></li>
 <li>or, <b>box</b> into which you can put <b>information</b> that you will want to get later.</li>
@@ -89,42 +89,42 @@
 </figure>
 
 </section>
-<section id="slide-sec-">
-<h3 id="org893096c">Declaring Variables</h3>
+<section id="slide-sec-declaring-variables-266e">
+<h3 id="declaring-variables-266e">Declaring Variables</h3>
 <iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
 const neverChange = "Project Key"; // comment
 let oftenChanges = 0; // maybe we will change this value later
 var oldDeclaration = 0; // we try to avoid using var now; use let instead
 
 </code></pre>
-<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
 <style>
-.CodeMirror { font-size: 1.5em; }
+.CodeMirror { font-size: 1.2em; }
 </style>
 <script>
 window.klipse_settings = { selector_eval_js: ".klipse" };
 </script>
-<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
 '>
 </iframe>
 
 </section>
-<section id="slide-sec-">
-<h3 id="org0ba3800">Text is Data</h3>
+<section id="slide-sec-text-is-data-75a7">
+<h3 id="text-is-data-75a7">Text is Data</h3>
 <iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
 let first="Matt";
 let last="Price"
 console.log(first + last);
 
 </code></pre>
-<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
 <style>
-.CodeMirror { font-size: 1.5em; }
+.CodeMirror { font-size: 1.2em; }
 </style>
 <script>
 window.klipse_settings = { selector_eval_js: ".klipse" };
 </script>
-<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
 '>
 </iframe>
 <p class="fragment (appear)">
@@ -139,8 +139,8 @@ Do it w/ your name!
 </aside>
 
 </section>
-<section id="slide-sec-">
-<h3 id="orgd079197">&ldquo;Dynamic&rdquo; (or &ldquo;Weak&rdquo;) Typing</h3>
+<section id="slide-sec-dynamic-(or-weak)-typing-c178">
+<h3 id="dynamic-(or-weak)-typing-c178">&ldquo;Dynamic&rdquo; (or &ldquo;Weak&rdquo;) Typing</h3>
 <ul>
 <li><b>numbers</b> and <b>strings</b> are different</li>
 <li>but we can convert <b>number &rarr; string</b></li>
@@ -156,14 +156,14 @@ console.log(s+n);
 
 
 </code></pre>
-<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
 <style>
-.CodeMirror { font-size: 1.5em; }
+.CodeMirror { font-size: 1.2em; }
 </style>
 <script>
 window.klipse_settings = { selector_eval_js: ".klipse" };
 </script>
-<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
 '>
 </iframe>
 <aside class="notes">
@@ -176,8 +176,8 @@ window.klipse_settings = { selector_eval_js: ".klipse" };
 </aside>
 
 </section>
-<section id="slide-sec-">
-<h3 id="org878da9d">Some Variable Types</h3>
+<section id="slide-sec-some-variable-types-c445">
+<h3 id="some-variable-types-c445">Some Variable Types</h3>
 <ul>
 <li>numbers</li>
 <li>strings</li>
@@ -189,8 +189,8 @@ window.klipse_settings = { selector_eval_js: ".klipse" };
 
 
 </section>
-<section id="slide-sec-">
-<h3 id="org7cc31bc">Making Lists (Arrays)</h3>
+<section id="slide-sec-making-lists-(arrays)-5385">
+<h3 id="making-lists-(arrays)-5385">Making Lists (Arrays)</h3>
 <iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
 let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
 for (h of historians) {
@@ -198,14 +198,14 @@ for (h of historians) {
 }
 
 </code></pre>
-<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
 <style>
-.CodeMirror { font-size: 1.5em; }
+.CodeMirror { font-size: 1.2em; }
 </style>
 <script>
 window.klipse_settings = { selector_eval_js: ".klipse" };
 </script>
-<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
 '>
 </iframe>
 
@@ -217,8 +217,8 @@ brackets!
 </aside>
 
 </section>
-<section id="slide-sec-">
-<h3 id="org06f9999">Working With Arrays</h3>
+<section id="slide-sec-working-with-arrays-c020">
+<h3 id="working-with-arrays-c020">Working With Arrays</h3>
 <iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
 a = [];
 a.push("Edward Gibbon");
@@ -231,14 +231,14 @@ a.pop();
 // a
 
 </code></pre>
-<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
 <style>
-.CodeMirror { font-size: 1.5em; }
+.CodeMirror { font-size: 1.2em; }
 </style>
 <script>
 window.klipse_settings = { selector_eval_js: ".klipse" };
 </script>
-<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
 '>
 </iframe>
 
@@ -250,29 +250,29 @@ window.klipse_settings = { selector_eval_js: ".klipse" };
 
 </aside>
 </section>
-<section id="slide-sec-">
-<h3 id="orgbf75815">Working with Numbers</h3>
+<section id="slide-sec-working-with-numbers-9fb5">
+<h3 id="working-with-numbers-9fb5">Working with Numbers</h3>
 <iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
 wardates=[1776, 1792, 1812, 1861, 1870, 1914, 1939, 1994]
 console.log("The time between The First and \
 Second World Wars was " + (wardates[6] - wardates[5]) + " years");
 
 </code></pre>
-<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
 <style>
-.CodeMirror { font-size: 1.5em; }
+.CodeMirror { font-size: 1.2em; }
 </style>
 <script>
 window.klipse_settings = { selector_eval_js: ".klipse" };
 </script>
-<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
 '>
 </iframe>
 </section>
 </section>
 <section>
-<section id="slide-sec-">
-<h2 id="org28cd9ea">Repetition: While Loops</h2>
+<section id="slide-sec-repetition:-while-loops-c251">
+<h2 id="repetition:-while-loops-c251">Repetition: While Loops</h2>
 <iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
 let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
 let i = 0;
@@ -284,45 +284,61 @@ while (i < historians.length) {
 
 
 </code></pre>
-<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
 <style>
-.CodeMirror { font-size: 1.5em; }
+.CodeMirror { font-size: 1.2em; }
 </style>
 <script>
 window.klipse_settings = { selector_eval_js: ".klipse" };
 </script>
-<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
 '>
 </iframe>
+<p>
+repeat inside the <code>{ ... }</code> as long as test is true:
+</p>
+<ul>
+<li><b>initial value:</b> <code>i = 0</code></li>
+<li><b>test (halt condition):</b> <code>i &lt; historians.length</code></li>
+<li><b>change in condition:</b> <code>i += 1</code></li>
+
+</ul>
 </section>
 </section>
 <section>
-<section id="slide-sec-">
-<h2 id="orga05fd39">Repetition: For Loops</h2>
+<section id="slide-sec-repetition:-for-loops-c510">
+<h2 id="repetition:-for-loops-c510">Repetition: For Loops</h2>
 <iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
 let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
 
-for (i=0; i < historians.length ; i++){
+for (let i=0; i < historians.length ; i++){
   console.log(historians[i] + " was a historian.");
+  i // this is not required, just here to show you a slight difference
 }
 
 
 </code></pre>
-<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
 <style>
-.CodeMirror { font-size: 1.5em; }
+.CodeMirror { font-size: 1.2em; }
 </style>
 <script>
 window.klipse_settings = { selector_eval_js: ".klipse" };
 </script>
-<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
 '>
 </iframe>
+<ul>
+<li><b>initial value:</b> <code>i = 0</code></li>
+<li><b>test (halt condition):</b> <code>i &lt; historians.length</code></li>
+<li><b>change in condition:</b> <code>i++</code> (idiomatic)</li>
+
+</ul>
 </section>
 </section>
 <section>
-<section id="slide-sec-">
-<h2 id="org0e6526e">Repetition: other for loops</h2>
+<section id="slide-sec-repetition:-other-for-loops-3d1d">
+<h2 id="repetition:-other-for-loops-3d1d">Repetition: other for loops</h2>
 <iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
 let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
 
@@ -335,48 +351,61 @@ for (h of historians) {
 }
 
 </code></pre>
-<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
 <style>
-.CodeMirror { font-size: 1.5em; }
+.CodeMirror { font-size: 1.2em; }
 </style>
 <script>
 window.klipse_settings = { selector_eval_js: ".klipse" };
 </script>
-<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
 '>
 </iframe>
+<ul>
+<li>these also &ldquo;loop&rdquo;</li>
+<li>but the <b>initial value</b>, <b>test</b>, and <b>increment</b> are <b>implicit</b></li>
+<li>defined by <code>historians</code>, but in slightly different ways.</li>
+<li>they are very convenient! read about them.</li>
 
+</ul>
 
 </section>
 </section>
 <section>
-<section id="slide-sec-">
-<h2 id="orgf6ebdb4">Conditionals: If</h2>
+<section id="slide-sec-conditionals:-if-a6b8">
+<h2 id="conditionals:-if-a6b8">Conditionals: If</h2>
 <iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
 let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
 let i = 0;
 
 while (i < historians.length) {
-  if (historians[i] ==="Joan Scott") {
+  if (historians[i] === "Joan Scott") {
     console.log(historians[i] + " is my favourite.");
   }
   i +=1;
 };
 
 </code></pre>
-<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
 <style>
-.CodeMirror { font-size: 1.5em; }
+.CodeMirror { font-size: 1.2em; }
 </style>
 <script>
 window.klipse_settings = { selector_eval_js: ".klipse" };
 </script>
-<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
 '>
 </iframe>
+<ul>
+<li>execute the <code>{ ... }</code> only if the <b>test</b> is true</li>
+<li>here the test is <code>historians[i] === "Joan Scott"</code></li>
+<li>note the many <code>===</code> &#x2013; different feom just one <code>=</code></li>
+
+</ul>
+
 </section>
-<section id="slide-sec-">
-<h3 id="orgee63cf8">Branching</h3>
+<section id="slide-sec-branching-2c02">
+<h3 id="branching-2c02">Branching</h3>
 <iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
 let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
 let i = 0;
@@ -390,23 +419,23 @@ while (i < historians.length) {
   i +=1;
 };
 
-
 </code></pre>
-<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
 <style>
-.CodeMirror { font-size: 1.5em; }
+.CodeMirror { font-size: 1.2em; }
 </style>
 <script>
 window.klipse_settings = { selector_eval_js: ".klipse" };
 </script>
-<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
 '>
 </iframe>
+
 </section>
 </section>
 <section>
-<section id="slide-sec-">
-<h2 id="org8156222">Parts of things: elements, methods, properties</h2>
+<section id="slide-sec-parts-of-things:-elements,-methods,-properties-be27">
+<h2 id="parts-of-things:-elements,-methods,-properties-be27">Parts of things: elements, methods, properties</h2>
 <iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
 let a=["name", 0, "otherinfo"];
 console.log(a[2]);
@@ -415,21 +444,35 @@ console.log(a[length]);
 a.pop;
 
 </code></pre>
-<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
 <style>
-.CodeMirror { font-size: 1.5em; }
+.CodeMirror { font-size: 1.2em; }
 </style>
 <script>
 window.klipse_settings = { selector_eval_js: ".klipse" };
 </script>
-<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
 '>
 </iframe>
+<ul>
+<li>note strange syntax:
+<ul>
+<li><code>a[1]</code>: second element of array</li>
+<li><code>a.length</code>: a special way of finding the length of any array.  Length is a <b>property</b> of a.</li>
+
+</ul></li>
+<li><code>console.log(a))</code>: <b>log</b> is a part of <b>console</b>.  it takes a <b>parameter</b> , in this case <code>a</code></li>
+
+</ul>
+
 </section>
 </section>
 <section>
-<section id="slide-sec-">
-<h2 id="org4a21336">Doing Stuff: functions</h2>
+<section id="slide-sec-doing-stuff:-functions-d6a3">
+<h2 id="doing-stuff:-functions-d6a3">Doing Stuff: functions</h2>
+</section>
+<section id="slide-sec--7b52">
+<h3 id="-7b52">A Function <b>is</b> a variable(!)</h3>
 <ul>
 <li>functions are also a box into which you put stuff</li>
 <li>but when you look into the box, the &ldquo;stuff&rdquo; has changed</li>
@@ -437,9 +480,18 @@ window.klipse_settings = { selector_eval_js: ".klipse" };
 <li>use <b>whenever you&rsquo;re repeating an action or process</b></li>
 
 </ul>
+
+<p>
+compare: 
+</p>
+<ul>
+<li><code>let fruit="orange";</code></li>
+<li><code>eat("orange")</code></li>
+
+</ul>
 </section>
-<section id="slide-sec-">
-<h3 id="orgbe48146">Defining a function</h3>
+<section id="slide-sec-defining-a-function-bb11">
+<h3 id="defining-a-function-bb11">Defining a function</h3>
 <iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
 function square(number) {
   return number * number;
@@ -453,32 +505,24 @@ console.log(square(2));
 console.log(cube(3));
 
 </code></pre>
-<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
 <style>
-.CodeMirror { font-size: 1.5em; }
+.CodeMirror { font-size: 1.2em; }
 </style>
 <script>
 window.klipse_settings = { selector_eval_js: ".klipse" };
 </script>
-<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
 '>
 </iframe>
+<ul>
+<li>we&rsquo;ll use the first method:
+<ul>
+<li>keyword <code>function</code> followed by <code>name</code> then <code>(parameters, if, you, need, them)</code>, then <code>{</code> ,  then <code>statements</code>, then <code>}</code></li>
 
-<iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
-4
-27
+</ul></li>
 
-</code></pre>
-<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
-<style>
-.CodeMirror { font-size: 1.5em; }
-</style>
-<script>
-window.klipse_settings = { selector_eval_js: ".klipse" };
-</script>
-<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
-'>
-</iframe>
+</ul>
 
 <aside class="notes">
 <ul>
@@ -491,8 +535,8 @@ window.klipse_settings = { selector_eval_js: ".klipse" };
 
 </aside>
 </section>
-<section id="slide-sec-">
-<h3 id="org1989bfb">Remember this</h3>
+<section id="slide-sec-remember-this-0f7d">
+<h3 id="remember-this-0f7d">Remember this</h3>
 <iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
 let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
 let i = 0;
@@ -504,19 +548,19 @@ while (i < historians.length) {
 
 
 </code></pre>
-<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
 <style>
-.CodeMirror { font-size: 1.5em; }
+.CodeMirror { font-size: 1.2em; }
 </style>
 <script>
 window.klipse_settings = { selector_eval_js: ".klipse" };
 </script>
-<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
 '>
 </iframe>
 </section>
-<section id="slide-sec-">
-<h3 id="orgc6545f5">As a function</h3>
+<section id="slide-sec-as-a-function-ed13">
+<h3 id="as-a-function-ed13">As a function</h3>
 <iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
 function makeSentences(historians) {
   let i = 0,
@@ -537,19 +581,87 @@ makeSentences(h2);
 
 
 </code></pre>
-<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
 <style>
-.CodeMirror { font-size: 1.5em; }
+.CodeMirror { font-size: 1.2em; }
 </style>
 <script>
 window.klipse_settings = { selector_eval_js: ".klipse" };
 </script>
-<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
 '>
 </iframe>
 </section>
-<section id="slide-sec-">
-<h3 id="org6da68cd">Function Hints for Assignments</h3>
+<section id="slide-sec-finally-we-can--talk-about-scope-7723">
+<h3 id="finally-we-can--talk-about-scope-7723">Finally we can  talk about scope!</h3>
+<iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
+let a = "just some string",
+    b = "some other string";
+
+function scopeExample (anyString) {
+  let a = "I set this value inside the function";
+
+  return ("inside the function, a=" + a + ", not " + anyString);
+}
+
+a
+// scopeExample(a);
+//anyString
+
+</code></pre>
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
+<style>
+.CodeMirror { font-size: 1.2em; }
+</style>
+<script>
+window.klipse_settings = { selector_eval_js: ".klipse" };
+</script>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
+'>
+</iframe>
+<ul>
+<li>outside the function, <code>a</code> = &ldquo;just some string&rdquo;</li>
+<li>inside, we <b>redeclare it for the function scope</b> and now <code>a</code> has new value</li>
+<li><code>anyString</code> is <b>only</b> declared inside the function scope</li>
+
+</ul>
+
+</section>
+<section id="slide-sec-advanced-scope-fa36">
+<h3 id="advanced-scope-fa36">Advanced scope</h3>
+<iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
+let a = "global scope a";
+
+console.log(a);
+
+for (i=0; i<6; i++) {
+  let a = "local scope a on iteration: " + (i + 1) ;
+  console.log(a)
+}
+
+console.log(a);
+
+</code></pre>
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
+<style>
+.CodeMirror { font-size: 1.2em; }
+</style>
+<script>
+window.klipse_settings = { selector_eval_js: ".klipse" };
+</script>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
+'>
+</iframe>
+<ul>
+<li>we can also <b>redeclare</b> <code>let</code> variables in an if/for/while &ldquo;block&rdquo;</li>
+<li>scope scales:  <b>global &rarr; function &rarr; block &rarr; nested block &rarr; etc etc</b></li>
+<li>any time you see <code>{ .. }</code> you&rsquo;re in a new scope context!</li>
+
+</ul>
+
+</section>
+<section id="slide-sec-function-hints-for-assignments-1cb2">
+<h3 id="function-hints-for-assignments-1cb2">Function Hints for Assignments</h3>
 <ul>
 <li><b>remember the return values!</b></li>
 <li><p>
@@ -566,14 +678,14 @@ let a = returnArray (1, 3,5);
 a  // quokka will display the value
 
 </code></pre>
-<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
 <style>
-.CodeMirror { font-size: 1.5em; }
+.CodeMirror { font-size: 1.2em; }
 </style>
 <script>
 window.klipse_settings = { selector_eval_js: ".klipse" };
 </script>
-<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
 '>
 </iframe></li>
 
@@ -582,8 +694,271 @@ window.klipse_settings = { selector_eval_js: ".klipse" };
 </section>
 </section>
 <section>
+<section id="slide-sec-objects-and-properties-e146">
+<h2 id="objects-and-properties-e146">Objects and Properties</h2>
+</section>
+<section id="slide-sec-objects-are-variables-with-named-parts-c234">
+<h3 id="objects-are-variables-with-named-parts-c234">Objects are <b>variables</b> with <b>named parts</b></h3>
+<ul>
+<li>parts are called <b>properties</b>, but</li>
+<li>if a part is a <b>function</b>, we call that part a <b>method</b></li>
+
+</ul>
+
+</section>
+<section id="slide-sec-let's-eat-f11e">
+<h3 id="let's-eat-f11e">let&rsquo;s eat</h3>
+<iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
+let myFruit="orange",
+    mySandwich = "just some bread!",
+    myBar="weird vegan bar",
+    myCookie="ginger",
+    myCandy="pulparindo",
+    mySnacks=["cliff bar", "cliff bar", "kind bar"];
+
+function eat (food) {
+  console.log("Umm, that was a delicious " + food + ".");
+}
+
+eat (myFruit);
+
+</code></pre>
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
+<style>
+.CodeMirror { font-size: 1.2em; }
+</style>
+<script>
+window.klipse_settings = { selector_eval_js: ".klipse" };
+</script>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
+'>
+</iframe>
+<ul>
+<li>we can eat any of the foods</li>
+<li><b>they&rsquo;re not related to each other</b>, just floating around</li>
+
+</ul>
+
+</section>
+<section id="slide-sec-now-let's-make-lunch-6196">
+<h3 id="now-let's-make-lunch-6196">Now let&rsquo;s make lunch</h3>
+<iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
+let myFruit="orange",
+    mySandwich = "just some bread!",
+    myBar="weird vegan bar",
+    myCookie="ginger",
+    myCandy="pulparindo",
+    mySnacks=["cliff bar", "cliff bar", "kind bar"];
+
+let myLunch = {};
+
+</code></pre>
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
+<style>
+.CodeMirror { font-size: 1.2em; }
+</style>
+<script>
+window.klipse_settings = { selector_eval_js: ".klipse" };
+</script>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
+'>
+</iframe>
+
+<ul>
+<li>myLunch is <b>an empty object</b> &#x2013; it has no parts yet</li>
+
+</ul>
+
+</section>
+<section id="slide-sec-add-some-parts-18dc">
+<h3 id="add-some-parts-18dc">Add some parts</h3>
+<iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
+let myFruit="orange",
+    mySandwich = "just some bread!",
+    myBar="weird vegan bar",
+    myCookie="ginger",
+    myCandy="pulparindo",
+    mySnacks=["cliff bar", "cliff bar", "kind bar"];
+
+let myLunch = {
+  fruit: "orange",
+  sandwich: mySandwich
+};
+
+myLunch["snacks"]=mySnacks;
+myLunch;
+
+
+</code></pre>
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
+<style>
+.CodeMirror { font-size: 1.2em; }
+</style>
+<script>
+window.klipse_settings = { selector_eval_js: ".klipse" };
+</script>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
+'>
+</iframe>
+<ul>
+<li>added parts in 3 ways: set <b>directly</b> in definition; set <b>by reference</b> in definition; <b>added by reference after definition</b></li>
+
+</ul>
+
+</section>
+<section id="slide-sec-eat-the-lunch-b7bb">
+<h3 id="eat-the-lunch-b7bb">Eat the Lunch</h3>
+<iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
+let myFruit="orange",
+    mySandwich = "just some bread!",
+    myBar="weird vegan bar",
+    myCookie="ginger",
+    myCandy="pulparindo",
+    mySnacks=["cliff bar", "cliff bar", "kind bar"];
+
+let myLunch = {
+  fruit: "orange",
+  sandwich: mySandwich
+};
+
+myLunch["snacks"]=mySnacks;
+
+function eatLunch (someLunch) {
+  let output = "";
+  output += "I&#39;ll start with my " + someLunch["fruit"] + "\n";
+  output += "Next I want to eat " + someLunch.sandwich + "\n";
+  for (snack of someLunch.snacks) {
+    output += "   I love my " + snack + "\n";
+  }
+  return output;
+}
+
+eatLunch(myLunch);
+
+</code></pre>
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
+<style>
+.CodeMirror { font-size: 1.2em; }
+</style>
+<script>
+window.klipse_settings = { selector_eval_js: ".klipse" };
+</script>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
+'>
+</iframe>
+<ul>
+<li>rewrote <b>eat</b> to take advantage of the <b>structure</b> of lunch</li>
+
+</ul>
+</section>
+<section id="slide-sec-add-dessert-c5dd">
+<h3 id="add-dessert-c5dd">Add Dessert</h3>
+<iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
+let myLunch = {
+  fruit: "orange",
+  sandwich: "just some bred!",
+  bar: "weird vegan bar",
+  snacks: ["cliff bar", "cliff bar", "kind bar"],
+  dessert: {cookie: "ginger", candy: "pulparindo"}
+};
+
+console.log("I&#39;m finally ready for my " + myLunch.dessert.cookie);
+
+
+</code></pre>
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
+<style>
+.CodeMirror { font-size: 1.2em; }
+</style>
+<script>
+window.klipse_settings = { selector_eval_js: ".klipse" };
+</script>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
+'>
+</iframe>
+<ul>
+<li>objects can be <b>arbitrarily complex</b> and <b>contain other objects</b></li>
+
+</ul>
+
+</section>
+<section id="slide-sec-eat-the-lunch-as-a-method-971e">
+<h3 id="eat-the-lunch-as-a-method-971e">Eat The Lunch as a Method</h3>
+</section>
 <section id="slide-sec-">
-<h2 id="orgc92c103">Objects and Properties</h2>
+<h4 id="orgda5b660">Reminder</h4>
+<iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
+function eatLunch (someLunch) {
+  let output = "";
+  output += "I&#39;ll start with my " + someLunch["fruit"] + "\n";
+  output += "Next I want to eat " + someLunch.sandwich + "\n";
+  for (snack of someLunch.snacks) {
+    output += "   I love my " + snack + "\n";
+  }
+  return output;
+}
+
+
+</code></pre>
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
+<style>
+.CodeMirror { font-size: 1.2em; }
+</style>
+<script>
+window.klipse_settings = { selector_eval_js: ".klipse" };
+</script>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
+'>
+</iframe>
+
+</section>
+<section id="slide-sec-">
+<h4 id="orgca8b9fc">Writing the Method</h4>
+<iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
+let myLunch = {
+  fruit: "orange",
+  sandwich: "just some bred!",
+  bar: "weird vegan bar",
+  snacks: ["cliff bar", "cliff bar", "kind bar"],
+  dessert: {cookie: "ginger", candy: "pulparindo"},
+  eatMe: function() {
+    let output = "";
+    output += "I&#39;ll start with my " + this["fruit"] + "\n";
+    output += "Next I want to eat " + this.sandwich + "\n";
+    for (snack of this.snacks) {
+      output += "   I love my " + snack + "\n";
+    }
+    return output;
+  }
+};
+
+myLunch.eatMe;
+
+myLunch.eatMe();
+
+</code></pre>
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
+<style>
+.CodeMirror { font-size: 1.2em; }
+</style>
+<script>
+window.klipse_settings = { selector_eval_js: ".klipse" };
+</script>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
+'>
+</iframe>
+<ul>
+<li>note the differences between <code>eat()</code> and <code>myLunch.eatMe</code>:
+<ul>
+<li>the method doesn&rsquo;t <b>take a parameter</b>!</li>
+<li>instead, we get to use <code>this</code>, which refers to the <b>current object scope</b></li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-sec-finally-some-history-0c62">
+<h3 id="finally-some-history-0c62">Finally some History</h3>
 <iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
   let greatWar = {
     name: "The First World War",
@@ -594,23 +969,23 @@ window.klipse_settings = { selector_eval_js: ".klipse" };
     scale: "Catastrophe"
   }
 
-//  console.log(greatWar["name"] + " lasted for " +\
-//  greatWar.end - greatWar.start + " years.");
+//  console.log(greatWar["name"] + " lasted for " +
+//  (greatWar.end - greatWar.start) + " years.");
 
 </code></pre>
-<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
 <style>
-.CodeMirror { font-size: 1.5em; }
+.CodeMirror { font-size: 1.2em; }
 </style>
 <script>
 window.klipse_settings = { selector_eval_js: ".klipse" };
 </script>
-<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
 '>
 </iframe>
 </section>
-<section id="slide-sec-">
-<h3 id="org47ddbc0">more objects</h3>
+<section id="slide-sec-more-objects-322f">
+<h3 id="more-objects-322f">more objects</h3>
 <iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
   let greatWar = {
     name: "The First World War",
@@ -626,25 +1001,26 @@ window.klipse_settings = { selector_eval_js: ".klipse" };
       }]
   }
 
-  console.log(greatWar["name"] + " lasted for " + (greatWar.end - greatWar.start) + " \ years.");
+  console.log(greatWar["name"] + " lasted for "
+ + (greatWar.end - greatWar.start) + " \ years.");
 console.log(greatWar.battles[0].name + " was ferocious and horrific. There were " + \
             greatWar.battles[0].casualties + " casualties.");
 
 </code></pre>
-<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
 <style>
-.CodeMirror { font-size: 1.5em; }
+.CodeMirror { font-size: 1.2em; }
 </style>
 <script>
 window.klipse_settings = { selector_eval_js: ".klipse" };
 </script>
-<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
 '>
 </iframe>
 
 </section>
-<section id="slide-sec-">
-<h3 id="org76a7540">Using Objects in JS</h3>
+<section id="slide-sec-using-objects-in-js-ace7">
+<h3 id="using-objects-in-js-ace7">Basic Logic with Objects</h3>
 <iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
 let goodGuys = ["CA", "UK", "US"];
 let badGuys=["DE", "AH"];
@@ -660,19 +1036,19 @@ for (person of people) {
 };
 
 </code></pre>
-<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
 <style>
-.CodeMirror { font-size: 1.5em; }
+.CodeMirror { font-size: 1.2em; }
 </style>
 <script>
 window.klipse_settings = { selector_eval_js: ".klipse" };
 </script>
-<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
 '>
 </iframe>
 </section>
-<section id="slide-sec-">
-<h4 id="org72d4d23">Branching</h4>
+<section id="slide-sec-logic-with-objects-9863">
+<h3 id="logic-with-objects-9863">Branching Logic with Objects</h3>
 <iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
 let goodGuys = ["CA", "UK", "US"];
 let badGuys=["DE", "AH"];
@@ -691,14 +1067,14 @@ for (person of people) {
 };
 
 </code></pre>
-<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<link rel= "stylesheet" type= "text/css" href="./vendor/klipse/codemirror.css">
 <style>
-.CodeMirror { font-size: 1.5em; }
+.CodeMirror { font-size: 1.2em; }
 </style>
 <script>
 window.klipse_settings = { selector_eval_js: ".klipse" };
 </script>
-<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+<script src= "./vendor/klipse/klipse_plugin.min.js"></script></body></html>
 '>
 </iframe>
 </section>
