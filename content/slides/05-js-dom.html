@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Week 5: JavaScript and the DOM</title>
+<meta name="author" content="(Matt Price)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../vendor/reveal//css/reveal.css"/>
+
+<link rel="stylesheet" href="../../vendor/reveal//css/theme/matt.css" id="theme"/>
+
+<link rel="stylesheet" href=""/>
+<link rel="stylesheet" href="../../vendor/reveal//lib/css/zenburn.css"/>
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../vendor/reveal//css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section>
+<section id="slide-sec-">
+<h2 id="orgf49265b">Working with the DOM</h2>
+<p>
+<b>Document Object</b>
+</p>
+<ul>
+<li>everything in the document can be manipulated via the DOM</li>
+
+</ul>
+
+<figure>
+<img src="https://www.computerhope.com/jargon/d/dom1.jpg" alt="dom1.jpg">
+
+</figure>
+</section>
+<section id="slide-sec-">
+<h3 id="org11c925d">Inspecting the DOM</h3>
+
+<figure>
+<img src="/ox-hugo/devtools.png" alt="devtools.png">
+
+</figure>
+
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="org479c4fa">Finding Elements</h2>
+<ul>
+<li><b>&ldquo;Vanilla&rdquo; JavaScript</b> (described in MDN)
+<ul>
+<li><code>document.querySelector("str")</code></li>
+
+</ul></li>
+<li><b>jQuery</b> (convenience library)
+<ul>
+<li><code>$("str")</code></li>
+<li><b>library must be loaded</b> with <code>&lt;script src="http://code.jquery.com/jquery-3.3.1.min.js"&lt;/script&gt;</code></li>
+
+</ul></li>
+
+</ul>
+
+
+<ul>
+<li>we use jQuery in examples, but it&rsquo;s your choice.
+<ul>
+<li>slightly different syntax &amp; different return values, so be careful.</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="org3ffbc8d">Change CSS of an Element</h2>
+<iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
+$(&#39;selector&#39;).css(&#39;property-name&#39;, &#39;value&#39;)
+
+</code></pre>
+<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<style>
+.CodeMirror { font-size: 1.2em; }
+</style>
+<script>
+window.klipse_settings = { selector_eval_js: ".klipse" };
+</script>
+<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+'>
+</iframe>
+
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="org0757d27">Get and Change Text Content</h2>
+<iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
+$(&#39;selector&#39;).text()
+$(&#39;selector&#39;).text(&#39;new value&#39;)
+
+</code></pre>
+<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<style>
+.CodeMirror { font-size: 1.2em; }
+</style>
+<script>
+window.klipse_settings = { selector_eval_js: ".klipse" };
+</script>
+<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+'>
+</iframe>
+
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="org74774dc">Get and Change Full inner HTML</h2>
+<iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
+$(&#39;selector&#39;).text()
+$(&#39;selector&#39;).text(&#39;<h2>new value, with valide HTML markup</h2>&#39;)
+
+</code></pre>
+<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<style>
+.CodeMirror { font-size: 1.2em; }
+</style>
+<script>
+window.klipse_settings = { selector_eval_js: ".klipse" };
+</script>
+<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+'>
+</iframe>
+
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="orgfbd47cf">Append elements</h2>
+<iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
+$(&#39;selector&#39;).append(&#39;<p>valid HTML Markup</p>&#39;)
+
+</code></pre>
+<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<style>
+.CodeMirror { font-size: 1.2em; }
+</style>
+<script>
+window.klipse_settings = { selector_eval_js: ".klipse" };
+</script>
+<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+'>
+</iframe>
+
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="orgbcbc055">What does jQuery return?</h2>
+<ul>
+<li>an &ldquo;array-like object&rdquo;</li>
+<li>it&rsquo;s not exactly an array, but you can use &ldquo;of&rdquo; to iterate over HTMl objects</li>
+<li>each element can use <b>native DOM methods</b> for HTML elements (cf MDN)</li>
+<li>to use jQuery methods on it, wrap it again in the $() function</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="org567e876">Looping: over HTML elements</h2>
+<iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
+let allElements = $(&#39;selector&#39;);
+// for.. in will NOT work!!!!
+for (e of allElements) { // this will loop through the *html elements* found by jQ   
+  $(e).doSomething(0) // if you want to use jquery methods, you have to jquery-ize first
+}
+
+</code></pre>
+<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<style>
+.CodeMirror { font-size: 1.2em; }
+</style>
+<script>
+window.klipse_settings = { selector_eval_js: ".klipse" };
+</script>
+<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+'>
+</iframe>
+
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="org00ea00a">Looping &#x2013; advanced</h2>
+<p>
+Trickier! Uses a &ldquo;callback function&rdquo; &#x2013; see this <a href="https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced">excellent, but still difficult, explanation</a> 
+</p>
+<iframe style="background-color:white;" height="500px" width= "100%" srcdoc='<html><body><pre><code class="klipse" >
+$(&#39;td.name&#39;).each(
+  function (index) {
+    console.log(`here&#39;s the content of cell number ${index}`);
+    console.log($(this).text());
+  });
+
+</code></pre>
+<link rel= "stylesheet" type= "text/css" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css">
+<style>
+.CodeMirror { font-size: 1.2em; }
+</style>
+<script>
+window.klipse_settings = { selector_eval_js: ".klipse" };
+</script>
+<script src= "https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script></body></html>
+'>
+</iframe>
+
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="org0e1ca74">Takeaways for us</h2>
+<ul>
+<li>it&rsquo;s a wild world out there</li>
+<li>many complex concepts, but if you go slowly, it&rsquo;s not impossible to figure out</li>
+<li>key is to understand that the DOM is a <b>strutureo f HTML elements</b>, which can be *created, destroyed,</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="../../vendor/reveal//lib/js/head.min.js"></script>
+<script src="../../vendor/reveal//js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: false,
+slideNumber: 'c / t',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+margin: 0.10,
+maxScale: 1.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+{src: '../../vendor/reveal//plugin/klipse_reveal.js'},
+ { src: '../../vendor/reveal//lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: '../../vendor/reveal//plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
