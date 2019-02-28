@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Homework Help Day</title>
+<meta name="author" content="(Matt Price)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../vendor/reveal//css/reveal.css"/>
+
+<link rel="stylesheet" href="../../vendor/reveal//css/theme/matt.css" id="theme"/>
+
+<link rel="stylesheet" href=""/>
+<link rel="stylesheet" href="../../vendor/reveal//lib/css/zenburn.css"/>
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../vendor/reveal//css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section>
+<section id="slide-sec-">
+<h2 id="org0c51483">Status Report</h2>
+<ul>
+<li>looked at and evaluated all Assignment 2&rsquo;s</li>
+<li>assignment 3 is the crux of the course!</li>
+<li>can give <b>limited</b> help for next 24 hours or so</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="org9780f7c">HTML Structures</h2>
+<ul>
+<li>for the rest of the course, coding is mostly <b>creating HTML structures</b></li>
+<li>becaue HTML is tedious, <b>lots</b> of opportunity to introduce errors!</li>
+<li>How to avoid?
+<ul>
+<li><b>D.R.Y.</b> (Don&rsquo;t Repeat Yourself)</li>
+<li>if done right, guarantees that low-level problems only need to be solved <b>once</b></li>
+<li>remember: laziness is a virtue</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="org65cf46f">Writing &ldquo;Atomic&rdquo; Functions</h2>
+<ul>
+<li>Complex code is difficult to debug!</li>
+<li>instead, try to make your individual functions as simple as possible</li>
+<li><b>divide your problem into smallest possible parts</b> (hence &rsquo;atomic&rsquo;)</li>
+<li>&ldquo;chain&rdquo; your functions together to recreate complexity</li>
+<li>much easier to localize failure</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="orgf832e40">Making a card deck</h2>
+<p>
+<b>Task:</b> given a JSON data structure, generate a set of cards (like the ones we made in assignment 0, but simpler)
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="html" ><card class="card">
+  <header>
+    <h1>Person Name</h1>
+  </header>
+  <main class="card">   
+    <p>
+      lengthy text here
+    </p>
+  </main>
+  <footer>
+    <a href="'https://digitalhistory.github.io/dh-website'">A Project of HIS393</a>
+  </footer>
+</card>
+</code></pre>
+</div>
+
+<div class="org-src-container">
+
+<pre><code class="js" >{
+  name: 'Person Name',
+  blurb: 'lenghty text here',
+}
+</code></pre>
+</div>
+
+</section>
+<section id="slide-sec-">
+<h3 id="orgd886d68">First, Map the assignment</h3>
+<ul class="paired" style="font-size: 0.75em;">
+<li class="fragment appear">card deck &rarr; set of cards</li>
+<li class="fragment appear"><p>
+card &rarr; 
+</p>
+<div class="org-src-container">
+
+<pre><code class="html" ><card class="card">
+  <header></header>
+  <main></main>
+  <footer></footer>
+</card>
+</code></pre>
+</div></li>
+<li class="fragment appear">this is <b>set of tagged elements</b></li>
+<li class="fragment appear">so we might do something like this:
+<ul>
+<li class="fragment appear"><b>fn 1</b>: tag some content</li>
+<li class="fragment appear"><b>fn 2</b>: use <b>fn 1</b> to make header structure</li>
+<li class="fragment appear"><b>fn 3</b>: use <b>fn 1</b> to make main structure</li>
+<li class="fragment appear"><b>fn 4</b>: use <b>fn 1</b> to make footer structure</li>
+<li class="fragment appear"><b>fn 5</b>: use <b>fn 2, fn 3, fn 4</b> to make sub-structures and then call <b>fn 1</b> to wrap whole thing</li>
+<li class="fragment appear"><b>fn 6</b>: loop through data structure, calling <b>fn 5</b> once for each element</li>
+
+</ul></li>
+
+</ul>
+
+<ul class="paired" style="font-size: 0.75em">
+<li class="fragment appear">Now Name our functions</li>
+<li class="fragment appear"><b>fn 1: letsTag()</b></li>
+<li class="fragment appear"><b>fn 2: headMe()</b>)</li>
+<li class="fragment appear"><b>fn 3: mainMe()</b>)</li>
+<li class="fragment appear"><b>fn 4: footMe()</b></li>
+<li class="fragment appear"><b>fn 5: cardMe()</b></li>
+<li class="fragment appear"><b>fn 6: makeAllCards()</b></li>
+
+</ul>
+</section>
+<section id="slide-sec-">
+<h3 id="org7815f4f">Start with Fn 1: <code>letsTag</code></h3>
+<div class="org-src-container">
+
+<pre><code class="js" >function letsTag ( content, tagName, attrs) {
+  output = `<${tagName} `;
+  for (a of attrs) {
+    output+=`${a}=${attrs[a]} `;
+  }
+  output += `>${content}</${tagName}>`;
+  return output;
+}
+
+
+letsTag('I am the main content', 'main', {style: 'border: 2px solid black;'});
+</code></pre>
+</div>
+
+</section>
+<section id="slide-sec-">
+<h3 id="org5354155">Fn 2: <code>headMe()</code></h3>
+<div class="org-src-container">
+
+<pre><code class="js" >function headMe (titleText) {
+  let output=letsTag(titleText, 'h1');
+  output=letsTag(output, 'header');
+  return output
+}
+
+headMe('I am the title');
+</code></pre>
+</div>
+
+</section>
+<section id="slide-sec-">
+<h3 id="org0a0b45e">All the Rest</h3>
+<div class="org-src-container">
+
+<pre><code class="js" >function footMe () {
+  let link = letsTag('A Project of HIS393', 'a', {href: 'https://digitalhistory.github.io/dh-website/'});
+  return letsTag(link, 'footer');
+}
+
+function mainMe (blurb) {
+  let p = letsTag(blurb, 'p');
+  return letsTag(p, 'main');
+}
+
+function cardMe (person) {
+  let header = headMe(person.name);
+  let main = mainMe(person.blurb);
+  let footer = footMe();
+  return letsTag(header + main + footer, 'card', {class: 'card'});
+}
+
+function makeAllTheCards (people) {
+  output = '';
+  for (p of people) {
+    output += cardMe (p);
+  }
+  return $('main#page-main').append(output); 
+}
+
+makeAllTheCards (allEntries);
+</code></pre>
+</div>
+</section>
+</section>
+</div>
+</div>
+<script src="../../vendor/reveal//lib/js/head.min.js"></script>
+<script src="../../vendor/reveal//js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: false,
+slideNumber: 'c / t',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+margin: 0.10,
+maxScale: 1.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+{src: '../../vendor/reveal//plugin/klipse_reveal.js'},
+ { src: '../../vendor/reveal//lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: '../../vendor/reveal//plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
