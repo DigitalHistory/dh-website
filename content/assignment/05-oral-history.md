@@ -1,7 +1,7 @@
 ---
 title: "Assignment 05: Oral History"
 author: ["Matt Price"]
-lastmod: 2019-03-15T11:14:49-04:00
+lastmod: 2019-03-15T11:42:57-04:00
 draft: false
 banner: "testbanner"
 menu:
@@ -25,3 +25,14 @@ git pull upstream master
 This may pop you into a new editor window to edit the commit message.  If so, just save it as as is and close; commit should proceed from there. If you have issues, please post them to Slack.
 
 Some more advanced Git command tutorials coming your way soon.
+
+See the README.org file in your own repo or [the upstream Github Repo](https://github.com/DigitalHistory/advanced-topics/tree/master/oral-history) for details.
+
+
+## Rubric {#rubric}
+
+-   [ ] Passes General Tests
+
+-
+
+-

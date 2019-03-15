@@ -1,7 +1,7 @@
 ---
 title: "Assignment 04: Spatial History"
 author: ["Matt Price"]
-lastmod: 2019-03-15T11:18:35-04:00
+lastmod: 2019-03-15T11:42:50-04:00
 tags: ["assignment"]
 draft: false
 banner: "testbanner"
@@ -20,5 +20,7 @@ Your next assignment builds directly from our in-class exercise, and should be q
 ## Rubric {#rubric}
 
 -   [ ] Passes General Tests
--   **Grade** :
--   **Comments**:
+
+-
+
+-
