@@ -1,8 +1,7 @@
 ---
 title: "Installing Node Dependencies"
 author: ["Matt Price"]
-date: 2015-07-21T13:48:00-04:00
-lastmod: 2019-01-10T13:48:23-05:00
+lastmod: 2019-08-20T14:53:20-04:00
 draft: false
 banner: "testbanner"
 menu:
@@ -18,8 +17,8 @@ Node.js is an exquisite piece of programming infrastructure. One of its main fea
 
 In our assignments, node dependencies are mostly used to enable the **tests**, whose main function is to help you figure out whether you've done the assignments correctly.  Installing node dependencies is pretty simple, but can be confusing if you're completely new to node, the command line, and programming in general.  Here are the (very simple!) instructions:
 
-1.  Install Node and NPM as per [this section of the "Setup" instructions](https://digital.hackinghistory.ca/tools/setup/#node-and-npm)
-2.  From the command line, navigate to the root directory of your repository using `cd` as per [the navigation help page](https://digital.hackinghistory.ca/tools/navigating-command-line/)
+1.  Install Node and NPM as per [this section of the "Setup" instructions](https://digitalhistory.github.io/tools/setup/#node-and-npm)
+2.  From the command line, navigate to the root directory of your repository using `cd` as per [the navigation help page](https://digitalhistory.github.io/tools/navigating-command-line/)
 3.  From the root directory of your repository,type the following command into the terminal/git-bash prompt: `npm install`
 
 You should see some complex output from the command, after which your node dependencies will be installed. You can actually see the installed files by browsing the contents of the `node_modules` directory, which should now be present in your working directory.

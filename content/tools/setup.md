@@ -1,8 +1,7 @@
 ---
 title: "Setup"
 author: ["Matt Price"]
-date: 2015-07-21T13:48:00-04:00
-lastmod: 2019-01-10T13:48:46-05:00
+lastmod: 2019-08-20T14:53:37-04:00
 draft: false
 banner: "testbanner"
 menu:
@@ -117,7 +116,7 @@ Sometimes it's nice to have a backp. [GitKraken](https://www.gitkraken.com/) is 
 
 ### Learn more {#learn-more}
 
-There is a somewhat more wordy [Git tutorial on this website](http://digital.hackinghistory.ca/introduction-to-github), which you should read. For now, [Install the Github Desktop App](https://desktop.github.com/) which also includes the command-line version of git.  You can follow the [excellent tutorial in the downloadable git-it application](https://github.com/jlord/git-it-electron/releases), as well as the [Github Desktop documentation](https://help.github.com/desktop/guides/).  There is also a [quite helpful tutorial on The Programming Historian](http://programminghistorian.org/lessons/getting-started-with-github-desktop). We'll be discussing Git and Github further in our first class.
+There is a somewhat more wordy [Git tutorial on this website](http://digitalhistory.github.io/introduction-to-github), which you should read. For now, [Install the Github Desktop App](https://desktop.github.com/) which also includes the command-line version of git.  You can follow the [excellent tutorial in the downloadable git-it application](https://github.com/jlord/git-it-electron/releases), as well as the [Github Desktop documentation](https://help.github.com/desktop/guides/).  There is also a [quite helpful tutorial on The Programming Historian](http://programminghistorian.org/lessons/getting-started-with-github-desktop). We'll be discussing Git and Github further in our first class.
 
 
 ## Node and NPM -- This is the hardest part! {#node-and-npm-this-is-the-hardest-part}
