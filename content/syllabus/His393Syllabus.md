@@ -17,7 +17,7 @@ menu:
 |-------------------|------------------------------------------------------------------|
 | **Email:**        | matt.price@utoronto.ca                                           |
 | **Meeting Times** | T Th 2-3, [SS 1070](http://map.utoronto.ca/utsg/building/033)    |
-| **Web:**          | <http://digital.hackinghistory.ca/>                              |
+| **Web:**          | <http://digitalhistory.github.io/dh-website/>                    |
 | **Slack:**        | <https://digitalhistoryuoft.slack.com/>                          |
 | **Office Hrs:**   | T Th 3-3:30, [SS 3077](http://map.utoronto.ca/utsg/building/033) |
 
@@ -153,10 +153,10 @@ I know there will be questions!  Please don't hesitate to ask them.  And here, f
 | G & GH Extras        |                                                                               |                                                                    | &#10004; |          |          |          |
 | Zero to Blog Post    | <span class="timestamp-wrapper"><span class="timestamp">Jan. 29</span></span> | web markup and presentation                                        | &#10004; | &#10004; | &#10004; | &#10004; |
 | Z2B Extras           |                                                                               |                                                                    | &#10004; |          |          |          |
-| A Table of Ministers | <span class="timestamp-wrapper"><span class="timestamp">Feb. 12</span></span> | Programming Concepts: abstraction, loops, DOM                      | &#10004; | &#10004; | &#10004; | &#10004; |
+| A Feast of Ministers | <span class="timestamp-wrapper"><span class="timestamp">Feb. 12</span></span> | Programming Concepts: abstraction, loops, data types               | &#10004; | &#10004; | &#10004; | &#10004; |
 | Ministers Extras     |                                                                               |                                                                    | &#10004; |          |          |          |
-| Using Data Sources   | <span class="timestamp-wrapper"><span class="timestamp">Mar. 01</span></span> | Programming Concepts: Object structure, substitution, text as data | &#10004; | &#10004; | &#10004; |          |
-| Data Sources Extras  |                                                                               |                                                                    | &#10004; |          |          |          |
+| DOM and Data         | <span class="timestamp-wrapper"><span class="timestamp">Mar. 01</span></span> | Programming Concepts: Object structure, substitution, text as data | &#10004; | &#10004; | &#10004; |          |
+| DOM and Data Extras  |                                                                               |                                                                    | &#10004; |          |          |          |
 | Spatial History      | <span class="timestamp-wrapper"><span class="timestamp">Mar. 15</span></span> | API's, GIS                                                         | &#10004; | &#10004; |          |          |
 | Oral History         | <span class="timestamp-wrapper"><span class="timestamp">Mar. 30</span></span> | API's, Multimedia Narratives                                       | &#10004; | &#10004; | &#10004; | &#10004; |
 | Project Proposal     | <span class="timestamp-wrapper"><span class="timestamp">Apr. 05</span></span> | Imagine a Digital History Project                                  | &#10004; |          |          |          |
@@ -178,7 +178,7 @@ While all our readings are online, the following texts are heavily used & may be
 ### Text, Code, and the Web {#text-code-and-the-web}
 
 
-#### Introducing _Digital History_ (<span class="timestamp-wrapper"><span class="timestamp">Jan. 08</span></span>) {#introducing-digital-history}
+#### Introducing _Digital History_ (<span class="timestamp-wrapper"><span class="timestamp">Sep. 05</span></span>) {#introducing-digital-history}
 
 **Class Synopsis:** Introduction to the course
 
@@ -189,10 +189,10 @@ While all our readings are online, the following texts are heavily used & may be
 -   Cohen, Daniel J, and Roy Rosenzweig. “Becoming Digital.” In _Digital History: A Guide to Gathering, Preserving, and Presenting the Past on the Web_. Philadelphia: University of Pennsylvania Press, 2006. <http://chnm.gmu.edu/digitalhistory/digitizing/>.
 
 
-#### In-Class Activity: Collaboration on Github, Markdown (<span class="timestamp-wrapper"><span class="timestamp">Jan. 10</span></span>) {#in-class-activity-collaboration-on-github-markdown}
+#### In-Class Activity: Collaboration on Github, Markdown (<span class="timestamp-wrapper"><span class="timestamp">Sep. 10</span></span>) {#in-class-activity-collaboration-on-github-markdown}
 
 
-#### What the Web Signifies (<span class="timestamp-wrapper"><span class="timestamp">Jan. 15</span></span>) {#what-the-web-signifies}
+#### What the Web Signifies (<span class="timestamp-wrapper"><span class="timestamp">Sep. 12</span></span>) {#what-the-web-signifies}
 
 We all live with the web, but that doesn't mean we think much about _how it works_ and _what it's changed_. This week's lecture presents some thoughts on the changing nature of the public sphere and the significance of the web's _digital_ and _machine-readable_ nature.
 
@@ -202,7 +202,7 @@ We all live with the web, but that doesn't mean we think much about _how it work
 -   Cohen, Daniel J. “Interchange: The Promise of Digital History” 95, no. 2 (September 1, 2008): 452–91. <http://jah.oxfordjournals.org.myaccess.library.utoronto.ca/content/95/2/452.short>
 
 
-#### In-Class Activity: HTML + CSS (<span class="timestamp-wrapper"><span class="timestamp">Jan. 17</span></span>) {#in-class-activity-html-css}
+#### In-Class Activity: HTML + CSS (<span class="timestamp-wrapper"><span class="timestamp">Sep. 17</span></span>) {#in-class-activity-html-css}
 
 **Resources:**
 These Mozilla Developer Network guides are inter-related, and the structure is easy to get lost in. Still, this is among the best resources on the web.
@@ -218,7 +218,7 @@ These Mozilla Developer Network guides are inter-related, and the structure is e
 -   [Blogstarter: simple tutorial](https://www.theblogstarter.com/html-for-beginners/) (one of a zillion alternatives to the MDN pages)
 
 
-#### Abundance and Openness (<span class="timestamp-wrapper"><span class="timestamp">Jan. 22</span></span>) {#abundance-and-openness}
+#### Abundance and Openness (<span class="timestamp-wrapper"><span class="timestamp">Sep. 19</span></span>) {#abundance-and-openness}
 
 One of the key features of the web is its _immenseness_. We will discuss how this genuinely new circumstance transforms the work of the historian.
 
@@ -229,13 +229,13 @@ One of the key features of the web is its _immenseness_. We will discuss how thi
 -   “Learn How Google Works: In Gory Detail.” _PPCBlog_. Accessed June 30, 2015. <http://www.ppcblog.com/how-google-works/>.
 
 
-#### In-Class Activity: More HTML + CSS (<span class="timestamp-wrapper"><span class="timestamp">Jan. 24</span></span>) {#in-class-activity-more-html-css}
+#### In-Class Activity: More HTML + CSS (<span class="timestamp-wrapper"><span class="timestamp">Sep. 24</span></span>) {#in-class-activity-more-html-css}
 
 
 ### Data Driven History {#data-driven-history}
 
 
-#### Distant Reading 1 (<span class="timestamp-wrapper"><span class="timestamp">Jan. 29</span></span>) {#distant-reading-1}
+#### Distant Reading 1 (<span class="timestamp-wrapper"><span class="timestamp">Sep. 26</span></span>) {#distant-reading-1}
 
 Franco Moretti's _Graphs, Maps, Trees_ was a manifesto of sorts for a data-driven literary history. We'll discuss the first 2/3s of this book before turning to some practical skills
 
@@ -245,10 +245,10 @@ Franco Moretti's _Graphs, Maps, Trees_ was a manifesto of sorts for a data-drive
 -   "Basic Text Mining" in _The Historian's Macroscope:_ <http://www.themacroscope.org/?page%5Fid=362>
 
 
-#### In-Class Activity: Javascript variables & functions (<span class="timestamp-wrapper"><span class="timestamp">Jan. 31</span></span>) {#in-class-activity-javascript-variables-and-functions}
+#### In-Class Activity: Javascript variables & functions (<span class="timestamp-wrapper"><span class="timestamp">Oct. 01</span></span>) {#in-class-activity-javascript-variables-and-functions}
 
 
-#### Distant Reading 2: Are Texts Data? (<span class="timestamp-wrapper"><span class="timestamp">Feb. 05</span></span>) {#distant-reading-2-are-texts-data}
+#### Distant Reading 2: Are Texts Data? (<span class="timestamp-wrapper"><span class="timestamp">Oct. 03</span></span>) {#distant-reading-2-are-texts-data}
 
 More Moretti, and some criticisms
 
@@ -260,10 +260,10 @@ More Moretti, and some criticisms
 -   Marc Dunkelman. “[What Data Can't Convey](http://chronicle.com/blogs/conversation/2014/08/19/what-data-cant-convey/).” Blog. _The Chronicle of Higher Education_, 19 2014.
 
 
-#### In-Class Activity: Javascript objects and DOM manipulation (<span class="timestamp-wrapper"><span class="timestamp">Feb. 07</span></span>) {#in-class-activity-javascript-objects-and-dom-manipulation}
+#### In-Class Activity: Javascript objects and DOM manipulation (<span class="timestamp-wrapper"><span class="timestamp">Oct. 08</span></span>) {#in-class-activity-javascript-objects-and-dom-manipulation}
 
 
-#### Text as Data, History as Algorithm (<span class="timestamp-wrapper"><span class="timestamp">Feb. 12</span></span>) {#text-as-data-history-as-algorithm}
+#### Text as Data, History as Algorithm (<span class="timestamp-wrapper"><span class="timestamp">Oct. 10</span></span>) {#text-as-data-history-as-algorithm}
 
 **Note:** we may need to push this up
 We'll explore "topic modelling" &#x2013; one of the most popular DH methods &#x2013; as well as some critiques of it, and some more playful extrapolations about the future of data-driven history.
@@ -274,24 +274,24 @@ We'll explore "topic modelling" &#x2013; one of the most popular DH methods &#x2
 -   Seth van Hooland, Ruben Verborgh, and Max De Wilde. “[Cleaning Data with OpenRefine](http://programminghistorian.org/lessons/cleaning-data-with-openrefine).” _The Programming Historian_.
 
 
-#### In-Class Activity: Javascript questions (<span class="timestamp-wrapper"><span class="timestamp">Feb. 14</span></span>) {#in-class-activity-javascript-questions}
+#### In-Class Activity: Javascript questions (<span class="timestamp-wrapper"><span class="timestamp">Oct. 15</span></span>) {#in-class-activity-javascript-questions}
 
 
-#### READING WEEK &#x2013; NO CLASS <span class="timestamp-wrapper"><span class="timestamp">Feb. 19</span></span> and <span class="timestamp-wrapper"><span class="timestamp">Feb. 21</span></span> {#reading-week-and-x2013-no-class}
+#### READING WEEK &#x2013; NO CLASS <span class="timestamp-wrapper"><span class="timestamp">Oct. 17</span></span> and <span class="timestamp-wrapper"><span class="timestamp">Oct. 22</span></span> {#reading-week-and-x2013-no-class}
 
 
-#### Computing Concepts Catch-up day (<span class="timestamp-wrapper"><span class="timestamp">Feb. 26</span></span>) {#computing-concepts-catch-up-day}
+#### Computing Concepts Catch-up day (<span class="timestamp-wrapper"><span class="timestamp">Oct. 24</span></span>) {#computing-concepts-catch-up-day}
 
 More JS, and Trees.
 
 
-#### Assignment Help Day (<span class="timestamp-wrapper"><span class="timestamp">Feb. 28</span></span>) {#assignment-help-day}
+#### Assignment Help Day (<span class="timestamp-wrapper"><span class="timestamp">Oct. 29</span></span>) {#assignment-help-day}
 
 
 ### Maps, Visualization, and History {#maps-visualization-and-history}
 
 
-#### Spatial History (<span class="timestamp-wrapper"><span class="timestamp">Mar. 05</span></span>) {#spatial-history}
+#### Spatial History (<span class="timestamp-wrapper"><span class="timestamp">Oct. 31</span></span>) {#spatial-history}
 
 Contemporary "Historical GIS" and web-based geohistory projects descend from an illustrious lineage of qualitative and quantitative "spatial histories". In class today we explore what happens when "place" takes centre stage in a historical analysis.
 
@@ -301,24 +301,24 @@ Contemporary "Historical GIS" and web-based geohistory projects descend from an 
 -   Ben Schmidt, "[Data narratives and structural histories: Melville, Maury, and American whaling](http://sappingattention.blogspot.com/2012/10/data-narratives-and-structural.html)
 
 
-#### In-Class Activity: Mapping with Google (<span class="timestamp-wrapper"><span class="timestamp">Mar. 07</span></span>) {#in-class-activity-mapping-with-google}
+#### In-Class Activity: Mapping with Google (<span class="timestamp-wrapper"><span class="timestamp">Nov. 05</span></span>) {#in-class-activity-mapping-with-google}
 
 
-#### Maps Online (<span class="timestamp-wrapper"><span class="timestamp">Mar. 12</span></span>) {#maps-online}
+#### Maps Online (<span class="timestamp-wrapper"><span class="timestamp">Nov. 07</span></span>) {#maps-online}
 
 Maps and visiaulizations are neat and all, but contemporary web-based geohistory allows historical maps to interact powerfully with other data sources.  We'll explore some possibilities!
 
 **Readings:**
 
 -   "Railways and Agriculture in France and Great Britain" in _Toward Spatial Humanities_
--   "The Development, Persistance, and Change of Racial Segregation in U.S. Urban Areas, 1880-2010" in _Toward Spatial Humanities_
+-   "The Development, Persistence, and Change of Racial Segregation in U.S. Urban Areas, 1880-2010" in _Toward Spatial Humanities_
 -   google earth tutorial: <https://geospatialhistorian.wordpress.com/lessons/lesson-1/>
 
 
-#### In-Class Activity: GIS (<span class="timestamp-wrapper"><span class="timestamp">Mar. 14</span></span>) {#in-class-activity-gis}
+#### In-Class Activity: GIS (<span class="timestamp-wrapper"><span class="timestamp">Nov. 12</span></span>) {#in-class-activity-gis}
 
 
-#### Visualization (<span class="timestamp-wrapper"><span class="timestamp">Mar. 19</span></span>) {#visualization}
+#### Visualization (<span class="timestamp-wrapper"><span class="timestamp">Nov. 14</span></span>) {#visualization}
 
 Of course, maps and graphs are in a certain sense part of a much broader field of _rhetorical visualizations:_ attempts to convey quantitative information through pictures in an effort to convince the reader.
 
@@ -329,13 +329,13 @@ Of course, maps and graphs are in a certain sense part of a much broader field o
 -   Andy Kirk, 298 Data Visualisation Resources, Visualising Data, (2015).
 
 
-#### In-Class Activity: Reading visualizations (<span class="timestamp-wrapper"><span class="timestamp">Mar. 21</span></span>) {#in-class-activity-reading-visualizations}
+#### In-Class Activity: Reading visualizations (<span class="timestamp-wrapper"><span class="timestamp">Nov. 19</span></span>) {#in-class-activity-reading-visualizations}
 
 
 ### Oral History, Crowdsourcing, and the Promise of the Public Sphere {#oral-history-crowdsourcing-and-the-promise-of-the-public-sphere}
 
 
-#### What's Special about Oral History (<span class="timestamp-wrapper"><span class="timestamp">Mar. 26</span></span>) {#what-s-special-about-oral-history}
+#### What's Special about Oral History (<span class="timestamp-wrapper"><span class="timestamp">Nov. 21</span></span>) {#what-s-special-about-oral-history}
 
 Oral History has a long tradition; we explore its roots and peculiarities, and
 
@@ -345,17 +345,17 @@ Oral History has a long tradition; we explore its roots and peculiarities, and
 -   Listen to some part of  "I can almost see the lights of home" <http://www.albany.edu/jmmh/vol2no1/lightssoundessay.html>
 
 
-#### In-Class Activity: Popcorn.js (<span class="timestamp-wrapper"><span class="timestamp">Mar. 28</span></span>) {#in-class-activity-popcorn-dot-js}
+#### In-Class Activity: Popcorn.js (<span class="timestamp-wrapper"><span class="timestamp">Nov. 26</span></span>) {#in-class-activity-popcorn-dot-js}
 
 
-#### Project Planning & Citizen History  (<span class="timestamp-wrapper"><span class="timestamp">Apr. 02</span></span>) {#project-planning-and-citizen-history}
+#### Project Planning & Citizen History  (<span class="timestamp-wrapper"><span class="timestamp">Nov. 28</span></span>) {#project-planning-and-citizen-history}
 
 We'll discuss some project management techniques that should help you with your final proposal
 
 -   <http://publichistorycommons.org/where-are-the-citizen-historians/>
 
 
-#### Oral History & Remix Culture (<span class="timestamp-wrapper"><span class="timestamp">Apr. 04</span></span>) {#oral-history-and-remix-culture}
+#### Oral History & Remix Culture (<span class="timestamp-wrapper"><span class="timestamp">Dec. 03</span></span>) {#oral-history-and-remix-culture}
 
 Once oral histories migrate to the web, they, like maps, can interact with other kinds of data.
 
