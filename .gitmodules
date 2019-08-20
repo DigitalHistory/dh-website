@@ -5,3 +5,5 @@
 	path = public
 	url = git@github.com:titaniumbones/digitalhistory.github.io.git
 	branch = master
+	ignore = all
+	
