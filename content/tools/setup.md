@@ -1,7 +1,7 @@
 ---
 title: "Setup"
 author: ["Matt Price"]
-lastmod: 2019-08-20T14:53:37-04:00
+lastmod: 2019-08-20T15:39:52-04:00
 draft: false
 banner: "testbanner"
 menu:
@@ -19,43 +19,42 @@ For the duration of this course, you will need to set up a "development environm
 I run [Arch Linux](https://archlinux.org) on my laptop, and have experience with [Ubuntu](https://www.ubuntu.com/) as well. For the purposes of this class, I have installed Windows 10 Education Edition ([available free to U of T students here](https://uoft.onthehub.com/WebStore/Security/Signin.aspx)).  I wil also attempt to support MacOS as best I can.
 
 -   if you have an earlier edition of Windows, some of our tools may not work properly. I encourage you to upgrade to Windows 10 Education Edition, which has good support for modern tools.
--   if you have a Chromebook, you will need to install a full Linux OS in order to do the coursework. If you are lucky enough to have a recent, powerful Chromebook, you may be able to use [Google's official "Crostini" tool](https://chromium.googlesource.com/chromiumos/docs/+/master/containers%5Fand%5Fvms.md#Overview). Otherwise, [Gallium OS](https://wiki.galliumos.org/Welcome%5Fto%5Fthe%5FGalliumOS%5FWiki) and [Crouton](https://github.com/dnschneid/crouton) are the two recommended tools for this, and you can find [some instructions here](https://arstechnica.com/gadgets/2017/06/how-to-install-linux-on-a-chromebook/). It's not easy, and I won't be able to help you.  If this seems hard, you may want to think about buying an inexpensive, older laptop and installing an ordinary Linux distribution.  [Here are](https://fossbytes.com/best-lightweight-linux-distros/) [two lists](https://fossbytes.com/best-linux-distro-beginners/) of distributions, but the choice is up to you.
+-   if you have a Chromebook, you will need to install a full Linux OS in order to do the coursework. [Gallium OS](https://wiki.galliumos.org/Welcome%5Fto%5Fthe%5FGalliumOS%5FWiki) and [Crouton](https://github.com/dnschneid/crouton) are the two recommended tools for this, and you can find [some instructions here](https://arstechnica.com/gadgets/2017/06/how-to-install-linux-on-a-chromebook/). It's not easy, and I won't be able to help you.  If this seems hard, you may want to think about buying an inexpensive, older laptop and installing an ordinary Linux distribution.  [Here are](https://fossbytes.com/best-lightweight-linux-distros/) [two lists](https://fossbytes.com/best-linux-distro-beginners/) of distributions, but the choice is up to you. .
 
 
 ## Details {#details}
 
 Here's the table of tools from the syllabus:
 
-| Tool                           | On Mac                                                                                                                     | On Windows                                                                                                                                             | On Linux (debian/ubuntu commands)                                                                                        |
-|--------------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Real Web Browser               | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                          | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                                                      | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                        |
-| Text Editor                    | [VSCode](https://code.visualstudio.com/download)                                                                           | [VSCode](https://code.visualstudio.com/download)                                                                                                       | [VSCode](https://code.visualstudio.com/download)                                                                         |
-| Bash Shell Environment         | Terminal (Built in)                                                                                                        | [Git for Windows](https://git-for-windows.github.io/) or [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/install-win10) | gnome-terminal, qterm, etc                                                                                               |
-| Git Version Control            | [Git for OSX](https://sourceforge.net/projects/git-osx-installer/files/)                                                   | [Git for Windows](https://git-for-windows.github.io/)                                                                                                  | `apt-get install git`                                                                                                    |
-| Slack Community                | [Client Download](https://slack.com/downloads), [Signup Link](https://join.slack.com/t/digitalhistoryuoft/signup)          | [Client Download](https://slack.com/downloads), [Signup Link](https://join.slack.com/t/digitalhistoryuoft/signup)                                      | [Client Download](https://slack.com/downloads), [Signup Link](https://join.slack.com/t/digitalhistoryuoft/signup)        |
-| Github Org Membership          | [Sign up here](https://github.com/join)                                                                                    | [Sign up here](https://github.com/join)                                                                                                                | [Sign up here](https://github.com/join)                                                                                  |
-| Git Visualization (deprecated) | [gitKraken](https://www.gitkraken.com/)                                                                                    | [gitKraken](https://www.gitkraken.com/)                                                                                                                | [gitKraken](https://www.gitkraken.com/)                                                                                  |
-| Node and NPM                   | [Node Website](https://nodejs.org/en/download/) ([guide](http://nodesource.com/blog/installing-nodejs-tutorial-mac-os-x/)) | [Node Website](https://nodejs.org/en/download/) ([guide](https://wsvincent.com/install-node-js-npm-windows/))                                          | [Node Website](https://nodejs.org/en/download/) ([distro instructions](https://nodejs.org/en/download/package-manager/)) |
+| Tool                   | On Mac                                                                                                                     | On Windows                                                                                                                                             | On Linux                                                                                                                 |
+|------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| Real Web Browser       | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                          | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                                                      | [Firefox](https://www.mozilla.org/en-US/firefox/) and/or [Chrome](https://www.google.com/chrome/)                        |
+| Text Editor            | [VSCode](https://code.visualstudio.com/download)                                                                           | [VSCode](https://code.visualstudio.com/download)                                                                                                       | [VSCode](https://code.visualstudio.com/download)                                                                         |
+| Bash Shell Environment | Terminal (Built in)                                                                                                        | [Git for Windows](https://git-for-windows.github.io/) or [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/install-win10) | gnome-terminal, qterm, etc                                                                                               |
+| Git Version Control    | [Git for OSX](https://sourceforge.net/projects/git-osx-installer/files/)                                                   | [Git for Windows](https://git-for-windows.github.io/)                                                                                                  | `apt-get install git`                                                                                                    |
+| Slack Community        | [Client Download](https://slack.com/downloads), [Signup Link](https://join.slack.com/t/digitalhistoryuoft/signup)          | [Client Download](https://slack.com/downloads), [Signup Link](https://join.slack.com/t/digitalhistoryuoft/signup)                                      | [Client Download](https://slack.com/downloads), [Signup Link](https://join.slack.com/t/digitalhistoryuoft/signup)        |
+| Github Org Membership  | [Sign up here](https://github.com/join)                                                                                    | [Sign up here](https://github.com/join)                                                                                                                | [Sign up here](https://github.com/join)                                                                                  |
+| Node and NPM           | [Node Website](https://nodejs.org/en/download/) ([guide](http://nodesource.com/blog/installing-nodejs-tutorial-mac-os-x/)) | [Node Website](https://nodejs.org/en/download/) ([guide](https://wsvincent.com/install-node-js-npm-windows/))                                          | [Node Website](https://nodejs.org/en/download/) ([distro instructions](https://nodejs.org/en/download/package-manager/)) |
 
 If you're comfortable exploring and installing software, you can probably get set up quickly by following the links above. **Please nonetheless read the detailed instructions below.** Things will go smoother if you do!
 
 
-## Web Browser {#web-browser}
+## Web browser {#web-browser}
 
 All of our work will involve interacting with the World Wide Web. Firefox and Chrome are head and shoulders above all other web browsers, and you should install one (or preferably both) of them. In class, I will use Firefox almost exclusively. If you haven't tried Firefox for a while, give the new Quantum version a try' it is much, much faster and more stable than its predecessors.
 
 Both have highly sophisticated **developer tools** with which you should familiarize yourself. As you learn more about web design, you'll come to rely on these tools more and more. Follow these links for more about [Firefox Dev Tools](https://developer.mozilla.org/en-US/docs/Tools/Page%5FInspector) and [Chrome's version](https://developer.chrome.com/devtools).
 
-Of particular value in both Chrome and Firefox is the "Javascript Consoles," accessible from the developer tools: `Tools \rarr Web Developer \rarr Console` or `Menu \rarr More Tools \rarr Developer \rarr Console`
+Of particular value in both Chrome and Firefox is the "Javascript Consoles," accessible from the developer tools: `Tools \rightarrow Web Developer \rightarrow Console` or `Menu \rightarrow More Tools \rightarrow Developer \rightarrow Console`
 
-The Firefox console is a little awkward to use for multi-line programming, so they have also provided a "Scratchpad" tool (`Shift-F4`), which I find helpful, though I now often use VSCode's Javascript console instead (see "Text Editor", below).
+The Firefox console is a little awkward to use for multi-line programming, so they have also provided a "Scratchpad" tool (`Shift-F4`), which I find helpful, though I now use VSCode's Javascript console instead (see "Text Editor", below).
 
 The other tool I use all the time is "inspect element", available by right-clicking on any part of a web page.  Both of these tools will prove **essential** for figuring out why your code isn't working right!
 
 
 ## Text Editor {#text-editor}
 
-If you want to code, you have to write like a coder. This means using a powerful text editor. In this class we use [Visual Studio Code](https://code.visualstudio.com/).  Please follow the download links and install to your computer. There's a separate post about using VSCode -- once you've installed it, navigate there!
+If you want to code, you have to write like a coder. This means using a powerful text editor. In this class we use [Visual Studio Code](https://code.visualstudio.com/). Please follow the download links and install to your computer. There's a separate post about using VSCode -- once you've installed it, navigate there!
 
 
 ## Command Line {#command-line}
@@ -78,7 +77,7 @@ Software development is made **vastly** easier by "[version control](https://git
 
 ### Install Git {#install-git}
 
-To install git, follow the [download links](https://git-scm.com/downloads) on the website (see the table above for OS-specific links and instructions. We'll come back to the Git command-line in a minute.
+To install git, follow the [download links](https://git-scm.com/downloads) on the website (see the table above for OS-specific links and instructions). We'll come back to the Git command-line in a minute.
 
 
 ### Sign up for Github {#sign-up-for-github}
@@ -106,7 +105,7 @@ Great -- now git knows who you are. If you're feeling ambitious, you can also [s
 
 ### VSCode Git {#vscode-git}
 
-VSCode also has an interface to Git and Github. It's pretty powerful and intuitive, so I recommend trying it before installing GitKraken.  [The instructions are here](https://code.visualstudio.com/docs/editor/versioncontrol#%5Fgit-support).
+VSCode also has an interface to Git and Github. It's pretty powerful and intuitive, so I recommend trying it before installing GitKraken. [The instructions are here](https://code.visualstudio.com/docs/editor/versioncontrol#%5Fgit-support).
 
 
 ### Using the GitKraken GUI client {#using-the-gitkraken-gui-client}

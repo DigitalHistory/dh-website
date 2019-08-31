@@ -4,6 +4,5 @@ pre ="<i class='fa fa-github'></i> "
 weight=01
 +++
 
-
-{{% children  %}}
+{{% children sort="Name" direction="Reverse"  %}}
 

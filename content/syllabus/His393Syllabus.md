@@ -1,9 +1,6 @@
 ---
 title: "Syllabus"
-author: ["Matt Price"]
-date: 2018-01-08T00:00:00-05:00
 draft: false
-creator: "Emacs 27.0.5 (Org mode 9.1.4)"
 banner: "testbanner"
 menu:
   main:
@@ -17,7 +14,7 @@ menu:
 |-------------------|------------------------------------------------------------------|
 | **Email:**        | matt.price@utoronto.ca                                           |
 | **Meeting Times** | T Th 2-3, [SS 1070](http://map.utoronto.ca/utsg/building/033)    |
-| **Web:**          | <http://digitalhistory.github.io/dh-website/>                    |
+| **Web:**          | <http://digitalhistory.github.io/>                               |
 | **Slack:**        | <https://digitalhistoryuoft.slack.com/>                          |
 | **Office Hrs:**   | T Th 3-3:30, [SS 3077](http://map.utoronto.ca/utsg/building/033) |
 
@@ -111,7 +108,7 @@ I can offer help with the following
 | Github Org Membership         | [Sign up here](https://github.com/join)                                                                                    | [Sign up here](https://github.com/join)                                                                                                                | [Sign up here](https://github.com/join)                                                                                  |
 | Node and NPM                  | [Node Website](https://nodejs.org/en/download/) ([guide](http://nodesource.com/blog/installing-nodejs-tutorial-mac-os-x/)) | [Node Website](https://nodejs.org/en/download/) ([guide](https://wsvincent.com/install-node-js-npm-windows/))                                          | [Node Website](https://nodejs.org/en/download/) ([distro instructions](https://nodejs.org/en/download/package-manager/)) |
 
-Please see the [Setup](http://digital.hackinghistory.ca/article/tools) page for more details about the particular tools we will be using. **YOU WILL ABSOLUTEY NEED TO HAVE THESE TOOLS IN ORDER TO TAKE THE COURSE**
+Please see the [Setup](http://digitalhistory.github.io/article/tools) page for more details about the particular tools we will be using. **YOU WILL ABSOLUTEY NEED TO HAVE THESE TOOLS IN ORDER TO TAKE THE COURSE**
 
 
 ## Course Requirements & Grading {#course-requirements-and-grading}
@@ -149,17 +146,17 @@ I know there will be questions!  Please don't hesitate to ask them.  And here, f
 
 | Assignment           | Due Date                                                                      | Skills/Aims                                                        | A        | B        | C        | D        |
 |----------------------|-------------------------------------------------------------------------------|--------------------------------------------------------------------|----------|----------|----------|----------|
-| Class Profile        | <span class="timestamp-wrapper"><span class="timestamp">Jan. 17</span></span> | version control and collaboration                                  | &#10004; | &#10004; | &#10004; | &#10004; |
+| Class Profile        | <span class="timestamp-wrapper"><span class="timestamp">Sep. 12</span></span> | version control and collaboration                                  | &#10004; | &#10004; | &#10004; | &#10004; |
 | G & GH Extras        |                                                                               |                                                                    | &#10004; |          |          |          |
-| Zero to Blog Post    | <span class="timestamp-wrapper"><span class="timestamp">Jan. 29</span></span> | web markup and presentation                                        | &#10004; | &#10004; | &#10004; | &#10004; |
+| Zero to Blog Post    | <span class="timestamp-wrapper"><span class="timestamp">Sep. 24</span></span> | web markup and presentation                                        | &#10004; | &#10004; | &#10004; | &#10004; |
 | Z2B Extras           |                                                                               |                                                                    | &#10004; |          |          |          |
-| A Feast of Ministers | <span class="timestamp-wrapper"><span class="timestamp">Feb. 12</span></span> | Programming Concepts: abstraction, loops, data types               | &#10004; | &#10004; | &#10004; | &#10004; |
+| A Feast of Ministers | <span class="timestamp-wrapper"><span class="timestamp">Oct. 08</span></span> | Programming Concepts: abstraction, loops, data types               | &#10004; | &#10004; | &#10004; | &#10004; |
 | Ministers Extras     |                                                                               |                                                                    | &#10004; |          |          |          |
-| DOM and Data         | <span class="timestamp-wrapper"><span class="timestamp">Mar. 01</span></span> | Programming Concepts: Object structure, substitution, text as data | &#10004; | &#10004; | &#10004; |          |
+| DOM and Data         | <span class="timestamp-wrapper"><span class="timestamp">Oct. 29</span></span> | Programming Concepts: Object structure, substitution, text as data | &#10004; | &#10004; | &#10004; |          |
 | DOM and Data Extras  |                                                                               |                                                                    | &#10004; |          |          |          |
-| Spatial History      | <span class="timestamp-wrapper"><span class="timestamp">Mar. 15</span></span> | API's, GIS                                                         | &#10004; | &#10004; |          |          |
-| Oral History         | <span class="timestamp-wrapper"><span class="timestamp">Mar. 30</span></span> | API's, Multimedia Narratives                                       | &#10004; | &#10004; | &#10004; | &#10004; |
-| Project Proposal     | <span class="timestamp-wrapper"><span class="timestamp">Apr. 05</span></span> | Imagine a Digital History Project                                  | &#10004; |          |          |          |
+| Spatial History      | <span class="timestamp-wrapper"><span class="timestamp">Nov. 07</span></span> | API's, GIS                                                         | &#10004; | &#10004; |          |          |
+| Oral History         | <span class="timestamp-wrapper"><span class="timestamp">Nov. 29</span></span> | API's, Multimedia Narratives                                       | &#10004; | &#10004; | &#10004; | &#10004; |
+| Project Proposal     | <span class="timestamp-wrapper"><span class="timestamp">Dec. 05</span></span> | Imagine a Digital History Project                                  | &#10004; |          |          |          |
 |                      |                                                                               |                                                                    |          |          |          |          |
 
 
@@ -202,7 +199,7 @@ We all live with the web, but that doesn't mean we think much about _how it work
 -   Cohen, Daniel J. “Interchange: The Promise of Digital History” 95, no. 2 (September 1, 2008): 452–91. <http://jah.oxfordjournals.org.myaccess.library.utoronto.ca/content/95/2/452.short>
 
 
-#### In-Class Activity: HTML + CSS (<span class="timestamp-wrapper"><span class="timestamp">Sep. 17</span></span>) {#in-class-activity-html-css}
+#### In-Class Activity: HTML + CSS (<span class="timestamp-wrapper"><span class="timestamp">Sep. 17</span></span>) {#in-class-activity-html-plus-css}
 
 **Resources:**
 These Mozilla Developer Network guides are inter-related, and the structure is easy to get lost in. Still, this is among the best resources on the web.
@@ -229,7 +226,7 @@ One of the key features of the web is its _immenseness_. We will discuss how thi
 -   “Learn How Google Works: In Gory Detail.” _PPCBlog_. Accessed June 30, 2015. <http://www.ppcblog.com/how-google-works/>.
 
 
-#### In-Class Activity: More HTML + CSS (<span class="timestamp-wrapper"><span class="timestamp">Sep. 24</span></span>) {#in-class-activity-more-html-css}
+#### In-Class Activity: More HTML + CSS (<span class="timestamp-wrapper"><span class="timestamp">Sep. 24</span></span>) {#in-class-activity-more-html-plus-css}
 
 
 ### Data Driven History {#data-driven-history}
@@ -277,21 +274,18 @@ We'll explore "topic modelling" &#x2013; one of the most popular DH methods &#x2
 #### In-Class Activity: Javascript questions (<span class="timestamp-wrapper"><span class="timestamp">Oct. 15</span></span>) {#in-class-activity-javascript-questions}
 
 
-#### READING WEEK &#x2013; NO CLASS <span class="timestamp-wrapper"><span class="timestamp">Oct. 17</span></span> and <span class="timestamp-wrapper"><span class="timestamp">Oct. 22</span></span> {#reading-week-and-x2013-no-class}
-
-
-#### Computing Concepts Catch-up day (<span class="timestamp-wrapper"><span class="timestamp">Oct. 24</span></span>) {#computing-concepts-catch-up-day}
+#### Computing Concepts Catch-up day (<span class="timestamp-wrapper"><span class="timestamp">Oct. 17</span></span>) {#computing-concepts-catch-up-day}
 
 More JS, and Trees.
 
 
-#### Assignment Help Day (<span class="timestamp-wrapper"><span class="timestamp">Oct. 29</span></span>) {#assignment-help-day}
+#### Assignment Help Day (<span class="timestamp-wrapper"><span class="timestamp">Oct. 22</span></span>) {#assignment-help-day}
 
 
 ### Maps, Visualization, and History {#maps-visualization-and-history}
 
 
-#### Spatial History (<span class="timestamp-wrapper"><span class="timestamp">Oct. 31</span></span>) {#spatial-history}
+#### Spatial History (<span class="timestamp-wrapper"><span class="timestamp">Oct. 24</span></span>) {#spatial-history}
 
 Contemporary "Historical GIS" and web-based geohistory projects descend from an illustrious lineage of qualitative and quantitative "spatial histories". In class today we explore what happens when "place" takes centre stage in a historical analysis.
 
@@ -301,10 +295,10 @@ Contemporary "Historical GIS" and web-based geohistory projects descend from an 
 -   Ben Schmidt, "[Data narratives and structural histories: Melville, Maury, and American whaling](http://sappingattention.blogspot.com/2012/10/data-narratives-and-structural.html)
 
 
-#### In-Class Activity: Mapping with Google (<span class="timestamp-wrapper"><span class="timestamp">Nov. 05</span></span>) {#in-class-activity-mapping-with-google}
+#### In-Class Activity: Mapping with Google (<span class="timestamp-wrapper"><span class="timestamp">Oct. 29</span></span>) {#in-class-activity-mapping-with-google}
 
 
-#### Maps Online (<span class="timestamp-wrapper"><span class="timestamp">Nov. 07</span></span>) {#maps-online}
+#### Maps Online (<span class="timestamp-wrapper"><span class="timestamp">Oct. 31</span></span>) {#maps-online}
 
 Maps and visiaulizations are neat and all, but contemporary web-based geohistory allows historical maps to interact powerfully with other data sources.  We'll explore some possibilities!
 
@@ -313,6 +307,9 @@ Maps and visiaulizations are neat and all, but contemporary web-based geohistory
 -   "Railways and Agriculture in France and Great Britain" in _Toward Spatial Humanities_
 -   "The Development, Persistence, and Change of Racial Segregation in U.S. Urban Areas, 1880-2010" in _Toward Spatial Humanities_
 -   google earth tutorial: <https://geospatialhistorian.wordpress.com/lessons/lesson-1/>
+
+
+#### READING WEEK &#x2013; NO CLASS <span class="timestamp-wrapper"><span class="timestamp">Nov. 05</span></span> and <span class="timestamp-wrapper"><span class="timestamp">Nov. 07</span></span> {#reading-week-and-x2013-no-class}
 
 
 #### In-Class Activity: GIS (<span class="timestamp-wrapper"><span class="timestamp">Nov. 12</span></span>) {#in-class-activity-gis}

@@ -4,5 +4,5 @@ pre ="<i class='fa fa-github'></i> "
 +++
 
 
-{{% children  %}}
+{{% children sort="Name"  direction="Reverse"  %}}
 

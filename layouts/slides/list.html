@@ -22,7 +22,7 @@
 
 {{end}}
 <ul>
-  {{ range .Data.Pages }}
+  {{ range .Data.Pages.ByLinkTitle }}
   <li>
     <a href="{{.Permalink}}">{{.File.BaseFileName}}</a>
   </li>
