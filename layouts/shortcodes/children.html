@@ -1,0 +1,78 @@
+{{- $showhidden := .Get "showhidden"}}
+{{- $style :=  .Get "style" | default "li" }}
+{{- $depth :=  .Get "depth" | default 1 }}
+{{- $withDescription :=  .Get "description" | default false }}
+{{- $sortTerm :=  .Get "sort" | default "Weight" }}
+{{- $direction :=  .Get "direction" | default "" }}
+{{- .Scratch.Set "current" .Page }}
+{{- if (.Get "page")}}
+    {{- with .Site.GetPage "section" (.Get "page") }}
+	{{- $.Scratch.Set "current" . }}
+    {{- end }}
+{{- end }}
+{{- $cpage := (.Scratch.Get "current") }}
+<ul class="children children-{{$style}}">
+    {{- .Scratch.Set "pages" $cpage.Pages }}
+    {{- if $cpage.Sections}}
+	{{- .Scratch.Set "pages" ($cpage.Pages | union $cpage.Sections) }}
+    {{- end}}
+    {{- $pages := (.Scratch.Get "pages") }}
+    {{- $menu := $pages }}
+    {{- if eq $sortTerm "Weight"}}
+	{{- $menu :=  $pages.ByWeight }}
+    {{- else if eq $sortTerm "Name"}}
+	{{- $menu :=  $pages.ByTitle }}
+    {{- else if eq $sortTerm "PublishDate"}}
+	{{- $menu :=  $pages.ByPublishDate }}
+    {{- else if eq $sortTerm "Date"}}
+	{{- $menu :=  $pages.ByDate }}
+    {{- else if eq $sortTerm "Length"}}
+	{{- $menu :=  $pages.ByLength }}
+    {{- else}}
+	{{- $menu :=  $pages }}
+    {{- end}}
+    {{- template "childs" dict "menu" $menu "style" $style "direction" $direction "showhidden" $showhidden "count" 1 "depth" $depth "pages" .Site.Pages "description" $withDescription "sortTerm" $sortTerm}}
+</ul>
+{{.Inner|safeHTML}}
+{{ define "childs" }}
+    {{- range (cond (eq .direction "Reverse") .menu.Reverse .menu) }}
+	{{- if and .Params.hidden (not $.showhidden) }}
+            <!-- hidden -->>
+        {{- else}}
+                {{- if hasPrefix $.style "h"}}
+	            {{- $num := sub ( int (trim $.style "h") ) 1 }}
+	            {{- $numn := add $num $.count }}
+	            {{- (printf "<h%d>" $numn)|safeHTML}}
+		    <a href="{{.URL}}" >{{ .Title }}</a>
+	            {{- (printf "</h%d>" $numn)|safeHTML}}
+                {{- else}}
+	            {{- (printf "<%s>" $.style)|safeHTML}}
+		    <a href="{{.URL}}" > {{ .Title }}</a>
+	            {{- (printf "</%s>" $.style)|safeHTML}}
+                {{- end}}
+		{{- if $.description}}
+		    {{- if .Description}}
+                        <p>{{.Description}}</p>
+		    {{- else}}
+                        <p>{{.Summary}}</p>
+		    {{- end}}
+		{{- end}} {{/* end description */}}
+            </span>
+            {{- if lt $.count $.depth}}
+                {{- if eq $.style "li" }}
+                    <ul>
+                {{- end}}
+                {{- .Scratch.Set "pages" .Pages }}
+                {{- if .Sections}}
+	            {{- .Scratch.Set "pages" (.Pages | union .Sections) }}
+                {{- end}}
+                {{- $pages := (.Scratch.Get "pages") }}
+                {{- template "childs" dict "menu" $.menu  "style" $.style "direction" $.direction "showhidden" $.showhidden "count" (add $.count 1) "depth" $.depth "pages" $.pages "description" $.description "sortTerm" $.sortTerm}}
+                {{- if eq $.style "li"}}
+                    </ul>
+                {{- end }}
+            {{- end }} {{/* end if count */}}
+
+	{{- end }} {{/* end if not hidden */}}
+    {{- end }} {{/* end range */}}
+{{- end }} {{/* end childs definition */}}
