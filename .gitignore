@@ -1,1 +1,15 @@
 public
+*~
+/static/vendor/reveal/bower.json
+/static/vendor/reveal/CONTRIBUTING.md
+/static/vendor/reveal/ctangel-demo.html
+/static/vendor/reveal/demo.html
+/static/vendor/reveal/flymd.html
+/static/vendor/reveal/flymd.md
+/static/vendor/reveal/gruntfile.js
+/static/vendor/reveal/package-lock.json
+/static/vendor/reveal/package.json
+/static/vendor/reveal/re-demo.html
+/static/vendor/reveal/reveal-editor-demo.html
+/static/vendor/reveal/reveal-editor-demo_files/a.htm
+/static/vendor/reveal/scratch.htm
