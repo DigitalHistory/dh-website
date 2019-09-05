@@ -13,3 +13,5 @@ public
 /static/vendor/reveal/reveal-editor-demo.html
 /static/vendor/reveal/reveal-editor-demo_files/a.htm
 /static/vendor/reveal/scratch.htm
+/static/vendor/reveal/reveal-editor-demo_files/ace.js
+/static/vendor/reveal/src-noconflict/ace.js
