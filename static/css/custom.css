@@ -1,13 +1,13 @@
-.padding.highlightable:after {
-    content: "DRAFT \A August 2019";
-    /*! color: steelblue; */
-    font-size: 8rem;
-    position: fixed;
-    top: 50vh;
-    left: 50%;
-    opacity: 0.2;
-    transform: translate(-40%, -50%) rotate(-30deg);
-}
+/* .padding.highlightable:after { */
+/*     content: "DRAFT \A August 2019"; */
+/*     /\*! color: steelblue; *\/ */
+/*     font-size: 8rem; */
+/*     position: fixed; */
+/*     top: 50vh; */
+/*     left: 50%; */
+/*     opacity: 0.2; */
+/*     transform: translate(-40%, -50%) rotate(-30deg); */
+/* } */
 
 #sidebar ul li .category-icon {
     padding-left: 50px;
