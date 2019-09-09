@@ -8,6 +8,9 @@ menu:
     weight: 10
 ---
 
+<section class="outline-1">
+  <section></section>
+
 ## Logistics {#logistics}
 
 | **Instructor:**   | Matt Price                                                       |
@@ -20,6 +23,10 @@ menu:
 
 In general, online communication should take place **via Slack**.  In the case of questions having to do with official University business (requests for extensions, discussion of accommodations, any message involving sensitive personal data) please [use my University email, being sure to put "HIS393" in the subject line](mailto:matt.price@utoronto.ca?subject=HIS389%20Digital%20History).
 
+</section>
+
+<section class="outline-1">
+  <section></section>
 
 ## Introduction {#introduction}
 
@@ -38,6 +45,10 @@ How should history respond to these new conditions of our existence?  In this cl
 -   Can we use the new media to ask (and answer!) new kinds of questions? Can they help us improve our answers to the old questions?
 -   Perhaps most powerfully: how do the new digital conditions of existence relate to the question of "engaged" scholarship?  What new opportunities, constraints, and dangers does digital production call forth when we mix scholarship and citizenship?
 
+</section>
+
+<section class="outline-1">
+  <section></section>
 
 ## Objectives {#objectives}
 
@@ -50,6 +61,10 @@ At the end of this course, you should:
 -   be able to make compelling use of media materials such as audio, video, and animation in historical arguments
 -   understand how to create simple historical maps, and have an opinion about the value of GIS in historical argument
 
+</section>
+
+<section class="outline-1">
+  <section></section>
 
 ## Method {#method}
 
@@ -64,19 +79,33 @@ Almost every digital humanist will, at some point, need to do the following:
 
 Our emphasis is therefore on _simple coding_ taught using _standard tools that are available almost everywhere_.  Almost all of the software we use is Free or Open Source. You will learn very basic web development skills and _slowly_ come to apply them to _increasingly sophisticated_ (but still pretty simple!) historical questions.  These baby steps will give you some sense of what skills a "real" digital history project requires, and give you the tools you'll need to _teach yourself_ when you encounter new tools in the course of a project.
 
+</section>
+
+<section class="outline-1">
+  <section></section>
 
 ## Policies {#policies}
 
+<div class="outline-2">
+  <div></div>
 
 ### Accessibility {#accessibility}
 
 The University provides academic accommodations for students with disabilities in accordance with the terms of the Ontario Human Rights Code. For information on services and resources, see <http://www.studentlife.utoronto.ca/as>
 
+</div>
+
+<div class="outline-2">
+  <div></div>
 
 ### Respecting Diversity {#respecting-diversity}
 
 Diverse backgrounds, embodiments, and experiences are essential to the critical thinking endeavor at the heart of higher education. We expect you to be respectful of the many social and cultural differences among us, which may include, but are not limited to: age, cultural background, disability, ethnicity, technical ability, gender identity and presentation, citizenship and immigration status, national origin, race, religious and political beliefs, sex, sexual orientation, and socioeconomic status. Please talk with me right away if you experience disrespect in this class—from any source, including myself—and I will active work to address it.
 
+</div>
+
+<div class="outline-2">
+  <div></div>
 
 ### Correspondence {#correspondence}
 
@@ -84,6 +113,10 @@ As noted above, most communication should take place **via Slack**.  In the case
 
 **Also:** I have an injury-related difficulty co-ordinating action between my left and right hands, which leads to very frequent & distinctive typographical errors (and is also one of the many reasons you don't want to hear me play a musical instrument). In my course materials, assignment comments, and announcements, I strive to eliminate those errors, but in instant messaging I am less attentive, as typing corrections approximately triples my composition time. So&#x2026; please bear with me.
 
+</div>
+
+<div class="outline-2">
+  <div></div>
 
 ### Attendance {#attendance}
 
@@ -91,6 +124,12 @@ Make every effort to attend each class meeting (including lab sections)! Class w
 
 Please silence all cell phones/pagers/etc. before the beginning of each class. You should bring your laptop for in-class work, but please don't use class time (lecture or lab) to check your email, update your Facebook, read reddit, watch YouTube, make dank memes, seize the means of production (well, that may be allowed under certain circumstances), etc. Such usage is distracting and interferes with learning both for you and for all the other students around you. If I notice you doing this, I will call you out in public. Spend class time on class materials. If another student's activity is distracting, please ask them to stop it (or let me know outside of class).
 
+</div>
+
+</section>
+
+<section class="outline-1">
+  <section></section>
 
 ## Tools {#tools}
 
@@ -110,6 +149,10 @@ I can offer help with the following
 
 Please see the [Setup](http://digitalhistory.github.io/article/tools) page for more details about the particular tools we will be using. **YOU WILL ABSOLUTEY NEED TO HAVE THESE TOOLS IN ORDER TO TAKE THE COURSE**
 
+</section>
+
+<section class="outline-1">
+  <section></section>
 
 ## Course Requirements & Grading {#course-requirements-and-grading}
 
@@ -159,6 +202,10 @@ I know there will be questions!  Please don't hesitate to ask them.  And here, f
 | Project Proposal     | <span class="timestamp-wrapper"><span class="timestamp">Dec. 06</span></span> | Imagine a Digital History Project                                  | &#10004; |          |          |          |
 |                      |                                                                               |                                                                    |          |          |          |          |
 
+</section>
+
+<section class="outline-1">
+  <section></section>
 
 ## Texts {#texts}
 
@@ -168,12 +215,20 @@ While all our readings are online, the following texts are heavily used & may be
 -   Geddes et al _Toward Spatial Humanities_ Bloomington: Indiana University Press, 2014.
 -   Perks, et al. _The Oral History Reader_. 2016 ([Online Access](https://www-taylorfrancis-com.myaccess.library.utoronto.ca/books/9781315671833))
 
+</section>
+
+<section class="outline-1">
+  <section></section>
 
 ## Course Outline {#course-outline}
 
+<div class="outline-2">
+  <div></div>
 
 ### Text, Code, and the Web {#text-code-and-the-web}
 
+<div class="outline-3">
+  <div></div>
 
 #### Introducing _Digital History_ (<span class="timestamp-wrapper"><span class="timestamp">Sep. 05</span></span>) {#introducing-digital-history}
 
@@ -185,9 +240,18 @@ While all our readings are online, the following texts are heavily used & may be
 -   William Cronon, ["Why the Past Matters"](http://www.williamcronon.net/writing/Cronon%5FWhy%5Fthe%5FPast%5FMatters.pdf)
 -   Cohen, Daniel J, and Roy Rosenzweig. “Becoming Digital.” In _Digital History: A Guide to Gathering, Preserving, and Presenting the Past on the Web_. Philadelphia: University of Pennsylvania Press, 2006. <http://chnm.gmu.edu/digitalhistory/digitizing/>.
 
+</div>
+
+<div class="outline-3">
+  <div></div>
 
 #### In-Class Activity: Collaboration on Github, Markdown (<span class="timestamp-wrapper"><span class="timestamp">Sep. 10</span></span>) {#in-class-activity-collaboration-on-github-markdown}
 
+
+</div>
+
+<div class="outline-3">
+  <div></div>
 
 #### What the Web Signifies (<span class="timestamp-wrapper"><span class="timestamp">Sep. 12</span></span>) {#what-the-web-signifies}
 
@@ -198,6 +262,10 @@ We all live with the web, but that doesn't mean we think much about _how it work
 -   Juergen Habermas, "[The Public Sphere: An Encyclopedia Article](https://unige.ch/sciences-societe/socio/files/2914/0533/6073/Habermas%5F1974.pdf)" (1964)
 -   Cohen, Daniel J. “Interchange: The Promise of Digital History” 95, no. 2 (September 1, 2008): 452–91. <http://jah.oxfordjournals.org.myaccess.library.utoronto.ca/content/95/2/452.short>
 
+</div>
+
+<div class="outline-3">
+  <div></div>
 
 #### In-Class Activity: HTML + CSS (<span class="timestamp-wrapper"><span class="timestamp">Sep. 17</span></span>) {#in-class-activity-html-plus-css}
 
@@ -214,6 +282,10 @@ These Mozilla Developer Network guides are inter-related, and the structure is e
 
 -   [Blogstarter: simple tutorial](https://www.theblogstarter.com/html-for-beginners/) (one of a zillion alternatives to the MDN pages)
 
+</div>
+
+<div class="outline-3">
+  <div></div>
 
 #### Abundance and Openness (<span class="timestamp-wrapper"><span class="timestamp">Sep. 19</span></span>) {#abundance-and-openness}
 
@@ -225,12 +297,25 @@ One of the key features of the web is its _immenseness_. We will discuss how thi
 
 -   “Learn How Google Works: In Gory Detail.” _PPCBlog_. Accessed June 30, 2015. <http://www.ppcblog.com/how-google-works/>.
 
+</div>
+
+<div class="outline-3">
+  <div></div>
 
 #### In-Class Activity: More HTML + CSS (<span class="timestamp-wrapper"><span class="timestamp">Sep. 24</span></span>) {#in-class-activity-more-html-plus-css}
 
 
+</div>
+
+</div>
+
+<div class="outline-2">
+  <div></div>
+
 ### Data Driven History {#data-driven-history}
 
+<div class="outline-3">
+  <div></div>
 
 #### Distant Reading 1 (<span class="timestamp-wrapper"><span class="timestamp">Sep. 26</span></span>) {#distant-reading-1}
 
@@ -241,9 +326,18 @@ Franco Moretti's _Graphs, Maps, Trees_ was a manifesto of sorts for a data-drive
 -   Moretti, Franco. _Graphs, Maps, Trees: Abstract Models for a Literary History_. Verso, 2005 through p. 64, or  Moretti, Franco. “[Graphs, Maps, Trees.](http://search.proquest.com.myaccess.library.utoronto.ca/docview/1301929949/citation/D2E84E1A5CCD4A82PQ/1)” New Left Review 24 (November 1, 2003): 67–93m and Moretti, Franco. “[Graphs, Maps, Trees - 2](http://search.proquest.com.myaccess.library.utoronto.ca/docview/1301999488/citation/72DD61D56A3244B9PQ/1).” New Left Review 26 (March 1, 2004): 79–103
 -   "Basic Text Mining" in _The Historian's Macroscope:_ <http://www.themacroscope.org/?page%5Fid=362>
 
+</div>
+
+<div class="outline-3">
+  <div></div>
 
 #### In-Class Activity: Javascript variables & functions (<span class="timestamp-wrapper"><span class="timestamp">Oct. 01</span></span>) {#in-class-activity-javascript-variables-and-functions}
 
+
+</div>
+
+<div class="outline-3">
+  <div></div>
 
 #### Distant Reading 2: Are Texts Data? (<span class="timestamp-wrapper"><span class="timestamp">Oct. 03</span></span>) {#distant-reading-2-are-texts-data}
 
@@ -256,9 +350,18 @@ More Moretti, and some criticisms
 -   Gibbs, Fred. “Hermeneutics of Data and Historical Writing” Writing History in the Digital Age, March 14, 2012. <http://writinghistory.trincoll.edu/data/gibbs-owens-2012-spring/>.
 -   Marc Dunkelman. “[What Data Can't Convey](http://chronicle.com/blogs/conversation/2014/08/19/what-data-cant-convey/).” Blog. _The Chronicle of Higher Education_, 19 2014.
 
+</div>
+
+<div class="outline-3">
+  <div></div>
 
 #### In-Class Activity: Javascript objects and DOM manipulation (<span class="timestamp-wrapper"><span class="timestamp">Oct. 08</span></span>) {#in-class-activity-javascript-objects-and-dom-manipulation}
 
+
+</div>
+
+<div class="outline-3">
+  <div></div>
 
 #### Text as Data, History as Algorithm (<span class="timestamp-wrapper"><span class="timestamp">Oct. 10</span></span>) {#text-as-data-history-as-algorithm}
 
@@ -270,20 +373,42 @@ We'll explore "topic modelling" &#x2013; one of the most popular DH methods &#x2
 -   Gibbs, Fred. “[Hermeneutics of Data and Historical Writing](http://writinghistory.trincoll.edu/data/gibbs-owens-2012-spring/).” _Writing History in the Digital Age_, March 14, 2012.
 -   Seth van Hooland, Ruben Verborgh, and Max De Wilde. “[Cleaning Data with OpenRefine](http://programminghistorian.org/lessons/cleaning-data-with-openrefine).” _The Programming Historian_.
 
+</div>
+
+<div class="outline-3">
+  <div></div>
 
 #### In-Class Activity: Javascript questions (<span class="timestamp-wrapper"><span class="timestamp">Oct. 15</span></span>) {#in-class-activity-javascript-questions}
 
+
+</div>
+
+<div class="outline-3">
+  <div></div>
 
 #### Computing Concepts Catch-up day (<span class="timestamp-wrapper"><span class="timestamp">Oct. 17</span></span>) {#computing-concepts-catch-up-day}
 
 More JS, and Trees.
 
+</div>
+
+<div class="outline-3">
+  <div></div>
 
 #### Assignment Help Day (<span class="timestamp-wrapper"><span class="timestamp">Oct. 22</span></span>) {#assignment-help-day}
 
 
+</div>
+
+</div>
+
+<div class="outline-2">
+  <div></div>
+
 ### Maps, Visualization, and History {#maps-visualization-and-history}
 
+<div class="outline-3">
+  <div></div>
 
 #### Spatial History (<span class="timestamp-wrapper"><span class="timestamp">Oct. 24</span></span>) {#spatial-history}
 
@@ -294,9 +419,18 @@ Contemporary "Historical GIS" and web-based geohistory projects descend from an 
 -   Mark Monmonier,  "[Lying with Maps](http://faculty.maxwell.syr.edu/mon2ier/e%5Freprints/StatSci%20Aug2005%20%28Lying%20with%20Maps%29.pdf)" _Statistical Science_ 20:3, 2005. 215-222.
 -   Ben Schmidt, "[Data narratives and structural histories: Melville, Maury, and American whaling](http://sappingattention.blogspot.com/2012/10/data-narratives-and-structural.html)
 
+</div>
+
+<div class="outline-3">
+  <div></div>
 
 #### In-Class Activity: Mapping with Google (<span class="timestamp-wrapper"><span class="timestamp">Oct. 29</span></span>) {#in-class-activity-mapping-with-google}
 
+
+</div>
+
+<div class="outline-3">
+  <div></div>
 
 #### Maps Online (<span class="timestamp-wrapper"><span class="timestamp">Oct. 31</span></span>) {#maps-online}
 
@@ -308,12 +442,26 @@ Maps and visiaulizations are neat and all, but contemporary web-based geohistory
 -   "The Development, Persistence, and Change of Racial Segregation in U.S. Urban Areas, 1880-2010" in _Toward Spatial Humanities_
 -   google earth tutorial: <https://geospatialhistorian.wordpress.com/lessons/lesson-1/>
 
+</div>
+
+<div class="outline-3">
+  <div></div>
 
 #### READING WEEK &#x2013; NO CLASS <span class="timestamp-wrapper"><span class="timestamp">Nov. 05</span></span> and <span class="timestamp-wrapper"><span class="timestamp">Nov. 07</span></span> {#reading-week-and-x2013-no-class}
 
 
+</div>
+
+<div class="outline-3">
+  <div></div>
+
 #### In-Class Activity: GIS (<span class="timestamp-wrapper"><span class="timestamp">Nov. 12</span></span>) {#in-class-activity-gis}
 
+
+</div>
+
+<div class="outline-3">
+  <div></div>
 
 #### Visualization (<span class="timestamp-wrapper"><span class="timestamp">Nov. 14</span></span>) {#visualization}
 
@@ -325,12 +473,25 @@ Of course, maps and graphs are in a certain sense part of a much broader field o
 -   Kostiantyn Kucher and Andreas Kerren, ‘[Text Visualization Browser: A Visual Survey of Text Visualization Techniques](http://textvis.lnu.se/)’, (2014)
 -   Andy Kirk, 298 Data Visualisation Resources, Visualising Data, (2015).
 
+</div>
+
+<div class="outline-3">
+  <div></div>
 
 #### In-Class Activity: Reading visualizations (<span class="timestamp-wrapper"><span class="timestamp">Nov. 19</span></span>) {#in-class-activity-reading-visualizations}
 
 
+</div>
+
+</div>
+
+<div class="outline-2">
+  <div></div>
+
 ### Oral History, Crowdsourcing, and the Promise of the Public Sphere {#oral-history-crowdsourcing-and-the-promise-of-the-public-sphere}
 
+<div class="outline-3">
+  <div></div>
 
 #### What's Special about Oral History (<span class="timestamp-wrapper"><span class="timestamp">Nov. 21</span></span>) {#what-s-special-about-oral-history}
 
@@ -341,9 +502,18 @@ Oral History has a long tradition; we explore its roots and peculiarities, and
 -   "The Voice of the Past" and "What makes Oral History Different" in _The Oral History Reader_
 -   Listen to some part of  "I can almost see the lights of home" <http://www.albany.edu/jmmh/vol2no1/lightssoundessay.html>
 
+</div>
+
+<div class="outline-3">
+  <div></div>
 
 #### In-Class Activity: Popcorn.js (<span class="timestamp-wrapper"><span class="timestamp">Nov. 26</span></span>) {#in-class-activity-popcorn-dot-js}
 
+
+</div>
+
+<div class="outline-3">
+  <div></div>
 
 #### Project Planning & Citizen History  (<span class="timestamp-wrapper"><span class="timestamp">Nov. 28</span></span>) {#project-planning-and-citizen-history}
 
@@ -351,6 +521,10 @@ We'll discuss some project management techniques that should help you with your 
 
 -   <http://publichistorycommons.org/where-are-the-citizen-historians/>
 
+</div>
+
+<div class="outline-3">
+  <div></div>
 
 #### Oral History & Remix Culture (<span class="timestamp-wrapper"><span class="timestamp">Dec. 03</span></span>) {#oral-history-and-remix-culture}
 
@@ -363,7 +537,17 @@ If we're ahead of schedule, we'll watch _Harlan County USA_ in class.
 -   "[Oral History and the Digital Revolution](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.582.7124&rep=rep1&type=pdf)" and "Authoring in Sound" in _The Oral History Reader_
 -   Gunkel, David J. “[Rethinking the Digital Remix: Mash‐ups and the Metaphysics of Sound Recording](https://journals-scholarsportal-info.myaccess.library.utoronto.ca/details/03007766/v31i0004/489%5Frtdrmatmosr.xml).” Popular Music and Society 31, no. 4 (October 1, 2008): 489–510. <http://resolver.scholarsportal.info/resolve/03007766/v31i0004/489%5Frtdrmatmosr.xml>.
 
+</div>
+
+</div>
+
+</section>
+
+<section class="outline-1">
+  <section></section>
 
 ## Acknowledgments {#acknowledgments}
 
 Thanks to Joel Wrossley of the University of Washington and Thomas J Bradley of Algonquin Collegee for help and inspiration in assignments and grading strategy.  The "Policies" section above is taken almost verbatim from [Joel's web development course](https://canvas.uw.edu/courses/1118282/pages/policies). Various pieces of the course have been inspired by other teachers over the year, and I hope to do a better job of document theft and inspiration from here on in.
+
+</section>
