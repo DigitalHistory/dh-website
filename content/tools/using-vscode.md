@@ -1,10 +1,7 @@
 ---
-title: "Using VSCode"
-author: ["Matt Price"]
-date: 2015-07-21T13:48:00-04:00
-lastmod: 2019-01-10T13:48:41-05:00
+title: "using vscode"
+lastmod: 2019-09-10T11:31:27-04:00
 draft: false
-banner: "testbanner"
 menu:
   main:
     identifier: "using-vscode"
@@ -19,14 +16,14 @@ As with any powerful tool, it can take a little while to get comfortable with VS
 I will mostly let you explore on your own, but here are a few important starting points.
 
 
-## Editor Basics {#editor-basics}
+## Editor Basics {#editor-basics-editor-basics}
 
-{{< figure src="https://code.visualstudio.com/assets/docs/getstarted/userinterface/hero.png" >}}
+{{< figure src="https://code.visualstudio.com/assets/docs/getstarted/userinterface/hero.png" link="https://code.visualstudio.com/assets/docs/getstarted/userinterface/hero.png" >}}
 
 The editor has 4 main parts. Since each part can itself have lots of parts, this is not as simple as it sounds! From left to right, here are the main areas:
 
 -   the **activity bar** provides you with various tools and ways to switch views
--   the **side bar** content changes depending on what you've selected i n the activity bar.  By default, it shows a file tree listing, like you would find in windows explorer or the Apple Finder.  But it can also provide a list of extensions, information about your git status, or information about project tests, among other things.
+-   the **side bar** content changes depending on what you've selected in the activity bar. By default, it shows a file tree listing, like you would find in windows explorer or the Apple Finder. But it can also provide a list of extensions, information about your git status, or information about project tests, among other things.
 -   the **editor groups** are clusters of tabs. Usually a tab will contain a file, but things like the VSCode preferences and live HTML previews also show up in this area
 -   the **panels** near the bottom include the built-in terminal, a list of errors VSCode has found in your files, and other important tools
 
