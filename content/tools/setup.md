@@ -1,9 +1,7 @@
 ---
 title: "Setup"
-author: ["Matt Price"]
-lastmod: 2019-09-05T10:54:29-04:00
+lastmod: 2019-09-10T12:22:57-04:00
 draft: false
-banner: "testbanner"
 menu:
   main:
     identifier: "setup"
@@ -54,7 +52,7 @@ The other tool I use all the time is "inspect element", available by right-click
 
 ## Text Editor {#text-editor}
 
-If you want to code, you have to write like a coder. This means using a powerful text editor. In this class we use [Visual Studio Code](https://code.visualstudio.com/). Please follow the download links and install to your computer. There's a separate post about using VSCode -- once you've installed it, navigate there!
+If you want to code, you have to write like a coder. This means using a powerful text editor. In this class we use [Visual Studio Code](https://code.visualstudio.com/). Please follow the download links and install to your computer. There's a [separate post about using VSCode](../using-vscode) &#x2013; once you've installed it, navigate there!
 
 
 ## Command Line {#command-line}
@@ -65,12 +63,12 @@ There are actually many different command-line environments; in this class we us
 
 On Mac and Linux, bash is built in to the system.  In Mac, open the `Terminal` app to find the bash prompt; in Linux you may have any of several terminal emulators installed, search your program list for "term" to find yours.
 
-In Windows, bash comes with the Git installation -- follow the instructions below. Note that very recent editions of Windows 10 come with the "Windows Subsystem for Linux (WSL)", which you can use instead of the Git Bash method.
+In Windows, bash comes with the Git installation &#x2013; follow the instructions below. Note that very recent editions of Windows 10 come with the "Windows Subsystem for Linux (WSL)", which you can use instead of the Git Bash method.
 
 **IMPORTANT UPDATE**: VSCode has an [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal), and it's extremely useful. Windows users will have to do a little bit of work in order to use bash in the integrated terminal. See the excellent [terminal configuration instructions online](https://code.visualstudio.com/docs/editor/integrated-terminal#%5Fconfiguration), and be sure to follow the link explaining [how to access the user settings screen in VSCode](https://code.visualstudio.com/docs/getstarted/settings#%5Fcreating-user-and-workspace-settings).
 
 
-## Git, Github, and GitKraken {#git-github-and-gitkraken}
+## Git, Github, and optionaly GitKraken {#git-github-and-optionaly-gitkraken}
 
 Software development is made **vastly** easier by "[version control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)" systems: specialized software that keeps track of the history and current state of files and directories. In the past there were many such systems, but now almost the whole user uses [git](https://git-scm.com/), and we're all grateful for it.
 
@@ -82,7 +80,7 @@ To install git, follow the [download links](https://git-scm.com/downloads) on th
 
 ### Sign up for Github {#sign-up-for-github}
 
-For many developers -- maybe even most of them -- using Git is intimately tied to the [Github](https://github.com) code-sharing website.  We'll be using Github for almost all of our work this semester, so it's important that you get familiar with it.  If you were present for the first class, you've already done this. If not, you'll need to [sign Up for a Github account](https://github.com/join). Once you've done that, you have two choices:
+For many developers &#x2013; maybe even most of them &#x2013; using Git is intimately tied to the [Github](https://github.com) code-sharing website.  We'll be using Github for almost all of our work this semester, so it's important that you get familiar with it.  If you were present for the first class, you've already done this. If not, you'll need to [sign Up for a Github account](https://github.com/join). Once you've done that, you have two choices:
 
 -   practice working at the command line
 -   go straight to a GUI ("Graphical User Interface") that will make working with git a little more comfortable.
@@ -100,7 +98,7 @@ git config --global user.email "youraddress@ mail.utoronto.ca"
 git config --global github.user YourGithubId
 ```
 
-Great -- now git knows who you are. If you're feeling ambitious, you can also [set up SSH keys so you don't have to type in your password every time you commit to Git](https://help.github.com/articles/connecting-to-github-with-ssh/).
+Great &#x2013; now git knows who you are. If you're feeling ambitious, you can also [set up SSH keys so you don't have to type in your password every time you commit to Git](https://help.github.com/articles/connecting-to-github-with-ssh/).
 
 
 ### VSCode Git {#vscode-git}
@@ -118,7 +116,7 @@ Sometimes it's nice to have a backp. [GitKraken](https://www.gitkraken.com/) is 
 There is a somewhat more wordy [Git tutorial on this website](http://digitalhistory.github.io/introduction-to-github), which you should read. For now, [Install the Github Desktop App](https://desktop.github.com/) which also includes the command-line version of git.  You can follow the [excellent tutorial in the downloadable git-it application](https://github.com/jlord/git-it-electron/releases), as well as the [Github Desktop documentation](https://help.github.com/desktop/guides/).  There is also a [quite helpful tutorial on The Programming Historian](http://programminghistorian.org/lessons/getting-started-with-github-desktop). We'll be discussing Git and Github further in our first class.
 
 
-## Node and NPM -- This is the hardest part! {#node-and-npm-this-is-the-hardest-part}
+## Node and NPM &#x2013; This is the hardest part! {#node-and-npm-and-x2013-this-is-the-hardest-part}
 
 **Right now it looks like the drag and drop tool we wanted to make will NOT be ready for this semester** :frowning_face:
 
