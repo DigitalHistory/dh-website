@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>01-02: Git and Github</title>
+<meta name="author" content="Matt Price"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../vendor/reveal//css/reveal.css"/>
+
+<link rel="stylesheet" href="../../vendor/reveal//css/theme/matt.css" id="theme"/>
+
+<link rel="stylesheet" href=""/>
+<link rel="stylesheet" href="../../vendor/reveal//lib/css/zenburn.css"/>
+<link rel="stylesheet" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css"/>
+<style>
+/* Position computations of klipse get confused by reveal.js's scaling.
+   Hence, scaling should be disabled with this code.  Fix height of code area
+   with scrollbar (use overflow instead of overflow-y to restore CodeMirror
+   setting afterwards): */
+.reveal section pre { max-height: 70vh; height: auto; overflow: auto; }
+/* Reset some reveal.js and oer-reveal settings: */
+.reveal section pre .CodeMirror pre { font-size: 2em; box-shadow: none; width: auto; padding: 0.4em; display: block; overflow: visible; }
+/* Enlarge cursor: */
+.CodeMirror-cursor { border-left: 3px solid black; }
+</style>
+<script>
+    window.klipse_settings = {
+        selector: '.language-klipse',
+        selector_eval_html: '.language-klipse-html',
+        selector_eval_js: '.language-klipse-javascript',
+        selector_eval_js: '.language-klipse-js',
+        selector_eval_php: '.language-klipse-php',
+        selector_eval_python_client: '.language-klipse-python',
+        selector_eval_ruby: '.language-klipse-ruby',
+        selector_eval_scheme: '.language-klipse-scheme',
+        selector_sql: '.language-klipse-sql'
+    };
+</script>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../vendor/reveal//css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>01-02: Git and Github</h1>
+<h3>Matt Price  </h3>
+<!-- <p class="title-theme-choice">(view this presentation in another theme: 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
+				)	</p> -->
+
+</section>
+<section>
+<section id="slide-orgcedacfd">
+<h2 id="orgcedacfd">Git!</h2>
+
+<figure>
+<img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" alt="Git-Logo-2Color.png">
+
+</figure>
+
+<form><ul>
+<li>"Track Changes" on steroids</li>
+<li>"Version Control" software optimized for collaboration</li>
+<li><b>essential infrastructure for almost all programming projects</b></li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-github!-7877">
+<h2 id="github!-7877">Github!</h2>
+
+<figure>
+<img src="https://github.githubassets.com/images/modules/open_graph/github-octocat.png" alt="github-octocat.png">
+
+</figure>
+<form><ul>
+<li>git-based code-sharing site</li>
+<li>largest in history</li>
+<li>owned by Microsoft ☹</li>
+<li>where we (and most open-source projects) work!</li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-org2937345">
+<h2 id="org2937345">Today</h2>
+<form><ul>
+<li>fun git practice</li>
+<li>git concepts</li>
+<li>ensure setup is going well</li>
+<li>assignment/process overview</li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-orgedd3110">
+<h2 id="orgedd3110">Git Practice: History, Please!</h2>
+<form><ul>
+<li>simple command-line/graphical application</li>
+<li>crowd-sourced by students from this class</li>
+<li>many problems to fix &amp; improvements to make</li>
+<li>we'll try to make some progress</li>
+
+</ul></form>
+</section>
+<section id="slide-orga98f5f2">
+<h3 id="orga98f5f2">History, Please</h3>
+<p>
+<b>Take out your Laptop!</b>
+</p>
+
+<form><ul>
+<li><a href="https://github.com/DigitalHistory/history-please">Navigate to the History-Please repository</a></li>
+<li>Let's explore <b>code</b>, <b>issues</b>, and <b>pulls</b></li>
+
+</ul></form>
+</section>
+<section id="slide-org06cbe5f">
+<h3 id="org06cbe5f">Activity</h3>
+<form><ul>
+<li>Divide into groups:
+<form><ul>
+<li><code>trends</code> page adders</li>
+<li><code>events</code> page adders</li>
+<li><code>copyeditors</code></li>
+<li>issue triagers</li>
+
+</ul></form></li>
+<li>Find <b>at least one</b> partner (if you're very confident, help someone else)</li>
+<li>Scroll down to the <a href="https://github.com/DigitalHistory/history-please#how-to-participate">contributing instructions</a></li>
+<li>Additional tips:
+<form><ul>
+<li>reference issues &amp; pull requests by number, e.g. <a href="https://github.com/DigitalHistory/history-please/pull/58">#58</a>. Do this whenever you create a pull that fixes an issue, especially.</li>
+<li>Give your PR's <b>meaningful titles</b> and <b>helpful,extensive descriptions</b></li>
+<li><code>@mention</code> me (<code>@titaniumbones</code>) when you think you have fixed an issue, or want my input (won't get back to you today though!)</li>
+
+</ul></form></li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-org0be9403">
+<h2 id="org0be9403">Git Concepts</h2>
+<p>
+<b>In this section</b>
+</p>
+<form><ul>
+<li>collaboration</li>
+<li>remotes</li>
+<li>branches</li>
+<li>commits</li>
+<li>worktree vs. repository</li>
+
+</ul></form>
+</section>
+<section id="slide-org26eb105">
+<h3 id="org26eb105">Collaboration</h3>
+
+<figure>
+<img src="http://invistruct.com/wp-content/uploads/2012/08/distributed-vc.png" alt="distributed-vc.png">
+
+</figure>
+</section>
+<section id="slide-orgc512e5e">
+<h3 id="orgc512e5e">Concepts: Remote</h3>
+
+<figure>
+<img src="https://wac-cdn.atlassian.com/dam/jcr:df13d351-6189-4f0b-94f0-21d3fcd66038/01.svg" alt="01.svg">
+
+</figure>
+</section>
+<section id="slide-org04e90c0" class="twobytwo">
+<h3 id="org04e90c0">Classroom Network</h3>
+<div class="slideblock">
+
+<figure>
+<img src="../../ox-hugo/gh-lpatop.svg" alt="gh-lpatop.svg" style="min-width: 15vw;">
+
+</figure>
+
+</div>
+
+<div class="fragment (appear) slideblock">
+
+<figure>
+<img src="../../ox-hugo/gh-degen-network.svg" alt="gh-degen-network.svg" style="min-width: 20vw;">
+
+</figure>
+
+</div>
+<div class="fragment (appear) slideblock">
+
+<figure>
+<img src="../../ox-hugo/gh-abbrev-network.svg" alt="gh-abbrev-network.svg">
+
+</figure>
+
+</div>
+<div class="fragment (appear) slideblock">
+
+<figure>
+<img src="../../ox-hugo/gh-full-network.svg" alt="gh-full-network.svg">
+
+</figure>
+
+</div>
+
+</section>
+<section id="slide-org14384ed" class="twoc">
+<h3 id="org14384ed">Concepts: Branch</h3>
+<div class="slideblock">
+<p>
+
+</p>
+
+
+<figure>
+<img src="https://wac-cdn.atlassian.com/dam/jcr:746be214-eb99-462c-9319-04a4d2eeebfa/01.svg" alt="01.svg">
+
+</figure>
+
+</div>
+<div class="fragment (appear) slideblock">
+<form><ul>
+<li>git history is a <b>tree</b>, not a straight line</li>
+<li>nothing is every lost!!</li>
+<li>can be hard to figure out!</li>
+
+</ul></form>
+
+</div>
+
+</section>
+<section id="slide-org6ebad02">
+<h3 id="org6ebad02">Activity Branches</h3>
+
+<figure>
+<img src="../../ox-hugo/gh-branch.svg" alt="gh-branch.svg" style="min-width:75vw;">
+
+</figure>
+
+</section>
+<section id="slide-orgcc830e1">
+<h3 id="orgcc830e1">Concepts: Commit</h3>
+
+<figure>
+<img src="https://wac-cdn.atlassian.com/dam/jcr:362f3b15-9e74-4fe5-b97d-784e296880ad/01.svg" alt="01.svg">
+
+</figure>
+<form><ul>
+<li>changes aren't saved automatically; manually “commit”</li>
+<li>every commit can be revisited later</li>
+<li>a branch is really just a “pointer” to a specific commit (complicated)</li>
+
+</ul></form>
+
+</section>
+<section id="slide-org52af393">
+<h3 id="org52af393">Activity Commits</h3>
+
+<figure>
+<img src="../../ox-hugo/commits.svg" alt="commits.svg">
+
+</figure>
+
+
+</section>
+<section id="slide-org22840fa" class="twoc">
+<h3 id="org22840fa">Concept: Worktree and Repository</h3>
+<div class="slideblock">
+<p>
+<b>what you see</b>
+<img src="../../ox-hugo/worktree.png" alt="worktree.png">
+</p>
+
+</div>
+
+<div class="fragment (appear) slideblock">
+<p>
+<b>what's underneath</b>
+<img src="../../ox-hugo/repository.png" alt="repository.png">
+</p>
+
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgdff53a4">
+<h2 id="orgdff53a4">Git Workflows</h2>
+<p>
+<b>In this section</b>
+</p>
+<form><ul>
+<li>merging</li>
+<li>pulling</li>
+<li>pushing</li>
+
+</ul></form>
+</section>
+<section id="slide-org731272f" class="twoc">
+<h3 id="org731272f">Concepts: Merge</h3>
+<div class="slideblock">
+
+<figure>
+<img src="https://wac-cdn.atlassian.com/dam/jcr:83323200-3c57-4c29-9b7e-e67e98745427/Branch-1.png" alt="Branch-1.png">
+
+</figure>
+<form><ul>
+<li>when we “merge” two branches, the changes from one are brought over into the other</li>
+
+</ul></form>
+
+</div>
+<div class="fragment (appear) slideblock">
+
+<figure>
+<img src="https://blog.developer.atlassian.com/wp-content/uploads/dac-import/merge-conflict.png" alt="merge-conflict.png">
+
+</figure>
+<form><ul>
+<li>if work has progressed on <b>both</b> branches, then there might be incompatible changes</li>
+<li>these are called "merge conflicts"</li>
+<li>they suck!</li>
+
+</ul></form>
+
+</div>
+
+</section>
+<section id="slide-org4e0f821" class="twoc">
+<h3 id="org4e0f821">Concepts: Pull and Push Changes</h3>
+<div class="slideblock">
+
+<figure>
+<img src="../../ox-hugo/git-push0.svg" alt="git-push0.svg" class="fragment (appear)">
+
+</figure>
+
+<figure>
+<img src="../../ox-hugo/git-push1.svg" alt="git-push1.svg" class="fragment (appear)">
+
+</figure>
+
+</div>
+
+<div class="slideblock">
+
+<figure>
+<img src="../../ox-hugo/git-push2.svg" alt="git-push2.svg" class="fragment (appear)">
+
+</figure>
+
+<figure>
+<img src="../../ox-hugo/git-push3.svg" alt="git-push3.svg" class="fragment (appear)">
+
+</figure>
+
+</div>
+
+</section>
+<section id="slide-orge8f9d36" class="twobytwo">
+<h3 id="orge8f9d36">Concepts: Pull and Push collaboratively</h3>
+<div class="slideblock">
+
+<figure>
+<img src="https://wac-cdn.atlassian.com/dam/jcr:0718ae20-0dc5-482c-a38c-25e4f1a1a3b0/02.svg" alt="02.svg">
+
+</figure>
+
+</div>
+<div style="grid-row: 2/4;" class="slideblock">
+
+<figure>
+<img src="../../ox-hugo/gh-pull.svg" alt="gh-pull.svg" style="min-width: 20vw;">
+
+</figure>
+
+</div>
+
+<div class="slideblock">
+
+<figure>
+<img src="https://wac-cdn.atlassian.com/dam/jcr:00d011ed-03dc-440f-afc5-9b13d5e14fbf/bubble%20diagram-01.svg" alt="bubble%20diagram-01.svg">
+
+</figure>
+
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org8e5d07e">
+<h2 id="org8e5d07e">Assignment</h2>
+<p>
+The assignment is now up on Github Classroom
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="../../vendor/reveal//lib/js/head.min.js"></script>
+<script src="../../vendor/reveal//js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: false,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: "100%",
+height: "100%",
+margin: 0.10,
+minScale: 1.00,
+maxScale: 1.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+{src: '../../vendor/reveal//plugin/klipse_reveal.js'},
+ { src: '../../vendor/reveal//lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: '../../vendor/reveal//plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+<script src="https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script>
+<script>
+/* Recompute layout upon changes by klipse.  Code fragment from
+   asciidoctor-revealjs-klipse by Timothy Pratley under GPLv3:
+   https://github.com/timothypratley/asciidoctor-revealjs-klipse/blob/master/docs/docinfo-footer.html */
+Reveal.addEventListener( 'slidechanged', function( event ) {
+    window.dispatchEvent( new Event('resize') );
+} );
+</script>
+</body>
+</html>
