@@ -1,6 +1,6 @@
 ---
 title: "Assignment 00: Your Class Profile"
-lastmod: 2019-09-10T13:11:04-04:00
+lastmod: 2019-09-10T13:12:53-04:00
 tags: ["assignment"]
 draft: false
 menu:
@@ -26,7 +26,12 @@ This may take longer than you think, and it's due soon. Please get started soon 
 
 -   [ ] Passes General Tests
 -   [ ] Passes Reflection Tests
--
+
+<!--listend-->
+
+**Grade**
+:
 
 
--   **Comments**:
+
+**Comments**:
