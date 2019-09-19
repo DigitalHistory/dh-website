@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>And Now: CSS!</title>
+<meta name="author" content="Matt Price"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../vendor/reveal//css/reveal.css"/>
+
+<link rel="stylesheet" href="../../vendor/reveal//css/theme/matt.css" id="theme"/>
+
+<link rel="stylesheet" href=""/>
+<link rel="stylesheet" href="../../vendor/reveal//lib/css/zenburn.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../vendor/reveal//css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>And Now: CSS!</h1>
+<h3>Matt Price  </h3>
+<!-- <p class="title-theme-choice">(view this presentation in another theme: 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
+				)	</p> -->
+
+</section>
+<section>
+<section id="slide-reminder-974a">
+<h2 id="reminder-974a">Reminder</h2>
+<form><ul>
+<li>HTML for <b>structure/content</b>;</li>
+<li>CSS for <b>presentation</b></li>
+<li>Resources:  <a href="http://www.codecademy.com/courses/web-beginner-en-TlhFi/0/1?curriculum_id=50579fb998b470000202dc8b">Codeacademy</a> CSS offerings;  <a href="http://learnlayout.com/">Learn Layout</a>; <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Mozilla Developer Network</a>; many other cool sites</li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-what-you-need-to-learn-today-f47f">
+<h2 id="what-you-need-to-learn-today-f47f">What you Need to Learn Today</h2>
+<form><ul>
+<li>syntax: selectors, rules, punctuation;</li>
+<li>jargon: colors, sizes</li>
+<li>where to look stuff up (!)</li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-css-basics-6376">
+<h2 id="css-basics-6376">CSS Basics</h2>
+<form><ul>
+<li>"<a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets">Cascading Style Sheets</a>"</li>
+<li>Style sheet</li>
+<li>that "cascades" = overrides prior values</li>
+
+</ul></form>
+
+<figure>
+<img src="http://bollig.co/assets/page-images/understanding-the-cascade-part-1/css-cascade.jpg" alt="css-cascade.jpg">
+
+</figure>
+
+<aside class="notes">
+<p>
+two "dimensions" to cascade (source order and specificity)
+</p>
+
+<form><ul>
+<li>specificity is the hard/important one.</li>
+
+</ul></form>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-with-and-without-css-43a6">
+<h2 id="with-and-without-css-43a6">With and without CSS</h2>
+
+<figure>
+<img src="../../ox-hugo/nytimes-w-css.png" alt="nytimes-w-css.png" class="paired">  
+
+</figure>
+
+<figure>
+<img src="../../ox-hugo/nytimes-no-css.png" alt="nytimes-no-css.png" class="paired"> 
+
+</figure>
+
+
+</section>
+</section>
+<section>
+<section id="slide-css-selectors-ab36">
+<h2 id="css-selectors-ab36">CSS Selectors</h2>
+</section>
+<section id="slide--c0f8">
+<h3 id="-c0f8"></h3>
+<div class="org-src-container">
+
+<pre><code class=" css" >h1 {
+    color:blue;
+    font-family:serif; 
+    font-size:24px; 
+}
+
+div {
+    border: 1px solid black;
+}
+
+div.main p {
+    color:red;
+}
+
+#specialid {
+    float:left;
+}
+</code></pre>
+</div>
+
+<aside class="notes">
+<p>
+When you look at a CSS file, you will see it is divided into a bunch of stanzas, like this.  Each of these stanzas is called a "selector statement":
+They all follow the same pattern: 
+</p>
+<form><ul>
+<li>first, a <b>selector</b> that identifies the elements to which these instructions will apply</li>
+<li>then <b>an open brace</b> "{" which marks the start of the actual instructions</li>
+<li>then a series of <b>property-value pairs</b>.  Each of these sets the <i>value</i> of a particular <i>property</i> (duh).  Note that at the end of a property, there is <b>always</b> a semi-colon!</li>
+<li>finally, <b>a closing brace</b> that ends the selector declaration.</li>
+
+</ul></form>
+
+</aside>
+</section>
+<section id="slide-selector-anatomy-9f2b">
+<h3 id="selector-anatomy-9f2b">Selector Anatomy</h3>
+<style>
+ h1#anatomy1 {
+      display: inline-flex;
+     padding: 15px;
+     background-color: rgb(30,30,30,0.1);
+     font-size: 1.4em;
+     border: 2px gray solid; }
+  h1#anatomy1 span {padding: 4px;border: 2px black solid; background-color: rgba(10,70,10,0.6);}
+  h1#anatomy1 span.selector {background-color: rgba(150, 20, 20, 0.4);}
+  h1#anatomy1 span.rule {background-color: rgba(70, 10,70, 0.4);}
+  h1#anatomy1 span.value {background-color: rgba(10,150, 150, 0.4);}
+
+</style>
+
+<h1 id="anatomy1">
+  <span class="selector">selector.has >  #funny:stuff</span>
+  <span class="bracket">{</span>
+  <span class="rule">rule:</span>
+  <span class="value">value in (approved);</span>
+  <span class="bracket">}</span>
+</h1>
+</section>
+<section id="slide-selector-types">
+<h3 id="selector-types">Selector types</h3>
+<div class="org-src-container">
+
+<pre><code class=" html" >&lt;style&gt;
+h1 {
+font-size: 2em;
+color: red;
+}
+p {
+font-size:5em}
+
+.coolpara {
+color:green;
+}
+
+#myfave {
+color:yellow;
+background-color: black;
+}
+&lt;/style&gt;
+
+&lt;h1&gt; Heading&lt;/h1&gt;
+&lt;p class="coolpara"&gt;Some Content&lt;/p&gt;
+&lt;p id="myfave"&gt;Some Content&lt;/p&gt;
+
+</code></pre>
+</div>
+
+<aside class="notes">
+<p>
+Though simple in principle, CSS selectors can be confusing.  Here are some basic selector types:
+</p>
+<form><ul>
+<li><b>Element</b> selectors:  these just give the element (like h1, p, div, span, etc.).  they apply to all elements of this type.</li>
+<li><b>Class</b> selectors:  these give the name of a class attribute that an HTML element may have.  This selector will always begin with a period (".").  So for instance:</li>
+
+<li><b>ID</b> selector:  this addresses the element with a particular ID:</li>
+
+</ul></form>
+
+</aside>
+</section>
+<section id="slide-selector-types-e94f">
+<h3 id="selector-types-e94f">Selector types</h3>
+
+<style>
+div#cssdemo h1 {
+font-size: 3em;
+color: red;
+}
+div#cssdemo p {
+font-size:5em}
+
+.coolpara {
+color:green;
+}
+
+div#cssdemo #myfave {
+color:yellow;
+background-color: black;
+}
+</style>
+
+<div id="cssdemo">
+<h1> Heading</h1>
+<p class="coolpara">Some Content</p>
+<p id="myfave">Some Content</p>
+</div>
+
+</section>
+<section id="slide-more-selectors-d28a">
+<h3 id="more-selectors-d28a">More Selectors</h3>
+<div class="org-src-container">
+
+<pre><code class=" css" >div.main p {
+      color:red;
+  }
+
+div.main &gt; p.blue {
+      color: blue;
+}
+</code></pre>
+</div>
+
+<aside class="notes">
+<form><ul>
+<li>Finally, we have many more complex selectors.  This one here is a descendant selector</li>
+
+</ul></form>
+<p>
+It addresses every <b>p</b> that is contained inside a div of <b>class</b> <i>"main."</i>
+</p>
+
+</aside>
+
+</section>
+<section id="slide-more-selectors-d8a0">
+<h3 id="more-selectors-d8a0">More Selectors</h3>
+<style>
+div#cssmain p {
+      color:red;
+  }
+
+div#cssmain > p.blue {
+      color: blue;
+}
+</style>
+<div id="cssmain">
+<p> regular (red) paragraph</p>
+  <p class="blue"> not a regular paragraph (blue) </p>
+
+</div>
+</section>
+</section>
+<section>
+<section id="slide-selectors-and-the-cascade-0a08">
+<h2 id="selectors-and-the-cascade-0a08">Selectors and the Cascade</h2>
+<form><ul>
+<li>Priority: inline &rarr; id &rarr; class &rarr; element/tag</li>
+<li>fine gradations within this</li>
+<li>the awful <b>!important</b> rule</li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-color-values-456b">
+<h2 id="color-values-456b">Color Values</h2>
+<p>
+Various representations:
+</p>
+<style>
+ul#color-rules {font-size 1.5rem;}
+ul#color-rules li span.red {color: #FF0000}  
+ul#color-rules li span.green {color: #00FF00}  
+ul#color-rules li span.blue {color: #0000FF}  
+</style>
+
+<ul id="color-rules">
+  <li>
+    color: #
+    <span class="red">00</span>
+    <span class="green">7F</span>
+    <span class="blue">FF</span>
+    ;
+  </li>
+  <li>
+    color: rgb(
+    <span class="red">00</span>,
+    <span class="green">127</span>,
+    <span class="blue">255</span>
+    );
+  </li>
+  <li>
+    color: rgba(
+    <span class="red">00</span>,
+    <span class="green">127</span>,
+    <span class="blue">255</span>, 0.6);
+  </li>
+</ul>
+
+<p>
+(also hsl, hsla)
+</p>
+</section>
+<section id="slide-fonts,-colors-and-borders-127a">
+<h3 id="fonts,-colors-and-borders-127a">Fonts, colors and borders</h3>
+<div class="org-src-container">
+
+<pre><code class=" css" >div.main {
+      color: rgb(150,150,150);
+      background-color: (#b0c4ee);
+      text-align: center;
+      text-decoration:underline;
+      font-family: "Times New Roman", Times, Serif;
+      font-style:italic;
+      font-size:1.25em;
+      border: 4px green solid;
+      border-radius:20%;
+  }
+</code></pre>
+</div>
+<aside class="notes">
+<p>
+A lot of what we do with CSS is to set fonts and colors.  Here are some examples:
+There are plenty of other properties that can be set, in much the same way.
+</p>
+
+</aside>
+</section>
+<section id="slide-fonts-and-colors-in-action-1cb9">
+<h3 id="fonts-and-colors-in-action-1cb9">Fonts and Colors in Action</h3>
+<style>
+div#maincss2 {
+      color: rgb(150,150,150);
+      background-color: (#b0c4ee);
+      text-align: center;
+      text-decoration:underline;
+      font-family: "Times New Roman", Times, Serif;
+      font-style:italic;
+      font-size:1.25em;
+      border: 4px green solid;
+      border-radius:20%;
+  }
+</style>
+<div id="maincss2">
+   <p> here is a sample paragraph doing all of this stuff...</p>
+</section>
+</section>
+<section>
+<section id="slide-sizes-af7f">
+<h2 id="sizes-af7f">Sizes</h2>
+<div class="org-src-container">
+
+<pre><code class=" web" >&lt;style&gt;
+ p.fixed {
+     font-size: 20px;
+     background-color: gray;
+     } 
+ p.em-small {
+     font-size: 0.4em;
+     background-color: blue;
+ }
+ p.em-big {
+     font-size: 2.5em;
+     background-color: red;
+ }
+ div.pixel-box {
+     width: 50px;
+     height: 50px;
+     border: 1px solid black;
+ }
+ div.percent-box {
+     width: 20%;
+     height: 20px;
+     border: 1px solid black;
+ }
+ div.viewport-box {
+     width: 30vw;
+     height: 30vh;
+     border: 1px solid black;
+ }
+
+&lt;/style&gt;
+
+&lt;p class="fixed"&gt;This paragraph will be syled differently from its peers&lt;/p&gt;
+&lt;p class="em-small"&gt;This paragraph will be syled differently from its peers&lt;/p&gt;
+&lt;p class="em-big"&gt;This paragraph will be syled differently from its peers&lt;/p&gt;
+
+&lt;div class="pixel-box"&gt;&lt;/div&gt;
+&lt;div class="percent-box"&gt;&lt;/div&gt;
+&lt;div class="viewport-box"&gt;&lt;/div&gt;
+</code></pre>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-sizes-082b">
+<h2 id="sizes-082b">Sizes</h2>
+<style>
+ p.fixed {
+     font-size: 20px;
+     background-color: gray;
+ }
+ p.em-small {
+     font-size: 0.4em;
+     background-color: blue;
+ }
+ p.em-big {
+     font-size: 2.5em;
+     background-color: red;
+ }
+ div.pixel-box {
+     width: 50px;
+     height: 50px;
+     border: 1px solid black;
+ }
+ div.percent-box {
+     width: 20%;
+     height: 20px;
+     border: 1px solid black;
+ }
+ div.viewport-box {
+     width: 30vw;
+     height: 30vh;
+     border: 1px solid black;
+ }
+ 
+</style>
+
+<p class="fixed">This paragraph will be syled differently from its peers</p>
+<p class="em-small">This paragraph will be syled differently from its peers</p>
+<p class="em-big">This paragraph will be syled differently from its peers</p>
+
+<div class="pixel-box"></div>
+<div class="percent-box"></div>
+<div class="viewport-box"></div>
+
+</section>
+</section>
+<section>
+<section id="slide-group-work-2:--html,-continued-03e2">
+<h2 id="group-work-2:--html,-continued-03e2">Group Work:  HTML</h2>
+<p>
+Let's continue our introduction to HTML in VSCode
+</p>
+<form><ul>
+<li><b>Clone  the excercse</b> <a href="https://github.com/titaniumbones/HabermasCode">at the Github Repository</a></li>
+
+</ul></form>
+<aside class="notes">
+<p>
+Here you can see the all parts of the page in different panes.  try to add:
+</p>
+<form><ul>
+<li>images</li>
+<li>lists</li>
+<li>real links</li>
+<li>anything else you can think of</li>
+
+</ul></form>
+<p>
+Try to keep it "real", and work as <b>teams</b>, with one person driving, and the other person looking stuff up on another computer.  
+</p>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-simple-exercise-ca4d">
+<h2 id="simple-exercise-ca4d">Simple Exercise</h2>
+<p>
+<a href="https://github.com/DigitalHistory/css-styling/">https://github.com/DigitalHistory/css-styling/</a></p>
+</section>
+</section>
+</div>
+</div>
+<script src="../../vendor/reveal//lib/js/head.min.js"></script>
+<script src="../../vendor/reveal//js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: false,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: "100%",
+height: "100%",
+margin: 0.10,
+minScale: 1.00,
+maxScale: 1.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+{src: '../../vendor/reveal//plugin/klipse_reveal.js'},
+ { src: '../../vendor/reveal//lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: '../../vendor/reveal//plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+</body>
+</html>
