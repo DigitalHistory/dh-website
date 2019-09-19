@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>HTML: Machine-readable Text</title>
+<meta name="author" content="Matt Price"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../vendor/reveal//css/reveal.css"/>
+
+<link rel="stylesheet" href="../../vendor/reveal//css/theme/matt.css" id="theme"/>
+
+<link rel="stylesheet" href=""/>
+<link rel="stylesheet" href="../../vendor/reveal//lib/css/zenburn.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../vendor/reveal//css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>HTML: Machine-readable Text</h1>
+<h3>Matt Price  </h3>
+<!-- <p class="title-theme-choice">(view this presentation in another theme: 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
+				)	</p> -->
+
+</section>
+<section>
+<section id="slide-machine-readable-text-2a02" class="splitc">
+<h2 id="machine-readable-text-2a02">HTML and some consequences</h2>
+<div class="fragment (appear) slideblock">
+<h1>This is the top-level heading</h1>
+<p>
+  This is a paragraph. It can contain <i>further markup</i> and also 
+  <a href="http:/some.where.com">more complex content</a>.
+</p>
+<aside>
+  Sometimes you'll see <i>semantic</i> tags, like "aside",
+  "header", "footer", "article", or "section".  
+</aside>
+
+</div>
+<div class="fragment (appear) slideblock">
+<p>
+On the web, text is "Marked up" 
+</p>
+<div class="org-src-container">
+
+<pre><code class=" html" >&lt;h1&gt;This is a top-level heading&lt;/h1&gt;
+&lt;p&gt;
+  This is a paragraph. It can contain &lt;i&gt;further markup&lt;/i&gt; and also 
+  &lt;a href="http:/some.where.com"&gt;more complex content&lt;/a&gt;.
+&lt;/p&gt;
+&lt;aside&gt;
+  Sometimes you'll see &lt;i&gt;semantic&lt;/i&gt; tags, like "aside",
+  "header", "footer", "article", or "section".  
+&lt;/aside&gt;
+
+</code></pre>
+</div>
+
+</div>
+<div class="fragment (appear) slideblock">
+<form><ul>
+<li>Programs can scan this text, interpret it&#x2026;</li>
+<li>then treat it as <i>data</i> which can be combined, analyzed, etc.</li>
+
+</ul></form>
+<form><ul class="fragment appear">
+<li>point of learning HTML is</li>
+
+</ul></form>
+<form><ul class="fragment appear">
+<li>Understand how to achieve a certain "look"</li>
+<li>Understand how a complex computer algorithm might treat it as "data".</li>
+
+</ul></form>
+
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-tag-structure-6119" class="twoc">
+<h2 id="tag-structure-6119">Tag Structure</h2>
+<div class="slideblock">
+<div class="org-src-container">
+
+<pre><code class=" html" >&lt;tag att1="value1" att2="value2"&gt;content&lt;/tag&gt;
+&lt;p class="normal" align="right"&gt;Paragraph Content&lt;/p&gt;
+&lt;a href="http://www.google.com"&gt;Link to google&lt;/a&gt;
+&lt;img src="http://1.bp.blogspot.com/-CzqzzBV2tMk/TxBM3ar18MI/AAAAAAAAPm0/6faLPO9BM8w/s1600/i-can-has-cheezburger.jpg" title="I can Haz Cheezburger?" alt="greedy cat saying 'I can haz cheezburger?'" /&gt;
+</code></pre>
+</div>
+
+<form><ul>
+<li class="fragment appear">tags:
+<form><ul>
+<li>tag identifier</li>
+<li>attributes</li>
+<li>content</li>
+
+</ul></form></li>
+
+</ul></form>
+
+</div>
+
+<div class="fragment (appear) slideblock">
+<tag att1="value1" att2="value2">content</tag>
+<p class="normal" align="right">Paragraph Content</p>
+<a href="http://www.google.com">Link to google</a>
+<img src="http://1.bp.blogspot.com/-CzqzzBV2tMk/TxBM3ar18MI/AAAAAAAAPm0/6faLPO9BM8w/s1600/i-can-has-cheezburger.jpg" title="I can Haz Cheezburger?" alt="greedy cat saying 'I can haz cheezburger?'" />
+
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-a-few-html-tags-you-should-know-4481" class="twoc">
+<h2 id="a-few-html-tags-you-should-know-4481">A Few HTML tags you should know</h2>
+<div class="slideblock">
+<p>
+Page Structure:
+</p>
+<form><dl>
+<dt class="fragment appear"><code>&lt;html&gt;&lt;/html&gt;</code></dt><dd class="fragment appear">Opens/closes every page</dd>
+<dt class="fragment appear"><code>&lt;head&gt;&lt;/head&gt;</code> and <code>&lt;body&gt;&lt;/body&gt;</code></dt><dd class="fragment appear">two main sections for metadata and display</dd>
+<dt class="fragment appear"><code>&lt;div&gt;&lt;/div&gt;</code></dt><dd class="fragment appear">often-invisible tag that divides page into "divisions"</dd>
+<dt class="fragment appear"><code>&lt;section&gt;&lt;/section&gt;, &lt;article&gt;&lt;/article&gt;, &lt;header&gt;&lt;/header&gt; &lt;footer&gt;&lt;/footer&gt;</code></dt><dd class="fragment appear">also invisible-by-default "semantic" tags that create divisions in page</dd>
+<dt class="fragment appear"><code>&lt;p&gt;&lt;/p&gt;</code></dt><dd class="fragment appear">basic paragraph unit</dd>
+<dt class="fragment appear"><code>&lt;blockquote&gt;&lt;/blockquote&gt;</code></dt><dd class="fragment appear">semantic tag distinguishing quoted text</dd>
+<dt class="fragment appear"><code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code></dt><dd class="fragment appear">building tables (don't overuse!)</dd>
+
+</dl></form>
+
+</div>
+
+<div class="fragment (appear) slideblock">
+<p>
+Found inside structural elements:
+</p>
+<form><dl>
+<dt class="fragment appear"><code>&lt;a href="http://link.address"&gt;&lt;/a&gt;</code></dt><dd class="fragment appear">The essential <a href="http://link.address">hyperlink</a> tag that makes the web what it is</dd>
+<dt class="fragment appear"><code>&lt;img src="http://file.location" alt="text to display for non-visual browsers/viewers"/&gt;</code></dt><dd class="fragment appear">"self-closing" image display tag</dd>
+<dt class="fragment appear"><code>&lt;em&gt;&lt;/em&gt; &lt;strong&gt;&lt;/strong&gt;,  &lt;i&gt;&lt;/i&gt; &lt;b&gt;&lt;/b&gt;</code></dt><dd class="fragment appear"><i>emphasized</i> and <b>strong</b> text</dd>
+<dt class="fragment appear"><code>&lt;ol&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code></dt><dd class="fragment appear">building "ordered" and "unordered" lists</dd>
+
+</dl></form>
+
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-group-work-2:--html,-continued-03e2">
+<h2 id="group-work-2:--html,-continued-03e2">Group Work:  HTML</h2>
+<p>
+Let's continue our introduction to HTML in VSCode
+</p>
+<form><ul>
+<li><b>Clone  the excercse</b> <a href="https://github.com/titaniumbones/HabermasCode">at the Github Repository</a></li>
+
+</ul></form>
+<aside class="notes">
+<p>
+Here you can see the all parts of the page in different panes.  try to add:
+</p>
+<form><ul>
+<li>images</li>
+<li>lists</li>
+<li>real links</li>
+<li>anything else you can think of</li>
+
+</ul></form>
+<p>
+Try to keep it "real", and work as <b>teams</b>, with one person driving, and the other person looking stuff up on another computer.  
+</p>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-org69ab9d9">
+<h2 id="org69ab9d9">Assignment</h2>
+<p>
+<a href="https://digitalhistory.github.io/assignment/01-html-css/">The assignment is online</a>. Let's talk about it.  
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="../../vendor/reveal//lib/js/head.min.js"></script>
+<script src="../../vendor/reveal//js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: false,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: "100%",
+height: "100%",
+margin: 0.10,
+minScale: 1.00,
+maxScale: 1.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+{src: '../../vendor/reveal//plugin/klipse_reveal.js'},
+ { src: '../../vendor/reveal//lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: '../../vendor/reveal//plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+</body>
+</html>
