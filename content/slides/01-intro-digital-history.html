@@ -13,6 +13,32 @@
 
 <link rel="stylesheet" href=""/>
 <link rel="stylesheet" href="../../vendor/reveal//lib/css/zenburn.css"/>
+<link rel="stylesheet" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css"/>
+<style>
+/* Position computations of klipse get confused by reveal.js's scaling.
+   Hence, scaling should be disabled with this code.  Fix height of code area
+   with scrollbar (use overflow instead of overflow-y to restore CodeMirror
+   setting afterwards): */
+.reveal section pre { max-height: 70vh; height: auto; overflow: auto; }
+/* Reset some reveal.js and oer-reveal settings: */
+.reveal section pre .CodeMirror pre { font-size: 2em; box-shadow: none; width: auto; padding: 0.4em; display: block; overflow: visible; }
+/* Enlarge cursor: */
+.CodeMirror-cursor { border-left: 3px solid black; }
+</style>
+<script>
+    window.klipse_settings = {
+        selector: '.language-klipse',
+        selector_eval_html: '.language-klipse-html',
+        selector_eval_js: '.language-klipse-javascript',
+        selector_eval_js: '.language-klipse-js',
+        selector_eval_php: '.language-klipse-php',
+        selector_eval_python_client: '.language-klipse-python',
+        selector_eval_ruby: '.language-klipse-ruby',
+        selector_eval_scheme: '.language-klipse-scheme',
+        selector_sql: '.language-klipse-sql'
+    };
+</script>
+
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
     if( window.location.search.match( /print-pdf/gi ) ) {
@@ -56,7 +82,7 @@
 <form><ul>
 <li>Historian of Science &amp; Technology</li>
 <li>Interdisciplinary Background</li>
-<li>Interest in &ldquo;Engaged&rdquo; scholarship</li>
+<li>Interest in "Engaged" scholarship</li>
 
 </ul></form>
 
@@ -155,7 +181,7 @@ Understand how to write history for a digital age!
 
 <div class="fragment (appear) slideblock">
 <p>
-<b>Systematic inquiry won&rsquo;t get us there</b>
+<b>Systematic inquiry won't get us there</b>
 </p>
 <form><ul>
 <li><i>Hackers</i> not Computer scientists!</li>
@@ -185,8 +211,8 @@ Understand how to write history for a digital age!
 <section id="slide-syllabus-3974" class="twobytwo">
 <h2 id="syllabus-3974">Syllabus</h2>
 </section>
-<section id="slide-org412f899" class="twobytwo">
-<h3 id="org412f899">Some Highlights</h3>
+<section id="slide-org146d486" class="twobytwo">
+<h3 id="org146d486">Some Highlights</h3>
 <div class="slideblock">
 <p>
 <b>Participate</b>
@@ -207,7 +233,7 @@ Understand how to write history for a digital age!
 </p>
 <form><ul>
 <li>get outside your comfort zone</li>
-<li>if you don&rsquo;t get it right, try again</li>
+<li>if you don't get it right, try again</li>
 <li>read the assignments &amp; follow instructions &amp; feedback carefully</li>
 
 </ul></form>
@@ -238,8 +264,8 @@ Understand how to write history for a digital age!
 </div>
 
 </section>
-<section id="slide-org4965b63" class="twobytwo">
-<h3 id="org4965b63">4 blocks!</h3>
+<section id="slide-orge14b910" class="twobytwo">
+<h3 id="orge14b910">4 blocks!</h3>
 <div class="fragment (appear) slideblock">
 <p>
 <b>Text and Code</b>
@@ -263,9 +289,9 @@ Understand how to write history for a digital age!
 <form><ul>
 <li>Aims:
 <form><ul>
-<li>understand &ldquo;Distant Reading&rdquo; and the problems of textual abundance</li>
+<li>understand "Distant Reading" and the problems of textual abundance</li>
 <li>experiment with treating texts as data</li>
-<li>distinguish between &ldquo;meaning&rdquo; and &ldquo;information&rdquo;</li>
+<li>distinguish between "meaning" and "information"</li>
 <li>introduction to Javascript (variables, functions, control structures)</li>
 
 </ul></form></li>
@@ -312,9 +338,9 @@ Understand how to write history for a digital age!
 At the end of this course, you should:
 </p>
 <form><ul>
-<li class="fragment appear">be able to describe to others <b>what the phrase &ldquo;digital humanities&rdquo; means to you.</b></li>
+<li class="fragment appear">be able to describe to others <b>what the phrase "digital humanities" means to you.</b></li>
 <li class="fragment appear">be able to frame a coherent and nuanced argument <i>of your own</i> about <b>the value of DH methods to the field of history</b></li>
-<li class="fragment appear">be able to clearly state and <b>defend a position regarding &ldquo;engaged scholarship&rdquo;</b>, and articulate the relationship of your argument to the contemporary media landscape</li>
+<li class="fragment appear">be able to clearly state and <b>defend a position regarding "engaged scholarship"</b>, and articulate the relationship of your argument to the contemporary media landscape</li>
 <li class="fragment appear">have a basic understanding of <b>markup languages</b> and their use in DH</li>
 <li class="fragment appear">be able to <b>read and navigate basic Javascript</b> programs</li>
 <li class="fragment appear">be able to make compelling use of <b>media materials such as audio, video, and animation</b> in historical arguments</li>
@@ -322,8 +348,8 @@ At the end of this course, you should:
 
 </ul></form>
 </section>
-<section id="slide-orge511e08">
-<h3 id="orge511e08">About that Land Acknowledgment</h3>
+<section id="slide-org89a11f5">
+<h3 id="org89a11f5">About that Land Acknowledgment</h3>
 <form><ul>
 <li>History of Life on this shore</li>
 <li>Dish with One Spoon</li>
@@ -354,12 +380,12 @@ We would like to acknowledge this sacred land on which the University of Toronto
 
 </aside>
 </section>
-<section id="slide-org0829bf8">
-<h3 id="org0829bf8">Weird Grading Method</h3>
+<section id="slide-org1af6adf">
+<h3 id="org1af6adf">Weird Grading Method</h3>
 <form><ul>
 <li>you choose what grade you want to get</li>
 <li>do the assignments required for that grade</li>
-<li>to &ldquo;pass&rdquo; an assignment, you need to achieve a high standard &#x2013; approx. <code>B+</code></li>
+<li>to "pass" an assignment, you need to achieve a high standard &#x2013; approx. <code>B+</code></li>
 <li>if you fail the first time, you have a chance to try again</li>
 <li><code>+/-</code> set by participation</li>
 
@@ -399,7 +425,7 @@ We would like to acknowledge this sacred land on which the University of Toronto
 <tbody>
 <tr>
 <td class="org-left">Class Profile</td>
-<td class="org-left"><span class="timestamp-wrapper"><span class="timestamp">2019-09-12 Thu</span></span></td>
+<td class="org-left"><span class="timestamp-wrapper"><span class="timestamp">Sep. 12</span></span></td>
 <td class="org-left">version control and collaboration</td>
 <td class="org-left">&#10004;</td>
 <td class="org-left">&#10004;</td>
@@ -419,7 +445,7 @@ We would like to acknowledge this sacred land on which the University of Toronto
 
 <tr>
 <td class="org-left">Zero to Blog Post</td>
-<td class="org-left"><span class="timestamp-wrapper"><span class="timestamp">2019-09-24 Tue</span></span></td>
+<td class="org-left"><span class="timestamp-wrapper"><span class="timestamp">Sep. 24</span></span></td>
 <td class="org-left">web markup and presentation</td>
 <td class="org-left">&#10004;</td>
 <td class="org-left">&#10004;</td>
@@ -439,7 +465,7 @@ We would like to acknowledge this sacred land on which the University of Toronto
 
 <tr>
 <td class="org-left">A Feast of Ministers</td>
-<td class="org-left"><span class="timestamp-wrapper"><span class="timestamp">2019-10-08 Tue</span></span></td>
+<td class="org-left"><span class="timestamp-wrapper"><span class="timestamp">Oct. 08</span></span></td>
 <td class="org-left">abstraction, loops, data types</td>
 <td class="org-left">&#10004;</td>
 <td class="org-left">&#10004;</td>
@@ -459,7 +485,7 @@ We would like to acknowledge this sacred land on which the University of Toronto
 
 <tr>
 <td class="org-left">DOM and Data</td>
-<td class="org-left"><span class="timestamp-wrapper"><span class="timestamp">2019-10-25 Fri</span></span></td>
+<td class="org-left"><span class="timestamp-wrapper"><span class="timestamp">Oct. 25</span></span></td>
 <td class="org-left">Objects, substitution, text as data</td>
 <td class="org-left">&#10004;</td>
 <td class="org-left">&#10004;</td>
@@ -479,7 +505,7 @@ We would like to acknowledge this sacred land on which the University of Toronto
 
 <tr>
 <td class="org-left">Spatial History</td>
-<td class="org-left"><span class="timestamp-wrapper"><span class="timestamp">2019-11-14 Thu</span></span></td>
+<td class="org-left"><span class="timestamp-wrapper"><span class="timestamp">Nov. 14</span></span></td>
 <td class="org-left">Simple GIS Web Project</td>
 <td class="org-left">&#10004;</td>
 <td class="org-left">&#10004;</td>
@@ -489,7 +515,7 @@ We would like to acknowledge this sacred land on which the University of Toronto
 
 <tr>
 <td class="org-left">Oral History</td>
-<td class="org-left"><span class="timestamp-wrapper"><span class="timestamp">2019-12-05 Thu</span></span></td>
+<td class="org-left"><span class="timestamp-wrapper"><span class="timestamp">Dec. 05</span></span></td>
 <td class="org-left">Multimedia We Project</td>
 <td class="org-left">&#10004;</td>
 <td class="org-left">&#10004;</td>
@@ -499,7 +525,7 @@ We would like to acknowledge this sacred land on which the University of Toronto
 
 <tr>
 <td class="org-left">Project Proposal</td>
-<td class="org-left"><span class="timestamp-wrapper"><span class="timestamp">2019-12-06 Fri</span></span></td>
+<td class="org-left"><span class="timestamp-wrapper"><span class="timestamp">Dec. 06</span></span></td>
 <td class="org-left">Imagine a Digital History Project</td>
 <td class="org-left">&#10004;</td>
 <td class="org-left">&#xa0;</td>
@@ -509,8 +535,8 @@ We would like to acknowledge this sacred land on which the University of Toronto
 </tbody>
 </table>
 </section>
-<section id="slide-org04ad66b" class="twobytwo">
-<h3 id="org04ad66b">Assignments, put another way</h3>
+<section id="slide-orgf5ddeea" class="twobytwo">
+<h3 id="orgf5ddeea">Assignments, put another way</h3>
 <div class="slideblock">
 <p>
 <b>To Pass</b>
@@ -596,7 +622,7 @@ We would like to acknowledge this sacred land on which the University of Toronto
 <section id="slide-intros-1-7ff4">
 <h2 id="intros-1-7ff4">Intros 1</h2>
 <form><ul>
-<li class="fragment appear">Find someone you don&rsquo;t know</li>
+<li class="fragment appear">Find someone you don't know</li>
 <li class="fragment appear">in 3 minutes, find out: Name; Year; Interest in the class; something else of interest</li>
 <li class="fragment appear">Present yr classmate to the people around you</li>
 
@@ -617,11 +643,11 @@ We would like to acknowledge this sacred land on which the University of Toronto
 </section>
 </section>
 <section>
-<section id="slide-org1f39818">
-<h2 id="org1f39818">Before next class</h2>
+<section id="slide-org011da37">
+<h2 id="org011da37">Before next class</h2>
 <form><ul>
 <li><a href="https://github.com/join?source=header-home">Get yourself a Github user account</a></li>
-<li><a href="https://classroom.github.com/classrooms/54332214-digital-history-fall-2019">Join the &ldquo;Github Classroom&rdquo;</a></li>
+<li><a href="https://classroom.github.com/classrooms/54332214-digital-history-fall-2019">Join the "Github Classroom"</a></li>
 <li>Begin working your way through the [[</li>
 
 </ul></form>
@@ -631,7 +657,7 @@ We would like to acknowledge this sacred land on which the University of Toronto
 <section>
 <section id="slide-bibliography">
 <h2 id="bibliography">Bibliography</h2>
-<ul class='org-ref-bib'><li><a id="CrononWhyMatters2000">[CrononWhyMatters2000]</a> <a name="CrononWhyMatters2000"></a>Cronon, Why the Past Matters, <i>The Wisconsin Magazine of History</i>, <b>84(1)</b>, 2-13 .</li>
+<ul class='org-ref-bib'><li><a id="CrononWhyMatters2000">[CrononWhyMatters2000]</a> <a name="CrononWhyMatters2000"></a>Cronon, Why the Past Matters, <i>The Wisconsin Magazine of History</i>, <b>84(1)</b>, 2-13 (2000).</li>
 </ul>
 </section>
 </section>
@@ -653,6 +679,7 @@ rollingLinks: false,
 keyboard: true,
 mouseWheel: false,
 fragmentInURL: false,
+hashOneBasedIndex: false,
 pdfSeparateFragments: true,
 
 overview: true,
@@ -666,7 +693,7 @@ theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
 transitionSpeed: 'default',
 
-// Optional libraries used to extend on reveal.js
+// Optional libraries used to extend reveal.js
 dependencies: [
 {src: '../../vendor/reveal//plugin/klipse_reveal.js'},
  { src: '../../vendor/reveal//lib/js/classList.js', condition: function() { return !document.body.classList; } },
@@ -677,6 +704,15 @@ dependencies: [
  { src: '../../vendor/reveal//plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
 
 });
+</script>
+<script src="https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script>
+<script>
+/* Recompute layout upon changes by klipse.  Code fragment from
+   asciidoctor-revealjs-klipse by Timothy Pratley under GPLv3:
+   https://github.com/timothypratley/asciidoctor-revealjs-klipse/blob/master/docs/docinfo-footer.html */
+Reveal.addEventListener( 'slidechanged', function( event ) {
+    window.dispatchEvent( new Event('resize') );
+} );
 </script>
 </body>
 </html>

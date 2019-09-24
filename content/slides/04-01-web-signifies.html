@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>04-01: What the Web Signifies</title>
+<meta name="author" content="Matt Price"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../vendor/reveal//css/reveal.css"/>
+
+<link rel="stylesheet" href="../../vendor/reveal//css/theme/matt.css" id="theme"/>
+
+<link rel="stylesheet" href=""/>
+<link rel="stylesheet" href="../../vendor/reveal//lib/css/zenburn.css"/>
+<link rel="stylesheet" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css"/>
+<style>
+/* Position computations of klipse get confused by reveal.js's scaling.
+   Hence, scaling should be disabled with this code.  Fix height of code area
+   with scrollbar (use overflow instead of overflow-y to restore CodeMirror
+   setting afterwards): */
+.reveal section pre { max-height: 70vh; height: auto; overflow: auto; }
+/* Reset some reveal.js and oer-reveal settings: */
+.reveal section pre .CodeMirror pre { font-size: 2em; box-shadow: none; width: auto; padding: 0.4em; display: block; overflow: visible; }
+/* Enlarge cursor: */
+.CodeMirror-cursor { border-left: 3px solid black; }
+</style>
+<script>
+    window.klipse_settings = {
+        selector: '.language-klipse',
+        selector_eval_html: '.language-klipse-html',
+        selector_eval_js: '.language-klipse-javascript',
+        selector_eval_js: '.language-klipse-js',
+        selector_eval_php: '.language-klipse-php',
+        selector_eval_python_client: '.language-klipse-python',
+        selector_eval_ruby: '.language-klipse-ruby',
+        selector_eval_scheme: '.language-klipse-scheme',
+        selector_sql: '.language-klipse-sql'
+    };
+</script>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../vendor/reveal//css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>04-01: What the Web Signifies</h1>
+<h3>Matt Price  </h3>
+<!-- <p class="title-theme-choice">(view this presentation in another theme: 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
+				)	</p> -->
+
+</section>
+<section>
+<section id="slide-orgbfa96d7">
+<h2 id="orgbfa96d7">Today</h2>
+<form><ul>
+<li>Assignment 0 review</li>
+<li>Concept of the "Public Sphere"</li>
+<li>Internet and Habermas's conception</li>
+<li>CSS Layout/Assignment 1</li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-significance-and-signification-4ace">
+<h2 id="significance-and-signification-4ace">Significance and Signification</h2>
+<form><ul>
+<li>What <i>matters</i> about the web?</li>
+<li><i>How does the web</i> create and change meaning?</li>
+
+</ul></form>
+
+<aside class="notes">
+<form><ul>
+<li><b>Significance:</b> what is its importance?</li>
+<li><b>Signification:</b> how does the web introduce or trransform meaning?</li>
+
+</ul></form>
+
+</aside>
+</section>
+<section id="slide-what-matters-about-the-web?-944f">
+<h3 id="what-matters-about-the-web?-944f">What matters about the web?</h3>
+<p>
+Web has had enormous effects
+</p>
+<form><ul>
+<li class="fragment appear">economic</li>
+<li class="fragment appear">political</li>
+<li class="fragment appear">cultural</li>
+<li class="fragment appear"><b>but I want to talk about</b> <b><i>discursive</i></b></li>
+<li class="fragment appear">does the web change what <i>kinds of conversations</i> we can have?
+<form><ul>
+<li>for the better, or for the worse?</li>
+
+</ul></form></li>
+
+</ul></form>
+<aside class="notes">
+<form><ul>
+<li>"peculiar :technical affordances"  of this technological system
+<form><ul>
+<li>tech systems make some things possible &amp; other things impossible. Or, at lease: some thing <b>easy</b> and other things <b>very difficult</b>.</li>
+<li>ex: chainsaw vs. jigsaw. Table saw vs. Band saw.  Pencil vs. pen.</li>
+
+</ul></form></li>
+
+</ul></form>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-part-i:-the-public-sphere-4b49">
+<h2 id="part-i:-the-public-sphere-4b49">Part I: The Public Sphere</h2>
+</section>
+<section id="slide-authenticity-in-a-media-age-9bf8">
+<h3 id="authenticity-in-a-media-age-9bf8">Authenticity in a media age</h3>
+
+<figure>
+<img src="http://upload.wikimedia.org/wikipedia/commons/4/4d/JuergenHabermas.jpg" alt="JuergenHabermas.jpg" style="max-height:70vh;">
+
+<figcaption><span class="figure-number">Figure 1: </span>Jürgen Habermas</figcaption>
+</figure>
+</section>
+<section id="slide-mid-century-anxiety-a1d1">
+<h3 id="mid-century-anxiety-a1d1">Mid-century anxiety</h3>
+<form><ul class="fragment appear">
+<li>Appearance of new media (radio, TV, new kinds of magazine)</li>
+<li>Are these "degraded"?</li>
+<li>Do the media make us stupider?</li>
+<li>Less critical?</li>
+<li>More pliable?</li>
+
+</ul></form>
+
+</section>
+<section id="slide-reasons-to-worry-7254" class="twobytwo">
+<h3 id="reasons-to-worry-7254">Reasons to worry</h3>
+<div class="fragment (appear) slideblock">
+
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Bundesarchiv_Bild_102-17049%2C_Joseph_Goebbels_spricht.jpg" alt="Bundesarchiv_Bild_102-17049%2C_Joseph_Goebbels_spricht.jpg">
+
+</figure>
+
+</div>
+<div class="fragment (appear) slideblock">
+
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/en/8/86/EwigerJudeFilm.jpg" alt="EwigerJudeFilm.jpg">
+
+</figure>
+
+</div>
+
+<div class="fragment (appear) slideblock">
+<form><ul class="fragment appear">
+<li>maybe there are <i>material conditions</i> that make this sort of evil possible?</li>
+<li>perhaps the media of communication have a role?</li>
+
+</ul></form>
+
+</div>
+
+</section>
+<section id="slide-the-public-sphere-d6c3">
+<h3 id="the-public-sphere-d6c3">The Public Sphere</h3>
+<blockquote>
+<p>
+A portion of the public sphere comes into being in every conversation in which private individuals assemble to form a public body.
+</p>
+
+<p>
+&#x2013; J. Habermas
+</p>
+</blockquote>
+
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+Habermas wants us to believe in the reality of the "public sphere", as a <i>discursive body</i> composed of <i>conversations</i> that have <i>a certain form</i>
+</p>
+
+</aside>
+</section>
+<section id="slide-jürgen-habermas-(b.-1929)-0ad4">
+<h3 id="jürgen-habermas-(b.-1929)-0ad4">Jürgen Habermas (b. 1929)</h3>
+<form><ul>
+<li>pre-eminent German public intellectual of 1960's and 1970's</li>
+<li>role of Holocaust/Fascism in all his thinking</li>
+<li>inheritance from the Frankfurt School</li>
+<li>search for "authentic" forms of communication</li>
+
+</ul></form>
+</section>
+<section id="slide-concept-of-the-public-sphere-9b21">
+<h3 id="concept-of-the-public-sphere-9b21">Concept of the Public Sphere</h3>
+<blockquote>
+<p>
+By "the public sphere" we mean&#x2026; a realm of our social life in which something approaching public opinion can be formed&#x2026; <b>Citizens behave as a public body when they confer in an unrestricted fashion</b> &#x2013; that is, with the guarantee of freedom of assembly and association and the freedom to express and publish their opinions &#x2013; <b>about matters of general interest.</b> (Habermas 1964, p.49[p.2])
+</p>
+</blockquote>
+<aside class="notes">
+<p>
+Unpacking:
+</p>
+<form><ul>
+<li><b>"something approaching public opinion":</b> suggests that "public opinion" has a technical meaning</li>
+<li><b>Conferring in an unrestricted fashion</b>: the public sphere <b>requires</b> a certain kind of freedom</li>
+<li><b>Matters of general interest</b>: we're not talking about breakfast, jeans, or lipstick.</li>
+
+</ul></form>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-public-and-private-f483">
+<h2 id="public-and-private-f483">Public and Private</h2>
+<table class="&quot;smalltable&quot;">
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Public</th>
+<th scope="col" class="org-left">Private</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">open to all</td>
+<td class="org-left">restricted</td>
+</tr>
+
+<tr>
+<td class="org-left">accessible for money</td>
+<td class="org-left">closed even if you can pay</td>
+</tr>
+
+<tr>
+<td class="org-left">state-related</td>
+<td class="org-left">non-state, civil society</td>
+</tr>
+
+<tr>
+<td class="org-left">political</td>
+<td class="org-left">non-political</td>
+</tr>
+
+<tr>
+<td class="org-left">official</td>
+<td class="org-left">non-official</td>
+</tr>
+
+<tr>
+<td class="org-left">common</td>
+<td class="org-left">special</td>
+</tr>
+
+<tr>
+<td class="org-left">impersonal</td>
+<td class="org-left">personal</td>
+</tr>
+
+<tr>
+<td class="org-left">national or popular</td>
+<td class="org-left">group, class, or locale</td>
+</tr>
+
+<tr>
+<td class="org-left">international/universal</td>
+<td class="org-left">particular/finite</td>
+</tr>
+
+<tr>
+<td class="org-left">in view of others</td>
+<td class="org-left">concealed</td>
+</tr>
+
+<tr>
+<td class="org-left">outside the home</td>
+<td class="org-left">domestic</td>
+</tr>
+
+<tr>
+<td class="org-left">circulated in print/electronic media</td>
+<td class="org-left">circulated orally/in manuscript</td>
+</tr>
+
+<tr>
+<td class="org-left">known widely</td>
+<td class="org-left">known only to a few</td>
+</tr>
+
+<tr>
+<td class="org-left">acknowledged/explicit</td>
+<td class="org-left">tacit/implicit</td>
+</tr>
+</tbody>
+</table>
+
+<aside class="notes">
+<form><ul>
+<li>many definitions</li>
+<li>not all of them part of Habermas's terminology</li>
+
+</ul></form>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-concept-of-the-public-sphere-3013">
+<h2 id="concept-of-the-public-sphere-3013">Concept of the Public Sphere</h2>
+<p>
+<b>Strukturwandlung der Öffentlichkeit (1962)</b>
+</p>
+<form><ul>
+<li>Arena ruled by rational argument</li>
+<li>Freedom of expression prevails (<i>&#x2026;an unrestricted fashion</i>)</li>
+<li>Conversations concern <i>common interests</i> (e.g. ?)</li>
+<li class="fragment appear">both <b>ideal</b> and <b>historical</b></li>
+<li class="fragment appear">arises first in 18th Century</li>
+<li class="fragment appear">flourishes and then withers in 19th</li>
+<li class="fragment appear">at a nadir in 20th; can it be revived?</li>
+
+</ul></form>
+<aside class="notes">
+<p>
+Habermas's <i>Habilitation</i> and first important book.  but 35 years old!!
+</p>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-before-bourgeois-society-dd7b">
+<h2 id="before-bourgeois-society-dd7b">Before Bourgeois Society</h2>
+<form><ul>
+<li>There is no "Public Sphere"</li>
+<li>Instead there are "Public Individuals" with certain powers
+<form><ul>
+<li>and Church authorities, empowered to speak on moral matters</li>
+
+</ul></form></li>
+<li>Opposed to these are "private persons"</li>
+
+</ul></form>
+<aside class="notes">
+<p>
+Begin the historical story w/ the classic trnasition to a bourgeois/capitalist society around 1800.  
+</p>
+<form><ul>
+<li>before this point, not public sphere, just public individuals, who are distinct from 'private persons"</li>
+
+</ul></form>
+
+</aside>
+</section>
+<section id="slide-private-and-public-persons-f0ec">
+<h3 id="private-and-public-persons-f0ec">Private and Public Persons</h3>
+<blockquote>
+<p>
+A private person has no right to pass <i>public</i> and perhaps even disapproving judgement on the actions, procedures, laws, regulations, and ordinances of sovereigns and courts&#x2026;. or to publish in print pertinent reports that he manages to obtain.  <b>For a private person is not at all capable of making such judgment</b>, because he lacks complete knowledge of circumstances and motives.
+</p>
+
+<p>
+&#x2013; Frederick 'the Great' of Prussia, 1784
+</p>
+</blockquote>
+<aside class="notes">
+<p>
+"Private" and "Public" distinguish <i>types of person</i>, not types of activity. 
+</p>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-18th-century-origins-265c">
+<h2 id="18th-century-origins-265c">18th Century Origins</h2>
+<form><ul>
+<li>How do we get from a monarchy in which only 'public persons' have license to speak on 'public matters', to a 'public sphere' which is opened more widely?</li>
+
+</ul></form>
+<form><ul class="fragment appear">
+<li>Rise of newspapers/journals. Intrusion of private commentary on 'public' matters
+<form><ul>
+<li>a new kind of <i>media</i></li>
+
+</ul></form></li>
+<li>rise of <i>salons</i> &amp; coffee houses.
+<form><ul>
+<li>a new kind of <i>sociality</i>.</li>
+
+</ul></form></li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-org1398183">
+<h2 id="org1398183"></h2>
+<div class="outline-text-2" id="text-org1398183">
+</div>
+</section>
+<section id="slide-salons-and-coffee-houses-4538" class="splitc">
+<h3 id="salons-and-coffee-houses-4538">Salons and Coffee Houses</h3>
+<div class="slideblock">
+<form><ul>
+<li class="fragment appear"><i>Salons</i> as the heart of intellectual activity in c. 18
+<form><ul>
+<li>'monopoly on first publication'</li>
+<li>mixing of classes</li>
+<li>freedom from patronage</li>
+
+</ul></form></li>
+<li class="fragment appear">Coffee Houses a similar space
+<form><ul>
+<li>But no restrictions on topics of discourse</li>
+<li>matters of <i>politics</i> as frequent a topic as art</li>
+
+</ul></form></li>
+<li class="fragment appear">an ideal of <i>common humanity</i> esp. in coffee houses
+<form><ul>
+<li>opinions judged by reason alone
+<form><ul>
+<li>no intrusion of 'distinction' <i>or</i> finance</li>
+
+</ul></form></li>
+<li>[ <b>but note:</b> imperfection of this vision ]</li>
+
+</ul></form></li>
+
+</ul></form>
+
+</div>
+
+<div class="slideblock">
+
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/17/17th_century_coffeehouse_england_1-580x400.jpg" alt="17th_century_coffeehouse_england_1-580x400.jpg">
+
+</figure>
+
+</div>
+
+<div class="slideblock">
+
+<figure>
+<img src="http://cabinetmagazine.org/issues/8/assets/images/main/coffeehouse.jpg" alt="coffeehouse.jpg">
+
+</figure>
+
+</div>
+<aside class="notes">
+<p>
+one of the longstanding critiques of Habermas is the <i>actual</i> restrictiveness of coffee houses <i>in real life</i>.  Who's excluded? make a list: women, the truly poor, non-Europeans, the uneducated (to some extent), 
+</p>
+
+</aside>
+</section>
+<section id="slide-circulation-d616">
+<h3 id="circulation-d616">Circulation</h3>
+<form><ul>
+<li>Communication across broad spaces &amp; differences needs something more than conversation</li>
+<li>need a way get ideas to large numbers
+<form><ul>
+<li>news sheets &rarr; newspapers</li>
+<li>letters &rarr; journals</li>
+
+</ul></form></li>
+
+</ul></form>
+
+</section>
+<section id="slide-markets-ec75">
+<h3 id="markets-ec75">Markets</h3>
+<form><ul>
+<li>Through newspapers &amp; journals conversation becomes a <i>commodity</i></li>
+<li>Therefore it loses its exclusivity</li>
+<li>so, in the beginning, <i>commodification is a <b>good thing</b></i></li>
+
+</ul></form>
+<aside class="notes">
+<p>
+This process of commodification, and its trasformation from a <b>positive, welcome</b> force in to a <b>troubling, destructive</b> one is central to H but is not just his idea.
+</p>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-the-state-vs.-society-4420">
+<h2 id="the-state-vs.-society-4420">The State vs. Society</h2>
+<form><ul>
+<li>This is all happening in a pre-democratic era (mostly)</li>
+<li>'The People' are <i>a problem</i> for the state</li>
+<li>growth of 'the social' a threat to sovereignty</li>
+<li>'public sphere' precarious and subject to dissolution</li>
+
+</ul></form>
+</section>
+<section id="slide-the-structure-of-the-public-sphere-3d98">
+<h3 id="the-structure-of-the-public-sphere-3d98">The Structure of the Public Sphere</h3>
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Private Realm</th>
+<th scope="col" class="org-left">Public Sphere</th>
+<th scope="col" class="org-left">Sphere of Public Authority</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Civil Society (Commodity Exchange, social labour)</td>
+<td class="org-left">Political Public Sphere</td>
+<td class="org-left">State</td>
+</tr>
+
+<tr>
+<td class="org-left">Conjugal Family</td>
+<td class="org-left">Literary/Philosophical Public Sphere</td>
+<td class="org-left">Court</td>
+</tr>
+</tbody>
+</table>
+
+
+<form><ul>
+<li><i>the public sphere sits between Private Life and Authority, striving for independence from both</i></li>
+<li>it <b>mediates</b> between them and draws its legitimacy from its use of reason</li>
+<li>note that it <b>presupposes</b> an emergent realm of "privacy" &#x2013; and so, it is grounded in that notion, like all liberal philosophical constructs</li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-from-debate-to-consumption-2369">
+<h2 id="from-debate-to-consumption-2369">From Debate to Consumption</h2>
+<form><ul>
+<li>Public Sphere in effect <i>undoes itself</i></li>
+<li>success of media dissolves the reciprocal creation &amp; communication of ideas
+<form><ul>
+<li>instead we just <i>consume</i></li>
+<li><i>reason</i> begins to vanish</li>
+
+</ul></form></li>
+<li>Massive growth of media in c.20
+<form><ul>
+<li>radio, television, film</li>
+
+</ul></form></li>
+<li>The Public Sphere: A Hollow Shell?
+<form><ul>
+<li>Where is its legitimacy?</li>
+
+</ul></form></li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-reception-d9f8">
+<h2 id="reception-d9f8">Reception</h2>
+<form><ul>
+<li>extremely influential</li>
+<li>with some questions about both the <i>historical</i> and the <i>philosophical</i> elements of the story.</li>
+
+</ul></form>
+</section>
+<section id="slide-counterpublics-8f8c">
+<h3 id="counterpublics-8f8c">Counterpublics</h3>
+<blockquote>
+<p>
+&#x2026;some publics are defined by their tension with a larger public&#x2026; Discussion with such a public is understood to <b>contravene the rules obtaining in the world at large</b>&#x2026; This kind of public is, in effect, a <b>counterpublic</b>: it maintains at some level&#x2026; an awareness of its subordinate status.
+  &#x2013; M. Warner (2002)
+</p>
+</blockquote>
+
+</section>
+<section id="slide-one-or-many?-f97b">
+<h3 id="one-or-many?-f97b">One or Many?</h3>
+<form><ul>
+<li>Habermas sees Public Sphere as <b>necessarily unitary</b></li>
+<li>But discourse carves out separate spaces
+<form><ul>
+<li>that may correlate with social divides</li>
+<li>&#x2026; and where the addressee ("stranger") is presumed to share a <b>common subordination</b> with the speaker</li>
+
+</ul></form></li>
+<li>("Given the fact that almost anyone can contribute to public discourse, the multiplicity of perspectives makes it even more difficult to define public opinion. Any designation of public opinion then becomes arbitrary")</li>
+
+</ul></form>
+
+</section>
+<section id="slide-disinterested-or-embodied?-9ff3">
+<h3 id="disinterested-or-embodied?-9ff3">Disinterested or embodied?</h3>
+<form><ul>
+<li>for Habermas <b>separation</b> of individual from <b>both</b> "accidental" circumstances <b>and</b> official capacities is paramount</li>
+<li>Warner:  This is fictive
+<form><ul>
+<li>and anyway undesirable
+<form><ul>
+<li>because some kinds of "argument" are fundamentally corporeal</li>
+<li>this doesn't make them less legitimate</li>
+<li>does it?</li>
+
+</ul></form></li>
+
+</ul></form></li>
+
+</ul></form>
+
+</section>
+<section id="slide-reading-or-acting-3a57">
+<h3 id="reading-or-acting-3a57">Reading or Acting</h3>
+<form><ul>
+<li>Habermas:  the actions of a legitimate public sphere are actions of reading (scrutinize, judge, decide)</li>
+<li>Warner: in a counterpublic, there may be other sorts of actions (prance, diss, act up, fantasize, mourn)</li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-how-this-matters-for-history-d592">
+<h2 id="how-this-matters-for-history-d592">How this matters for History</h2>
+<form><ul>
+<li>If there are many "publics", then working to carve out a particular space for discourse can have salutary effects</li>
+<li>Modes of address and standards of comportment can differ across 'publics'</li>
+<li>May even be possible to craft a 'public' around our work.
+<form><ul>
+<li>though " it follows that the public exists only as long as the text is being engaged with"</li>
+
+</ul></form></li>
+
+</ul></form>
+
+</section>
+<section id="slide-enter-the-internet-ab5f">
+<h3 id="enter-the-internet-ab5f">Enter the Internet</h3>
+<form><ul>
+<li>Habermas' theory revolves around a <b>technology</b> and a <b>social institution</b>
+<form><ul>
+<li>enabled by print, threatened by TV</li>
+<li>can the Internet undo this dissolution?  If so, how?</li>
+<li>if not, is it the apotheosis of that dissolution?</li>
+
+</ul></form></li>
+
+</ul></form>
+
+</section>
+<section id="slide-digital-history-and-the-public-sphere-5a06">
+<h3 id="digital-history-and-the-public-sphere-5a06">Digital History and the Public Sphere</h3>
+<form><ul>
+<li>Does the Internet provide a space for authentic <i>public</i> conversatoin?</li>
+<li>What are effects of the <i>medium</i> on <i>how we pursue knowledge and truth</i>?</li>
+
+</ul></form>
+<form><ul class="fragment appear">
+<li><b>state and corporate pressures</b></li>
+<li>algorithmic actors (!)</li>
+
+</ul></form>
+
+</section>
+<section id="slide-technical-affordances-of-the-web-503d">
+<h3 id="technical-affordances-of-the-web-503d">Technical Affordances of the web</h3>
+<form><ul>
+<li>instantaneous distribution</li>
+<li>distributed production</li>
+<li>machine-readable text</li>
+<li>algorithmic sorting</li>
+
+</ul></form>
+<aside class="notes">
+<p>
+All of these are present in <b>every</b> web-based communication.  But realms of the web have distinct affordances of their own: <a href="http://www.reddit.com">Reddit</a> &ne; <a href="http://twitter.com">twitter</a> &ne; <a href="http://www.facebook.com">facebook</a> &ne; <a href="http://nytimes.com">The New York Times</a>
+</p>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-orgd08269f">
+<h2 id="orgd08269f">Assignment 1: CSS &#x2013; some hints</h2>
+<form><ul>
+<li>new youtube video will help a little</li>
+<li>watch me work briefly with <a href="https://github.com/DigitalHistory/css-layout.git">css-layout practice repo</a></li>
+
+</ul></form>
+</section>
+</section>
+</div>
+</div>
+<script src="../../vendor/reveal//lib/js/head.min.js"></script>
+<script src="../../vendor/reveal//js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: false,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: "100%",
+height: "100%",
+margin: 0.10,
+minScale: 1.00,
+maxScale: 1.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+{src: '../../vendor/reveal//plugin/klipse_reveal.js'},
+ { src: '../../vendor/reveal//lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: '../../vendor/reveal//plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+<script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
+<script>
+/* Recompute layout upon changes by klipse.  Code fragment from
+   asciidoctor-revealjs-klipse by Timothy Pratley under GPLv3:
+   https://github.com/timothypratley/asciidoctor-revealjs-klipse/blob/master/docs/docinfo-footer.html */
+Reveal.addEventListener( 'slidechanged', function( event ) {
+    window.dispatchEvent( new Event('resize') );
+} );
+</script>
+</body>
+</html>

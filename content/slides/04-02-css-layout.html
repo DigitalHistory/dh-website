@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>04-02, CSS Part 2: Layout</title>
+<meta name="author" content="Matt Price"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../vendor/reveal//css/reveal.css"/>
+
+<link rel="stylesheet" href="../../vendor/reveal//css/theme/matt.css" id="theme"/>
+
+<link rel="stylesheet" href=""/>
+<link rel="stylesheet" href="../../vendor/reveal//lib/css/zenburn.css"/>
+<link rel="stylesheet" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css"/>
+<style>
+/* Position computations of klipse get confused by reveal.js's scaling.
+   Hence, scaling should be disabled with this code.  Fix height of code area
+   with scrollbar (use overflow instead of overflow-y to restore CodeMirror
+   setting afterwards): */
+.reveal section pre { max-height: 70vh; height: auto; overflow: auto; }
+/* Reset some reveal.js and oer-reveal settings: */
+.reveal section pre .CodeMirror pre { font-size: 2em; box-shadow: none; width: auto; padding: 0.4em; display: block; overflow: visible; }
+/* Enlarge cursor: */
+.CodeMirror-cursor { border-left: 3px solid black; }
+</style>
+<script>
+    window.klipse_settings = {
+        selector: '.language-klipse',
+        selector_eval_html: '.language-klipse-html',
+        selector_eval_js: '.language-klipse-javascript',
+        selector_eval_js: '.language-klipse-js',
+        selector_eval_php: '.language-klipse-php',
+        selector_eval_python_client: '.language-klipse-python',
+        selector_eval_ruby: '.language-klipse-ruby',
+        selector_eval_scheme: '.language-klipse-scheme',
+        selector_sql: '.language-klipse-sql'
+    };
+</script>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../vendor/reveal//css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>04-02, CSS Part 2: Layout</h1>
+<h3>Matt Price  </h3>
+<!-- <p class="title-theme-choice">(view this presentation in another theme: 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
+				)	</p> -->
+
+</section>
+<section>
+<section id="slide-recap-7f3b">
+<h2 id="recap-7f3b">Recap</h2>
+<form><ul>
+<li>selector syntax: <code>selector &gt; string {property: value;}</code></li>
+<li>colors: <code>#RRGGBB</code> or <code>rgba(RRR, BBB, GGG, 0.alpha)</code></li>
+<li>sizes: <code>px</code> or <code>em</code> (or <code>rem</code>)</li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-today-e46c">
+<h2 id="today-e46c">Today</h2>
+<form><ul>
+<li>intro to layout</li>
+<li>follow along with the repo: <a href="https://github.com/DigitalHistory/css-layout">https://github.com/DigitalHistory/css-layout</a></li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-box-model-6dae">
+<h2 id="box-model-6dae">Box Model</h2>
+
+<figure>
+<img src="http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-boxmodel.png" alt="wpid-boxmodel.png">
+
+</figure>
+
+<form><ul>
+<li>content</li>
+<li>padding</li>
+<li>border</li>
+<li>margin</li>
+
+</ul></form>
+<aside class="notes">
+<p>
+One important notion to understand in CSS is the so-called "<a href="http://www.w3.org/TR/CSS2/box.html">Box Model</a>", which accounts for the distribution of whitespace around elements.  A lot of the grief you will encounter when designing websites will come back to the box model, so it's important to learn it:  
+</p>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-russian-dolls-ba13">
+<h2 id="russian-dolls-ba13">"Russian Dolls"</h2>
+
+<figure>
+<img src="https://www.w3.org/TR/css-flexbox-1/images/flex-order-page.svg" alt="flex-order-page.svg">
+
+</figure>
+</section>
+</section>
+<section>
+<section id="slide-display:-block-vs.-inline-1e99">
+<h2 id="display:-block-vs.-inline-1e99">Display: Block vs. Inline</h2>
+
+<figure>
+<img src="https://i.stack.imgur.com/mGTYI.png" alt="mGTYI.png">
+
+</figure>
+<form><ul>
+<li><b>block</b> elements <b>have their own boxes</b></li>
+<li><b>inline</b> elements <b>do not have boxes</b>. height, width, padding, work inconsistently.</li>
+<li><b>inline-block</b> elements don't make "true" boxes but allow you to set height and width.</li>
+
+</ul></form>
+<aside class="notes">
+<p>
+by default, these elements are inline:
+</p>
+<form><ul>
+<li>a, b, i, strong, em, span, img</li>
+
+</ul></form>
+<p>
+while these are block:
+</p>
+<form><ul>
+<li>div, article, section, nav, hx, p, ul, ol, li, main, header, footer</li>
+
+</ul></form>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-normal-flow-9b65">
+<h2 id="normal-flow-9b65">Normal Flow</h2>
+<form><ul>
+<li>page processed sequentially</li>
+<li>each block-level element gets its own line</li>
+<li>inline elements displayed inside those lines</li>
+<li>heights of lines set by height of content</li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-layout:-overriding-normal-flows-6043">
+<h2 id="layout:-overriding-normal-flows-6043">Layout: Overriding "normal" flows</h2>
+<form><ul>
+<li>instruct elements to either <b>step out of the normal flow</b> or <b>set new rues for their "internal" or "external" flow</b></li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-layout-methods-5357">
+<h2 id="layout-methods-5357">Layout Methods</h2>
+<form><ul>
+<li><b>display</b> property</li>
+<li><b>position</b> property</li>
+<li><b>float</b> property</li>
+
+</ul></form>
+
+<p>
+We focus on <b>display</b> but dip into the other methods
+</p>
+</section>
+</section>
+<section>
+<section id="slide-display-f731">
+<h2 id="display-f731">Display</h2>
+<p>
+values we care about: 
+</p>
+<form><ul>
+<li>display: none</li>
+<li>display: block/inline/inline-block</li>
+<li>display: flex</li>
+<li>display: grid</li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-follow-along-e70b">
+<h2 id="follow-along-e70b">Follow Along</h2>
+<form><ul>
+<li>I'll be using <b>dev tools</b> to quickly change css properties</li>
+<li>do the same if you wish!</li>
+<li><a href="https://github.com/DigitalHistory/css-layout">https://github.com/DigitalHistory/css-layout</a></li>
+
+</ul></form>
+</section>
+</section>
+</div>
+</div>
+<script src="../../vendor/reveal//lib/js/head.min.js"></script>
+<script src="../../vendor/reveal//js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: false,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: "100%",
+height: "100%",
+margin: 0.10,
+minScale: 1.00,
+maxScale: 1.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+{src: '../../vendor/reveal//plugin/klipse_reveal.js'},
+ { src: '../../vendor/reveal//lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: '../../vendor/reveal//plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+<script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
+<script>
+/* Recompute layout upon changes by klipse.  Code fragment from
+   asciidoctor-revealjs-klipse by Timothy Pratley under GPLv3:
+   https://github.com/timothypratley/asciidoctor-revealjs-klipse/blob/master/docs/docinfo-footer.html */
+Reveal.addEventListener( 'slidechanged', function( event ) {
+    window.dispatchEvent( new Event('resize') );
+} );
+</script>
+</body>
+</html>
