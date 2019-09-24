@@ -221,6 +221,387 @@ values we care about:
 <li><a href="https://github.com/DigitalHistory/css-layout">https://github.com/DigitalHistory/css-layout</a></li>
 
 </ul></form>
+
+
+</section>
+</section>
+<section>
+<section id="slide-default-view-(just-some-silly-styling)-3cbb" class="twoc">
+<h2 id="default-view-(just-some-silly-styling)-3cbb">Default View (just some silly styling)</h2>
+<div class="slideblock">
+<div class="org-src-container">
+
+<pre><code class=" id="basic_layout" html" >&lt;style&gt;
+ main {
+     display: block;
+ }
+
+ header {
+     display:block;
+ }
+&lt;/style&gt;
+
+&lt;main&gt;
+    &lt;header&gt;
+        &lt;h1&gt;header&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;article&gt;
+        &lt;p&gt;article p&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;footer&gt;footer&lt;/footer&gt;
+&lt;/main&gt;
+
+</code></pre>
+</div>
+
+</div>
+<p>
+<div class="slideblock fragment appear" id="basic_layout"></iv>
+</p>
+<script type="text/javascript">
+var elId="basic_layout";
+var dom_block="<style>\n main {\n     display: block;\n }\n\n header {\n     display:block;\n }\n</style>\n\n<main>\n    <header>\n        <h1>header</h1>\n    </header>\n    <article>\n        <p>article p</p>\n    </article>\n    <footer>footer</footer>\n</main>\n";
+function createElementFromHTML(htmlString) {
+  let div = document.createElement('div');
+  div.innerHTML = htmlString.trim();
+
+  // Change This to div.childNodes to support multiple top-level nodes
+  return div; 
+}
+
+// window.addEventListener("load",function(){
+var htmlString = dom_block;
+if (typeof document != 'undefined') {
+  let sroot = document.getElementById(elId).attachShadow({mode: 'open'});
+  sroot.appendChild(createElementFromHTML(htmlString));
+}
+//return (htmlString);
+  console.log("HTMLSTRING!" + htmlString);
+// });
+</script>
+
+</section>
+</section>
+<section>
+<section id="slide-display:-none-5a37" class="twoc">
+<h2 id="display:-none-5a37">Display: None</h2>
+<div class="slideblock">
+<p>
+hide element <b>completely</b> so that it takes up no space at all
+</p>
+<div class="org-src-container">
+
+<pre><code class=" id="none_layout" html" >&lt;style&gt;
+ main {
+     display: block;
+ }
+
+ header {
+     display: none;
+ }
+&lt;/style&gt;
+
+&lt;main&gt;
+    &lt;header&gt;
+        &lt;h1&gt;header&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;article&gt;
+        &lt;p&gt;article p&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;footer&gt;footer&lt;/footer&gt;
+&lt;/main&gt;
+
+</code></pre>
+</div>
+
+</div>
+<p>
+<div class="slideblock fragment appear" id="display_none"></div>
+</p>
+<script type="text/javascript">
+var elId="display_none";
+var dom_block="<style>\n main {\n     display: block;\n }\n\n header {\n     display: none;\n }\n</style>\n\n<main>\n    <header>\n        <h1>header</h1>\n    </header>\n    <article>\n        <p>article p</p>\n    </article>\n    <footer>footer</footer>\n</main>\n";
+function createElementFromHTML(htmlString) {
+  let div = document.createElement('div');
+  div.innerHTML = htmlString.trim();
+
+  // Change This to div.childNodes to support multiple top-level nodes
+  return div; 
+}
+
+// window.addEventListener("load",function(){
+var htmlString = dom_block;
+if (typeof document != 'undefined') {
+  let sroot = document.getElementById(elId).attachShadow({mode: 'open'});
+  sroot.appendChild(createElementFromHTML(htmlString));
+}
+//return (htmlString);
+  console.log("HTMLSTRING!" + htmlString);
+// });
+</script>
+
+</section>
+</section>
+<section>
+<section id="slide-display:-flex-2a88" class="twoc">
+<h2 id="display:-flex-2a88">Display: Flex</h2>
+<div class="slideblock">
+<p>
+
+</p>
+
+<form><ul>
+<li>one-dimensional layout</li>
+<li>"content-out"
+<form><ul>
+<li>container determines direction &amp; a few defaults</li>
+<li>most styling still in children</li>
+
+</ul></form></li>
+<li>revolutionary!</li>
+
+</ul></form>
+
+<div class="org-src-container">
+
+<pre class="fragment (appear)"><code class=" id="flex_layout" html" >&lt;style&gt;
+ main {
+     display: flex;
+     align-items: center;
+     justify-content: stretch;
+ }
+ main&gt;* {
+     flex-grow: 1;
+ }
+&lt;/style&gt;
+
+&lt;main&gt;
+    &lt;header&gt;
+        &lt;h1&gt;header&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;article&gt;
+        &lt;p&gt;article p&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;footer&gt;footer&lt;/footer&gt;
+&lt;/main&gt;
+
+</code></pre>
+</div>
+
+</div>
+<p>
+<div class="slideblock fragment appear" id="display_flex"></div>
+</p>
+
+<script type="text/javascript">
+var elId="display_flex";
+var dom_block="<style>\n main {\n     display: flex;\n     align-items: center;\n     justify-content: stretch;\n }\n main>* {\n     flex-grow: 1;\n }\n</style>\n\n<main>\n    <header>\n        <h1>header</h1>\n    </header>\n    <article>\n        <p>article p</p>\n    </article>\n    <footer>footer</footer>\n</main>\n";
+function createElementFromHTML(htmlString) {
+  let div = document.createElement('div');
+  div.innerHTML = htmlString.trim();
+
+  // Change This to div.childNodes to support multiple top-level nodes
+  return div; 
+}
+
+// window.addEventListener("load",function(){
+var htmlString = dom_block;
+if (typeof document != 'undefined') {
+  let sroot = document.getElementById(elId).attachShadow({mode: 'open'});
+  sroot.appendChild(createElementFromHTML(htmlString));
+}
+//return (htmlString);
+  console.log("HTMLSTRING!" + htmlString);
+// });
+</script>
+
+</section>
+<section id="slide-flex-concepts:-container-and-items-c4e5">
+<h3 id="flex-concepts:-container-and-items-c4e5">Flex Concepts: Container and Items</h3>
+<form><ul>
+<li>the <b>container</b> has <b>display: flex;</b></li>
+<li>the <b>items</b> are <b>direct children of the container</b></li>
+<li><b>container</b> controls <b>direction</b> and <b>wrapping behaviour</b>, as well as <b>default box alignments</b>;</li>
+<li><b>items</b> control most other properties</li>
+
+</ul></form>
+</section>
+<section id="slide-flex-concepts:-direction-(container)-0ecf">
+<h3 id="flex-concepts:-direction-(container)-0ecf">Flex Concepts: Direction (container!)</h3>
+
+<figure>
+<img src="https://mdn.mozillademos.org/files/3739/flex_terms.png" alt="flex_terms.png">
+
+</figure>
+<form><ul>
+<li><b>main axis</b>: horizontal if <b>flex-direction: column</b>; vertical if <b>flex-direction: row</b></li>
+<li><b>cross axis</b>: vertical if <b>flex-direction: column</b>; horizontal if <b>flex-direction: row</b></li>
+
+</ul></form>
+</section>
+<section id="slide-flex-concepts:-alignment,-justification-(container-and-items)-40c6">
+<h3 id="flex-concepts:-alignment,-justification-(container-and-items)-40c6">Flex Concepts: Alignment, Justification (container and items!)</h3>
+<form><ul>
+<li><b>align-items</b>: default cross-axis alignment (stretch, flex-start, flex-end)</li>
+<li><b>justify-content</b>: default main-axis alignment (flex-start, flex-end, space-around, space-between)</li>
+<li><b>align-self:</b> item cross-axis</li>
+<li><b>order</b>: placement in flex-container (relative, not absolute!!)</li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-display:-grid-f6dd" class="twoc">
+<h2 id="display:-grid-f6dd">Display: Grid</h2>
+<div class="slideblock">
+<form><ul>
+<li>two-dimensional layout</li>
+<li>"container-in"
+<form><ul>
+<li>container determines almost all layout properties</li>
+<li>children choose their position within the grid</li>
+
+</ul></form></li>
+<li>revolutionary!</li>
+
+</ul></form>
+<div class="org-src-container">
+
+<pre class="fragment (appear)"><code class=" id="grid_layout" html" >&lt;style&gt;
+ main {
+     display: grid;
+     height: 100%;
+     grid-template-rows: 1fr 4fr 1fr;
+     grid-template-columns: 1fr 2fr;
+ }
+ main&gt;* {
+     min-width: 100%;
+     border: 2px green solid;
+ }
+header,footer {
+    grid-column: 1/3;
+}
+&lt;/style&gt;
+
+&lt;main&gt;
+    &lt;header&gt;
+        &lt;h1&gt;header&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;aside&gt;
+    aside
+    &lt;/aside&gt;
+    &lt;article&gt;
+        &lt;p&gt;article p&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;footer&gt;footer&lt;/footer&gt;
+&lt;/main&gt;
+
+</code></pre>
+</div>
+
+</div>
+<p>
+<div class="slideblock fragment appear" id="display_grid"></div>
+</p>
+<script type="text/javascript">
+var elId="display_grid";
+var dom_block="<style>\n main {\n     display: grid;\n     height: 100%;\n     grid-template-rows: 1fr 4fr 1fr;\n     grid-template-columns: 1fr 2fr;\n }\n main>* {\n     min-width: 100%;\n     border: 2px green solid;\n }\nheader,footer {\n    grid-column: 1/3;\n}\n</style>\n\n<main>\n    <header>\n        <h1>header</h1>\n    </header>\n    <aside>\n    aside\n    </aside>\n    <article>\n        <p>article p</p>\n    </article>\n    <footer>footer</footer>\n</main>\n";
+function createElementFromHTML(htmlString) {
+  let div = document.createElement('div');
+  div.innerHTML = htmlString.trim();
+
+  // Change This to div.childNodes to support multiple top-level nodes
+  return div; 
+}
+
+// window.addEventListener("load",function(){
+var htmlString = dom_block;
+if (typeof document != 'undefined') {
+  let sroot = document.getElementById(elId).attachShadow({mode: 'open'});
+  sroot.appendChild(createElementFromHTML(htmlString));
+}
+//return (htmlString);
+  console.log("HTMLSTRING!" + htmlString);
+// });
+</script>
+
+</section>
+<section id="slide-a-lot-like-flex-1b97">
+<h3 id="a-lot-like-flex-1b97">A lot like flex!</h3>
+<form><ul>
+<li>many ideas come from flex</li>
+<li>finer control</li>
+<li>2 dimensions, not one</li>
+
+</ul></form>
+</section>
+<section id="slide-grid-concepts:-container-and-items-c24b">
+<h3 id="grid-concepts:-container-and-items-c24b">Grid Concepts: Container and Items</h3>
+<form><ul>
+<li>as in flex</li>
+
+</ul></form>
+</section>
+<section id="slide-grid-concepts:-templates-and-areas-(container)-4a8c">
+<h3 id="grid-concepts:-templates-and-areas-(container)-4a8c">Grid Concepts: Templates and Areas (container)</h3>
+<form><ul>
+<li>set patterns for the 2-d grid</li>
+<li><b>grid-template-columns</b>: how many columns, and what size?</li>
+<li><b>grid-template-rows</b>: how many rows, and what size?</li>
+<li><b>grid-template-areas</b>: <b>names</b> the areas, and allows <b>items</b> to set their own areas</li>
+
+</ul></form>
+</section>
+<section id="slide-placing-items-ecc0">
+<h3 id="placing-items-ecc0">Placing Items</h3>
+<form><ul>
+<li><b>grid-column: n/m</b>: place items by <b>column-number</b></li>
+<li><b>grid-row: n/m</b>: place items by <b>row-number</b>
+<form><ul>
+<li>(note how these allow spanning)</li>
+
+</ul></form></li>
+<li><b>grid-area: area-name</b>: place by <b>named area</b>
+<form><ul>
+<li>does not allow spanning</li>
+
+</ul></form></li>
+
+</ul></form>
+</section>
+<section id="slide-resources-7128">
+<h3 id="resources-7128">Resources</h3>
+<form><ul>
+<li><a href="http://grid.malven.co/">visual cheatsheet</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids">MDN Grid series</a></li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-media-queries-9633">
+<h2 id="media-queries-9633">Media Queries</h2>
+<form><ul>
+<li>CSS rules that only come into effect under certain conditions</li>
+<li>we will only use for <b>screen size</b></li>
+<li>allows creation of <b>responsive</b> sites</li>
+
+</ul></form>
+<div class="org-src-container">
+
+<pre><code class=" css" >@media screen and (min-width: 500px;) {
+    normal.selector &gt; here {
+        normal-rule: normal-value;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    normal.selector &gt; here {
+        normal-rule: normal-value;
+    }    
+}
+</code></pre>
+</div>
 </section>
 </section>
 </div>
