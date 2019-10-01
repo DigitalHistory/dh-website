@@ -1,6 +1,6 @@
 ---
 title: "Syllabus"
-lastmod: 2019-09-11T11:29:45-04:00
+lastmod: 2019-10-01T05:31:43-04:00
 draft: false
 menu:
   main:
@@ -10,14 +10,19 @@ menu:
 
 ## Logistics {#logistics}
 
+<div class="ox-hugo-table org-upload">
+<div></div>
+
 | **Instructor:**    | Matt Price                                                       |
 |--------------------|------------------------------------------------------------------|
 | **Email:**         | matt.price@utoronto.ca                                           |
-| **Meeting Times**  | T Th 2-3, [SS 1070](http://map.utoronto.ca/utsg/building/033)    |
+| **Meeting Times**  | T Th 2-3, [SS 1072](http://map.utoronto.ca/utsg/building/033)    |
 | **Web:**           | <http://digitalhistory.github.io/>                               |
 | **Slack:**         | <https://digitalhistoryuoft.slack.com/>                          |
 | **New!! Youtube:** | <https://www.youtube.com/channel/UC59evpoPsmdKhmB9YeqXMPg>       |
 | **Office Hrs:**    | T Th 3-3:30, [SS 3077](http://map.utoronto.ca/utsg/building/033) |
+
+</div>
 
 In general, online communication should take place **via Slack**.  In the case of questions having to do with official University business (requests for extensions, discussion of accommodations, any message involving sensitive personal data) please [use my University email, being sure to put "HIS393" in the subject line](mailto:matt.price@utoronto.ca?subject=HIS389%20Digital%20History).
 
@@ -145,11 +150,12 @@ Pluses and Minuses are determined by participation
 
 I know there will be questions!  Please don't hesitate to ask them.  And here, finally, is the list of assignments. Detailed assignments will be handed out with adequate time to permit completion.
 
+<a id="table--assignments-table"></a>
 | Assignment           | Due Date                                                                      | Skills/Aims                                                        | A        | B        | C        | D        |
 |----------------------|-------------------------------------------------------------------------------|--------------------------------------------------------------------|----------|----------|----------|----------|
 | Class Profile        | <span class="timestamp-wrapper"><span class="timestamp">Sep. 17</span></span> | version control and collaboration                                  | &#10004; | &#10004; | &#10004; | &#10004; |
 | G & GH Extras        |                                                                               |                                                                    | &#10004; |          |          |          |
-| Zero to Blog Post    | <span class="timestamp-wrapper"><span class="timestamp">Sep. 24</span></span> | web markup and presentation                                        | &#10004; | &#10004; | &#10004; | &#10004; |
+| Zero to Blog Post    | <span class="timestamp-wrapper"><span class="timestamp">Sep. 26</span></span> | web markup and presentation                                        | &#10004; | &#10004; | &#10004; | &#10004; |
 | Z2B Extras           |                                                                               |                                                                    | &#10004; |          |          |          |
 | A Feast of Ministers | <span class="timestamp-wrapper"><span class="timestamp">Oct. 08</span></span> | Programming Concepts: abstraction, loops, data types               | &#10004; | &#10004; | &#10004; | &#10004; |
 | Ministers Extras     |                                                                               |                                                                    | &#10004; |          |          |          |
