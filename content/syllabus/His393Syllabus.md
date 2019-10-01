@@ -1,6 +1,6 @@
 ---
 title: "Syllabus"
-lastmod: 2019-10-01T05:31:43-04:00
+lastmod: 2019-10-01T15:31:38-04:00
 draft: false
 menu:
   main:
@@ -21,6 +21,7 @@ menu:
 | **Slack:**         | <https://digitalhistoryuoft.slack.com/>                          |
 | **New!! Youtube:** | <https://www.youtube.com/channel/UC59evpoPsmdKhmB9YeqXMPg>       |
 | **Office Hrs:**    | T Th 3-3:30, [SS 3077](http://map.utoronto.ca/utsg/building/033) |
+| **TA:**            | [Lara Howerton](mailto:lara.howerton@mail.utoronto.ca)           |
 
 </div>
 
