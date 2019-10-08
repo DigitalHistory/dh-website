@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>05-01: Getting Started With Javascript</title>
+<title>05-01 and 06-01: Getting Started With Javascript</title>
 <meta name="author" content="Matt Price"/>
 <style type="text/css">
 .underline { text-decoration: underline; }
@@ -54,7 +54,7 @@
 <div class="reveal">
 <div class="slides">
 <section id="sec-title-slide">
-<h1>05-01: Getting Started With Javascript</h1>
+<h1>05-01 and 06-01: Getting Started With Javascript</h1>
 <h3>Matt Price  </h3>
 <!-- <p class="title-theme-choice">(view this presentation in another theme: 
 <a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
@@ -202,13 +202,15 @@ console.log(s+n);
 </section>
 <section id="slide-making-lists-(arrays)-5385">
 <h3 id="making-lists-(arrays)-5385">Making Lists (Arrays)</h3>
-<p>
-+#NAME: js-array-historians
-</p>
 <pre><code class="language-klipse-js" >
 let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
 
 </code></pre>
+
+<pre class="example">
+undefined
+</pre>
+
 
 <aside class="notes">
 <p>
@@ -253,6 +255,7 @@ Second World Wars was " + (wardates[6] - wardates[5]) + " years");
 <section id="slide-repetition:-while-loops-c251">
 <h2 id="repetition:-while-loops-c251">Repetition: While Loops</h2>
 <pre><code class="language-klipse-js" >
+let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
 
 let i = 0;
 
@@ -277,6 +280,7 @@ repeat inside the <code>{ ... }</code> as long as test is true:
 <section id="slide-repetition:-for-loops-c510">
 <h2 id="repetition:-for-loops-c510">Repetition: For Loops</h2>
 <pre><code class="language-klipse-js" >
+let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
 
 for (let i=0; i &lt; historians.length ; i++){
   console.log(historians[i] + " was a historian.");
@@ -293,12 +297,18 @@ for (let i=0; i &lt; historians.length ; i++){
 </section>
 </section>
 <section>
+<section id="slide-orgd85fab7">
+<h2 id="orgd85fab7">Repetition: other for loops</h2>
+<div class="outline-text-2" id="text-orgd85fab7">
+</div>
+</section>
 <section id="slide-repetition:-other-for-loops-3d1d">
-<h2 id="repetition:-other-for-loops-3d1d">Repetition: other for loops</h2>
+<h3 id="repetition:-other-for-loops-3d1d"></h3>
 <pre><code class="language-klipse-js" >
+let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
 
 
-for (let i in historians) {
+for (i in historians) {
   console.log(historians[i] + " was a historian.");
 }
 
@@ -306,6 +316,7 @@ for (let h of historians) {
   console.log(h + " was a historian.");
 }
 </code></pre>
+
 <form><ul>
 <li>these also "loop"</li>
 <li>but the <b>initial value</b>, <b>test</b>, and <b>increment</b> are <b>implicit</b></li>
@@ -320,6 +331,7 @@ for (let h of historians) {
 <section id="slide-conditionals:-if-a6b8">
 <h2 id="conditionals:-if-a6b8">Conditionals: If</h2>
 <pre><code class="language-klipse-js" >
+let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
 
 let i = 0;
 
@@ -341,6 +353,7 @@ while (i &lt; historians.length) {
 <section id="slide-branching-2c02">
 <h3 id="branching-2c02">Branching</h3>
 <pre><code class="language-klipse-js" >
+let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
 
 let i = 0;
 
@@ -359,31 +372,8 @@ while (i &lt; historians.length) {
 </section>
 </section>
 <section>
-<section id="slide-parts-of-things:-elements,-methods,-properties-be27">
-<h2 id="parts-of-things:-elements,-methods,-properties-be27">Parts of things: elements, methods, properties</h2>
-<pre><code class="language-klipse-js" >
-let a=["name", 0, "otherinfo"];
-console.log(a[2]);
-console.log(a.length);
-console.log(a[length]);
-a.pop;
-</code></pre>
-<form><ul>
-<li>note strange syntax:
-<form><ul>
-<li><code>a[1]</code>: second element of array</li>
-<li><code>a.length</code>: a special way of finding the length of any array.  Length is a <b>property</b> of a.</li>
-
-</ul></form></li>
-<li><code>console.log(a))</code>: <b>log</b> is a part of <b>console</b>.  it takes a <b>parameter</b> , in this case <code>a</code></li>
-
-</ul></form>
-
-</section>
-</section>
-<section>
-<section id="slide-doing-stuff:-functions-d6a3">
-<h2 id="doing-stuff:-functions-d6a3">Doing Stuff: functions</h2>
+<section id="slide-functions-d6a3">
+<h2 id="functions-d6a3">Doing Stuff: functions</h2>
 </section>
 <section id="slide--7b52">
 <h3 id="-7b52">A Function <b>is</b> a variable(!)</h3>
@@ -614,6 +604,30 @@ console.log(evenGreaterWriter("Margaret Atwood"))
 </section>
 </section>
 <section>
+<section id="slide-parts-of-things:-elements,-methods,-properties-be27">
+<h2 id="parts-of-things:-elements,-methods,-properties-be27">Parts of things: elements, methods, properties</h2>
+<pre><code class="language-klipse-js" >
+let a=["name", 0, "otherinfo"];
+console.log(a[2]);
+console.log(a.length);
+console.log(a[length]);
+a.pop;
+</code></pre>
+<form><ul>
+<li>note strange syntax:
+<form><ul>
+<li><code>a[1]</code>: second element of array</li>
+<li><code>a.length</code>: a special way of finding the length of any array.  Length is a <b>property</b> of a.</li>
+
+</ul></form></li>
+<li><code>console.log(a))</code>: <b>log</b> is a part of <b>console</b>.  it takes a <b>parameter</b> , in this case <code>a</code></li>
+<li>not that <code>a.pop</code> is not the same as <code>a.pop()</code></li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
 <section id="slide-objects-and-properties-e146">
 <h2 id="objects-and-properties-e146">Objects and Properties</h2>
 </section>
@@ -815,8 +829,7 @@ myLunch.eatMe();
     scale: "Catastrophe"
   }
 
-//  console.log(greatWar["name"] + " lasted for " +
-//  (greatWar.end - greatWar.start) + " years.");
+//  console.log(greatWar["name"] + " lasted for " + (greatWar.end - greatWar.start) + " years.");
 </code></pre>
 </section>
 <section id="slide-more-objects-322f">
@@ -878,6 +891,129 @@ for (person of people) {
 
 }
 };
+</code></pre>
+</section>
+</section>
+<section>
+<section id="slide-orga94da56">
+<h2 id="orga94da56">In-class coding exercise!</h2>
+<div class="outline-text-2" id="text-orga94da56">
+</div>
+</section>
+<section id="slide-org9924de8">
+<h3 id="org9924de8"></h3>
+<p>
+Pull in changes to <a href="https://github.com/DigitalHistory/lecture-code-snippest">the code snippets repo</a>
+</p>
+
+<p>
+Now consider the following javascript array of objects:
+</p>
+
+<pre><code class="language-klipse-js" >
+orgs = [
+  {"name": "African National Congress",
+   "founded": 1912,
+   "link": "https://en.wikipedia.org/wiki/African_National_Congress"
+  },
+  {"name": "Pan Africanist Congress",
+   "founded": 1959,
+   "link": "https://en.wikipedia.org/wiki/Pan_Africanist_Congress_of_Azania"
+  },
+  {"name": "South African Communist Party",
+   "founded": 1921,
+   "link": "https://en.wikipedia.org/wiki/South_African_Communist_Party"
+  },
+  {
+    "name": "Black Sash",
+    "founded": 1955,
+    "link": "https://en.wikipedia.org/wiki/Black_Sash"
+  },
+  {
+    "name": "South African Students&#39; Organization",
+    "founded": 1968,
+    "link": "https://en.wikipedia.org/wiki/South_African_Students%27_Organisation"
+  }
+]
+orgs
+</code></pre>
+
+<p>
+Our objective is to read this variable and use it to build sentences about anti-apartheid organizations in South Africa.  
+</p>
+</section>
+<section id="slide-org9c19b24">
+<h3 id="org9c19b24">using JSON data</h3>
+<pre><code class="language-klipse-js" >
+orgs = [
+  {"name": "African National Congress",
+   "founded": 1912,
+   "link": "https://en.wikipedia.org/wiki/African_National_Congress"
+  },
+  {"name": "Pan Africanist Congress",
+   "founded": 1959,
+   "link": "https://en.wikipedia.org/wiki/Pan_Africanist_Congress_of_Azania"
+  },
+  {"name": "South African Communist Party",
+   "founded": 1921,
+   "link": "https://en.wikipedia.org/wiki/South_African_Communist_Party"
+  },
+  {
+    "name": "Black Sash",
+    "founded": 1955,
+    "link": "https://en.wikipedia.org/wiki/Black_Sash"
+  },
+  {
+    "name": "South African Students&#39; Organization",
+    "founded": 1968,
+    "link": "https://en.wikipedia.org/wiki/South_African_Students%27_Organisation"
+  }
+]
+orgs 
+function describeOrg (org) {
+  return org.name + &#39; was founded in &#39; + org.founded + &#39;.&#39;;
+}
+
+console.log(describeOrg(orgs[0]));
+</code></pre>
+
+
+</section>
+<section id="slide-org800f6e6">
+<h3 id="org800f6e6">Looping through the data</h3>
+<pre><code class="language-klipse-js" >
+orgs = [
+  {"name": "African National Congress",
+   "founded": 1912,
+   "link": "https://en.wikipedia.org/wiki/African_National_Congress"
+  },
+  {"name": "Pan Africanist Congress",
+   "founded": 1959,
+   "link": "https://en.wikipedia.org/wiki/Pan_Africanist_Congress_of_Azania"
+  },
+  {"name": "South African Communist Party",
+   "founded": 1921,
+   "link": "https://en.wikipedia.org/wiki/South_African_Communist_Party"
+  },
+  {
+    "name": "Black Sash",
+    "founded": 1955,
+    "link": "https://en.wikipedia.org/wiki/Black_Sash"
+  },
+  {
+    "name": "South African Students&#39; Organization",
+    "founded": 1968,
+    "link": "https://en.wikipedia.org/wiki/South_African_Students%27_Organisation"
+  }
+]
+orgs 
+function describeOrg (org) {
+  return org.name + &#39; was founded in &#39; + org.founded + &#39;.&#39;;
+}
+
+for (let o of orgs) {
+console.log(describeOrg(o));
+}
 </code></pre>
 </section>
 </section>
