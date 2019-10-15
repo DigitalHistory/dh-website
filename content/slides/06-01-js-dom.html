@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>07-01: JavaScript and the DOM</title>
+<meta name="author" content="Matt Price"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../vendor/reveal//css/reveal.css"/>
+
+<link rel="stylesheet" href="../../vendor/reveal//css/theme/matt.css" id="theme"/>
+
+<link rel="stylesheet" href=""/>
+<link rel="stylesheet" href="../../vendor/reveal//lib/css/zenburn.css"/>
+<link rel="stylesheet" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css"/>
+<style>
+/* Position computations of klipse get confused by reveal.js's scaling.
+   Hence, scaling should be disabled with this code.  Fix height of code area
+   with scrollbar (use overflow instead of overflow-y to restore CodeMirror
+   setting afterwards): */
+.reveal section pre { max-height: 70vh; height: auto; overflow: auto; }
+/* Reset some reveal.js and oer-reveal settings: */
+.reveal section pre .CodeMirror pre { font-size: 2em; box-shadow: none; width: auto; padding: 0.4em; display: block; overflow: visible; }
+/* Enlarge cursor: */
+.CodeMirror-cursor { border-left: 3px solid black; }
+</style>
+<script>
+    window.klipse_settings = {
+        selector: '.language-klipse',
+        selector_eval_html: '.language-klipse-html',
+        selector_eval_js: '.language-klipse-javascript',
+        selector_eval_js: '.language-klipse-js',
+        selector_eval_php: '.language-klipse-php',
+        selector_eval_python_client: '.language-klipse-python',
+        selector_eval_ruby: '.language-klipse-ruby',
+        selector_eval_scheme: '.language-klipse-scheme',
+        selector_sql: '.language-klipse-sql'
+    };
+</script>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../vendor/reveal//css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>07-01: JavaScript and the DOM</h1>
+<h3>Matt Price  </h3>
+<!-- <p class="title-theme-choice">(view this presentation in another theme: 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
+				)	</p> -->
+
+</section>
+<section>
+<section id="slide-working-with-the-dom-d129">
+<h2 id="working-with-the-dom-d129">Working with the DOM</h2>
+<p>
+<b>Document Object</b>
+</p>
+<form><ul>
+<li>everything in the document can be manipulated via the DOM</li>
+
+</ul></form>
+
+<figure>
+<img src="https://www.computerhope.com/jargon/d/dom1.jpg" alt="dom1.jpg">
+
+</figure>
+</section>
+<section id="slide-inspecting-the-dom-edf1">
+<h3 id="inspecting-the-dom-edf1">Inspecting the DOM</h3>
+
+<figure>
+<img src="../../ox-hugo/devtools.png" alt="devtools.png">
+
+</figure>
+
+</section>
+</section>
+<section>
+<section id="slide-finding-elements-11f8">
+<h2 id="finding-elements-11f8">Finding Elements</h2>
+<form><ul>
+<li><b>"Vanilla" JavaScript</b> (described in MDN)
+<form><ul>
+<li><code>document.querySelector("str")</code></li>
+
+</ul></form></li>
+<li><code>document.querySelectorAll("str")</code></li>
+<li><b>jQuery</b> (convenience library)
+<form><ul>
+<li><code>$("str")</code></li>
+<li><b>library must be loaded</b> with <code>&lt;script src="http://code.jquery.com/jquery-3.3.1.min.js"&lt;/script&gt;</code></li>
+
+</ul></form></li>
+
+</ul></form>
+
+
+<form><ul>
+<li>we use jQuery in examples, but it's your choice.
+<form><ul>
+<li>slightly different syntax &amp; different return values, so be careful.</li>
+
+</ul></form></li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-change-css-of-an-element-0bef">
+<h2 id="change-css-of-an-element-0bef">Change CSS of an Element</h2>
+<pre><code class="language-klipse-js" >
+$(&#39;selector&#39;).css(&#39;property-name&#39;, &#39;value&#39;)
+</code></pre>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc1c2230">
+<h2 id="orgc1c2230">Get and Change Text Content</h2>
+<pre><code class="language-klipse-js" >
+$(&#39;selector&#39;).text()
+$(&#39;selector&#39;).text(&#39;new value&#39;)
+</code></pre>
+
+</section>
+</section>
+<section>
+<section id="slide-org809d0cc">
+<h2 id="org809d0cc">Get and Change Full inner HTML</h2>
+<pre><code class="language-klipse-js" >
+$(&#39;selector&#39;).text()
+$(&#39;selector&#39;).text(&#39;&lt;h2&gt;new value, with valid HTML markup&lt;/h2&gt;&#39;)
+</code></pre>
+
+</section>
+</section>
+<section>
+<section id="slide-org3962293">
+<h2 id="org3962293">Append elements</h2>
+<pre><code class="language-klipse-js" >
+$(&#39;selector&#39;).append(&#39;&lt;p&gt;valid HTML Markup&lt;/p&gt;&#39;)
+</code></pre>
+
+</section>
+</section>
+<section>
+<section id="slide-orgcb8de44">
+<h2 id="orgcb8de44">What does jQuery return?</h2>
+<form><ul>
+<li>an "array-like object"</li>
+<li>it's not exactly an array, but you can use "of" to iterate over HTMl objects</li>
+<li>each element can use <b>native DOM methods</b> for HTML elements (cf MDN)</li>
+<li>to use jQuery methods on it, wrap it again in the $() function</li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-org8f0d678">
+<h2 id="org8f0d678">Looping: over HTML elements</h2>
+<pre><code class="language-klipse-js" >
+let allElements = $(&#39;selector&#39;);
+// for.. in will NOT work!!!!
+for (e of allElements) { // this will loop through the *html elements* found by jQ   
+  $(e).doSomething(0) // if you want to use jquery methods, you have to jquery-ize first
+}
+</code></pre>
+
+</section>
+</section>
+<section>
+<section id="slide-orgaad0e7c">
+<h2 id="orgaad0e7c">Looping &#x2013; advanced</h2>
+<p>
+Trickier! Uses a "callback function" &#x2013; see this <a href="https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced">excellent, but still difficult, explanation</a> 
+</p>
+<pre><code class="language-klipse-js" >
+$(&#39;td.name&#39;).each(
+  function (index) {
+    console.log(`here&#39;s the content of cell number ${index}`);
+    console.log($(this).text());
+  });
+</code></pre>
+
+</section>
+</section>
+<section>
+<section id="slide-org4adc8e7">
+<h2 id="org4adc8e7">Takeaways for us</h2>
+<form><ul>
+<li>it's a wild world out there</li>
+<li>many complex concepts, but if you go slowly, it's not impossible to figure out</li>
+<li>key is to understand that the DOM is a <b>struture of HTML elements</b>, which can be *created, destroyed,</li>
+
+</ul></form>
+</section>
+</section>
+</div>
+</div>
+<script src="../../vendor/reveal//lib/js/head.min.js"></script>
+<script src="../../vendor/reveal//js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: false,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: "100%",
+height: "100%",
+margin: 0.10,
+minScale: 1.00,
+maxScale: 1.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+{src: '../../vendor/reveal//plugin/klipse_reveal.js'},
+ { src: '../../vendor/reveal//lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: '../../vendor/reveal//plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+<script src="https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script>
+<script>
+/* Recompute layout upon changes by klipse.  Code fragment from
+   asciidoctor-revealjs-klipse by Timothy Pratley under GPLv3:
+   https://github.com/timothypratley/asciidoctor-revealjs-klipse/blob/master/docs/docinfo-footer.html */
+Reveal.addEventListener( 'slidechanged', function( event ) {
+    window.dispatchEvent( new Event('resize') );
+} );
+</script>
+</body>
+</html>
