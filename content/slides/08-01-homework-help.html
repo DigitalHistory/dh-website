@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>08-01: Homework Help Day</title>
+<meta name="author" content="Matt Price"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../vendor/reveal//css/reveal.css"/>
+
+<link rel="stylesheet" href="../../vendor/reveal//css/theme/matt.css" id="theme"/>
+
+<link rel="stylesheet" href=""/>
+<link rel="stylesheet" href="../../vendor/reveal//lib/css/zenburn.css"/>
+<link rel="stylesheet" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css"/>
+<style>
+/* Position computations of klipse get confused by reveal.js's scaling.
+   Hence, scaling should be disabled with this code.  Fix height of code area
+   with scrollbar (use overflow instead of overflow-y to restore CodeMirror
+   setting afterwards): */
+.reveal section pre { max-height: 70vh; height: auto; overflow: auto; }
+/* Reset some reveal.js and oer-reveal settings: */
+.reveal section pre .CodeMirror pre { font-size: 2em; box-shadow: none; width: auto; padding: 0.4em; display: block; overflow: visible; }
+/* Enlarge cursor: */
+.CodeMirror-cursor { border-left: 3px solid black; }
+</style>
+<script>
+    window.klipse_settings = {
+        selector: '.language-klipse',
+        selector_eval_html: '.language-klipse-html',
+        selector_eval_js: '.language-klipse-javascript',
+        selector_eval_js: '.language-klipse-js',
+        selector_eval_php: '.language-klipse-php',
+        selector_eval_python_client: '.language-klipse-python',
+        selector_eval_ruby: '.language-klipse-ruby',
+        selector_eval_scheme: '.language-klipse-scheme',
+        selector_sql: '.language-klipse-sql'
+    };
+</script>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../vendor/reveal//css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>08-01: Homework Help Day</h1>
+<h3>Matt Price  </h3>
+<!-- <p class="title-theme-choice">(view this presentation in another theme: 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
+				)	</p> -->
+
+</section>
+<section>
+<section id="slide-org1fdc752">
+<h2 id="org1fdc752">Today</h2>
+<form><ul>
+<li><a href="https://github.com/DigitalHistory/dom-exercises">working again from this repository</a></li>
+<li>HTML Structures &amp; Atomic Functions</li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-orgff8ac84">
+<h2 id="orgff8ac84">HTML Structures</h2>
+<form><ul>
+<li>for the rest of the course, coding is mostly <b>creating HTML structures</b></li>
+<li>becaue HTML is tedious, <b>lots</b> of opportunity to introduce errors!</li>
+<li>How to avoid?
+<form><ul>
+<li><b>D.R.Y.</b> (Don't Repeat Yourself)</li>
+<li>if done right, guarantees that low-level problems only need to be solved <b>once</b></li>
+<li>remember: laziness is a virtue</li>
+
+</ul></form></li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-org78baf35">
+<h2 id="org78baf35">Writing "Atomic" Functions</h2>
+<form><ul>
+<li>Complex code is difficult to debug!</li>
+<li>instead, try to make your individual functions as simple as possible</li>
+<li><b>divide your problem into smallest possible parts</b> (hence 'atomic')</li>
+<li>"chain" your functions together to recreate complexity</li>
+<li>much easier to localize failure</li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-org35d6508" class="twoc">
+<h2 id="org35d6508">Making a card deck</h2>
+<div class="slideblock">
+<pre><code class="language-klipse-html" >
+&lt;card class="card"&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Person Name&lt;/h1&gt;
+  &lt;/header&gt;
+  &lt;main class="card"&gt;   
+    &lt;p&gt;
+      lengthy text here
+    &lt;/p&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;
+    &lt;a href="https://digitalhistory.github.io/"&gt;A Project of HIS393&lt;/a&gt;
+  &lt;/footer&gt;
+&lt;/card&gt;
+</code></pre>
+
+</div>
+
+
+<div class="slideblock">
+<p>
+
+</p>
+
+<pre><code class="language-klipse-js" >
+let sampleData = {
+  name: &#39;Person Name&#39;,
+  blurb: &#39;lengthy text here&#39;,
+};
+</code></pre>
+<p>
+<b>Task:</b> given a JSON data structure, generate a set of cards (like the ones we made in assignment 0, but simpler)
+</p>
+
+</div>
+</section>
+<section id="slide-orgf06330d">
+<h3 id="orgf06330d">First, Map the assignment</h3>
+<form><ul>
+<li class="fragment appear">card deck &rarr; set of cards</li>
+<li class="fragment appear">card &rarr; <code>&lt;card&gt;&lt;header&gt;&lt;/header&gt;&lt;main&gt;&lt;/main&gt;&lt;footer&gt;&lt;/footer&gt;&lt;card&gt;</code></li>
+<li class="fragment appear">this is <b>set of tagged elements</b></li>
+<li class="fragment appear">so we might do something like this:
+<form><ul>
+<li class="fragment appear"><b>fn 1</b>: tag some content</li>
+<li class="fragment appear"><b>fn 2</b>: use <b>fn 1</b> to make header structure</li>
+<li class="fragment appear"><b>fn 3</b>: use <b>fn 1</b> to make main structure</li>
+<li class="fragment appear"><b>fn 4</b>: use <b>fn 1</b> to make footer structure</li>
+<li class="fragment appear"><b>fn 5</b>: use <b>fn 2, fn 3, fn 4</b> to make sub-structures and then call <b>fn 1</b> to wrap whole thing</li>
+<li class="fragment appear"><b>fn 6</b>: loop through data structure, calling <b>fn 5</b> once for each element</li>
+
+</ul></form></li>
+
+</ul></form>
+
+
+</section>
+<section id="slide-orgcd3cfef">
+<h3 id="orgcd3cfef">Start with Fn 1: <code>letsTag</code></h3>
+<pre><code class="language-klipse-js" >
+function letsTag(a,c,b={}){output=`&lt;${c} `;Object.keys(b).map((k,i)=&gt;output+=`${k}="${b[k]}" `);output+=`&gt;${a}&lt;/${c}&gt;`;return output}
+
+letsTag(&#39;I am the main content&#39;, &#39;main&#39;, {style: &#39;border: 2px solid black;&#39;});
+
+</code></pre>
+
+<form><ul>
+<li>code is purposely obfuscated; you guys can perhaps discuss among yourselves how you would implement it (is slightly harder than your assignment)</li>
+
+</ul></form>
+</section>
+<section id="slide-orga33eb1e">
+<h3 id="orga33eb1e">Fn 2: <code>headMe()</code></h3>
+<pre><code class="language-klipse-js" >
+function letsTag(a,c,b={}){output=`&lt;${c} `;Object.keys(b).map((k,i)=&gt;output+=`${k}="${b[k]}" `);output+=`&gt;${a}&lt;/${c}&gt;`;return output}
+
+function headMe (titleText) {
+  let output=letsTag(titleText, &#39;h1&#39;);
+  output=letsTag(output, &#39;header&#39;);
+  return output
+}
+
+headMe(&#39;I am the title&#39;);
+</code></pre>
+
+</section>
+<section id="slide-org5c59325">
+<h3 id="org5c59325">All the Rest</h3>
+<pre><code class="language-klipse-js" >
+function letsTag(a,c,b={}){output=`&lt;${c} `;Object.keys(b).map((k,i)=&gt;output+=`${k}="${b[k]}" `);output+=`&gt;${a}&lt;/${c}&gt;`;return output}
+
+function footMe () {
+  let link = letsTag(&#39;A Project of HIS393&#39;, &#39;a&#39;, {href: &#39;https://digitalhistory.github.io/&#39;});
+  return letsTag(link, &#39;footer&#39;);
+}
+
+function mainMe (blurb) {
+  let p = letsTag(blurb, &#39;p&#39;);
+  return letsTag(p, &#39;main&#39;);
+}
+
+function cardMe (person) {
+  let header = headMe(person.name);
+  let main = mainMe(person.blurb);
+  let footer = footMe();
+  return letsTag(header + main + footer, &#39;card&#39;, {class: &#39;card&#39;});
+}
+
+function makeAllTheCards (people) {
+  output = &#39;&#39;;
+  for (p of people) {
+    output += cardMe (p);
+  }
+  return $(&#39;main#page-main&#39;).append(output); 
+}
+
+makeAllTheCards (allEntries);
+</code></pre>
+</section>
+</section>
+</div>
+</div>
+<script src="../../vendor/reveal//lib/js/head.min.js"></script>
+<script src="../../vendor/reveal//js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: false,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: "100%",
+height: "100%",
+margin: 0.10,
+minScale: 1.00,
+maxScale: 1.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+{src: '../../vendor/reveal//plugin/klipse_reveal.js'},
+ { src: '../../vendor/reveal//lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: '../../vendor/reveal//plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+<script src="https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script>
+<script>
+/* Recompute layout upon changes by klipse.  Code fragment from
+   asciidoctor-revealjs-klipse by Timothy Pratley under GPLv3:
+   https://github.com/timothypratley/asciidoctor-revealjs-klipse/blob/master/docs/docinfo-footer.html */
+Reveal.addEventListener( 'slidechanged', function( event ) {
+    window.dispatchEvent( new Event('resize') );
+} );
+</script>
+</body>
+</html>
