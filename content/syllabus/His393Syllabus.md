@@ -115,6 +115,7 @@ I can offer help with the following
 | Git Visualization (optional!) | [gitKraken](https://www.gitkraken.com/)                                                                                    | [gitKraken](https://www.gitkraken.com/)                                                                                                                | [gitKraken](https://www.gitkraken.com/)                                                                                  |
 | Node and NPM                  | [Node Website](https://nodejs.org/en/download/) ([guide](http://nodesource.com/blog/installing-nodejs-tutorial-mac-os-x/)) | [Node Website](https://nodejs.org/en/download/) ([guide](https://wsvincent.com/install-node-js-npm-windows/))                                          | [Node Website](https://nodejs.org/en/download/) ([distro instructions](https://nodejs.org/en/download/package-manager/)) |
 
+
 Please see the [Setup](http://digitalhistory.github.io/article/tools) page for more details about the particular tools we will be using. **YOU WILL ABSOLUTEY NEED TO HAVE THESE TOOLS IN ORDER TO TAKE THE COURSE**
 
 
@@ -152,6 +153,8 @@ Pluses and Minuses are determined by participation
 I know there will be questions!  Please don't hesitate to ask them.  And here, finally, is the list of assignments. Detailed assignments will be handed out with adequate time to permit completion.
 
 <a id="table--assignments-table"></a>
+
+
 | Assignment           | Due Date                                                                      | Skills/Aims                                                        | A        | B        | C        | D        |
 |----------------------|-------------------------------------------------------------------------------|--------------------------------------------------------------------|----------|----------|----------|----------|
 | Class Profile        | <span class="timestamp-wrapper"><span class="timestamp">Sep. 17</span></span> | version control and collaboration                                  | &#10004; | &#10004; | &#10004; | &#10004; |
