@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>08-02: Why Spatial history?</title>
+<meta name="author" content="Matt Price"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../vendor/reveal//css/reveal.css"/>
+
+<link rel="stylesheet" href="../../vendor/reveal//css/theme/matt.css" id="theme"/>
+
+<link rel="stylesheet" href=""/>
+<link rel="stylesheet" href="../../vendor/reveal//lib/css/zenburn.css"/>
+<link rel="stylesheet" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css"/>
+<style>
+/* Position computations of klipse get confused by reveal.js's scaling.
+   Hence, scaling should be disabled with this code.  Fix height of code area
+   with scrollbar (use overflow instead of overflow-y to restore CodeMirror
+   setting afterwards): */
+.reveal section pre { max-height: 70vh; height: auto; overflow: auto; }
+/* Reset some reveal.js and oer-reveal settings: */
+.reveal section pre .CodeMirror pre { font-size: 2em; box-shadow: none; width: auto; padding: 0.4em; display: block; overflow: visible; }
+/* Enlarge cursor: */
+.CodeMirror-cursor { border-left: 3px solid black; }
+</style>
+<script>
+    window.klipse_settings = {
+        selector: '.language-klipse',
+        selector_eval_html: '.language-klipse-html',
+        selector_eval_js: '.language-klipse-javascript',
+        selector_eval_js: '.language-klipse-js',
+        selector_eval_php: '.language-klipse-php',
+        selector_eval_python_client: '.language-klipse-python',
+        selector_eval_ruby: '.language-klipse-ruby',
+        selector_eval_scheme: '.language-klipse-scheme',
+        selector_sql: '.language-klipse-sql'
+    };
+</script>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../vendor/reveal//css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>08-02: Why Spatial history?</h1>
+<h3>Matt Price  </h3>
+<!-- <p class="title-theme-choice">(view this presentation in another theme: 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
+				)	</p> -->
+
+</section>
+<section>
+<section id="slide-org3f76a2d">
+<h2 id="org3f76a2d">Assignment Notes</h2>
+<form><ul>
+<li>Assignment 3: good luck!!</li>
+<li>Assignment 4: not up yet! But the <b>non-technical instructions</b> in <a href="https://github.com/DigitalHistory/advanced-topics/tree/master/spatial-history#assignment">last year's version</a> will still apply. There will, however, be some significant differences in the technical content.</li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-recap-abcf">
+<h2 id="recap-abcf">Recap (from a while ago)</h2>
+<form><ul>
+<li>Hermeneutics and understanding</li>
+<li>What does it mean to <i>understand</i> large numbers of texts, and what is the nature of <i>expertise</i>?</li>
+<li><i>searching</i> vs <i>browsing</i></li>
+<li>data as <i>evidence</i>, data as <i>inspiration</i></li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-summary-7391">
+<h2 id="summary-7391">Summary</h2>
+<form><ul>
+<li>Space &amp; Place</li>
+<li>The Work Maps Do: lying; presenting; creating</li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-spatial-turn-c310">
+<h2 id="spatial-turn-c310">Spatial Turn</h2>
+<form><ul>
+<li>Space and "place"</li>
+<li>Space <i>as historically constituted</i></li>
+<li>What is "the History of a place?"</li>
+
+</ul></form>
+
+</section>
+<section id="slide-questions-for-us-3e02">
+<h3 id="questions-for-us-3e02">Questions for us</h3>
+<form><ul>
+<li>What does it mean to foreground spatial characteristics in a <i>spatial</i> history?</li>
+<li>How do maps &amp; media <i>transform</i> the kinds of stories we can tell</li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-looking-at-whales-7029">
+<h2 id="looking-at-whales-7029">Looking at Whales</h2>
+<form><ul>
+<li>impressive data collection</li>
+<li>arresting images</li>
+<li>but conclusion is about <b>pillage</b>: not immediately apparent to the eye.</li>
+
+</ul></form>
+</section>
+<section id="slide-one-version-of-the-story-8339">
+<h3 id="one-version-of-the-story-8339">One version of the story</h3>
+<p>
+<iframe width="800px" height="600px" src="https://www.youtube.com/embed/Tn7fQ5mYHPA" frameborder="0" allowfullscreen></iframe>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-lying-with-maps-7a34">
+<h2 id="lying-with-maps-7a34">Lying with Maps</h2>
+<form><ul>
+<li>maps are <i>rhetorical objects</i></li>
+<li>use of shade, color, can <i>be very misleading</i></li>
+<li>same numbers can produce <i>very different</i> visualizations</li>
+
+</ul></form>
+</section>
+<section id="slide-birth-rates-8c7e">
+<h3 id="birth-rates-8c7e">birth rates</h3>
+
+<figure>
+<img src="../../ox-hugo/lying-w-maps-birth-rates1.jpeg" alt="lying-w-maps-birth-rates1.jpeg" class="paired">
+
+</figure>
+
+<figure>
+<img src="../../ox-hugo/lying-w-maps-birth-rates-2.jpeg" alt="lying-w-maps-birth-rates-2.jpeg" class="paired">
+
+</figure>
+</section>
+</section>
+<section>
+<section id="slide-critical-cartography-b130">
+<h2 id="critical-cartography-b130">"Critical" Cartography</h2>
+<form><ul>
+<li>if maps "lie", or, at least, if maps are <i>arguments</i>, then:
+<form><ul>
+<li>what relations of power do they reveal/participate in?</li>
+<li>if we are aware of the "lying", how can we work with it <i>critically</i>?</li>
+
+</ul></form></li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-maps-make-landscapes-346e">
+<h2 id="maps-make-landscapes-346e">Maps Make Landscapes</h2>
+<form><ul>
+<li>U.S. <i>Land Ordinance of 1785</i> establishes grid mappping method as national system</li>
+<li>lots sold <i>according to this method</i></li>
+
+</ul></form>
+
+<figure>
+<img src="https://mvmtbldg.files.wordpress.com/2011/02/glo-plat2.jpg" alt="glo-plat2.jpg" class="paired">
+
+</figure>
+
+<figure>
+<img src="https://mvmtbldg.files.wordpress.com/2011/02/corner-homestead4.jpg" alt="corner-homestead4.jpg" class="paired">
+
+</figure>
+</section>
+</section>
+<section>
+<section id="slide-mapping-/enrols/-state-power-900d">
+<h2 id="mapping-/enrols/-state-power-900d">Mapping <i>enrols</i> State Power</h2>
+
+<figure>
+<img src="../../ox-hugo/concession_roads.jpeg" alt="concession_roads.jpeg">
+
+</figure>
+</section>
+</section>
+<section>
+<section id="slide-...and-technological-power-79b0">
+<h2 id="...and-technological-power-79b0">&#x2026;and technological power</h2>
+
+<figure>
+<img src="../../ox-hugo/surveyor.jpeg" alt="surveyor.jpeg" class="paired">
+
+</figure>
+
+<figure>
+<img src="../../ox-hugo/line_cut.jpeg" alt="line_cut.jpeg" class="paired">
+
+</figure>
+</section>
+</section>
+<section>
+<section id="slide-maps-/reinscribe/-power-1dc0" class="twoc">
+<h2 id="maps-/reinscribe/-power-1dc0">Maps <i>Reinscribe</i> Power</h2>
+<div class="slideblock">
+<form><ul>
+<li>"Home Owners Loan Corporations (HOLC) (1930's)
+<form><ul>
+<li>US Federal Agency in New Deal</li>
+<li>tasked with preventing foreclosures</li>
+<li>ranked neighbourhoods by "desirability"</li>
+<li>ancestor to contemporary maps used by real estate brokers</li>
+
+</ul></form></li>
+
+</ul></form>
+
+
+<figure>
+<img src="https://ncrc.org/wp-content/uploads/2018/09/PHILLY_HOLC-2.jpg" alt="PHILLY_HOLC-2.jpg">
+
+</figure>
+
+</div>
+
+<div class="fragment appear slideblock">
+<p>
+<iframe width="100%" height="800px" src="https://dsl.richmond.edu/panorama/redlining/#loc=12/40.017/-75.205&city=philadelphia-pa" allowfullscreen></iframe>
+</p>
+
+</div>
+
+
+</section>
+</section>
+<section>
+<section id="slide-questions-for-us-3e234">
+<h2 id="questions-for-us-3e234">Questions for us (again)</h2>
+<form><ul>
+<li>What does it mean to foreground spatial characteristics in a <i>spatial</i> history?</li>
+<li>How do maps &amp; media <i>transform</i> the kinds of stories we can tell</li>
+
+</ul></form>
+</section>
+</section>
+</div>
+</div>
+<script src="../../vendor/reveal//lib/js/head.min.js"></script>
+<script src="../../vendor/reveal//js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: false,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: "100%",
+height: "100%",
+margin: 0.10,
+minScale: 1.00,
+maxScale: 1.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+{src: '../../vendor/reveal//plugin/klipse_reveal.js'},
+ { src: '../../vendor/reveal//lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: '../../vendor/reveal//plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+<script src="https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script>
+<script>
+/* Recompute layout upon changes by klipse.  Code fragment from
+   asciidoctor-revealjs-klipse by Timothy Pratley under GPLv3:
+   https://github.com/timothypratley/asciidoctor-revealjs-klipse/blob/master/docs/docinfo-footer.html */
+Reveal.addEventListener( 'slidechanged', function( event ) {
+    window.dispatchEvent( new Event('resize') );
+} );
+</script>
+</body>
+</html>
