@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>09-01: Spatial History with Leaflet Maps</title>
+<meta name="author" content="Matt Price"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../vendor/reveal//css/reveal.css"/>
+
+<link rel="stylesheet" href="../../vendor/reveal//css/theme/matt.css" id="theme"/>
+
+<link rel="stylesheet" href=""/>
+<link rel="stylesheet" href="../../vendor/reveal//lib/css/zenburn.css"/>
+<link rel="stylesheet" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css"/>
+<style>
+/* Position computations of klipse get confused by reveal.js's scaling.
+   Hence, scaling should be disabled with this code.  Fix height of code area
+   with scrollbar (use overflow instead of overflow-y to restore CodeMirror
+   setting afterwards): */
+.reveal section pre { max-height: 70vh; height: auto; overflow: auto; }
+/* Reset some reveal.js and oer-reveal settings: */
+.reveal section pre .CodeMirror pre { font-size: 2em; box-shadow: none; width: auto; padding: 0.4em; display: block; overflow: visible; }
+/* Enlarge cursor: */
+.CodeMirror-cursor { border-left: 3px solid black; }
+</style>
+<script>
+    window.klipse_settings = {
+        selector: '.language-klipse',
+        selector_eval_html: '.language-klipse-html',
+        selector_eval_js: '.language-klipse-javascript',
+        selector_eval_js: '.language-klipse-js',
+        selector_eval_php: '.language-klipse-php',
+        selector_eval_python_client: '.language-klipse-python',
+        selector_eval_ruby: '.language-klipse-ruby',
+        selector_eval_scheme: '.language-klipse-scheme',
+        selector_sql: '.language-klipse-sql'
+    };
+</script>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../vendor/reveal//css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>09-01: Spatial History with Leaflet Maps</h1>
+<h3>Matt Price  </h3>
+<!-- <p class="title-theme-choice">(view this presentation in another theme: 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
+				)	</p> -->
+
+</section>
+<section>
+<section id="slide-org3a17055">
+<h2 id="org3a17055">Cats</h2>
+
+<figure>
+<img src="../../ox-hugo/cat.jpg" alt="cat.jpg" class="paired">
+
+</figure>
+
+<figure>
+<img src="../../ox-hugo/ropes.jpg" alt="ropes.jpg" class="paired">
+
+</figure>
+</section>
+</section>
+<section>
+<section id="slide-org9b60ec7">
+<h2 id="org9b60ec7">API's: incantations, conjurations, and mystical binding</h2>
+<form><ul>
+<li>API's are <i>magic</i></li>
+<li>we <i>bind</i> a monster to a variable</li>
+<li>and then it has to perform tasks for us.</li>
+<li>sometimes we need to give it an offering first</li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-leaflet-maps-and-spatial-history-eeb1">
+<h2 id="leaflet-maps-and-spatial-history-eeb1">Maps and Spatial History</h2>
+<form><ul>
+<li>use online Maps to explore <b>making geography central</b> to historical explanation</li>
+
+</ul></form>
+
+<aside class="notes">
+<p>
+Today in class we are discussing <i>spatial history</i>, that is, history which focusses very strongly on the cultural history of space and place. There is nothing <i>intrinsically digital</i> about spatial history, nor is it necessarily qunatitative in nature; but the incredible development of Geographical Information Systems (GIS) in the last 15 years has made the use of interactive digital maps an attractive target for historians.
+</p>
+
+<p>
+Sophisticated works such as the <a href="http://web.stanford.edu/group/spatialhistory/cgi-bin/site/pub.php?id=29">Spatial History Project</a> and Ben Schmidt's <a href="http://sappingattention.blogspot.co.uk/2012/10/data-narratives-and-structural.html">Whaling Maps Project</a> take substantial technical effort to achieve their effects; in general, lengthy training in the use of specialized GIS software is required. We have our own example in the <a href="http://decima.chass.utoronto.ca/">DECIMA Project</a> run by Prof. Terpstra in our department.
+</p>
+
+<p>
+Our approach will be decidedly more lightweight. In class today, we will build a very simple "Geographical Information System" around a Leaflet Map. Leaflet Maps are, in fact, highly sophisticated GIS's, with powerful tools for accessing various layers of information; but in order to work with them, we will need to use a very small amount of Javascript.
+</p>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-read-this-part!-follow-the-links!-ee94">
+<h2 id="read-this-part!-follow-the-links!-ee94">Read this part! Follow the links!</h2>
+<form><ul>
+<li><a href="https://classroom.github.com/a/oC6_7PJk">create your assignment repo and clone locally</a>. we will work on it directly.</li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-what-is-a-gis?-12ec" class="twoc">
+<h2 id="what-is-a-gis?-12ec">What is a GIS?</h2>
+<div class="slideblock">
+<p>
+
+</p>
+
+
+<figure>
+<img src="https://web.archive.org/web/20190105210746/http://iolandarch.com/wp-content/uploads/2014/09/overlay-analysis.jpg" alt="overlay-analysis.jpg">
+
+</figure>
+
+</div>
+
+<div class="slideblock">
+<p>
+
+</p>
+
+<form><ul>
+<li>all data is "geo-tagged" (has location info = latitude-longitude co-ords)</li>
+<li>layered data (like photoshop)
+<form><ul>
+<li>"layering" a non-trivial taxonomic decision</li>
+
+</ul></form></li>
+<li>managed by a database, often quite complex, sophisticated</li>
+
+</ul></form>
+
+</div>
+
+<aside class="notes">
+<p>
+GIS is just a name for any system that tries to capture, manipulate, and represent geographical data. There are many GIS tools; the history department uses <a href="http://www.arcgis.com/features/">ArcGIS</a>, which is expensive and something of an industry standard, while many independent scholars use <a href="http://www.qgis.org/en/site/">QGIS</a>, which is free, open source, and not quite as powerful as Arc.
+</p>
+
+<p>
+The data in a GIS is all <a href="https://en.wikipedia.org/wiki/Geotagging">geotagged</a>, that is, assigned a set of geographical co-ordinates. This sounds simple but it is actually quite complex, since any co-ordinate system is a <i>simplified projection</i> of real, disordered, 3-dimensional space.  Many of the frustrations of working with GIS comes from the difficulty of rendering (say) historical map images <i>commensurate</i> with modern, satellite-derived maps.
+</p>
+
+<p>
+Within a GIS, information is generally accessed as a set of <b>layers</b>.  Data of specific types is <i>stratified</i> in layers, in much the same way that one creates image layers in photoshop. This image gives a typical example.  Note that the creation of layers is itself an intellectual decision, relying on judgments about the relationships between individual bits of data.
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-org6f1505e">
+<h2 id="org6f1505e">Design Considerations</h2>
+<form><ul>
+<li>what should the <b>baselayer</b> look like?</li>
+<li>what <b>kinds of phenomena are we representing</b>?</li>
+<li>what are the <b>logical groupings</b>? These hsold probably be layers</li>
+<li>how does the map <b>enhance and transform</b> the story you're telling?</li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-controlling-leaflet-maps-a206">
+<h2 id="controlling-leaflet-maps-a206">Controlling Leaflet Maps</h2>
+<form><ul>
+<li>first, <b>instantiate map</b> and set up initial conditions</li>
+<li>then <b>add baselayer</b></li>
+<li>then add <b>other layers as desired</b></li>
+<li>finally, <b>add controls</b></li>
+<li>we use Leaflet Maps <b>API</b> to add markers to marker layer, generate map on web page
+<form><ul>
+<li>"load" Leaflet Maps API (using a script tag)</li>
+<li>instruct Leaflet Maps to do what we want by *using methods of the <code>L</code> object, which is the name assigned to the API by default</li>
+<li>API's as <a href="https://en.wikipedia.org/wiki/Evocation">Evocation</a></li>
+<li>code may look complex, but you only need to change a few things</li>
+
+</ul></form></li>
+
+</ul></form>
+
+<div class="ASIDE">
+<p>
+An <b>API</b> is an "Application Programming Interface": a communications channel that lets programs talk to each other.  By "loading" the Leaflet API, our web pages can communicate directly with Leaflet's servers to modify the map that Leaflet is presenting to us.  In fact, most of the interesting stuff happening on the web these days happens via these machine-to-machine communication channels.  Cf. <a href="https://www.youtube.com/watch?v=s7wmiS2mSXY">this helpful video</a> or <a href="https://en.wikipedia.org/wiki/Application_programming_interface">Wikipedia</a> for more API info.
+</p>
+
+</div>
+
+<aside class="notes">
+<p>
+For our exercise today, we are really only interested in two layers:  the "basemap", that is, the street or satellite map most of us use on an almost-daily basis; and the <i>marker layer</i>, in which all of the little pins on a map are stored.  We access these layers, and create those markers, with Javascript, by making <i>calls</i> to the <i>Leaflet Maps API</i>.
+</p>
+
+<p>
+You don't have to understand the Leaflet Maps API very thoroughly to be able to do this assignment.  The code comes pre-written; all you have to do is hack at it till it does what you want it to.  
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-using-markdown-3d00">
+<h2 id="using-markdown-3d00">Using Markdown (refresher)</h2>
+<form><ul>
+<li>write your essay in Markdown, rather than HTMl (b/c so much easier)</li>
+<li>HTML included in a markdown file will still render as HTML.
+<form><ul>
+<li>Use this when Markdown syntax is not complex enough for your needs</li>
+
+</ul></form></li>
+
+</ul></form>
+
+<div class="org-src-container">
+
+<pre><code class=" markdown" ># one or more '#' marks indicates a headline
+
+### this one is "level 3"
+
+*a single asterisk is emphasis, or italics*
+
+**two are strong, or bold**
+
+An empty line separates paragraphs.
+
+&gt; blockquotes are made with angle brackets
+&gt; like this
+
+</code></pre>
+</div>
+
+<p>
+While you're coding, reflect on <a href="https://www.youtube.com/watch?v=Q8gGsuWouDE&amp;t=0m20s">the satisfaction that good, honest work brings to the act of electronic communication</a>. 
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-the-exercise-9a2b">
+<h2 id="the-exercise-9a2b">The Assignment</h2>
+<p>
+<a href="https://classroom.github.com/a/Irv1gDIe">online here</a>
+</p>
+</section>
+</section>
+<section>
+<section id="slide-the-code-e630">
+<h2 id="the-code-e630">The code</h2>
+</section>
+<section id="slide-javascript-ed67">
+<h3 id="javascript-ed67">Javascript</h3>
+<form><ul>
+<li>modify lat/long co-ords of <code>my_center</code>.</li>
+<li>modify content of marker objects</li>
+<li>very little else needs to change</li>
+
+</ul></form>
+</section>
+<section id="slide-html-f31e">
+<h3 id="html-f31e">HTML</h3>
+<form><ul>
+<li>shouldn't have to change much, though feel free to add</li>
+
+</ul></form>
+</section>
+<section id="slide-css-46fc">
+<h3 id="css-46fc">CSS</h3>
+<form><ul>
+<li>in your assignment, use <code>css/extra-styles.css</code> to make small changes to CSS</li>
+<li>use a different Bootstrap theme to make bigger changes</li>
+<li>read assignment notes to learn more about the frameworks this assignment leans on</li>
+
+</ul></form>
+</section>
+</section>
+</div>
+</div>
+<script src="../../vendor/reveal//lib/js/head.min.js"></script>
+<script src="../../vendor/reveal//js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: false,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: "100%",
+height: "100%",
+margin: 0.10,
+minScale: 1.00,
+maxScale: 1.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+{src: '../../vendor/reveal//plugin/klipse_reveal.js'},
+ { src: '../../vendor/reveal//lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: '../../vendor/reveal//plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+<script src="https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script>
+<script>
+/* Recompute layout upon changes by klipse.  Code fragment from
+   asciidoctor-revealjs-klipse by Timothy Pratley under GPLv3:
+   https://github.com/timothypratley/asciidoctor-revealjs-klipse/blob/master/docs/docinfo-footer.html */
+Reveal.addEventListener( 'slidechanged', function( event ) {
+    window.dispatchEvent( new Event('resize') );
+} );
+</script>
+</body>
+</html>
