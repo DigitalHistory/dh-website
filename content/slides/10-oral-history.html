@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>10: Visualization/Engaged History/Oral History</title>
+<meta name="author" content="Matt Price"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../vendor/reveal//css/reveal.css"/>
+
+<link rel="stylesheet" href="../../vendor/reveal//css/theme/matt.css" id="theme"/>
+
+<link rel="stylesheet" href=""/>
+<link rel="stylesheet" href="../../vendor/reveal//lib/css/zenburn.css"/>
+<link rel="stylesheet" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css"/>
+<style>
+/* Position computations of klipse get confused by reveal.js's scaling.
+   Hence, scaling should be disabled with this code.  Fix height of code area
+   with scrollbar (use overflow instead of overflow-y to restore CodeMirror
+   setting afterwards): */
+.reveal section pre { max-height: 70vh; height: auto; overflow: auto; }
+/* Reset some reveal.js and oer-reveal settings: */
+.reveal section pre .CodeMirror pre { font-size: 2em; box-shadow: none; width: auto; padding: 0.4em; display: block; overflow: visible; }
+/* Enlarge cursor: */
+.CodeMirror-cursor { border-left: 3px solid black; }
+</style>
+<script>
+    window.klipse_settings = {
+        selector: '.language-klipse',
+        selector_eval_html: '.language-klipse-html',
+        selector_eval_js: '.language-klipse-javascript',
+        selector_eval_js: '.language-klipse-js',
+        selector_eval_php: '.language-klipse-php',
+        selector_eval_python_client: '.language-klipse-python',
+        selector_eval_ruby: '.language-klipse-ruby',
+        selector_eval_scheme: '.language-klipse-scheme',
+        selector_sql: '.language-klipse-sql'
+    };
+</script>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../vendor/reveal//css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>10: Visualization/Engaged History/Oral History</h1>
+<h3>Matt Price  </h3>
+<!-- <p class="title-theme-choice">(view this presentation in another theme: 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
+				)	</p> -->
+
+</section>
+<section>
+<section id="slide-recap-e97e">
+<h2 id="recap-e97e">Recap</h2>
+<form><ul>
+<li>Spatial History
+<form><ul>
+<li>new tools form GIS</li>
+<li>new questions from cultural geography</li>
+<li>maps &amp; visualizations are <b>rhetorical</b> and need <b>interpretation</b></li>
+
+</ul></form></li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-today-0deb">
+<h2 id="today-0deb">Today</h2>
+<form><ul>
+<li>a bit more on visualization (catchup really)</li>
+<li>Excursus on "Objectivity"</li>
+<li>What's Special about Oral History?</li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-playfair:-early-techniques-a672">
+<h2 id="playfair:-early-techniques-a672">Playfair: Early Techniques</h2>
+<p>
+<img src="http://www.jeffersonbailey.com/wp-content/uploads/2014/12/figure_2.png" alt="figure_2.png">
+multivariate data; area as quantity; pie chart
+</p>
+<aside class="notes">
+<p>
+William Playfair (1789-1823), Scottish engineer &amp; political scientist; brother John a major figure in Scottish enlightenment, which saw Adam Smith, James Watt, etc.; never a success in business, but interest in both tech &amp; finance.
+</p>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-org54c2321">
+<h2 id="org54c2321">Playfair: Early Techniques</h2>
+
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Playfair_TimeSeries-2.png" alt="Playfair_TimeSeries-2.png">
+
+</figure>
+</section>
+</section>
+<section>
+<section id="slide-charles-joseph-minard:-storytelling-7995">
+<h2 id="charles-joseph-minard:-storytelling-7995">Charles Joseph Minard: Storytelling</h2>
+
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Minard.png" alt="Minard.png">
+
+</figure>
+<aside class="notes">
+<p>
+CJ Minard (1781-1870); civil engineer; drawn in 1869; 
+ six different dimensions: latitude, longitude, direction of movement, time, temperature, and the size of the Grand Army. Minard's achievement here is expertly illustrating a complex, multivariate time-space story in a compelling and concise display. Tufte has famously endorsed it as the “best statistical graphic ever drawn.” 11  E.J. Marey, a contemporary of Minard, praised the map as “seeming to defy the pen of the historian by its brutal eloquence.” 1
+</p>
+
+<p>
+"The numbers of men present are represented by the widths of the colored zones in a rate of one millimeter for ten thousand men; these are also written beside the zones. Red designates men moving into Russia, black those on retreat. — The informations used for drawing the map were taken from the works of Messrs. Thiers, de Ségur, de Fezensac, de Chambray and the unpublished diary of Jacob, pharmacist of the Army since 28 October.
+In order to facilitate the judgement of the eye regarding the diminution of the army, I supposed that the troops under Prince Jèrôme and under Marshal Davoust, who were sent to Minsk and Mobilow and who rejoined near Orscha and Witebsk, had always marched with the army."
+</p>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-neurath:-isotype-3467">
+<h2 id="neurath:-isotype-3467">Neurath: Isotype</h2>
+
+<figure>
+<img src="http://56.media.tumblr.com/92cae54746a0198abb7a769f91c6ff83/tumblr_mobrwkmIla1r06q0no1_1280.jpg" alt="tumblr_mobrwkmIla1r06q0no1_1280.jpg">
+
+</figure>
+<aside class="notes">
+<p>
+Unified Encyclopedia of Science; Vienna Circle; the Ship
+</p>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-working-with-data-618e">
+<h2 id="working-with-data-618e">Working with Data</h2>
+<p>
+<a href="http://selfiecity.net/selfiexploratory/">Selfiexploratory</a>
+<a href="http://histecon.fas.harvard.edu/innerlife/connections-basic.html">Network Graphs</a>
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org16d9039">
+<h2 id="org16d9039">Panama Papers</h2>
+<form><ul>
+<li><a href="https://panamapapers.icij.org/graphs/">ICIJ visualizations</a></li>
+<li><a href="http://fusion.net/story/287382/panama-papers-data-visualization/">Fusion graph network visualization</a></li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-objectivity-in-history-8ee3">
+<h2 id="objectivity-in-history-8ee3">Objectivity in History</h2>
+<blockquote>
+<p>
+All history ultimately depends on its social purpose. (Thompson)
+</p>
+</blockquote>
+<blockquote>
+<p>
+Oral sources are not objective. This of course applies to every source, though
+the holiness of writing often leads us to forget it. (Portelli)
+</p>
+</blockquote>
+<form><ul>
+<li>What does it mean to be objective and/or neutral?</li>
+<li>What happens to history that abandons or modifies this standard?</li>
+
+</ul></form>
+
+</section>
+<section id="slide-myth-6729">
+<h3 id="myth-6729">Myth</h3>
+<form><ul>
+<li>not untruth, but beyond truth.</li>
+<li>Myths structure understanding of world, self, and events, give meaning to action, and purpose to the world.
+<form><ul>
+<li>Myth of Prometheus &amp; Fire gives an account of reason &amp; techne in Greece</li>
+<li>Creation Myth of Genesis give guide to relationships among (e.g.) Man, Woman, God, Nature</li>
+<li>'Myth of Progress' makes sense of modernity</li>
+<li>George Washington &amp; the apple tree ties virtue to the State</li>
+<li>"multiculturalism" as a mythical strucutrefor Canadians</li>
+
+</ul></form></li>
+
+</ul></form>
+<aside class="notes">
+<p>
+emphasize "beyond"
+</p>
+
+</aside>
+</section>
+<section id="slide-objectivity-as-founding-myth-c350">
+<h3 id="objectivity-as-founding-myth-c350">Objectivity as Founding Myth</h3>
+<form><ul>
+<li>fundamental to our pursuit</li>
+<li>but deeply problematic</li>
+<li>commitment to: fixity of the past; sharp separation between subject &amp; object; prior nature of fact to interpretation</li>
+<li>"wie es eigentlich gewesen" as bedrock</li>
+<li>and then the Twentieth Century</li>
+
+</ul></form>
+<aside class="notes">
+<form><ul>
+<li>Leopold von Ranke, 1824, <i>Geschichte der romanischen und germanischen Völker</i>, "wie es eigentlich gewesen".</li>
+
+</ul></form>
+
+</aside>
+</section>
+<section id="slide-epistemological-challenges-e712">
+<h3 id="epistemological-challenges-e712">Epistemological Challenges</h3>
+<form><ul>
+<li>the fact/value distinction</li>
+<li>structures of knowledge</li>
+<li>contexts of interpretation</li>
+<li>standpoints &amp; the view from nowhere</li>
+<li>"relativism" as nemesis and saviour</li>
+
+</ul></form>
+
+<aside class="notes">
+<form><ul>
+<li><b>fact/value distinction:</b> between what is and what ought to be, or between raw reality and interpretation
+<form><ul>
+<li>undermined not just for history but even for science: theory-ladenness of observation (Pierre Duhem, WVO Quine, others)</li>
+
+</ul></form></li>
+<li><b>structures &amp; contexts:</b> we make sense of the world through coherent, interlocked structures of meaning. We can't evaluate turth claims outside of those strctures</li>
+<li>These problems are sort-of solved by a variety of movments going by name of <b>relativism</b>, but they bring a whole bunch of serious problems with them, especially moral ones.</li>
+
+</ul></form>
+
+<p>
+Take-home: knowledge about the past turns out to be much more unstable/complex than it first appears. 
+</p>
+<form><ul>
+<li>and, even i n the absence of a clear/straightforward standard for "truth" or "objectivity", we still need a standard of "integrity".</li>
+
+</ul></form>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-truth-and-meaning-in-oral-history-1ed0">
+<h2 id="truth-and-meaning-in-oral-history-1ed0">Truth and Meaning in Oral History</h2>
+<blockquote>
+<p>
+The first thing that makes oral history different, therefore, is that it tells us
+less about events than about their meaning&#x2026;
+Oral sources are credible but with a different credibility. The importance of
+oral testimony may lie not in its adherence to fact, but rather in its departure
+from it, as imagination, symbolism, and desire emerge. (Portelli)
+</p>
+</blockquote>
+
+<aside class="notes">
+<form><ul>
+<li>we can learn about the past <i>without limiting ourseles to the quest for facts</i></li>
+<li>Oral History shines best where it uncovers <b>relationships of meaning</b>: how does this union strike or this car bomb explosion or this assasisnation <b>resonate throughout a community</b>, and get tied back to actions/events that preceded or followed it?</li>
+
+</ul></form>
+
+</aside>
+</section>
+<section id="slide-politics-of-engagement-84de">
+<h3 id="politics-of-engagement-84de">Politics of engagement</h3>
+<blockquote>
+<p>
+Oral sources are a necessary (not a sufficient) condition for a history of the
+nonhegemonic classes; they are less necessary (though by no means useless)
+for the history of the ruling classes, who have had control over writing and
+leave behind a much more abundant written record. (Portelli)
+</p>
+</blockquote>
+<form><ul>
+<li>New Social Movements and subversive history</li>
+<li>History from Below: <i>History Workshop</i>; <i>Radical History</i>; <i>Race Traitor</i></li>
+<li>slow elaboration of self-aware 'engagement' by scholars</li>
+<li>oral history central to this <i>champs de bataille</i>
+<form><ul>
+<li>challenges to objectivity/fact as goal</li>
+<li>growing role for <i>empathy</i> as technique</li>
+
+</ul></form></li>
+
+</ul></form>
+<aside class="notes">
+<form><ul>
+<li>emphasis on meaning leads almost seamlessly into forms of "engagement"</li>
+<li>infiltration of academia by radicals from movements of the 50s, 60s, and 70s.</li>
+<li>interest in harmonizing political work and academic pursuits</li>
+<li></li>
+
+</ul></form>
+
+</aside>
+</section>
+<section id="slide-oral-history-as-redemption-836b">
+<h3 id="oral-history-as-redemption-836b">Oral History as Redemption</h3>
+<blockquote>
+<p>
+In the most general sense, once the life experience of people of all kinds
+can be used as its raw material, a new dimension is given to history. (Thompson, 24)
+</p>
+</blockquote>
+<form><ul>
+<li>1980's: 'testimony' in Central American solidarity movement;</li>
+<li>1990's &amp; later: <i>Truth</i> and Reconciliation Commissions (South Africa; Australia; Chile; Argentina; Guatemala; Canada)</li>
+<li>tensions between <i>truth</i> and <i>experience</i></li>
+
+</ul></form>
+<aside class="notes">
+<p>
+Having been mobilized as this kind of a tool, Oral History finds its way into many domains of activity beyind the historical profession.  
+</p>
+<form><ul>
+<li>tightrope of honoring subjects/subject matter &amp; allegiance to some standard of integrity</li>
+
+</ul></form>
+
+</aside>
+</section>
+<section id="slide-ethical-demands-of-engagement-e9c2">
+<h3 id="ethical-demands-of-engagement-e9c2">Ethical Demands of Engagement</h3>
+<form><ul>
+<li>"Engagement" a terribly difficult stance to maintain</li>
+<li>Not a rejection of 'objectivity', but a refinement</li>
+<li>balancing btwn epistemic virtues</li>
+<li>constant vigilance!</li>
+
+</ul></form>
+<aside class="notes">
+<form><ul>
+<li>balance objectivity, neutrality, with ethical responsibilities (ov various kinds), also with complex engagements w/ meaning as it propagates across communities.</li>
+
+</ul></form>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-questions-of-form-47c4">
+<h2 id="questions-of-form-47c4">Questions of Form</h2>
+<form><ul>
+<li>transcripts not the same as tape</li>
+<li>tape not the same as digital media</li>
+<li>there are lots of kinds of 'oral history'</li>
+
+</ul></form>
+
+<aside class="notes">
+<p>
+
+</p>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-ethics-of-oral-history-3b99">
+<h2 id="ethics-of-oral-history-3b99">Ethics of Oral History</h2>
+<form><ul>
+<li>historians' responsibilities
+<form><ul>
+<li>respect</li>
+<li>handle materials carefully</li>
+<li>seek consent at all stages</li>
+
+</ul></form></li>
+<li>Forms 
+<form><ul>
+<li>ensure they understand it</li>
+<li>make sure they KNOW you intend to publish on the web
+<form><ul>
+<li>give them MULTIPLE chances to withdraw</li>
+
+</ul></form></li>
+
+</ul></form></li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-active-listening-8adc">
+<h2 id="active-listening-8adc">Active Listening</h2>
+<div class="QUOTE:">
+<p>
+<b>Interviewee:</b> I practically had a nervous breakdown when I discovered my sister had cancer, you know; it was kind of like knocking the pins [out from under me] &#x2013; and I had, after the second boy was born, I just had ill health for quite a few years. I evidently had a low-grade blood infection or something. Because I was very thin, and, of course, I kept working hard. And every fall, why, I'd generally spend a month or so being sick &#x2013; from overdoing, probably.
+</p>
+
+<p>
+<b>Interviewer:</b> What kind of farming did you do right after you were married?
+</p>
+
+</div>
+</section>
+<section id="slide-active-listening-eb83">
+<h3 id="active-listening-eb83">Active Listening</h3>
+<form><ul>
+<li>Don't be afraid to deviate from script</li>
+<li>pay attention to what you hear</li>
+
+</ul></form>
+<aside class="notes">
+<form><ul>
+<li>these are skills every historian needs</li>
+<li>of course we <b>also</b> need to be careful reading written texts. But the writtne text wil lstil lbe there when we go back to reread. The interview is <b>actively shaped</b> by our participation</li>
+<li>OH offers special opportunities when it comes to redirecting your research &#x2013; but you have to be able to seize them in the moment.  In this sense, more performative than other parts of history; closer to anthropology, to journalism, in effect, to all theo ther disciplines where OH is used!</li>
+
+</ul></form>
+
+</aside>
+</section>
+</section>
+</div>
+</div>
+<script src="../../vendor/reveal//lib/js/head.min.js"></script>
+<script src="../../vendor/reveal//js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: false,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: "100%",
+height: "100%",
+margin: 0.10,
+minScale: 1.00,
+maxScale: 1.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+{src: '../../vendor/reveal//plugin/klipse_reveal.js'},
+ { src: '../../vendor/reveal//lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: '../../vendor/reveal//plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+<script src="https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script>
+<script>
+/* Recompute layout upon changes by klipse.  Code fragment from
+   asciidoctor-revealjs-klipse by Timothy Pratley under GPLv3:
+   https://github.com/timothypratley/asciidoctor-revealjs-klipse/blob/master/docs/docinfo-footer.html */
+Reveal.addEventListener( 'slidechanged', function( event ) {
+    window.dispatchEvent( new Event('resize') );
+} );
+</script>
+</body>
+</html>

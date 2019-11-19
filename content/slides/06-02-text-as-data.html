@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>06-02: Text as Data, history As Algorithm (but also homework help)</title>
+<meta name="author" content="Matt Price"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../vendor/reveal//css/reveal.css"/>
+
+<link rel="stylesheet" href="../../vendor/reveal//css/theme/matt.css" id="theme"/>
+
+<link rel="stylesheet" href=""/>
+<link rel="stylesheet" href="../../vendor/reveal//lib/css/zenburn.css"/>
+<link rel="stylesheet" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css"/>
+<style>
+/* Position computations of klipse get confused by reveal.js's scaling.
+   Hence, scaling should be disabled with this code.  Fix height of code area
+   with scrollbar (use overflow instead of overflow-y to restore CodeMirror
+   setting afterwards): */
+.reveal section pre { max-height: 70vh; height: auto; overflow: auto; }
+/* Reset some reveal.js and oer-reveal settings: */
+.reveal section pre .CodeMirror pre { font-size: 2em; box-shadow: none; width: auto; padding: 0.4em; display: block; overflow: visible; }
+/* Enlarge cursor: */
+.CodeMirror-cursor { border-left: 3px solid black; }
+</style>
+<script>
+    window.klipse_settings = {
+        selector: '.language-klipse',
+        selector_eval_html: '.language-klipse-html',
+        selector_eval_js: '.language-klipse-javascript',
+        selector_eval_js: '.language-klipse-js',
+        selector_eval_php: '.language-klipse-php',
+        selector_eval_python_client: '.language-klipse-python',
+        selector_eval_ruby: '.language-klipse-ruby',
+        selector_eval_scheme: '.language-klipse-scheme',
+        selector_sql: '.language-klipse-sql'
+    };
+</script>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../vendor/reveal//css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>06-02: Text as Data, history As Algorithm (but also homework help)</h1>
+<h3>Matt Price  </h3>
+<!-- <p class="title-theme-choice">(view this presentation in another theme: 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
+				)	</p> -->
+
+</section>
+<section>
+<section id="slide-recap-8099">
+<h2 id="recap-8099">Recap (distant reading)</h2>
+<p>
+Models and Distant Reading
+</p>
+<form><ul>
+<li>Hopeful, even Utopian discourse</li>
+<li>Makes some questionable assumptions</li>
+<li>But raises substantive questions:
+<form><ul>
+<li class="fragment appear">Do we really deserve to call ourselves "Experts"?</li>
+<li class="fragment appear">What does it mean, today, to "know" something?</li>
+<li class="fragment appear">Can we leverage data-analysis tools to inform the classical goals of humanistic scholarship?</li>
+
+</ul></form></li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-synopsis-bfc9">
+<h2 id="synopsis-bfc9">Today</h2>
+<form><ul>
+<li>Assignment Questions</li>
+<li>Hermeneutics</li>
+<li>Data beyond evidence</li>
+<li>Screwing Around</li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-org515856f">
+<h2 id="org515856f">How's it going?</h2>
+<pre><code class="language-klipse-js" >
+//add code here
+
+</code></pre>
+
+</section>
+</section>
+<section>
+<section id="slide-hermeneutics-of-data-45d2">
+<h2 id="hermeneutics-of-data-45d2">Hermeneutics of Data</h2>
+</section>
+<section id="slide-the-hermeneutic-tradition-b60e">
+<h3 id="the-hermeneutic-tradition-b60e">The Hermeneutic Tradition</h3>
+<form><ul>
+<li>Science of Interpretation
+<form><ul>
+<li>Biblical Scholarship: how to read</li>
+<li>Schleiermacher: how to understand others</li>
+<li><p>
+Heidegger: experience as hermeneutic
+</p>
+<blockquote>
+<p>
+It is not really we who address the texts of tradition, but the canonic texts that address us. Having traveled through decades and centuries, the classic works of art, literature, science, and philosophy question us and our way of life. Our prejudices, whatever aspects of our cultural horizon that we take for granted, are brought into the open in the encounter with the past.
+</p>
+</blockquote></li>
+
+</ul></form></li>
+
+</ul></form>
+<aside class="notes">
+<p>
+Human being, Gadamer argues, is a being in language. It is through language that the world is opened up for us. We learn to know the world by learning to master a language. Hence we cannot really understand ourselves unless we understand ourselves as situated in a linguistically mediated, historical culture. Language is our second nature
+</p>
+
+<p>
+Gadamer argues that we never know a historical work as it originally appeared to its contemporaries. We have no access to its original context of production or to the intentions of its author. Tradition is always alive. It is not passive and stifling, but productive and in constant development. Trying, as the earlier hermeneuticians did, to locate the (scientific) value of the humanities in their capacity for objective reconstruction is bound to be a wasted effort. The past is handed over to us through the complex and ever-changing fabric of interpretations, which gets richer and more complex as decades and centuries pass. History, as Gadamer puts it, is always effective history. This, however, is not a deficiency. It is, rather, a unique possibility, a possibility that involves the particular kind of truth-claim that Gadamer ascribes to the human sciences: the truth of self-understanding.
+</p>
+
+</aside>
+
+<form><ul>
+<li>textual encouter as a fundamental act of self-comprehension</li>
+<li>can this be recaptured in data-heavy analysis?</li>
+
+</ul></form>
+
+</section>
+<section id="slide-method-as-interpretation-db44">
+<h3 id="method-as-interpretation-db44">Method as Interpretation</h3>
+<blockquote>
+<p>
+&#x2026;work with data can be exploratory and deliberately without the mathematical rigor that social scientists must use to support their epistemological claims. Using data in this way is fundamentally different from using data for quantifying, computing and creating knowledge as per quantitative history.
+</p>
+
+<p>
+&#x2026;data does not always have to be used as evidence. It can also help with discovering and framing research questions. 
+</p>
+</blockquote>
+
+<aside class="notes">
+<form><ul>
+<li>Gibbs &amp; Owens, both figures in DH scene in first half of this decade</li>
+<li>data in history has been around a while!</li>
+
+</ul></form>
+
+</aside>
+
+</section>
+<section id="slide-openness-a3bd">
+<h3 id="openness-a3bd">Openness</h3>
+<blockquote>
+<p>
+Regardless of form, we need history writing that explicates the research process as much as the research conclusions. We need history writing that interfaces with, explains, and makes accessible the data that historians use&#x2026;One way of reducing hostility to data and its manipulation is to lay bare whatever manipulations have led to some historical insight. 
+</p>
+</blockquote>
+</section>
+<section id="slide-open-research-on-users-5357">
+<h3 id="open-research-on-users-5357">Open Research on "Users"</h3>
+<form><ul>
+<li><a href="https://books.google.com/ngrams/graph?content=user&amp;year_start=1800&amp;year_end=2000&amp;corpus=15&amp;smoothing=3&amp;share=&amp;direct_url=t1%3B%2Cuser%3B%2Cc0">Rise of the User</a></li>
+<li><a href="https://books.google.com/ngrams/graph?content=drug+user%2Cuser+interface&amp;year_start=1960&amp;year_end=2000&amp;corpus=15&amp;smoothing=3&amp;share=&amp;direct_url=t1%3B%2Cdrug%20user%3B%2Cc0%3B.t1%3B%2Cuser%20interface%3B%2Cc0">Two different Rises</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/12ARdbZeISIGzV-_7sJPlB56ZOGZZvAQCC79CUcIRxqU/pub?hl=en_US&amp;hl=en_US&amp;output=html">Using Collocation</a></li>
+<li><a href="https://books.google.com/ngrams/graph?content=cyborg%2Crobot%2Candroid%2Cartificial+intelligence%2Cautomaton%2Cfrankenstein&amp;case_insensitive=on&amp;year_start=1800&amp;year_end=2008&amp;corpus=15&amp;smoothing=3&amp;share=&amp;direct_url=t4%3B%2Ccyborg%3B%2Cc0%3B%2Cs0%3B%3Bcyborg%3B%2Cc0%3B%3BCyborg%3B%2Cc0%3B%3BCYBORG%3B%2Cc0%3B.t4%3B%2Crobot%3B%2Cc0%3B%2Cs0%3B%3Brobot%3B%2Cc0%3B%3BRobot%3B%2Cc0%3B%3BROBOT%3B%2Cc0%3B.t4%3B%2Candroid%3B%2Cc0%3B%2Cs0%3B%3Bandroid%3B%2Cc0%3B%3BAndroid%3B%2Cc0%3B%3BANDROID%3B%2Cc0%3B.t4%3B%2Cartificial%20intelligence%3B%2Cc0%3B%2Cs0%3B%3BArtificial%20Intelligence%3B%2Cc0%3B%3Bartificial%20intelligence%3B%2Cc0%3B%3BArtificial%20intelligence%3B%2Cc0%3B%3BARTIFICIAL%20INTELLIGENCE%3B%2Cc0%3B.t4%3B%2Cautomaton%3B%2Cc0%3B%2Cs0%3B%3Bautomaton%3B%2Cc0%3B%3BAutomaton%3B%2Cc0%3B%3BAUTOMATON%3B%2Cc0%3B.t4%3B%2Cfrankenstein%3B%2Cc0%3B%2Cs0%3B%3BFrankenstein%3B%2Cc0%3B%3BFRANKENSTEIN%3B%2Cc0">And some further thoughts about human-machine hybrids</a></li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-screwing-around-2dc5">
+<h2 id="screwing-around-2dc5">Screwing Around</h2>
+</section>
+<section id="slide-millions-of-books-474c">
+<h3 id="millions-of-books-474c">Millions of books</h3>
+<blockquote>
+<p>
+It's one thing to worry that your canon isn't sufficiently inclusive, or broad, or representative. It's another thing when your canon has no better chance of being these things than a random selection.(Ramsay, p.3)
+</p>
+</blockquote>
+
+<form><ul>
+<li>now-familiar insight: you can't read everything</li>
+
+</ul></form>
+</section>
+<section id="slide-searching-and-browsing-f338">
+<h3 id="searching-and-browsing-f338">Searching and Browsing</h3>
+<form><ul>
+<li>Search: knowledge of object; strategies of data collection; methods of reading</li>
+<li>Browsing: bundle of interests; unsystematic following of connections</li>
+
+</ul></form>
+<aside class="notes">
+<p>
+I walk into the library and wander around in a state of insoucient boredom. I like music, so I head over to the music section. I pick up a book on American rock music and start flipping through it (because it's purple and big). There's an interesting bit on Frank Zappa, and it mentions that Zappa was way into this guy named Edgard Varèse. I have no idea who that is, so I start looking around for some Varèse. One look at the cover of his biography—Varèse with that mad-scientist look and the crazy hair—and I'm already a fan. And so off I go. I check out some records and discover Varèse.
+</p>
+
+</aside>
+</section>
+<section id="slide-screwing-around-898f">
+<h3 id="screwing-around-898f">"Screwing Around"</h3>
+<form><ul>
+<li>"Screwing around" is a form of hermeneutic encounter</li>
+<li>the text <i>addresses us</i></li>
+
+</ul></form>
+</section>
+<section id="slide-linked-data-for-/screwing-around/,-not-only-/rigourous-investigation/-a896">
+<h3 id="linked-data-for-/screwing-around/,-not-only-/rigourous-investigation/-a896">Linked Data for <i>Screwing Around</i>, not only <i>rigourous investigation</i></h3>
+<p>
+<b>Goal:</b>
+</p>
+<blockquote>
+<p>
+Extract from the stored record of humanity useful information in an actionable format for any given human being of any culture at any time and in
+any place. (Crane, cited in Ramsay, 7)
+</p>
+</blockquote>
+
+<form><ul>
+<li>A library where books talk to each other! and our encounter with them is playfully mediated through algorithms.</li>
+
+</ul></form>
+
+<blockquote>
+<p>
+the real message of our technology is something entirely unexpected—
+a writerly, anarchic text that is more useful than the readerly, institutional
+text. Useful and practical not in spite of its anarchic nature, but as a natural
+consequence of the speed and scale that inhere in all anarchic systems.
+</p>
+</blockquote>
+</section>
+</section>
+</div>
+</div>
+<script src="../../vendor/reveal//lib/js/head.min.js"></script>
+<script src="../../vendor/reveal//js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: false,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: "100%",
+height: "100%",
+margin: 0.10,
+minScale: 1.00,
+maxScale: 1.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+{src: '../../vendor/reveal//plugin/klipse_reveal.js'},
+ { src: '../../vendor/reveal//lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: '../../vendor/reveal//plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+<script src="https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script>
+<script>
+/* Recompute layout upon changes by klipse.  Code fragment from
+   asciidoctor-revealjs-klipse by Timothy Pratley under GPLv3:
+   https://github.com/timothypratley/asciidoctor-revealjs-klipse/blob/master/docs/docinfo-footer.html */
+Reveal.addEventListener( 'slidechanged', function( event ) {
+    window.dispatchEvent( new Event('resize') );
+} );
+</script>
+</body>
+</html>
