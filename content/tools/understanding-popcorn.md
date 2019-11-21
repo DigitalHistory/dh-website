@@ -1,6 +1,6 @@
 ---
 title: "Understanding Popcorn"
-lastmod: 2019-11-21T13:48:54-05:00
+lastmod: 2019-11-21T15:16:50-05:00
 draft: false
 menu:
   main:
@@ -114,9 +114,9 @@ pop = Popcorn("#media")
 and use something like one of the models below:
 
 ```js
-const smart = Popcorn.smart( "#media", "http://www.youtube.com/watch?v=9oar9glUCL0" );
-// const smart = Popcorn.smart( "#media", 'https://vimeo.com/267718090' );
-// const smart = Popcorn.smart( "#media", 'https://soundcloud.com/corbanbrook/leaving-on-a-spaceship' );
+const pop = Popcorn.smart( "#media", "http://www.youtube.com/watch?v=9oar9glUCL0" );
+// const pop = Popcorn.smart( "#media", 'https://vimeo.com/267718090' );
+// const  = Popcorn.smart( "#media", 'https://soundcloud.com/corbanbrook/leaving-on-a-spaceship' );
 ```
 
 the soundcloud player is a little buggy &#x2013; it emits a loud crackle when you start playback, and the 'play' button needs to be pushed twice. Also, there are no built-in volume controls (!). In fact, we have to add a little bit of hacky code to get the player to work at all. So you'll need something like this, on say line 22 (ish):
