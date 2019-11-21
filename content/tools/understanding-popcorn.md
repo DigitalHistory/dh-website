@@ -1,6 +1,6 @@
 ---
 title: "Understanding Popcorn"
-lastmod: 2019-11-19T13:51:56-05:00
+lastmod: 2019-11-21T13:48:54-05:00
 draft: false
 menu:
   main:
@@ -65,7 +65,7 @@ I've provided examples for as many plugins as I could.  All should work as-is:
 
 (The links in this section take you to the plugin sourcecode, which will usually be a directory with 4 files. The `html` file contains a working example of the plugin code. The `js` file is the sourcecode itself, and usually starts off with a useful explanation of how the plugin works. The last two files are provided for testing purposes, you shouldn't need to have use them.)
 
-You can explore the rest of the plugins as you wish; you may need to add some extra columns to your spreadsheet to get them to work
+You can explore the rest of the plugins as you wish; you may need to add some extra columns to your spreadsheet to get them to work. In particular, Timeline adds some interesting options, and I like wordirver, but it isn't currently behaving properly and needs to be rewritten (don't have time right now!)
 
 
 ## Media Elements {#media-elements}
