@@ -72,8 +72,8 @@
 
 </section>
 <section>
-<section id="slide-org99a84cf">
-<h2 id="org99a84cf">Taking Stock</h2>
+<section id="slide-org69fe8f8">
+<h2 id="org69fe8f8">Taking Stock</h2>
 <form><ul>
 <li>The End is Nigh!!</li>
 <li>Assignment 4: Lara has Returned it!</li>
@@ -83,8 +83,8 @@
 </section>
 </section>
 <section>
-<section id="slide-org99cae12">
-<h2 id="org99cae12">Oral History Assignment</h2>
+<section id="slide-org8eca82f">
+<h2 id="org8eca82f">Oral History Assignment</h2>
 <form><ul>
 <li>intellectual goal: think hard about <b>nature of oral history</b>, and <b>how to use digital media effectively</b></li>
 <li>technical goal: think more about working with non-textual media, about HTML structures, and about APIs (monsters in the deep)</li>
@@ -93,15 +93,14 @@
 </section>
 </section>
 <section>
-<section id="slide-orgce5a0ff">
-<h2 id="orgce5a0ff">Before we go further!</h2>
+<section id="slide-org3852bea">
+<h2 id="org3852bea">Before we go further!</h2>
 <p>
-Copy my upstream repo so you can play w/ up to date code during class today. 
+pull in upstream changes so you can play w/ up to date code during class today. 
 </p>
 <pre  class="example">
-git clone https://github.com/DigitalHistory/advanced-topics.git
+git pull
 </pre>
-
 
 </section>
 </section>
@@ -212,8 +211,21 @@ var mytables = Tabletop.init( { key: public_spreadsheet_key,
 </section>
 </section>
 <section>
+<section id="slide-org7003511">
+<h2 id="org7003511">Before we go further!</h2>
+<p>
+pull in upstream changes so you can play w/ up to date code during class today. 
+</p>
+<pre  class="example">
+git pull
+</pre>
+
+</section>
+</section>
+<section>
 <section id="slide-repo-update-37330908fdsa">
 <h2 id="repo-update-37330908fdsa">Getting Started: First, Copy Spreadsheet</h2>
+<div class="slideblock">
 <form><ul>
 <li>go to my sheet: <a href="https://docs.google.com/spreadsheets/d/1pL_Lj62_ZcW7iawTCQ_5BQsmdynCtC8y5BCNy3k2LOM/edit#gid=0">https://docs.google.com/spreadsheets/d/1pL_Lj62_ZcW7iawTCQ_5BQsmdynCtC8y5BCNy3k2LOM/edit#gid=0</a></li>
 <li><code>File</code> &#x2013;&gt; <code>Make a copy</code></li>
@@ -224,11 +236,13 @@ var mytables = Tabletop.init( { key: public_spreadsheet_key,
 <li>insert into your js file</li>
 
 </ul></form>
-</section>
-</section>
-<section>
-<section id="slide-repo-update-3733lk;zxf">
-<h2 id="repo-update-3733lk;zxf">(other way) Spreadsheet URL</h2>
+
+</div>
+
+<div class="slideblock">
+<p>
+<b>Alternative Method</b>
+</p>
 <pre><code class="language-klipse-javascript" >
 var public_spreadsheet_key = &#39;https://docs.google.com/spreadsheets/d/1pL_Lj62_ZcW7iawTCQ_5BQsmdynCtC8y5BCNy3k2LOM/pubhtml?gid=0&amp;single=true&#39;;
 </code></pre>
@@ -236,11 +250,86 @@ var public_spreadsheet_key = &#39;https://docs.google.com/spreadsheets/d/1pL_Lj6
 <li>Replace <b>ONLY THE PART BTWN <i>d</i> and /pubhtml</b> with the spreadsheet "key" from yr new sheet</li>
 
 </ul></form>
+
+</div>
+
 </section>
 </section>
 <section>
-<section id="slide-repo-update-37332l3j4">
-<h2 id="repo-update-37332l3j4">Run server</h2>
+<section id="slide-org20ac3df" class="twoc">
+<h2 id="org20ac3df">Styling Popcorn Plugins</h2>
+<div class="slideblock">
+<p>
+<b>Page-specific code is found in <code>/css/oh-styles.css</code></b>
+</p>
+<div class="org-src-container">
+
+<pre><code class=" css" >.main-container {
+    grid-template-areas: "intro popcorn" "main main";
+    grid-auto-columns: 1fr;
+    grid-template-rows: 50vh 1fr;
+}
+aside#popcorn-container {
+    grid-area: popcorn;
+    background-color: var(--color-highlight2);
+    border: 1px solid var(--color-custom-borders);
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    max-height: 100%;
+    /* space things out! */
+    justify-content: space-around;
+}
+aside#popcorn-container &gt; * {
+    /* default base width for plugins */
+    flex-basis: var(--default-width);
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+
+/* most of the plugins will create divs or other elements w/ class "pluginname-plugin" */
+/* here's one example of styling particular plugins differently from others */
+#popcorn-container figure.figure-plugin {
+    /* an example of setting the figure as a bit larger than the others.  */
+    flex-basis: calc(var(--default-width)*4/3);
+    max-width: 100%;
+}
+
+#popcorn-container .leaflet-plugin, #popcorn-container .googlemap-plugin {
+    /* make these full-width by default */
+    flex-basis: 100%;
+}
+
+/* you can also use the `id` column to address *most* plugins (but not all!) */
+</code></pre>
+</div>
+
+</div>
+<div class="slideblock">
+<p>
+<b>Some thoughts</b>
+</p>
+<form><ul>
+<li>if you are using a video (instead of audio), you may want to <b>make changes to the grid</b>. e.g., you might want to put the video inside the grid, next to the annotations, and either move intro to its own row or just eliminate the intro section altogether. This would likely involve change to the HTML as well.</li>
+<li><b>are you happy with the default display of the plugins?</b> This design assumes that you are unlikely to have more than 2 plugins visible at the same time. If you never have more than one, you may want to set <code>--default-width</code> to <code>100%</code>. Maybe you don't even want to use a flex container!</li>
+<li><b>set plugin-type and plugin-instance CSS with class and id properties</b>. In general, plugin instance containers have both a plugin-specific class <code>pluginName-plugin</code> and an instance-spcific id (the <code>id</code> property you set in a spreadsheet row).</li>
+<li><b>notice the use of CSS variables</b>. The syntax can sometimes feel a little heavy, but ultimately they mike life a lot easier.</li>
+
+</ul></form>
+
+</div>
+</section>
+</section>
+<section>
+<section id="slide-repo-update-37332l3j4" class="twobytwo">
+<h2 id="repo-update-37332l3j4">Getting Started with code</h2>
+<div class="slideblock">
+<p>
+<b>Install npm &amp; run server</b>
+</p>
 <div class="org-src-container">
 
 <pre><code class=" sh" >cd advanced-topics-yr-name
@@ -248,31 +337,30 @@ npm install
 npm run server &amp;
 </code></pre>
 </div>
-</section>
-</section>
-<section>
-<section id="slide-repo-update-3733ksljfd">
-<h2 id="repo-update-3733ksljfd">Open in browser</h2>
+
+</div>
+<div class="slideblock">
+<p>
+<b>Navigate to your site</b>
+</p>
 <div class="org-src-container">
 
 <pre><code class=" sh" >firefox localhost:8080/oral-history
 </code></pre>
 </div>
-</section>
-</section>
-<section>
-<section id="slide-repo-update-3733slkzvb">
-<h2 id="repo-update-3733slkzvb">use DevTools to look for errors</h2>
 
-<figure>
+</div>
+<div class="slideblock">
+<p>
+<b>use DevTools to look for errors</b>
 <img src="../../ox-hugo/console.png" alt="console.png">
+</p>
 
-</figure>
-</section>
-</section>
-<section>
-<section id="slide-repo-update-3733sklkjf">
-<h2 id="repo-update-3733sklkjf">Error Sources</h2>
+</div>
+<div class="slideblock">
+<p>
+<b>Error Sources</b>
+</p>
 <form><ul>
 <li>bad spreadsheet URL</li>
 <li>bad time codes etc. in spreadsheet</li>
@@ -280,38 +368,111 @@ npm run server &amp;
 <li>JS syntax errors in <code>index.html</code></li>
 
 </ul></form>
+
+</div>
+
+
 </section>
 </section>
 <section>
-<section id="slide-orgce24a6d">
-<h2 id="orgce24a6d">Good and Less Good Annotations</h2>
+<section id="slide-org224b86b" class="twoc">
+<h2 id="org224b86b">Good and Less Good Annotations</h2>
+<div class="slideblock">
+<p>
+<b>Good Annotations:</b>
+</p>
 <form><ul>
-<li>Add context/info</li>
-<li>clarify</li>
-<li>Comment</li>
+<li><p>
+Add context/info
+</p>
+<blockquote>
+<p>
+<i>Stunde null</i> ("hour zero") refers to the period of time directly after World War II, when the future direction and status of the old German Reich was radically undertain, and a dramatic reset of all social and political expectations seemed inevitable.
+</p>
+</blockquote>
+<p>
+<iframe style="width:100%; height: 20vh" src="https://en.wikipedia.org/wiki/Stunde_Null"></iframe>
+</p></li>
+<li><p>
+clarify content
+</p>
+<blockquote>
+<p>
+"His Holiness", that is, the Dalai Lama.
+</p>
+</blockquote></li>
+<li>enhance rather than distract</li>
 
 </ul></form>
+
+</div>
+<div class="slideblock">
+<p>
+<b>Less Good Annotations:</b>
+</p>
+<form><ul>
+<li>are not directly tied to what's being discussed in your media file</li>
+<li>pass too quickly to be comprehended in real time</li>
+<li>are too cluttered to interpret</li>
+
+</ul></form>
+
+</div>
+
 </section>
 </section>
 <section>
-<section id="slide-seek-function-a7fd">
-<h2 id="seek-function-a7fd">"Seek" function</h2>
+<section id="slide-seek-function-a7fd" class="twoc">
+<h2 id="seek-function-a7fd">Extra fun</h2>
+<div class="slideblock">
+<p>
+<b>Seek Function</b>
+</p>
 <pre><code class="language-klipse-javascript" >
-var seek = function (time) {
+const seek = function (time) {
  document.getElementById("media").currentTime= time;
- };
-
+ }; 
 </code></pre>
 
 <p>
-<code>&lt;a href="javascript:seek(75)"&gt;seek to 1:15&lt;/a&gt;</code>
+Use in Markdown thus: 
 </p>
+
+<div class="org-src-container">
+
+<pre><code class=" markdown" >When &lt;a href="javascript:seek(75)"&gt;Jonathan discusses the trauma of wartime (1:15)&lt;/a&gt;, 
+he uses language that clearly echos that of professional psychiatric discourse as it 
+came into vogue in the 1970's. 
+</code></pre>
+</div>
+
+</div>
+
+<div class="slideblock">
+<p>
+<b>Styling media container in chrome</b>
+</p>
+<div class="org-src-container">
+
+<pre><code class=" css" >audio::-webkit-media-controls-enclosure {
+    background-color: rgba(20,20,20,0.4);
+    border-radius: 5px;
+}
+audio {
+    width: 100%;
+}
+</code></pre>
+</div>
+
+</div>
+
+
 
 </section>
 </section>
 <section>
-<section id="slide-orgfde7488">
-<h2 id="orgfde7488"></h2>
+<section id="slide-orgd4346d2">
+<h2 id="orgd4346d2">Your Questions/Efforts</h2>
 </section>
 </section>
 </div>
