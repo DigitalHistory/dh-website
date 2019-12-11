@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>12: Citizen History</title>
+<meta name="author" content="Matt Price"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../vendor/reveal//css/reveal.css"/>
+
+<link rel="stylesheet" href="../../vendor/reveal//css/theme/matt.css" id="theme"/>
+
+<link rel="stylesheet" href=""/>
+<link rel="stylesheet" href="../../vendor/reveal//lib/css/zenburn.css"/>
+<link rel="stylesheet" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css"/>
+<style>
+/* Position computations of klipse get confused by reveal.js's scaling.
+   Hence, scaling should be disabled with this code.  Fix height of code area
+   with scrollbar (use overflow instead of overflow-y to restore CodeMirror
+   setting afterwards): */
+.reveal section pre { max-height: 70vh; height: auto; overflow: auto; }
+/* Reset some reveal.js and oer-reveal settings: */
+.reveal section pre .CodeMirror pre { font-size: 2em; box-shadow: none; width: auto; padding: 0.4em; display: block; overflow: visible; }
+/* Enlarge cursor: */
+.CodeMirror-cursor { border-left: 3px solid black; }
+</style>
+<script>
+    window.klipse_settings = {
+        selector: '.language-klipse',
+        selector_eval_html: '.language-klipse-html',
+        selector_eval_js: '.language-klipse-javascript',
+        selector_eval_js: '.language-klipse-js',
+        selector_eval_php: '.language-klipse-php',
+        selector_eval_python_client: '.language-klipse-python',
+        selector_eval_ruby: '.language-klipse-ruby',
+        selector_eval_scheme: '.language-klipse-scheme',
+        selector_sql: '.language-klipse-sql'
+    };
+</script>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../vendor/reveal//css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>12: Citizen History</h1>
+<h3>Matt Price  </h3>
+<!-- <p class="title-theme-choice">(view this presentation in another theme: 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
+				)	</p> -->
+
+</section>
+<section>
+<section id="slide-org0772a6a">
+<h2 id="org0772a6a">Reminders</h2>
+<form><ul>
+<li>Oral History due shortly</li>
+<li>Proposal due immediately after</li>
+<li>sorry no snacks!</li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-orge0bc019">
+<h2 id="orge0bc019">What we've learned</h2>
+<div class="outline-text-2" id="text-orge0bc019">
+</div>
+</section>
+<section id="slide-orgd0a7808">
+<h3 id="orgd0a7808">Text is Code</h3>
+<form><ul>
+<li>all our work is "digital" now</li>
+
+</ul></form>
+</section>
+<section id="slide-org64efe86">
+<h3 id="org64efe86">The 3 layers of the web</h3>
+<form><ul>
+<li>structure</li>
+<li>presentation</li>
+<li>dynamism</li>
+
+</ul></form>
+</section>
+<section id="slide-orge00f853">
+<h3 id="orge00f853">The "Public" and "the Public Sphere"</h3>
+<form><ul>
+<li>media constrain the possible</li>
+<li>the "public" is probably not unitary</li>
+<li>don't have to be a genius to make a contribution</li>
+
+</ul></form>
+</section>
+<section id="slide-org0428619">
+<h3 id="org0428619">Invocations and Incantations</h3>
+<form><ul>
+<li>Using APIs to take advantage of other people's work</li>
+<li>writing only what you have to</li>
+
+</ul></form>
+</section>
+<section id="slide-orgeb8a350">
+<h3 id="orgeb8a350">Open and Closed Systems</h3>
+<form><ul>
+<li>what "open source" means for us</li>
+
+</ul></form>
+</section>
+<section id="slide-org1eece0d">
+<h3 id="org1eece0d">Maps and Legends</h3>
+<form><ul>
+<li>organizing stories around space</li>
+<li>digital maps are spcial</li>
+
+</ul></form>
+</section>
+<section id="slide-org14a11da">
+<h3 id="org14a11da">Storytelling</h3>
+<form><ul>
+<li>the distinctive features of oral history</li>
+<li>problems of truth and objectivity</li>
+<li>collaboration and authorship</li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-org4c251e4">
+<h2 id="org4c251e4">What you might do</h2>
+<p>
+<i>History doesn't have to stop at graduation</i>
+</p>
+</section>
+<section id="slide-changing-landscape-of-profession-and-expertise-4204">
+<h3 id="changing-landscape-of-profession-and-expertise-4204">Changing Landscape of Profession and Expertise</h3>
+<form><ul>
+<li>how will "professionalism" stretch and change shape in the future?</li>
+
+</ul></form>
+</section>
+<section id="slide-continuing-as-"historian"-after-graduation-2a55">
+<h3 id="continuing-as-"historian"-after-graduation-2a55">Continuing as "historian" after graduation</h3>
+<form><ul>
+<li>history fora &amp; groups</li>
+<li>participating in crowdsourced projects</li>
+<li>writing with a historian's eye</li>
+
+</ul></form>
+</section>
+<section id="slide-orgd86d82d">
+<h3 id="orgd86d82d">Use your new skills!</h3>
+<form><ul>
+<li>you're not a programmer yet, but you now understand how code works</li>
+<li>lots of ways to learn</li>
+<li>lots of roles for "demi-geeks"</li>
+
+</ul></form>
+</section>
+<section id="slide-orgbb81ac6">
+<h3 id="orgbb81ac6">History and Digital Literacy as Citizenship</h3>
+<aside class="notes">
+<p>
+remind everyone that we live together in a world shaped both by the events of the past and by a tremendously powerful media landscape. Charting a course through this new world requires some understanding of both. Promises and pitfalls of DH are the promises and pitfalls of the new world.   
+</p>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-org70bcfc5">
+<h2 id="org70bcfc5">Congratulations</h2>
+<aside class="notes">
+<p>
+you've all come a really long way this semester. Lots of your cohort quit before you did. Even if you are just scraping by, you have had to work to a high standard. You deserve a round of applause!
+</p>
+
+</aside>
+</section>
+</section>
+</div>
+</div>
+<script src="../../vendor/reveal//lib/js/head.min.js"></script>
+<script src="../../vendor/reveal//js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: false,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: "100%",
+height: "100%",
+margin: 0.10,
+minScale: 1.00,
+maxScale: 1.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+{src: '../../vendor/reveal//plugin/klipse_reveal.js'},
+ { src: '../../vendor/reveal//lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: '../../vendor/reveal//plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+<script src="https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script>
+<script>
+/* Recompute layout upon changes by klipse.  Code fragment from
+   asciidoctor-revealjs-klipse by Timothy Pratley under GPLv3:
+   https://github.com/timothypratley/asciidoctor-revealjs-klipse/blob/master/docs/docinfo-footer.html */
+Reveal.addEventListener( 'slidechanged', function( event ) {
+    window.dispatchEvent( new Event('resize') );
+} );
+</script>
+</body>
+</html>
