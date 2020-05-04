@@ -1,6 +1,6 @@
 ---
 title: "Syllabus"
-lastmod: 2019-10-01T15:31:38-04:00
+lastmod: 2020-05-04T13:05:03-04:00
 draft: false
 menu:
   main:
@@ -13,26 +13,25 @@ menu:
 <div class="ox-hugo-table org-upload">
 <div></div>
 
-| **Instructor:**    | Matt Price                                                       |
-|--------------------|------------------------------------------------------------------|
-| **Email:**         | matt.price@utoronto.ca                                           |
-| **Meeting Times**  | T Th 2-3, [SS 1072](http://map.utoronto.ca/utsg/building/033)    |
-| **Web:**           | <http://digitalhistory.github.io/>                               |
-| **Slack:**         | <https://digitalhistoryuoft.slack.com/>                          |
-| **New!! Youtube:** | <https://www.youtube.com/channel/UC59evpoPsmdKhmB9YeqXMPg>       |
-| **Office Hrs:**    | T Th 3-3:30, [SS 3077](http://map.utoronto.ca/utsg/building/033) |
-| **TA:**            | [Lara Howerton](mailto:lara.howerton@mail.utoronto.ca)           |
+| **Instructor:**   | Matt Price                                                                                          |
+|-------------------|-----------------------------------------------------------------------------------------------------|
+| **Email:**        | matt.price@utoronto.ca                                                                              |
+| **Meeting Times** | T Th 10-12 EST [via BB Collaborate](https://ca.bbcollab.com/guest/03a91803bdc94cea8ba8197fcb15d985) |
+| **Web:**          | <http://digitalhistory.github.io/>                                                                  |
+| **Slack:**        | <https://digitalhistoryuoft.slack.com/>                                                             |
+| **Youtube:**      | <https://www.youtube.com/channel/UC59evpoPsmdKhmB9YeqXMPg>                                          |
+| **Office Hrs:**   | T Th 3-3:30, [SS 3077](http://map.utoronto.ca/utsg/building/033)                                    |
 
 </div>
 
-In general, online communication should take place **via Slack**.  In the case of questions having to do with official University business (requests for extensions, discussion of accommodations, any message involving sensitive personal data) please [use my University email, being sure to put "HIS393" in the subject line](mailto:matt.price@utoronto.ca?subject=HIS389%20Digital%20History).
+In general, online communication should take place **via Slack**.  In the case of questions having to do with official University business (requests for extensions, discussion of accommodations, any message involving sensitive personal data) please [use my University email, being sure to put "HIS393" in the subject line](mailto:matt.price@utoronto.ca?subject=HIS393%20Digital%20History).
 
 
 ## Introduction {#introduction}
 
 We all know &#x2013; it is so commonplace that we barely even notice it! &#x2013; that we are living through a revolutionary period in the history of communication.  In the year of your birth, the World Wide Web was a scrawny, hand-powered frontier of hand-coded sites and Internet startups.  Amazon and Google were infants.  The University of Toronto Library website [looked something like this](https://web.archive.org/web/19971210222202/http://library.utoronto.ca/):
 
-{{< figure src="/ox-hugo/Screenshot from 2015-06-23 16-12-51.png" class="someclass" >}}
+{{< figure src="/ox-hugo/utoronto-site-2000.png" class="someclass" >}}
 
 and many students and faculty still used the card catalog to find books in Robarts.
 
@@ -72,6 +71,15 @@ Almost every digital humanist will, at some point, need to do the following:
 Our emphasis is therefore on _simple coding_ taught using _standard tools that are available almost everywhere_.  Almost all of the software we use is Free or Open Source. You will learn very basic web development skills and _slowly_ come to apply them to _increasingly sophisticated_ (but still pretty simple!) historical questions.  These baby steps will give you some sense of what skills a "real" digital history project requires, and give you the tools you'll need to _teach yourself_ when you encounter new tools in the course of a project.
 
 
+## Course Format (CoViD edition) {#course-format--covid-edition}
+
+This class is being taught online and largely asynchronously for the first time during lockdown in May/June 2020. Despite being organized around Digital History,the class has, ironically, traditionally relied heavily on face to face interactions. This term, lectures will **all** be delivered asynchronously, and scheduled classtime &#x2013; 4 hours per week &#x2013; will be devoted to practical coding and writing problems. Essentially, this is a [flipped classroom](https://www.teachthought.com/learning/the-definition-of-the-flipped-classroom/) approach, but one in which we never meet IRL. If you're not able to come to the live sessions, help will also be available through Slack and other async channels.
+
+Each week, I will post a series of short lectures online. You will be expected to watch them in advance of our class meetings, and we will use the meeting time to practice skills you'll need for the assignments.
+
+[Please use this BB Collab to join our class meetings](https://ca.bbcollab.com/guest/03a91803bdc94cea8ba8197fcb15d985). This first week is a trial run &#x2013; we will see if BB Collaborate works for us, and reassess if necessary.
+
+
 ## Policies {#policies}
 
 
@@ -87,16 +95,16 @@ Diverse backgrounds, embodiments, and experiences are essential to the critical 
 
 ### Correspondence {#correspondence}
 
-As noted above, most communication should take place **via Slack**.  In the case of questions having to do with official University business (requests for extensions, discussion of accommodations, any message involving sensitive personal data) please [use my University email, being sure to put "HIS393" in the subject line](mailto:matt.price@utoronto.ca?subject=HIS389%20Digital%20History).  I'll do my best to reply within two working days, though occasionally the delay may be slightly longer. Please allow the full 48 hours to elapse before sending a repeat email.
+As noted above, most communication should take place **via Slack**.  In the case of questions having to do with official University business (requests for extensions, discussion of accommodations, any message involving sensitive personal data) please [use my University email, being sure to put "HIS393" in the subject line](mailto:matt.price@utoronto.ca?subject=HIS393%20Digital%20History).  I'll do my best to reply within two working days, though occasionally the delay may be slightly longer. Please allow the full 48 hours to elapse before sending a repeat email.
 
 **Also:** I have an injury-related difficulty co-ordinating action between my left and right hands, which leads to very frequent & distinctive typographical errors (and is also one of the many reasons you don't want to hear me play a musical instrument). In my course materials, assignment comments, and announcements, I strive to eliminate those errors, but in instant messaging I am less attentive, as typing corrections approximately triples my composition time. So&#x2026; please bear with me.
 
 
 ### Attendance {#attendance}
 
-Make every effort to attend each class meeting (including lab sections)! Class will begin and (usually) end on time. Please do your best to get to class before the start of the session. Students are expected to attend all meetings, with exceptions permitted in case of illness and family emergencies.
+Make every effort to attend each class meeting if you can! Class will begin and (usually) end on time. Please do your best to get to class before the start of the session. Students are expected to attend all meetings unless lockdown-related scheduling issues prevent you. Please let me know in advance if you need to skip class either once or in general.
 
-Please silence all cell phones/pagers/etc. before the beginning of each class. You should bring your laptop for in-class work, but please don't use class time (lecture or lab) to check your email, update your Facebook, read reddit, watch YouTube, make dank memes, seize the means of production (well, that may be allowed under certain circumstances), etc. Such usage is distracting and interferes with learning both for you and for all the other students around you. If I notice you doing this, I will call you out in public. Spend class time on class materials. If another student's activity is distracting, please ask them to stop it (or let me know outside of class).
+Please silence notirications on your devices during class, so you can focus. . You should bring your laptop for in-class work, but please don't use class time (lecture or lab) to check your email, update your Facebook, read reddit, watch YouTube, make dank memes, seize the means of production (well, that may be allowed under certain circumstances), etc. Such usage is distracting and interferes with learning both for you and for all the other students around you. If I notice you doing this, I will call you out in public. Spend class time on class materials. If another student's activity is distracting, please ask them to stop it (or let me know outside of class).
 
 
 ## Tools {#tools}
@@ -114,7 +122,6 @@ I can offer help with the following
 | Github Org Membership         | [Sign up here](https://github.com/join)                                                                                    | [Sign up here](https://github.com/join)                                                                                                                | [Sign up here](https://github.com/join)                                                                                  |
 | Git Visualization (optional!) | [gitKraken](https://www.gitkraken.com/)                                                                                    | [gitKraken](https://www.gitkraken.com/)                                                                                                                | [gitKraken](https://www.gitkraken.com/)                                                                                  |
 | Node and NPM                  | [Node Website](https://nodejs.org/en/download/) ([guide](http://nodesource.com/blog/installing-nodejs-tutorial-mac-os-x/)) | [Node Website](https://nodejs.org/en/download/) ([guide](https://wsvincent.com/install-node-js-npm-windows/))                                          | [Node Website](https://nodejs.org/en/download/) ([distro instructions](https://nodejs.org/en/download/package-manager/)) |
-
 
 Please see the [Setup](http://digitalhistory.github.io/article/tools) page for more details about the particular tools we will be using. **YOU WILL ABSOLUTEY NEED TO HAVE THESE TOOLS IN ORDER TO TAKE THE COURSE**
 
@@ -154,20 +161,19 @@ I know there will be questions!  Please don't hesitate to ask them.  And here, f
 
 <a id="table--assignments-table"></a>
 
-
 | Assignment           | Due Date                                                                      | Skills/Aims                                                        | A        | B        | C        | D        |
 |----------------------|-------------------------------------------------------------------------------|--------------------------------------------------------------------|----------|----------|----------|----------|
-| Class Profile        | <span class="timestamp-wrapper"><span class="timestamp">Sep. 17</span></span> | version control and collaboration                                  | &#10004; | &#10004; | &#10004; | &#10004; |
+| Class Profile        | <span class="timestamp-wrapper"><span class="timestamp">May. 07</span></span> | version control and collaboration                                  | &#10004; | &#10004; | &#10004; | &#10004; |
 | G & GH Extras        |                                                                               |                                                                    | &#10004; |          |          |          |
-| Zero to Blog Post    | <span class="timestamp-wrapper"><span class="timestamp">Sep. 26</span></span> | web markup and presentation                                        | &#10004; | &#10004; | &#10004; | &#10004; |
+| Zero to Blog Post    | <span class="timestamp-wrapper"><span class="timestamp">May. 15</span></span> | web markup and presentation                                        | &#10004; | &#10004; | &#10004; | &#10004; |
 | Z2B Extras           |                                                                               |                                                                    | &#10004; |          |          |          |
-| A Feast of Ministers | <span class="timestamp-wrapper"><span class="timestamp">Oct. 08</span></span> | Programming Concepts: abstraction, loops, data types               | &#10004; | &#10004; | &#10004; | &#10004; |
+| A Feast of Ministers | <span class="timestamp-wrapper"><span class="timestamp">May. 22</span></span> | Programming Concepts: abstraction, loops, data types               | &#10004; | &#10004; | &#10004; | &#10004; |
 | Ministers Extras     |                                                                               |                                                                    | &#10004; |          |          |          |
-| DOM and Data         | <span class="timestamp-wrapper"><span class="timestamp">Oct. 25</span></span> | Programming Concepts: Object structure, substitution, text as data | &#10004; | &#10004; | &#10004; |          |
+| DOM and Data         | <span class="timestamp-wrapper"><span class="timestamp">May. 29</span></span> | Programming Concepts: Object structure, substitution, text as data | &#10004; | &#10004; | &#10004; |          |
 | DOM and Data Extras  |                                                                               |                                                                    | &#10004; |          |          |          |
-| Spatial History      | <span class="timestamp-wrapper"><span class="timestamp">Nov. 14</span></span> | API's, GIS                                                         | &#10004; | &#10004; |          |          |
-| Oral History         | <span class="timestamp-wrapper"><span class="timestamp">Dec. 05</span></span> | API's, Multimedia Narratives                                       | &#10004; | &#10004; | &#10004; | &#10004; |
-| Project Proposal     | <span class="timestamp-wrapper"><span class="timestamp">Dec. 06</span></span> | Imagine a Digital History Project                                  | &#10004; |          |          |          |
+| Spatial History      | <span class="timestamp-wrapper"><span class="timestamp">Jun. 03</span></span> | API's, GIS                                                         | &#10004; | &#10004; |          |          |
+| Oral History         | <span class="timestamp-wrapper"><span class="timestamp">Jun. 12</span></span> | API's, Multimedia Narratives                                       | &#10004; | &#10004; | &#10004; | &#10004; |
+| Project Proposal     | <span class="timestamp-wrapper"><span class="timestamp">Jun. 17</span></span> | Imagine a Digital History Project                                  | &#10004; |          |          |          |
 |                      |                                                                               |                                                                    |          |          |          |          |
 
 
@@ -186,33 +192,48 @@ While all our readings are online, the following texts are heavily used & may be
 ### Text, Code, and the Web {#text-code-and-the-web}
 
 
-#### Introducing _Digital History_ (<span class="timestamp-wrapper"><span class="timestamp">Sep. 05</span></span>) {#introducing-digital-history}
+#### (<span class="timestamp-wrapper"><span class="timestamp">May. 05</span></span>) Introducing _Digital History_, [Github](https://github.com), and [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) {#introducing-digital-history-github-and-markdown}
 
 **Class Synopsis:** Introduction to the course
+
+**Lecture Videos:**
+
+-   Welcome
+-   Github Sign-up
+-   Github Hello World
+-   Using Markdown
+-   Github Pull Request
+-   JSON Fundamentals
 
 **Readings:** You may want to read some of these as general preparation for this and other history classes:
 
 -   W. Caleb McDaniel. “How to Read for History.” W. Caleb McDaniel. Accessed June 27, 2015. <http://wcm1.web.rice.edu/howtoread.html>.
 -   William Cronon, ["Why the Past Matters"](http://www.williamcronon.net/writing/Cronon%5FWhy%5Fthe%5FPast%5FMatters.pdf)
 -   Cohen, Daniel J, and Roy Rosenzweig. “Becoming Digital.” In _Digital History: A Guide to Gathering, Preserving, and Presenting the Past on the Web_. Philadelphia: University of Pennsylvania Press, 2006. <http://chnm.gmu.edu/digitalhistory/digitizing/>.
-
-
-#### In-Class Activity: Collaboration on Github, Markdown (<span class="timestamp-wrapper"><span class="timestamp">Sep. 10</span></span>) {#in-class-activity-collaboration-on-github-markdown}
-
 -   Also, consider watching the VSCode videos in [the class YouTube channel](https://www.youtube.com/channel/UC59evpoPsmdKhmB9YeqXMPg)
 
 
-#### What the Web Signifies (<span class="timestamp-wrapper"><span class="timestamp">Sep. 12</span></span>) {#what-the-web-signifies}
+##### In-Class Activity: Collaboration on Github, Markdown {#in-class-activity-collaboration-on-github-markdown}
 
-We all live with the web, but that doesn't mean we think much about _how it works_ and _what it's changed_. This week's lecture presents some thoughts on the changing nature of the public sphere and the significance of the web's _digital_ and _machine-readable_ nature.
+
+#### (<span class="timestamp-wrapper"><span class="timestamp">May. 07</span></span>) What the Web Signifies + [HTML](https://developer.mozilla.org/en-US/docs/Learn/Getting%5Fstarted%5Fwith%5Fthe%5Fweb/HTML%5Fbasics) and [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting%5Fstarted%5Fwith%5Fthe%5Fweb/CSS%5Fbasics) {#what-the-web-signifies-plus-html-and-css}
+
+**Class Synopsis:** we all live with the web, but that doesn't mean we think much about _how it works_ and _what it's changed_. This week's lecture presents some thoughts on the changing nature of the public sphere and the significance of the web's _digital_ and _machine-readable_ nature.
+
+**Lecture Videos:**
+
+-   What the Web signifies
+-   HTML 1: Tags and Structures
+-   CSS 1: Colors, sizes, Styles
+-   VSCode: Intro
 
 **Readings:**
 
 -   Juergen Habermas, "[The Public Sphere: An Encyclopedia Article](https://unige.ch/sciences-societe/socio/files/2914/0533/6073/Habermas%5F1974.pdf)" (1964)
--   Cohen, Daniel J. “Interchange: The Promise of Digital History” 95, no. 2 (September 1, 2008): 452–91. <http://jah.oxfordjournals.org.myaccess.library.utoronto.ca/content/95/2/452.short>
+-   Cohen, Daniel J. “[Interchange: The Promise of Digital History](http://jah.oxfordjournals.org.myaccess.library.utoronto.ca/content/95/2/452.short)” 95, no. 2 (September 1, 2008): 452–91.
 
 
-#### In-Class Activity: HTML + CSS (<span class="timestamp-wrapper"><span class="timestamp">Sep. 17</span></span>) {#in-class-activity-html-plus-css}
+##### In-Class Activity: HTML + CSS {#in-class-activity-html-plus-css}
 
 **Resources:**
 These Mozilla Developer Network guides are inter-related, and the structure is easy to get lost in. Still, this is among the best resources on the web.
@@ -228,9 +249,17 @@ These Mozilla Developer Network guides are inter-related, and the structure is e
 -   [Blogstarter: simple tutorial](https://www.theblogstarter.com/html-for-beginners/) (one of a zillion alternatives to the MDN pages)
 
 
-#### Abundance and Openness (<span class="timestamp-wrapper"><span class="timestamp">Sep. 19</span></span>) {#abundance-and-openness}
+#### (<span class="timestamp-wrapper"><span class="timestamp">May. 12</span></span>) Abundance and Openness {#abundance-and-openness}
 
 One of the key features of the web is its _immenseness_. We will discuss how this genuinely new circumstance transforms the work of the historian.
+
+**Lecture Videos:**
+
+-   Abundance and Openness
+-   CSS 2: The Box Model
+-   CSS 3: Layouts with Flex and Grid
+
+**Readings:**
 
 -   W. Caleb McDaniel. “How to Read for History.” W. Caleb McDaniel. Accessed June 27, 2015. <http://wcm1.web.rice.edu/howtoread.html>.
 -   Council. “Many More than a Million: Building the Digital Environment for the Age of Abundance.” Council on Library and Information Resources. Accessed June 7, 2011. <http://www.clir.org/activities/digitalscholar/index.html>.
@@ -239,13 +268,13 @@ One of the key features of the web is its _immenseness_. We will discuss how thi
 -   “Learn How Google Works: In Gory Detail.” _PPCBlog_. Accessed June 30, 2015. <http://www.ppcblog.com/how-google-works/>.
 
 
-#### In-Class Activity: More HTML + CSS (<span class="timestamp-wrapper"><span class="timestamp">Sep. 24</span></span>) {#in-class-activity-more-html-plus-css}
+##### In-Class Activity: More HTML + CSS {#in-class-activity-more-html-plus-css}
 
 
 ### Data Driven History {#data-driven-history}
 
 
-#### Distant Reading 1 (<span class="timestamp-wrapper"><span class="timestamp">Sep. 26</span></span>) {#distant-reading-1}
+#### (<span class="timestamp-wrapper"><span class="timestamp">May. 14</span></span>) Distant Reading 1 {#distant-reading-1}
 
 Franco Moretti's _Graphs, Maps, Trees_ was a manifesto of sorts for a data-driven literary history. We'll discuss the first 2/3s of this book before turning to some practical skills
 
@@ -255,10 +284,10 @@ Franco Moretti's _Graphs, Maps, Trees_ was a manifesto of sorts for a data-drive
 -   "Basic Text Mining" in _The Historian's Macroscope:_ <http://www.themacroscope.org/?page%5Fid=362>
 
 
-#### In-Class Activity: Javascript variables & functions (<span class="timestamp-wrapper"><span class="timestamp">Oct. 01</span></span>) {#in-class-activity-javascript-variables-and-functions}
+##### In-Class Activity: Javascript variables & functions {#in-class-activity-javascript-variables-and-functions}
 
 
-#### Distant Reading 2: Are Texts Data? (<span class="timestamp-wrapper"><span class="timestamp">Oct. 03</span></span>) {#distant-reading-2-are-texts-data}
+#### (<span class="timestamp-wrapper"><span class="timestamp">May. 19</span></span>) Distant Reading 2: Are Texts Data? {#distant-reading-2-are-texts-data}
 
 More Moretti, and some criticisms
 
@@ -270,35 +299,34 @@ More Moretti, and some criticisms
 -   Marc Dunkelman. “[What Data Can't Convey](http://chronicle.com/blogs/conversation/2014/08/19/what-data-cant-convey/).” Blog. _The Chronicle of Higher Education_, 19 2014.
 
 
-#### In-Class Activity: Javascript objects and DOM manipulation (<span class="timestamp-wrapper"><span class="timestamp">Oct. 08</span></span>) {#in-class-activity-javascript-objects-and-dom-manipulation}
+##### In-Class Activity: Javascript objects and DOM manipulation {#in-class-activity-javascript-objects-and-dom-manipulation}
 
 
-#### Text as Data, History as Algorithm (<span class="timestamp-wrapper"><span class="timestamp">Oct. 10</span></span>) {#text-as-data-history-as-algorithm}
+#### (<span class="timestamp-wrapper"><span class="timestamp">May. 21</span></span>) Text as Data, History as Algorithm {#text-as-data-history-as-algorithm}
 
 **Note:** we may need to push this up
-We'll explore "topic modelling" &#x2013; one of the most popular DH methods &#x2013; as well as some critiques of it, and some more playful extrapolations about the future of data-driven history.
+We'll explore some more playful extrapolations about the future of data-driven history.
 
 **Readings:**
 
 -   Gibbs, Fred. “[Hermeneutics of Data and Historical Writing](http://writinghistory.trincoll.edu/data/gibbs-owens-2012-spring/).” _Writing History in the Digital Age_, March 14, 2012.
+-   Ramsay, S., "[The Hermeneutics of Screwing Around](https://muse-jhu-edu.myaccess.library.utoronto.ca/chapter/1127328)", In K. Kee (Eds.), _Pastplay: Teaching and Learning History with Technology_ (pp. 110-141).
+
+**Recommended Readings:**
+
 -   Seth van Hooland, Ruben Verborgh, and Max De Wilde. “[Cleaning Data with OpenRefine](http://programminghistorian.org/lessons/cleaning-data-with-openrefine).” _The Programming Historian_.
 
 
-#### In-Class Activity: Javascript questions (<span class="timestamp-wrapper"><span class="timestamp">Oct. 15</span></span>) {#in-class-activity-javascript-questions}
+##### In-Class Activity: Javascript and the DOM {#in-class-activity-javascript-and-the-dom}
 
 
-#### Computing Concepts Catch-up day (<span class="timestamp-wrapper"><span class="timestamp">Oct. 17</span></span>) {#computing-concepts-catch-up-day}
-
-More JS, and Trees.
-
-
-#### Assignment Help Day (<span class="timestamp-wrapper"><span class="timestamp">Oct. 22</span></span>) {#assignment-help-day}
+#### (<span class="timestamp-wrapper"><span class="timestamp">May. 26</span></span>) Computing Concepts & Assignment Help Catch-up day {#computing-concepts-and-assignment-help-catch-up-day}
 
 
 ### Maps, Visualization, and History {#maps-visualization-and-history}
 
 
-#### Spatial History (<span class="timestamp-wrapper"><span class="timestamp">Oct. 24</span></span>) {#spatial-history}
+#### (<span class="timestamp-wrapper"><span class="timestamp">May. 28</span></span>) Spatial History {#spatial-history}
 
 Contemporary "Historical GIS" and web-based geohistory projects descend from an illustrious lineage of qualitative and quantitative "spatial histories". In class today we explore what happens when "place" takes centre stage in a historical analysis.
 
@@ -308,10 +336,10 @@ Contemporary "Historical GIS" and web-based geohistory projects descend from an 
 -   Ben Schmidt, "[Data narratives and structural histories: Melville, Maury, and American whaling](http://sappingattention.blogspot.com/2012/10/data-narratives-and-structural.html)
 
 
-#### In-Class Activity: Mapping with Google (<span class="timestamp-wrapper"><span class="timestamp">Oct. 29</span></span>) {#in-class-activity-mapping-with-google}
+##### In-Class Activity: Mapping with Google {#in-class-activity-mapping-with-google}
 
 
-#### Maps Online (<span class="timestamp-wrapper"><span class="timestamp">Oct. 31</span></span>) {#maps-online}
+#### (<span class="timestamp-wrapper"><span class="timestamp">Jun. 02</span></span>) Maps Online {#maps-online}
 
 Maps and visiaulizations are neat and all, but contemporary web-based geohistory allows historical maps to interact powerfully with other data sources.  We'll explore some possibilities!
 
@@ -322,13 +350,10 @@ Maps and visiaulizations are neat and all, but contemporary web-based geohistory
 -   google earth tutorial: <https://geospatialhistorian.wordpress.com/lessons/lesson-1/>
 
 
-#### READING WEEK &#x2013; NO CLASS <span class="timestamp-wrapper"><span class="timestamp">Nov. 05</span></span> and <span class="timestamp-wrapper"><span class="timestamp">Nov. 07</span></span> {#reading-week-and-x2013-no-class}
+##### In-Class Activity: GIS {#in-class-activity-gis}
 
 
-#### In-Class Activity: GIS (<span class="timestamp-wrapper"><span class="timestamp">Nov. 12</span></span>) {#in-class-activity-gis}
-
-
-#### Visualization (<span class="timestamp-wrapper"><span class="timestamp">Nov. 14</span></span>) {#visualization}
+#### (<span class="timestamp-wrapper"><span class="timestamp">Jun. 04</span></span>) Visualization {#visualization}
 
 Of course, maps and graphs are in a certain sense part of a much broader field of _rhetorical visualizations:_ attempts to convey quantitative information through pictures in an effort to convince the reader.
 
@@ -339,13 +364,13 @@ Of course, maps and graphs are in a certain sense part of a much broader field o
 -   Andy Kirk, 298 Data Visualisation Resources, Visualising Data, (2015).
 
 
-#### In-Class Activity: Reading visualizations (<span class="timestamp-wrapper"><span class="timestamp">Nov. 19</span></span>) {#in-class-activity-reading-visualizations}
+##### In-Class Activity: Reading visualizations {#in-class-activity-reading-visualizations}
 
 
 ### Oral History, Crowdsourcing, and the Promise of the Public Sphere {#oral-history-crowdsourcing-and-the-promise-of-the-public-sphere}
 
 
-#### What's Special about Oral History (<span class="timestamp-wrapper"><span class="timestamp">Nov. 21</span></span>) {#what-s-special-about-oral-history}
+#### (<span class="timestamp-wrapper"><span class="timestamp">Jun. 09</span></span>) What's Special about Oral History {#what-s-special-about-oral-history}
 
 Oral History has a long tradition; we explore its roots and peculiarities, and
 
@@ -355,17 +380,17 @@ Oral History has a long tradition; we explore its roots and peculiarities, and
 -   Listen to some part of  "I can almost see the lights of home" <http://www.albany.edu/jmmh/vol2no1/lightssoundessay.html>
 
 
-#### In-Class Activity: Popcorn.js (<span class="timestamp-wrapper"><span class="timestamp">Nov. 26</span></span>) {#in-class-activity-popcorn-dot-js}
+##### In-Class Activity: Popcorn.js {#in-class-activity-popcorn-dot-js}
 
 
-#### Project Planning & Citizen History  (<span class="timestamp-wrapper"><span class="timestamp">Nov. 28</span></span>) {#project-planning-and-citizen-history}
+#### (<span class="timestamp-wrapper"><span class="timestamp">Jun. 11</span></span>) Project Planning & Citizen History {#project-planning-and-citizen-history}
 
 We'll discuss some project management techniques that should help you with your final proposal
 
 -   <http://publichistorycommons.org/where-are-the-citizen-historians/>
 
 
-#### Oral History & Remix Culture (<span class="timestamp-wrapper"><span class="timestamp">Dec. 03</span></span>) {#oral-history-and-remix-culture}
+##### Oral History & Remix Culture {#oral-history-and-remix-culture}
 
 Once oral histories migrate to the web, they, like maps, can interact with other kinds of data.
 
@@ -379,4 +404,4 @@ If we're ahead of schedule, we'll watch _Harlan County USA_ in class.
 
 ## Acknowledgments {#acknowledgments}
 
-Thanks to Joel Wrossley of the University of Washington and Thomas J Bradley of Algonquin Collegee for help and inspiration in assignments and grading strategy.  The "Policies" section above is taken almost verbatim from [Joel's web development course](https://canvas.uw.edu/courses/1118282/pages/policies). Various pieces of the course have been inspired by other teachers over the year, and I hope to do a better job of document theft and inspiration from here on in.
+Thanks to Joel Wrossley of the University of Washington and Thomas J Bradley of Algonquin Collegee for help and inspiration in assignments and grading strategy.  The "Policies" section above is taken almost verbatim from [Joel's web development course](https://canvas.uw.edu/courses/1118282/pages/policies). Various pieces of the course have been inspired by other teachers over the year, and have benefited from feedback within the [Github Education Community](https://education.github.community/).
