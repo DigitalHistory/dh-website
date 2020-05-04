@@ -8,19 +8,12 @@
 /*     opacity: 0.2; */
 /*     transform: translate(-40%, -50%) rotate(-30deg); */
 /* } */
-
 #sidebar ul li .category-icon {
-    padding-left: 50px;
-    padding-right: 5px;
-}
+  padding-left: 50px;
+  padding-right: 5px; }
 
-.outline-2, .outline-3 {
-    padding-left: 1rem;
-    background-color: rgba(0,0,0,0.1);
-    border: 1px solid rgb(125,125,125);
-}
+h2#course-outline h4 {
+  font-weight: bold; }
 
-.outline-1 {
-    background-color: rgba(125,125,125, 0.2);
-    padding: 0.5em;}
-
+h4 {
+  font-weight: bold; }
