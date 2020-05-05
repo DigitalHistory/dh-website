@@ -24,7 +24,7 @@
 <ul>
   {{ range .Data.Pages.ByLinkTitle }}
   <li>
-    <a href="{{.Permalink}}">{{.File.BaseFileName}}</a>
+    <a href="{{.Permalink}}">{{.Title}}</a>
   </li>
   {{ end }}
 </ul>

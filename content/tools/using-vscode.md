@@ -1,6 +1,6 @@
 ---
-title: "using vscode"
-lastmod: 2019-09-10T12:22:43-04:00
+title: "Using VSCode"
+lastmod: 2020-05-04T18:25:10-04:00
 draft: false
 menu:
   main:
@@ -36,4 +36,4 @@ Read more about the [user interface here](https://code.visualstudio.com/docs/get
 
 ## Extensions {#extensions}
 
-There are many, many amazing extensions to VSCode. I've chose a small number of them and bundled them into an [extension pack](https://marketplace.visualstudio.com/items?itemName=digital-history.history-hack-pack). Install it by clicking on the extensions button in the activity bar and typing searching for `History Hack Pack`. Follow the links in the documentation to learn more about the individual extensions.
+There are many, many amazing extensions to VSCode. I've chosen a small number of them and bundled them into an [extension pack](https://marketplace.visualstudio.com/items?itemName=digital-history.history-hack-pack). Install it by clicking on the extensions button in the activity bar and typing searching for `History Hack Pack`. Follow the links in the documentation to learn more about the individual extensions.

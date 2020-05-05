@@ -73,7 +73,7 @@
                                  ">
                     <div>
                         <a href="{{ .RelPermalink}}">
-                            {{safeHTML .Params.Pre}}{{if .LinkTitle}}{{.LinkTitle}}{{else}}{{.File.BaseFileName}}{{end}}{{safeHTML .Params.Post}}
+                            {{safeHTML .Params.Pre}}{{if .LinkTitle}}{{.LinkTitle}}{{else}}{{ with .File }}{{ .BaseFileName }}{{ end }}{{end}}{{safeHTML .Params.Post}}
                         </a>
                         {{- if $showvisitedlinks}}<i class="fa fa-circle-thin read-icon"></i>{{end}}
                     </div>

@@ -1,6 +1,6 @@
 ---
 title: "Setup"
-lastmod: 2019-09-10T12:22:57-04:00
+lastmod: 2020-05-04T18:21:35-04:00
 draft: false
 menu:
   main:
@@ -9,7 +9,7 @@ menu:
     weight: 10
 ---
 
-For the duration of this course, you will need to set up a "development environment" to do your work. You'll need to download,install, and interact with a group of programs and services that make it possible to do your work. Setting your environment up can be difficult, so be sure to budget some time to do so! Also be aware that these tools will take up significant spae on your laptop and may cause your laptop to slow down somewhat if run simultaneously with
+For the duration of this course, you will need to set up a "development environment" to do your work. You'll need to download, install, and interact with a group of programs and services that make it possible to do your work. Setting your environment up can be difficult, so be sure to budget some time to do so! Also be aware that these tools will take up significant spae on your laptop and may cause your laptop to slow down somewhat if run simultaneously with
 
 
 ## Platform Notes {#platform-notes}
@@ -68,7 +68,7 @@ In Windows, bash comes with the Git installation &#x2013; follow the instruction
 **IMPORTANT UPDATE**: VSCode has an [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal), and it's extremely useful. Windows users will have to do a little bit of work in order to use bash in the integrated terminal. See the excellent [terminal configuration instructions online](https://code.visualstudio.com/docs/editor/integrated-terminal#%5Fconfiguration), and be sure to follow the link explaining [how to access the user settings screen in VSCode](https://code.visualstudio.com/docs/getstarted/settings#%5Fcreating-user-and-workspace-settings).
 
 
-## Git, Github, and optionaly GitKraken {#git-github-and-optionaly-gitkraken}
+## Git, Github, and optionally GitKraken {#git-github-and-optionally-gitkraken}
 
 Software development is made **vastly** easier by "[version control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)" systems: specialized software that keeps track of the history and current state of files and directories. In the past there were many such systems, but now almost the whole user uses [git](https://git-scm.com/), and we're all grateful for it.
 
